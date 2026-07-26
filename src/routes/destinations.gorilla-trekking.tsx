@@ -1,0 +1,121 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { DestinationPage } from "@/components/DestinationPage";
+import { buildDestinationHead } from "@/lib/destination-head";
+import heroGorilla from "@/assets/hero-gorilla.jpg";
+import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
+import sceneCulture from "@/assets/scene-culture.jpg";
+import expChimp from "@/assets/exp-chimp.jpg";
+import expLodge from "@/assets/exp-lodge.jpg";
+import sceneLion from "@/assets/scene-lion.jpg";
+import sceneFalls from "@/assets/scene-falls.jpg";
+import gorillaBabyEating from "@/assets/uploads/gorilla-baby-eating.jpg";
+import gorillaBacklit from "@/assets/gorilla-backlit.jpg";
+import gorillaLookup from "@/assets/uploads/gorilla-lookup.jpg";
+
+const FAQS = [
+  {
+    q: "How much does a Uganda gorilla trekking permit cost?",
+    a: "A Uganda Wildlife Authority gorilla permit costs USD 800 per person and includes one hour with a habituated gorilla family, ranger guides and park entry. Wild Uganda Treks secures permits on your behalf as part of every itinerary.",
+  },
+  {
+    q: "When is the best time to go gorilla trekking in Bwindi?",
+    a: "The dry seasons of June to September and December to February offer firmer trails and easier trekking. Gorilla trekking runs year-round, and the wet-season months of March–May and October–November mean fewer travellers and beautifully lush forest.",
+  },
+  {
+    q: "How difficult is the gorilla trek?",
+    a: "Treks range from 1 to 8 hours through steep, muddy rainforest. Fitness helps, but local porters carry your pack and rangers match each guest to a gorilla family suited to their ability.",
+  },
+  {
+    q: "Is Uganda safe for gorilla trekking?",
+    a: "Yes. Bwindi and Mgahinga are two of Africa's safest, best-managed national parks. Every trek is led by armed Uganda Wildlife Authority rangers, and Wild Uganda Treks handles logistics, transfers and lodges throughout.",
+  },
+  {
+    q: "How many people are in a gorilla trekking group?",
+    a: "Groups are limited to a maximum of eight guests per gorilla family, with strict distancing rules to protect the gorillas from disease and stress.",
+  },
+];
+
+export const Route = createFileRoute("/destinations/gorilla-trekking")({
+  head: () =>
+    buildDestinationHead({
+      slug: "gorilla-trekking",
+      name: "Gorilla Trekking in Bwindi",
+      title: "Gorilla Trekking in Bwindi, Uganda — Permits, Cost & Tours | Wild Uganda Treks",
+      description:
+        "Trek Uganda's Bwindi Impenetrable Forest to meet endangered mountain gorillas face-to-face. Permits, best time to go, itineraries and expert-guided luxury tours from Wild Uganda Treks.",
+      ogImage: heroGorilla,
+      region: "South-western Uganda",
+      keywords: [
+        "Uganda gorilla trekking",
+        "Bwindi Impenetrable Forest",
+        "mountain gorilla safari",
+        "gorilla permit Uganda",
+        "Uganda safari",
+        "Wild Uganda Treks",
+      ],
+      faqs: FAQS,
+    }),
+  component: () => (
+    <DestinationPage
+      slug="gorilla-trekking"
+      eyebrow="Bwindi Impenetrable Forest"
+      name="Gorilla Trekking"
+      tagline={<>An hour with the <em className="italic text-gold">silverbacks</em>.</>}
+      intro="Descend into one of Africa's oldest rainforests and stand quietly, breathing the same misty air as a family of mountain gorillas. It is the rarest wildlife encounter on earth — and Uganda protects nearly half of the world's remaining population."
+      heroImage={heroGorilla}
+      heroAlt="Silverback mountain gorilla resting in the undergrowth of Bwindi rainforest"
+      facts={[
+        { label: "Location", value: "Bwindi & Mgahinga" },
+        { label: "Duration", value: "1 hour with gorillas" },
+        { label: "Permit", value: "USD 800 per person" },
+        { label: "Difficulty", value: "Moderate to Strenuous" },
+      ]}
+      sections={[
+        {
+          title: "A forest older than memory",
+          body: "Bwindi Impenetrable Forest is one of Africa's oldest ecosystems — 25,000 years of unbroken canopy, a living cathedral of ferns, orchids and ancient hardwoods. It is home to more than 400 mountain gorillas, roughly half of the world's remaining population.",
+        },
+        {
+          title: "The hour that changes you",
+          body: "After a briefing at dawn, your ranger guides lead you into the forest to find a habituated gorilla family. Once you're with them, the clock begins: one silent, sacred hour with silverbacks, mothers and infants moving through their world as if you were simply another part of it.",
+        },
+        {
+          title: "Trekked with intention",
+          body: "Every permit funds ranger patrols, community projects and conservation of the forest itself. Group sizes are limited to eight guests per family, and Wild Uganda Treks pairs each trek with lodges and porters chosen from surrounding villages.",
+        },
+      ]}
+      galleryImages={[
+        { src: heroGorilla, alt: "Silverback gorilla in Bwindi" },
+        { src: gorillaLookup, alt: "Mountain gorilla pausing mid-forage" },
+        { src: gorillaBabyEating, alt: "Infant gorilla feeding in the undergrowth" },
+        { src: gorillaBacklit, alt: "Silverback gorilla at first light in Bwindi" },
+        { src: sceneCulture, alt: "Local Batwa community" },
+        { src: expLodge, alt: "Forest luxury lodge" },
+        { src: sceneBunyonyi, alt: "Lake Bunyonyi, a calm stop after the trek" },
+      ]}
+      highlights={[
+        { title: "Face-to-face encounter", desc: "One hour, three metres, no barriers — the most personal wildlife moment on the planet." },
+        { title: "Small, private groups", desc: "Only eight guests per gorilla family, guided by expert rangers from the community." },
+        { title: "Community porters", desc: "Optional local porters carry your pack — meaningful support for surrounding villages." },
+        { title: "Ancient rainforest", desc: "Trek through 25,000-year-old forest alive with birds, orchids and forest elephants." },
+        { title: "Conservation impact", desc: "Every permit directly funds anti-poaching patrols and gorilla healthcare." },
+        { title: "Boutique lodges", desc: "Sleep in intimate forest lodges built and staffed by neighbouring communities." },
+      ]}
+      itinerary={[
+        { day: "Day 01", title: "Kampala → Bwindi", desc: "A scenic drive south through the equator, tea estates and terraced hills to your forest lodge on the edge of Bwindi." },
+        { day: "Day 02", title: "Gorilla trek", desc: "An early briefing at the park headquarters, then a guided trek to a habituated gorilla family for your unforgettable hour." },
+        { day: "Day 03", title: "Batwa & community day", desc: "Spend the morning with the Batwa forest people, or hike to a waterfall through banana plantations before a slow evening at the lodge." },
+        { day: "Day 04", title: "Return via Lake Bunyonyi", desc: "Pause at Uganda's most beautiful lake for lunch on the water before continuing north or on to Rwanda." },
+      ]}
+      bestTime="June to September and December to February — the dry seasons — bring firmer trails and easier trekking. Gorilla trekking is possible year-round; the wet months of March–May and October–November mean fewer travellers and lush, cinematic light."
+      gettingThere="Fly into Entebbe International Airport. Bwindi is a scenic 8–9 hour drive south, or a 1-hour scheduled flight to Kihihi or Kisoro airstrips followed by a 1–2 hour transfer to your lodge."
+      related={[
+        { name: "Chimpanzee Trekking", to: "/destinations/chimpanzee-trekking", img: expChimp },
+        { name: "Tree-Climbing Lions", to: "/destinations/tree-climbing-lions", img: sceneLion },
+        { name: "Murchison Falls", to: "/destinations/murchison-falls", img: sceneFalls },
+        { name: "Lake Bunyonyi", to: "/destinations/lake-bunyonyi", img: sceneBunyonyi },
+      ]}
+      faqs={FAQS}
+    />
+  ),
+});

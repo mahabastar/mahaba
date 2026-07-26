@@ -9,38 +9,979 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as WildlifeReservesRouteImport } from './routes/wildlife-reserves'
+import { Route as WildlifeEncyclopediaRouteImport } from './routes/wildlife-encyclopedia'
+import { Route as WildUgandaTvRouteImport } from './routes/wild-uganda-tv'
+import { Route as WeatherRouteImport } from './routes/weather'
+import { Route as VisaGuideRouteImport } from './routes/visa-guide'
+import { Route as UntoldSecretsRouteImport } from './routes/untold-secrets'
+import { Route as UgandaExplorerRouteImport } from './routes/uganda-explorer'
+import { Route as TravelJournalRouteImport } from './routes/travel-journal'
+import { Route as SeasonalSafariCalendarRouteImport } from './routes/seasonal-safari-calendar'
+import { Route as SafariBudgetCalculatorRouteImport } from './routes/safari-budget-calculator'
+import { Route as RiversRouteImport } from './routes/rivers'
+import { Route as ResponsibleTourismRouteImport } from './routes/responsible-tourism'
+import { Route as QuoteRequestRouteImport } from './routes/quote-request'
+import { Route as PackingGuideRouteImport } from './routes/packing-guide'
+import { Route as NationalParksRouteImport } from './routes/national-parks'
+import { Route as MountainsRouteImport } from './routes/mountains'
+import { Route as LakesRouteImport } from './routes/lakes'
+import { Route as GorillaPermitGuideRouteImport } from './routes/gorilla-permit-guide'
+import { Route as GalleryRouteImport } from './routes/gallery'
+import { Route as ForestsRouteImport } from './routes/forests'
+import { Route as FoodGuideRouteImport } from './routes/food-guide'
+import { Route as FaqsRouteImport } from './routes/faqs'
+import { Route as ExperiencesRouteImport } from './routes/experiences'
+import { Route as DashboardRouteImport } from './routes/dashboard'
+import { Route as CulturalHeritageRouteImport } from './routes/cultural-heritage'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as CoffeeTeaGuideRouteImport } from './routes/coffee-tea-guide'
+import { Route as BuildMySafariRouteImport } from './routes/build-my-safari'
+import { Route as BirdGuideRouteImport } from './routes/bird-guide'
+import { Route as AiTripPlannerRouteImport } from './routes/ai-trip-planner'
+import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as TravelJournalIndexRouteImport } from './routes/travel-journal.index'
+import { Route as ExperiencesIndexRouteImport } from './routes/experiences.index'
+import { Route as TravelJournalSlugRouteImport } from './routes/travel-journal.$slug'
+import { Route as JourneysSlugRouteImport } from './routes/journeys.$slug'
+import { Route as ExperiencesSlugRouteImport } from './routes/experiences.$slug'
+import { Route as DestinationsZiwaRhinoSanctuaryRouteImport } from './routes/destinations.ziwa-rhino-sanctuary'
+import { Route as DestinationsTreeClimbingLionsRouteImport } from './routes/destinations.tree-climbing-lions'
+import { Route as DestinationsSipiFallsRouteImport } from './routes/destinations.sipi-falls'
+import { Route as DestinationsSemulikiRouteImport } from './routes/destinations.semuliki'
+import { Route as DestinationsRwenzoriMountainsRouteImport } from './routes/destinations.rwenzori-mountains'
+import { Route as DestinationsQueenElizabethNationalParkRouteImport } from './routes/destinations.queen-elizabeth-national-park'
+import { Route as DestinationsMurchisonFallsRouteImport } from './routes/destinations.murchison-falls'
+import { Route as DestinationsMountElgonRouteImport } from './routes/destinations.mount-elgon'
+import { Route as DestinationsMgahingaGorillaRouteImport } from './routes/destinations.mgahinga-gorilla'
+import { Route as DestinationsLakeMburoRouteImport } from './routes/destinations.lake-mburo'
+import { Route as DestinationsLakeBunyonyiRouteImport } from './routes/destinations.lake-bunyonyi'
+import { Route as DestinationsKidepoValleyRouteImport } from './routes/destinations.kidepo-valley'
+import { Route as DestinationsKibaleForestRouteImport } from './routes/destinations.kibale-forest'
+import { Route as DestinationsJinjaSourceOfTheNileRouteImport } from './routes/destinations.jinja-source-of-the-nile'
+import { Route as DestinationsGorillaTrekkingRouteImport } from './routes/destinations.gorilla-trekking'
+import { Route as DestinationsEntebbeRouteImport } from './routes/destinations.entebbe'
+import { Route as DestinationsCraterLakesRouteImport } from './routes/destinations.crater-lakes'
+import { Route as DestinationsChimpanzeeTrekkingRouteImport } from './routes/destinations.chimpanzee-trekking'
+import { Route as DestinationsBwindiImpenetrableRouteImport } from './routes/destinations.bwindi-impenetrable'
 
+const WildlifeReservesRoute = WildlifeReservesRouteImport.update({
+  id: '/wildlife-reserves',
+  path: '/wildlife-reserves',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WildlifeEncyclopediaRoute = WildlifeEncyclopediaRouteImport.update({
+  id: '/wildlife-encyclopedia',
+  path: '/wildlife-encyclopedia',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WildUgandaTvRoute = WildUgandaTvRouteImport.update({
+  id: '/wild-uganda-tv',
+  path: '/wild-uganda-tv',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const WeatherRoute = WeatherRouteImport.update({
+  id: '/weather',
+  path: '/weather',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const VisaGuideRoute = VisaGuideRouteImport.update({
+  id: '/visa-guide',
+  path: '/visa-guide',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UntoldSecretsRoute = UntoldSecretsRouteImport.update({
+  id: '/untold-secrets',
+  path: '/untold-secrets',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const UgandaExplorerRoute = UgandaExplorerRouteImport.update({
+  id: '/uganda-explorer',
+  path: '/uganda-explorer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TravelJournalRoute = TravelJournalRouteImport.update({
+  id: '/travel-journal',
+  path: '/travel-journal',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SeasonalSafariCalendarRoute = SeasonalSafariCalendarRouteImport.update({
+  id: '/seasonal-safari-calendar',
+  path: '/seasonal-safari-calendar',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SafariBudgetCalculatorRoute = SafariBudgetCalculatorRouteImport.update({
+  id: '/safari-budget-calculator',
+  path: '/safari-budget-calculator',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RiversRoute = RiversRouteImport.update({
+  id: '/rivers',
+  path: '/rivers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResponsibleTourismRoute = ResponsibleTourismRouteImport.update({
+  id: '/responsible-tourism',
+  path: '/responsible-tourism',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const QuoteRequestRoute = QuoteRequestRouteImport.update({
+  id: '/quote-request',
+  path: '/quote-request',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PackingGuideRoute = PackingGuideRouteImport.update({
+  id: '/packing-guide',
+  path: '/packing-guide',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NationalParksRoute = NationalParksRouteImport.update({
+  id: '/national-parks',
+  path: '/national-parks',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const MountainsRoute = MountainsRouteImport.update({
+  id: '/mountains',
+  path: '/mountains',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const LakesRoute = LakesRouteImport.update({
+  id: '/lakes',
+  path: '/lakes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GorillaPermitGuideRoute = GorillaPermitGuideRouteImport.update({
+  id: '/gorilla-permit-guide',
+  path: '/gorilla-permit-guide',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GalleryRoute = GalleryRouteImport.update({
+  id: '/gallery',
+  path: '/gallery',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ForestsRoute = ForestsRouteImport.update({
+  id: '/forests',
+  path: '/forests',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FoodGuideRoute = FoodGuideRouteImport.update({
+  id: '/food-guide',
+  path: '/food-guide',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqsRoute = FaqsRouteImport.update({
+  id: '/faqs',
+  path: '/faqs',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExperiencesRoute = ExperiencesRouteImport.update({
+  id: '/experiences',
+  path: '/experiences',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DashboardRoute = DashboardRouteImport.update({
+  id: '/dashboard',
+  path: '/dashboard',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CulturalHeritageRoute = CulturalHeritageRouteImport.update({
+  id: '/cultural-heritage',
+  path: '/cultural-heritage',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CoffeeTeaGuideRoute = CoffeeTeaGuideRouteImport.update({
+  id: '/coffee-tea-guide',
+  path: '/coffee-tea-guide',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BuildMySafariRoute = BuildMySafariRouteImport.update({
+  id: '/build-my-safari',
+  path: '/build-my-safari',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BirdGuideRoute = BirdGuideRouteImport.update({
+  id: '/bird-guide',
+  path: '/bird-guide',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AiTripPlannerRoute = AiTripPlannerRouteImport.update({
+  id: '/ai-trip-planner',
+  path: '/ai-trip-planner',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const TravelJournalIndexRoute = TravelJournalIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => TravelJournalRoute,
+} as any)
+const ExperiencesIndexRoute = ExperiencesIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => ExperiencesRoute,
+} as any)
+const TravelJournalSlugRoute = TravelJournalSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => TravelJournalRoute,
+} as any)
+const JourneysSlugRoute = JourneysSlugRouteImport.update({
+  id: '/journeys/$slug',
+  path: '/journeys/$slug',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ExperiencesSlugRoute = ExperiencesSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => ExperiencesRoute,
+} as any)
+const DestinationsZiwaRhinoSanctuaryRoute =
+  DestinationsZiwaRhinoSanctuaryRouteImport.update({
+    id: '/destinations/ziwa-rhino-sanctuary',
+    path: '/destinations/ziwa-rhino-sanctuary',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DestinationsTreeClimbingLionsRoute =
+  DestinationsTreeClimbingLionsRouteImport.update({
+    id: '/destinations/tree-climbing-lions',
+    path: '/destinations/tree-climbing-lions',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DestinationsSipiFallsRoute = DestinationsSipiFallsRouteImport.update({
+  id: '/destinations/sipi-falls',
+  path: '/destinations/sipi-falls',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DestinationsSemulikiRoute = DestinationsSemulikiRouteImport.update({
+  id: '/destinations/semuliki',
+  path: '/destinations/semuliki',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DestinationsRwenzoriMountainsRoute =
+  DestinationsRwenzoriMountainsRouteImport.update({
+    id: '/destinations/rwenzori-mountains',
+    path: '/destinations/rwenzori-mountains',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DestinationsQueenElizabethNationalParkRoute =
+  DestinationsQueenElizabethNationalParkRouteImport.update({
+    id: '/destinations/queen-elizabeth-national-park',
+    path: '/destinations/queen-elizabeth-national-park',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DestinationsMurchisonFallsRoute =
+  DestinationsMurchisonFallsRouteImport.update({
+    id: '/destinations/murchison-falls',
+    path: '/destinations/murchison-falls',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DestinationsMountElgonRoute = DestinationsMountElgonRouteImport.update({
+  id: '/destinations/mount-elgon',
+  path: '/destinations/mount-elgon',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DestinationsMgahingaGorillaRoute =
+  DestinationsMgahingaGorillaRouteImport.update({
+    id: '/destinations/mgahinga-gorilla',
+    path: '/destinations/mgahinga-gorilla',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DestinationsLakeMburoRoute = DestinationsLakeMburoRouteImport.update({
+  id: '/destinations/lake-mburo',
+  path: '/destinations/lake-mburo',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DestinationsLakeBunyonyiRoute =
+  DestinationsLakeBunyonyiRouteImport.update({
+    id: '/destinations/lake-bunyonyi',
+    path: '/destinations/lake-bunyonyi',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DestinationsKidepoValleyRoute =
+  DestinationsKidepoValleyRouteImport.update({
+    id: '/destinations/kidepo-valley',
+    path: '/destinations/kidepo-valley',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DestinationsKibaleForestRoute =
+  DestinationsKibaleForestRouteImport.update({
+    id: '/destinations/kibale-forest',
+    path: '/destinations/kibale-forest',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DestinationsJinjaSourceOfTheNileRoute =
+  DestinationsJinjaSourceOfTheNileRouteImport.update({
+    id: '/destinations/jinja-source-of-the-nile',
+    path: '/destinations/jinja-source-of-the-nile',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DestinationsGorillaTrekkingRoute =
+  DestinationsGorillaTrekkingRouteImport.update({
+    id: '/destinations/gorilla-trekking',
+    path: '/destinations/gorilla-trekking',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DestinationsEntebbeRoute = DestinationsEntebbeRouteImport.update({
+  id: '/destinations/entebbe',
+  path: '/destinations/entebbe',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DestinationsCraterLakesRoute = DestinationsCraterLakesRouteImport.update({
+  id: '/destinations/crater-lakes',
+  path: '/destinations/crater-lakes',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DestinationsChimpanzeeTrekkingRoute =
+  DestinationsChimpanzeeTrekkingRouteImport.update({
+    id: '/destinations/chimpanzee-trekking',
+    path: '/destinations/chimpanzee-trekking',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const DestinationsBwindiImpenetrableRoute =
+  DestinationsBwindiImpenetrableRouteImport.update({
+    id: '/destinations/bwindi-impenetrable',
+    path: '/destinations/bwindi-impenetrable',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/ai-trip-planner': typeof AiTripPlannerRoute
+  '/bird-guide': typeof BirdGuideRoute
+  '/build-my-safari': typeof BuildMySafariRoute
+  '/coffee-tea-guide': typeof CoffeeTeaGuideRoute
+  '/contact': typeof ContactRoute
+  '/cultural-heritage': typeof CulturalHeritageRoute
+  '/dashboard': typeof DashboardRoute
+  '/experiences': typeof ExperiencesRouteWithChildren
+  '/faqs': typeof FaqsRoute
+  '/food-guide': typeof FoodGuideRoute
+  '/forests': typeof ForestsRoute
+  '/gallery': typeof GalleryRoute
+  '/gorilla-permit-guide': typeof GorillaPermitGuideRoute
+  '/lakes': typeof LakesRoute
+  '/mountains': typeof MountainsRoute
+  '/national-parks': typeof NationalParksRoute
+  '/packing-guide': typeof PackingGuideRoute
+  '/quote-request': typeof QuoteRequestRoute
+  '/responsible-tourism': typeof ResponsibleTourismRoute
+  '/rivers': typeof RiversRoute
+  '/safari-budget-calculator': typeof SafariBudgetCalculatorRoute
+  '/seasonal-safari-calendar': typeof SeasonalSafariCalendarRoute
+  '/travel-journal': typeof TravelJournalRouteWithChildren
+  '/uganda-explorer': typeof UgandaExplorerRoute
+  '/untold-secrets': typeof UntoldSecretsRoute
+  '/visa-guide': typeof VisaGuideRoute
+  '/weather': typeof WeatherRoute
+  '/wild-uganda-tv': typeof WildUgandaTvRoute
+  '/wildlife-encyclopedia': typeof WildlifeEncyclopediaRoute
+  '/wildlife-reserves': typeof WildlifeReservesRoute
+  '/destinations/bwindi-impenetrable': typeof DestinationsBwindiImpenetrableRoute
+  '/destinations/chimpanzee-trekking': typeof DestinationsChimpanzeeTrekkingRoute
+  '/destinations/crater-lakes': typeof DestinationsCraterLakesRoute
+  '/destinations/entebbe': typeof DestinationsEntebbeRoute
+  '/destinations/gorilla-trekking': typeof DestinationsGorillaTrekkingRoute
+  '/destinations/jinja-source-of-the-nile': typeof DestinationsJinjaSourceOfTheNileRoute
+  '/destinations/kibale-forest': typeof DestinationsKibaleForestRoute
+  '/destinations/kidepo-valley': typeof DestinationsKidepoValleyRoute
+  '/destinations/lake-bunyonyi': typeof DestinationsLakeBunyonyiRoute
+  '/destinations/lake-mburo': typeof DestinationsLakeMburoRoute
+  '/destinations/mgahinga-gorilla': typeof DestinationsMgahingaGorillaRoute
+  '/destinations/mount-elgon': typeof DestinationsMountElgonRoute
+  '/destinations/murchison-falls': typeof DestinationsMurchisonFallsRoute
+  '/destinations/queen-elizabeth-national-park': typeof DestinationsQueenElizabethNationalParkRoute
+  '/destinations/rwenzori-mountains': typeof DestinationsRwenzoriMountainsRoute
+  '/destinations/semuliki': typeof DestinationsSemulikiRoute
+  '/destinations/sipi-falls': typeof DestinationsSipiFallsRoute
+  '/destinations/tree-climbing-lions': typeof DestinationsTreeClimbingLionsRoute
+  '/destinations/ziwa-rhino-sanctuary': typeof DestinationsZiwaRhinoSanctuaryRoute
+  '/experiences/$slug': typeof ExperiencesSlugRoute
+  '/journeys/$slug': typeof JourneysSlugRoute
+  '/travel-journal/$slug': typeof TravelJournalSlugRoute
+  '/experiences/': typeof ExperiencesIndexRoute
+  '/travel-journal/': typeof TravelJournalIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/ai-trip-planner': typeof AiTripPlannerRoute
+  '/bird-guide': typeof BirdGuideRoute
+  '/build-my-safari': typeof BuildMySafariRoute
+  '/coffee-tea-guide': typeof CoffeeTeaGuideRoute
+  '/contact': typeof ContactRoute
+  '/cultural-heritage': typeof CulturalHeritageRoute
+  '/dashboard': typeof DashboardRoute
+  '/faqs': typeof FaqsRoute
+  '/food-guide': typeof FoodGuideRoute
+  '/forests': typeof ForestsRoute
+  '/gallery': typeof GalleryRoute
+  '/gorilla-permit-guide': typeof GorillaPermitGuideRoute
+  '/lakes': typeof LakesRoute
+  '/mountains': typeof MountainsRoute
+  '/national-parks': typeof NationalParksRoute
+  '/packing-guide': typeof PackingGuideRoute
+  '/quote-request': typeof QuoteRequestRoute
+  '/responsible-tourism': typeof ResponsibleTourismRoute
+  '/rivers': typeof RiversRoute
+  '/safari-budget-calculator': typeof SafariBudgetCalculatorRoute
+  '/seasonal-safari-calendar': typeof SeasonalSafariCalendarRoute
+  '/uganda-explorer': typeof UgandaExplorerRoute
+  '/untold-secrets': typeof UntoldSecretsRoute
+  '/visa-guide': typeof VisaGuideRoute
+  '/weather': typeof WeatherRoute
+  '/wild-uganda-tv': typeof WildUgandaTvRoute
+  '/wildlife-encyclopedia': typeof WildlifeEncyclopediaRoute
+  '/wildlife-reserves': typeof WildlifeReservesRoute
+  '/destinations/bwindi-impenetrable': typeof DestinationsBwindiImpenetrableRoute
+  '/destinations/chimpanzee-trekking': typeof DestinationsChimpanzeeTrekkingRoute
+  '/destinations/crater-lakes': typeof DestinationsCraterLakesRoute
+  '/destinations/entebbe': typeof DestinationsEntebbeRoute
+  '/destinations/gorilla-trekking': typeof DestinationsGorillaTrekkingRoute
+  '/destinations/jinja-source-of-the-nile': typeof DestinationsJinjaSourceOfTheNileRoute
+  '/destinations/kibale-forest': typeof DestinationsKibaleForestRoute
+  '/destinations/kidepo-valley': typeof DestinationsKidepoValleyRoute
+  '/destinations/lake-bunyonyi': typeof DestinationsLakeBunyonyiRoute
+  '/destinations/lake-mburo': typeof DestinationsLakeMburoRoute
+  '/destinations/mgahinga-gorilla': typeof DestinationsMgahingaGorillaRoute
+  '/destinations/mount-elgon': typeof DestinationsMountElgonRoute
+  '/destinations/murchison-falls': typeof DestinationsMurchisonFallsRoute
+  '/destinations/queen-elizabeth-national-park': typeof DestinationsQueenElizabethNationalParkRoute
+  '/destinations/rwenzori-mountains': typeof DestinationsRwenzoriMountainsRoute
+  '/destinations/semuliki': typeof DestinationsSemulikiRoute
+  '/destinations/sipi-falls': typeof DestinationsSipiFallsRoute
+  '/destinations/tree-climbing-lions': typeof DestinationsTreeClimbingLionsRoute
+  '/destinations/ziwa-rhino-sanctuary': typeof DestinationsZiwaRhinoSanctuaryRoute
+  '/experiences/$slug': typeof ExperiencesSlugRoute
+  '/journeys/$slug': typeof JourneysSlugRoute
+  '/travel-journal/$slug': typeof TravelJournalSlugRoute
+  '/experiences': typeof ExperiencesIndexRoute
+  '/travel-journal': typeof TravelJournalIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/ai-trip-planner': typeof AiTripPlannerRoute
+  '/bird-guide': typeof BirdGuideRoute
+  '/build-my-safari': typeof BuildMySafariRoute
+  '/coffee-tea-guide': typeof CoffeeTeaGuideRoute
+  '/contact': typeof ContactRoute
+  '/cultural-heritage': typeof CulturalHeritageRoute
+  '/dashboard': typeof DashboardRoute
+  '/experiences': typeof ExperiencesRouteWithChildren
+  '/faqs': typeof FaqsRoute
+  '/food-guide': typeof FoodGuideRoute
+  '/forests': typeof ForestsRoute
+  '/gallery': typeof GalleryRoute
+  '/gorilla-permit-guide': typeof GorillaPermitGuideRoute
+  '/lakes': typeof LakesRoute
+  '/mountains': typeof MountainsRoute
+  '/national-parks': typeof NationalParksRoute
+  '/packing-guide': typeof PackingGuideRoute
+  '/quote-request': typeof QuoteRequestRoute
+  '/responsible-tourism': typeof ResponsibleTourismRoute
+  '/rivers': typeof RiversRoute
+  '/safari-budget-calculator': typeof SafariBudgetCalculatorRoute
+  '/seasonal-safari-calendar': typeof SeasonalSafariCalendarRoute
+  '/travel-journal': typeof TravelJournalRouteWithChildren
+  '/uganda-explorer': typeof UgandaExplorerRoute
+  '/untold-secrets': typeof UntoldSecretsRoute
+  '/visa-guide': typeof VisaGuideRoute
+  '/weather': typeof WeatherRoute
+  '/wild-uganda-tv': typeof WildUgandaTvRoute
+  '/wildlife-encyclopedia': typeof WildlifeEncyclopediaRoute
+  '/wildlife-reserves': typeof WildlifeReservesRoute
+  '/destinations/bwindi-impenetrable': typeof DestinationsBwindiImpenetrableRoute
+  '/destinations/chimpanzee-trekking': typeof DestinationsChimpanzeeTrekkingRoute
+  '/destinations/crater-lakes': typeof DestinationsCraterLakesRoute
+  '/destinations/entebbe': typeof DestinationsEntebbeRoute
+  '/destinations/gorilla-trekking': typeof DestinationsGorillaTrekkingRoute
+  '/destinations/jinja-source-of-the-nile': typeof DestinationsJinjaSourceOfTheNileRoute
+  '/destinations/kibale-forest': typeof DestinationsKibaleForestRoute
+  '/destinations/kidepo-valley': typeof DestinationsKidepoValleyRoute
+  '/destinations/lake-bunyonyi': typeof DestinationsLakeBunyonyiRoute
+  '/destinations/lake-mburo': typeof DestinationsLakeMburoRoute
+  '/destinations/mgahinga-gorilla': typeof DestinationsMgahingaGorillaRoute
+  '/destinations/mount-elgon': typeof DestinationsMountElgonRoute
+  '/destinations/murchison-falls': typeof DestinationsMurchisonFallsRoute
+  '/destinations/queen-elizabeth-national-park': typeof DestinationsQueenElizabethNationalParkRoute
+  '/destinations/rwenzori-mountains': typeof DestinationsRwenzoriMountainsRoute
+  '/destinations/semuliki': typeof DestinationsSemulikiRoute
+  '/destinations/sipi-falls': typeof DestinationsSipiFallsRoute
+  '/destinations/tree-climbing-lions': typeof DestinationsTreeClimbingLionsRoute
+  '/destinations/ziwa-rhino-sanctuary': typeof DestinationsZiwaRhinoSanctuaryRoute
+  '/experiences/$slug': typeof ExperiencesSlugRoute
+  '/journeys/$slug': typeof JourneysSlugRoute
+  '/travel-journal/$slug': typeof TravelJournalSlugRoute
+  '/experiences/': typeof ExperiencesIndexRoute
+  '/travel-journal/': typeof TravelJournalIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/ai-trip-planner'
+    | '/bird-guide'
+    | '/build-my-safari'
+    | '/coffee-tea-guide'
+    | '/contact'
+    | '/cultural-heritage'
+    | '/dashboard'
+    | '/experiences'
+    | '/faqs'
+    | '/food-guide'
+    | '/forests'
+    | '/gallery'
+    | '/gorilla-permit-guide'
+    | '/lakes'
+    | '/mountains'
+    | '/national-parks'
+    | '/packing-guide'
+    | '/quote-request'
+    | '/responsible-tourism'
+    | '/rivers'
+    | '/safari-budget-calculator'
+    | '/seasonal-safari-calendar'
+    | '/travel-journal'
+    | '/uganda-explorer'
+    | '/untold-secrets'
+    | '/visa-guide'
+    | '/weather'
+    | '/wild-uganda-tv'
+    | '/wildlife-encyclopedia'
+    | '/wildlife-reserves'
+    | '/destinations/bwindi-impenetrable'
+    | '/destinations/chimpanzee-trekking'
+    | '/destinations/crater-lakes'
+    | '/destinations/entebbe'
+    | '/destinations/gorilla-trekking'
+    | '/destinations/jinja-source-of-the-nile'
+    | '/destinations/kibale-forest'
+    | '/destinations/kidepo-valley'
+    | '/destinations/lake-bunyonyi'
+    | '/destinations/lake-mburo'
+    | '/destinations/mgahinga-gorilla'
+    | '/destinations/mount-elgon'
+    | '/destinations/murchison-falls'
+    | '/destinations/queen-elizabeth-national-park'
+    | '/destinations/rwenzori-mountains'
+    | '/destinations/semuliki'
+    | '/destinations/sipi-falls'
+    | '/destinations/tree-climbing-lions'
+    | '/destinations/ziwa-rhino-sanctuary'
+    | '/experiences/$slug'
+    | '/journeys/$slug'
+    | '/travel-journal/$slug'
+    | '/experiences/'
+    | '/travel-journal/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/ai-trip-planner'
+    | '/bird-guide'
+    | '/build-my-safari'
+    | '/coffee-tea-guide'
+    | '/contact'
+    | '/cultural-heritage'
+    | '/dashboard'
+    | '/faqs'
+    | '/food-guide'
+    | '/forests'
+    | '/gallery'
+    | '/gorilla-permit-guide'
+    | '/lakes'
+    | '/mountains'
+    | '/national-parks'
+    | '/packing-guide'
+    | '/quote-request'
+    | '/responsible-tourism'
+    | '/rivers'
+    | '/safari-budget-calculator'
+    | '/seasonal-safari-calendar'
+    | '/uganda-explorer'
+    | '/untold-secrets'
+    | '/visa-guide'
+    | '/weather'
+    | '/wild-uganda-tv'
+    | '/wildlife-encyclopedia'
+    | '/wildlife-reserves'
+    | '/destinations/bwindi-impenetrable'
+    | '/destinations/chimpanzee-trekking'
+    | '/destinations/crater-lakes'
+    | '/destinations/entebbe'
+    | '/destinations/gorilla-trekking'
+    | '/destinations/jinja-source-of-the-nile'
+    | '/destinations/kibale-forest'
+    | '/destinations/kidepo-valley'
+    | '/destinations/lake-bunyonyi'
+    | '/destinations/lake-mburo'
+    | '/destinations/mgahinga-gorilla'
+    | '/destinations/mount-elgon'
+    | '/destinations/murchison-falls'
+    | '/destinations/queen-elizabeth-national-park'
+    | '/destinations/rwenzori-mountains'
+    | '/destinations/semuliki'
+    | '/destinations/sipi-falls'
+    | '/destinations/tree-climbing-lions'
+    | '/destinations/ziwa-rhino-sanctuary'
+    | '/experiences/$slug'
+    | '/journeys/$slug'
+    | '/travel-journal/$slug'
+    | '/experiences'
+    | '/travel-journal'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/ai-trip-planner'
+    | '/bird-guide'
+    | '/build-my-safari'
+    | '/coffee-tea-guide'
+    | '/contact'
+    | '/cultural-heritage'
+    | '/dashboard'
+    | '/experiences'
+    | '/faqs'
+    | '/food-guide'
+    | '/forests'
+    | '/gallery'
+    | '/gorilla-permit-guide'
+    | '/lakes'
+    | '/mountains'
+    | '/national-parks'
+    | '/packing-guide'
+    | '/quote-request'
+    | '/responsible-tourism'
+    | '/rivers'
+    | '/safari-budget-calculator'
+    | '/seasonal-safari-calendar'
+    | '/travel-journal'
+    | '/uganda-explorer'
+    | '/untold-secrets'
+    | '/visa-guide'
+    | '/weather'
+    | '/wild-uganda-tv'
+    | '/wildlife-encyclopedia'
+    | '/wildlife-reserves'
+    | '/destinations/bwindi-impenetrable'
+    | '/destinations/chimpanzee-trekking'
+    | '/destinations/crater-lakes'
+    | '/destinations/entebbe'
+    | '/destinations/gorilla-trekking'
+    | '/destinations/jinja-source-of-the-nile'
+    | '/destinations/kibale-forest'
+    | '/destinations/kidepo-valley'
+    | '/destinations/lake-bunyonyi'
+    | '/destinations/lake-mburo'
+    | '/destinations/mgahinga-gorilla'
+    | '/destinations/mount-elgon'
+    | '/destinations/murchison-falls'
+    | '/destinations/queen-elizabeth-national-park'
+    | '/destinations/rwenzori-mountains'
+    | '/destinations/semuliki'
+    | '/destinations/sipi-falls'
+    | '/destinations/tree-climbing-lions'
+    | '/destinations/ziwa-rhino-sanctuary'
+    | '/experiences/$slug'
+    | '/journeys/$slug'
+    | '/travel-journal/$slug'
+    | '/experiences/'
+    | '/travel-journal/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  AiTripPlannerRoute: typeof AiTripPlannerRoute
+  BirdGuideRoute: typeof BirdGuideRoute
+  BuildMySafariRoute: typeof BuildMySafariRoute
+  CoffeeTeaGuideRoute: typeof CoffeeTeaGuideRoute
+  ContactRoute: typeof ContactRoute
+  CulturalHeritageRoute: typeof CulturalHeritageRoute
+  DashboardRoute: typeof DashboardRoute
+  ExperiencesRoute: typeof ExperiencesRouteWithChildren
+  FaqsRoute: typeof FaqsRoute
+  FoodGuideRoute: typeof FoodGuideRoute
+  ForestsRoute: typeof ForestsRoute
+  GalleryRoute: typeof GalleryRoute
+  GorillaPermitGuideRoute: typeof GorillaPermitGuideRoute
+  LakesRoute: typeof LakesRoute
+  MountainsRoute: typeof MountainsRoute
+  NationalParksRoute: typeof NationalParksRoute
+  PackingGuideRoute: typeof PackingGuideRoute
+  QuoteRequestRoute: typeof QuoteRequestRoute
+  ResponsibleTourismRoute: typeof ResponsibleTourismRoute
+  RiversRoute: typeof RiversRoute
+  SafariBudgetCalculatorRoute: typeof SafariBudgetCalculatorRoute
+  SeasonalSafariCalendarRoute: typeof SeasonalSafariCalendarRoute
+  TravelJournalRoute: typeof TravelJournalRouteWithChildren
+  UgandaExplorerRoute: typeof UgandaExplorerRoute
+  UntoldSecretsRoute: typeof UntoldSecretsRoute
+  VisaGuideRoute: typeof VisaGuideRoute
+  WeatherRoute: typeof WeatherRoute
+  WildUgandaTvRoute: typeof WildUgandaTvRoute
+  WildlifeEncyclopediaRoute: typeof WildlifeEncyclopediaRoute
+  WildlifeReservesRoute: typeof WildlifeReservesRoute
+  DestinationsBwindiImpenetrableRoute: typeof DestinationsBwindiImpenetrableRoute
+  DestinationsChimpanzeeTrekkingRoute: typeof DestinationsChimpanzeeTrekkingRoute
+  DestinationsCraterLakesRoute: typeof DestinationsCraterLakesRoute
+  DestinationsEntebbeRoute: typeof DestinationsEntebbeRoute
+  DestinationsGorillaTrekkingRoute: typeof DestinationsGorillaTrekkingRoute
+  DestinationsJinjaSourceOfTheNileRoute: typeof DestinationsJinjaSourceOfTheNileRoute
+  DestinationsKibaleForestRoute: typeof DestinationsKibaleForestRoute
+  DestinationsKidepoValleyRoute: typeof DestinationsKidepoValleyRoute
+  DestinationsLakeBunyonyiRoute: typeof DestinationsLakeBunyonyiRoute
+  DestinationsLakeMburoRoute: typeof DestinationsLakeMburoRoute
+  DestinationsMgahingaGorillaRoute: typeof DestinationsMgahingaGorillaRoute
+  DestinationsMountElgonRoute: typeof DestinationsMountElgonRoute
+  DestinationsMurchisonFallsRoute: typeof DestinationsMurchisonFallsRoute
+  DestinationsQueenElizabethNationalParkRoute: typeof DestinationsQueenElizabethNationalParkRoute
+  DestinationsRwenzoriMountainsRoute: typeof DestinationsRwenzoriMountainsRoute
+  DestinationsSemulikiRoute: typeof DestinationsSemulikiRoute
+  DestinationsSipiFallsRoute: typeof DestinationsSipiFallsRoute
+  DestinationsTreeClimbingLionsRoute: typeof DestinationsTreeClimbingLionsRoute
+  DestinationsZiwaRhinoSanctuaryRoute: typeof DestinationsZiwaRhinoSanctuaryRoute
+  JourneysSlugRoute: typeof JourneysSlugRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/wildlife-reserves': {
+      id: '/wildlife-reserves'
+      path: '/wildlife-reserves'
+      fullPath: '/wildlife-reserves'
+      preLoaderRoute: typeof WildlifeReservesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/wildlife-encyclopedia': {
+      id: '/wildlife-encyclopedia'
+      path: '/wildlife-encyclopedia'
+      fullPath: '/wildlife-encyclopedia'
+      preLoaderRoute: typeof WildlifeEncyclopediaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/wild-uganda-tv': {
+      id: '/wild-uganda-tv'
+      path: '/wild-uganda-tv'
+      fullPath: '/wild-uganda-tv'
+      preLoaderRoute: typeof WildUgandaTvRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/weather': {
+      id: '/weather'
+      path: '/weather'
+      fullPath: '/weather'
+      preLoaderRoute: typeof WeatherRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/visa-guide': {
+      id: '/visa-guide'
+      path: '/visa-guide'
+      fullPath: '/visa-guide'
+      preLoaderRoute: typeof VisaGuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/untold-secrets': {
+      id: '/untold-secrets'
+      path: '/untold-secrets'
+      fullPath: '/untold-secrets'
+      preLoaderRoute: typeof UntoldSecretsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/uganda-explorer': {
+      id: '/uganda-explorer'
+      path: '/uganda-explorer'
+      fullPath: '/uganda-explorer'
+      preLoaderRoute: typeof UgandaExplorerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/travel-journal': {
+      id: '/travel-journal'
+      path: '/travel-journal'
+      fullPath: '/travel-journal'
+      preLoaderRoute: typeof TravelJournalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/seasonal-safari-calendar': {
+      id: '/seasonal-safari-calendar'
+      path: '/seasonal-safari-calendar'
+      fullPath: '/seasonal-safari-calendar'
+      preLoaderRoute: typeof SeasonalSafariCalendarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/safari-budget-calculator': {
+      id: '/safari-budget-calculator'
+      path: '/safari-budget-calculator'
+      fullPath: '/safari-budget-calculator'
+      preLoaderRoute: typeof SafariBudgetCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/rivers': {
+      id: '/rivers'
+      path: '/rivers'
+      fullPath: '/rivers'
+      preLoaderRoute: typeof RiversRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/responsible-tourism': {
+      id: '/responsible-tourism'
+      path: '/responsible-tourism'
+      fullPath: '/responsible-tourism'
+      preLoaderRoute: typeof ResponsibleTourismRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/quote-request': {
+      id: '/quote-request'
+      path: '/quote-request'
+      fullPath: '/quote-request'
+      preLoaderRoute: typeof QuoteRequestRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/packing-guide': {
+      id: '/packing-guide'
+      path: '/packing-guide'
+      fullPath: '/packing-guide'
+      preLoaderRoute: typeof PackingGuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/national-parks': {
+      id: '/national-parks'
+      path: '/national-parks'
+      fullPath: '/national-parks'
+      preLoaderRoute: typeof NationalParksRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mountains': {
+      id: '/mountains'
+      path: '/mountains'
+      fullPath: '/mountains'
+      preLoaderRoute: typeof MountainsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/lakes': {
+      id: '/lakes'
+      path: '/lakes'
+      fullPath: '/lakes'
+      preLoaderRoute: typeof LakesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gorilla-permit-guide': {
+      id: '/gorilla-permit-guide'
+      path: '/gorilla-permit-guide'
+      fullPath: '/gorilla-permit-guide'
+      preLoaderRoute: typeof GorillaPermitGuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/gallery': {
+      id: '/gallery'
+      path: '/gallery'
+      fullPath: '/gallery'
+      preLoaderRoute: typeof GalleryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/forests': {
+      id: '/forests'
+      path: '/forests'
+      fullPath: '/forests'
+      preLoaderRoute: typeof ForestsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/food-guide': {
+      id: '/food-guide'
+      path: '/food-guide'
+      fullPath: '/food-guide'
+      preLoaderRoute: typeof FoodGuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faqs': {
+      id: '/faqs'
+      path: '/faqs'
+      fullPath: '/faqs'
+      preLoaderRoute: typeof FaqsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/experiences': {
+      id: '/experiences'
+      path: '/experiences'
+      fullPath: '/experiences'
+      preLoaderRoute: typeof ExperiencesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/dashboard': {
+      id: '/dashboard'
+      path: '/dashboard'
+      fullPath: '/dashboard'
+      preLoaderRoute: typeof DashboardRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cultural-heritage': {
+      id: '/cultural-heritage'
+      path: '/cultural-heritage'
+      fullPath: '/cultural-heritage'
+      preLoaderRoute: typeof CulturalHeritageRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/coffee-tea-guide': {
+      id: '/coffee-tea-guide'
+      path: '/coffee-tea-guide'
+      fullPath: '/coffee-tea-guide'
+      preLoaderRoute: typeof CoffeeTeaGuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/build-my-safari': {
+      id: '/build-my-safari'
+      path: '/build-my-safari'
+      fullPath: '/build-my-safari'
+      preLoaderRoute: typeof BuildMySafariRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/bird-guide': {
+      id: '/bird-guide'
+      path: '/bird-guide'
+      fullPath: '/bird-guide'
+      preLoaderRoute: typeof BirdGuideRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ai-trip-planner': {
+      id: '/ai-trip-planner'
+      path: '/ai-trip-planner'
+      fullPath: '/ai-trip-planner'
+      preLoaderRoute: typeof AiTripPlannerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -48,11 +989,259 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/travel-journal/': {
+      id: '/travel-journal/'
+      path: '/'
+      fullPath: '/travel-journal/'
+      preLoaderRoute: typeof TravelJournalIndexRouteImport
+      parentRoute: typeof TravelJournalRoute
+    }
+    '/experiences/': {
+      id: '/experiences/'
+      path: '/'
+      fullPath: '/experiences/'
+      preLoaderRoute: typeof ExperiencesIndexRouteImport
+      parentRoute: typeof ExperiencesRoute
+    }
+    '/travel-journal/$slug': {
+      id: '/travel-journal/$slug'
+      path: '/$slug'
+      fullPath: '/travel-journal/$slug'
+      preLoaderRoute: typeof TravelJournalSlugRouteImport
+      parentRoute: typeof TravelJournalRoute
+    }
+    '/journeys/$slug': {
+      id: '/journeys/$slug'
+      path: '/journeys/$slug'
+      fullPath: '/journeys/$slug'
+      preLoaderRoute: typeof JourneysSlugRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/experiences/$slug': {
+      id: '/experiences/$slug'
+      path: '/$slug'
+      fullPath: '/experiences/$slug'
+      preLoaderRoute: typeof ExperiencesSlugRouteImport
+      parentRoute: typeof ExperiencesRoute
+    }
+    '/destinations/ziwa-rhino-sanctuary': {
+      id: '/destinations/ziwa-rhino-sanctuary'
+      path: '/destinations/ziwa-rhino-sanctuary'
+      fullPath: '/destinations/ziwa-rhino-sanctuary'
+      preLoaderRoute: typeof DestinationsZiwaRhinoSanctuaryRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/tree-climbing-lions': {
+      id: '/destinations/tree-climbing-lions'
+      path: '/destinations/tree-climbing-lions'
+      fullPath: '/destinations/tree-climbing-lions'
+      preLoaderRoute: typeof DestinationsTreeClimbingLionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/sipi-falls': {
+      id: '/destinations/sipi-falls'
+      path: '/destinations/sipi-falls'
+      fullPath: '/destinations/sipi-falls'
+      preLoaderRoute: typeof DestinationsSipiFallsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/semuliki': {
+      id: '/destinations/semuliki'
+      path: '/destinations/semuliki'
+      fullPath: '/destinations/semuliki'
+      preLoaderRoute: typeof DestinationsSemulikiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/rwenzori-mountains': {
+      id: '/destinations/rwenzori-mountains'
+      path: '/destinations/rwenzori-mountains'
+      fullPath: '/destinations/rwenzori-mountains'
+      preLoaderRoute: typeof DestinationsRwenzoriMountainsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/queen-elizabeth-national-park': {
+      id: '/destinations/queen-elizabeth-national-park'
+      path: '/destinations/queen-elizabeth-national-park'
+      fullPath: '/destinations/queen-elizabeth-national-park'
+      preLoaderRoute: typeof DestinationsQueenElizabethNationalParkRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/murchison-falls': {
+      id: '/destinations/murchison-falls'
+      path: '/destinations/murchison-falls'
+      fullPath: '/destinations/murchison-falls'
+      preLoaderRoute: typeof DestinationsMurchisonFallsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/mount-elgon': {
+      id: '/destinations/mount-elgon'
+      path: '/destinations/mount-elgon'
+      fullPath: '/destinations/mount-elgon'
+      preLoaderRoute: typeof DestinationsMountElgonRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/mgahinga-gorilla': {
+      id: '/destinations/mgahinga-gorilla'
+      path: '/destinations/mgahinga-gorilla'
+      fullPath: '/destinations/mgahinga-gorilla'
+      preLoaderRoute: typeof DestinationsMgahingaGorillaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/lake-mburo': {
+      id: '/destinations/lake-mburo'
+      path: '/destinations/lake-mburo'
+      fullPath: '/destinations/lake-mburo'
+      preLoaderRoute: typeof DestinationsLakeMburoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/lake-bunyonyi': {
+      id: '/destinations/lake-bunyonyi'
+      path: '/destinations/lake-bunyonyi'
+      fullPath: '/destinations/lake-bunyonyi'
+      preLoaderRoute: typeof DestinationsLakeBunyonyiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/kidepo-valley': {
+      id: '/destinations/kidepo-valley'
+      path: '/destinations/kidepo-valley'
+      fullPath: '/destinations/kidepo-valley'
+      preLoaderRoute: typeof DestinationsKidepoValleyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/kibale-forest': {
+      id: '/destinations/kibale-forest'
+      path: '/destinations/kibale-forest'
+      fullPath: '/destinations/kibale-forest'
+      preLoaderRoute: typeof DestinationsKibaleForestRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/jinja-source-of-the-nile': {
+      id: '/destinations/jinja-source-of-the-nile'
+      path: '/destinations/jinja-source-of-the-nile'
+      fullPath: '/destinations/jinja-source-of-the-nile'
+      preLoaderRoute: typeof DestinationsJinjaSourceOfTheNileRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/gorilla-trekking': {
+      id: '/destinations/gorilla-trekking'
+      path: '/destinations/gorilla-trekking'
+      fullPath: '/destinations/gorilla-trekking'
+      preLoaderRoute: typeof DestinationsGorillaTrekkingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/entebbe': {
+      id: '/destinations/entebbe'
+      path: '/destinations/entebbe'
+      fullPath: '/destinations/entebbe'
+      preLoaderRoute: typeof DestinationsEntebbeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/crater-lakes': {
+      id: '/destinations/crater-lakes'
+      path: '/destinations/crater-lakes'
+      fullPath: '/destinations/crater-lakes'
+      preLoaderRoute: typeof DestinationsCraterLakesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/chimpanzee-trekking': {
+      id: '/destinations/chimpanzee-trekking'
+      path: '/destinations/chimpanzee-trekking'
+      fullPath: '/destinations/chimpanzee-trekking'
+      preLoaderRoute: typeof DestinationsChimpanzeeTrekkingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/destinations/bwindi-impenetrable': {
+      id: '/destinations/bwindi-impenetrable'
+      path: '/destinations/bwindi-impenetrable'
+      fullPath: '/destinations/bwindi-impenetrable'
+      preLoaderRoute: typeof DestinationsBwindiImpenetrableRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
+interface ExperiencesRouteChildren {
+  ExperiencesSlugRoute: typeof ExperiencesSlugRoute
+  ExperiencesIndexRoute: typeof ExperiencesIndexRoute
+}
+
+const ExperiencesRouteChildren: ExperiencesRouteChildren = {
+  ExperiencesSlugRoute: ExperiencesSlugRoute,
+  ExperiencesIndexRoute: ExperiencesIndexRoute,
+}
+
+const ExperiencesRouteWithChildren = ExperiencesRoute._addFileChildren(
+  ExperiencesRouteChildren,
+)
+
+interface TravelJournalRouteChildren {
+  TravelJournalSlugRoute: typeof TravelJournalSlugRoute
+  TravelJournalIndexRoute: typeof TravelJournalIndexRoute
+}
+
+const TravelJournalRouteChildren: TravelJournalRouteChildren = {
+  TravelJournalSlugRoute: TravelJournalSlugRoute,
+  TravelJournalIndexRoute: TravelJournalIndexRoute,
+}
+
+const TravelJournalRouteWithChildren = TravelJournalRoute._addFileChildren(
+  TravelJournalRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  AiTripPlannerRoute: AiTripPlannerRoute,
+  BirdGuideRoute: BirdGuideRoute,
+  BuildMySafariRoute: BuildMySafariRoute,
+  CoffeeTeaGuideRoute: CoffeeTeaGuideRoute,
+  ContactRoute: ContactRoute,
+  CulturalHeritageRoute: CulturalHeritageRoute,
+  DashboardRoute: DashboardRoute,
+  ExperiencesRoute: ExperiencesRouteWithChildren,
+  FaqsRoute: FaqsRoute,
+  FoodGuideRoute: FoodGuideRoute,
+  ForestsRoute: ForestsRoute,
+  GalleryRoute: GalleryRoute,
+  GorillaPermitGuideRoute: GorillaPermitGuideRoute,
+  LakesRoute: LakesRoute,
+  MountainsRoute: MountainsRoute,
+  NationalParksRoute: NationalParksRoute,
+  PackingGuideRoute: PackingGuideRoute,
+  QuoteRequestRoute: QuoteRequestRoute,
+  ResponsibleTourismRoute: ResponsibleTourismRoute,
+  RiversRoute: RiversRoute,
+  SafariBudgetCalculatorRoute: SafariBudgetCalculatorRoute,
+  SeasonalSafariCalendarRoute: SeasonalSafariCalendarRoute,
+  TravelJournalRoute: TravelJournalRouteWithChildren,
+  UgandaExplorerRoute: UgandaExplorerRoute,
+  UntoldSecretsRoute: UntoldSecretsRoute,
+  VisaGuideRoute: VisaGuideRoute,
+  WeatherRoute: WeatherRoute,
+  WildUgandaTvRoute: WildUgandaTvRoute,
+  WildlifeEncyclopediaRoute: WildlifeEncyclopediaRoute,
+  WildlifeReservesRoute: WildlifeReservesRoute,
+  DestinationsBwindiImpenetrableRoute: DestinationsBwindiImpenetrableRoute,
+  DestinationsChimpanzeeTrekkingRoute: DestinationsChimpanzeeTrekkingRoute,
+  DestinationsCraterLakesRoute: DestinationsCraterLakesRoute,
+  DestinationsEntebbeRoute: DestinationsEntebbeRoute,
+  DestinationsGorillaTrekkingRoute: DestinationsGorillaTrekkingRoute,
+  DestinationsJinjaSourceOfTheNileRoute: DestinationsJinjaSourceOfTheNileRoute,
+  DestinationsKibaleForestRoute: DestinationsKibaleForestRoute,
+  DestinationsKidepoValleyRoute: DestinationsKidepoValleyRoute,
+  DestinationsLakeBunyonyiRoute: DestinationsLakeBunyonyiRoute,
+  DestinationsLakeMburoRoute: DestinationsLakeMburoRoute,
+  DestinationsMgahingaGorillaRoute: DestinationsMgahingaGorillaRoute,
+  DestinationsMountElgonRoute: DestinationsMountElgonRoute,
+  DestinationsMurchisonFallsRoute: DestinationsMurchisonFallsRoute,
+  DestinationsQueenElizabethNationalParkRoute:
+    DestinationsQueenElizabethNationalParkRoute,
+  DestinationsRwenzoriMountainsRoute: DestinationsRwenzoriMountainsRoute,
+  DestinationsSemulikiRoute: DestinationsSemulikiRoute,
+  DestinationsSipiFallsRoute: DestinationsSipiFallsRoute,
+  DestinationsTreeClimbingLionsRoute: DestinationsTreeClimbingLionsRoute,
+  DestinationsZiwaRhinoSanctuaryRoute: DestinationsZiwaRhinoSanctuaryRoute,
+  JourneysSlugRoute: JourneysSlugRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
