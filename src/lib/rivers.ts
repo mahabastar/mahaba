@@ -1,4 +1,4 @@
-import sceneFalls from "@/assets/uploads/nile-bridge-aerial.jpg";
+import sceneFalls from "@/assets/uploads/murchison-falls.jpg";
 import nileBridgeAerial from "@/assets/uploads/nile-bridge-aerial.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
 import semulikiHotSprings from "@/assets/uploads/semuliki-hot-springs.jpg";

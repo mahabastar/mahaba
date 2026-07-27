@@ -8,9 +8,9 @@ import { trackEvent } from "@/lib/analytics";
 
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
-import sceneFalls from "@/assets/uploads/nile-bridge-aerial.jpg";
+import sceneFalls from "@/assets/uploads/murchison-falls.jpg";
 import expSipi from "@/assets/uploads/nile-bridge-aerial.jpg";
-import sceneBunyonyi from "@/assets/uploads/buffalo-waterhole.jpg";
+import sceneBunyonyi from "@/assets/uploads/crater-lake-sunset.jpg";
 
 export const Route = createFileRoute("/build-my-safari")({
   head: () => ({

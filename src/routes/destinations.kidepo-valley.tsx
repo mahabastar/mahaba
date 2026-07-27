@@ -4,7 +4,7 @@ import { buildDestinationHead } from "@/lib/destination-head";
 import sceneElephants from "@/assets/uploads/elephant-road.jpg";
 import ctaSunset from "@/assets/uploads/elephant-road.jpg";
 import sceneCrane from "@/assets/shoebill-real.jpg";
-import expLodge from "@/assets/uploads/giraffe-savanna.jpg";
+import expLodge from "@/assets/uploads/safari-lodge-pool.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneFalls from "@/assets/uploads/buffalo-waterhole.jpg";
 

@@ -23,6 +23,16 @@ import giraffeSavanna from "@/assets/uploads/giraffe-savanna.jpg";
 import qenpZebraBuffalo from "@/assets/uploads/qenp-zebra-buffalo.jpg";
 import rwenzoriSummit from "@/assets/uploads/rwenzori-summit.jpg";
 import mburoZebras from "@/assets/uploads/mburo-zebras.jpg";
+import murchisonFalls from "@/assets/uploads/murchison-falls.jpg";
+import safariLodgePool from "@/assets/uploads/safari-lodge-pool.jpg";
+import craterLakeSunset from "@/assets/uploads/crater-lake-sunset.jpg";
+import chimpFamily from "@/assets/uploads/chimp-family.jpg";
+import elephantPortrait from "@/assets/uploads/elephant-portrait.jpg";
+import baboonsRoadside from "@/assets/uploads/baboons-roadside.jpg";
+import pythonAntelope from "@/assets/uploads/python-antelope.jpg";
+import lionessStanding from "@/assets/uploads/lioness-standing.jpg";
+import cheetahMound from "@/assets/uploads/cheetah-mound.jpg";
+import rhinoZiwa from "@/assets/uploads/rhino-ziwa.jpg";
 import { SITE_CONFIG } from "@/lib/site-config";
 
 export const Route = createFileRoute("/gallery")({
@@ -62,6 +72,16 @@ const PHOTOS = [
   { src: semulikiHotSprings, alt: "Sempaya hot springs, Semuliki National Park", caption: "The boiling springs of Sempaya, Semuliki National Park." },
   { src: elephantSavanna, alt: "African elephant in the savanna", caption: "An elephant at last light." },
   { src: nileBridgeAerial, alt: "A bridge spanning the Nile", caption: "The Nile, seen from above." },
+  { src: murchisonFalls, alt: "Murchison Falls thundering through the gorge", caption: "The Nile forced through a 7-metre gap — Murchison Falls." },
+  { src: safariLodgePool, alt: "Thatched safari lodge beside a pool", caption: "Thatch, timber and a pool at the end of a game drive." },
+  { src: craterLakeSunset, alt: "Crater lake at sunset in western Uganda", caption: "A crater lake catching the last of the light." },
+  { src: chimpFamily, alt: "Family group of chimpanzees on the forest floor", caption: "A chimp family, holding court on the forest floor." },
+  { src: elephantPortrait, alt: "Elephant facing the camera in long grass", caption: "Eye to eye, in the long grass." },
+  { src: baboonsRoadside, alt: "Olive baboons sitting beside a park track", caption: "Olive baboons, running the tollbooth." },
+  { src: pythonAntelope, alt: "African rock python constricting an antelope", caption: "A rock python and its kill — the safari nobody plans for." },
+  { src: lionessStanding, alt: "Lioness standing alert in open grassland", caption: "A lioness scanning the plain, Queen Elizabeth NP." },
+  { src: cheetahMound, alt: "Cheetah sitting on a termite mound", caption: "A cheetah using a termite mound as a lookout." },
+  { src: rhinoZiwa, alt: "White rhino grazing at Ziwa Rhino Sanctuary", caption: "A white rhino grazing at Ziwa — Uganda's only wild rhinos." },
 ];
 
 function Gallery() {

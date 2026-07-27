@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
-import elephantSavanna from "@/assets/uploads/elephant-savanna.jpg";
+import elephantSavanna from "@/assets/uploads/rhino-ziwa.jpg";
 import sceneCrane from "@/assets/shoebill-real.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
-import expLodge from "@/assets/uploads/elephant-road.jpg";
-import sceneFalls from "@/assets/uploads/nile-bridge-aerial.jpg";
+import expLodge from "@/assets/uploads/safari-lodge-pool.jpg";
+import sceneFalls from "@/assets/uploads/murchison-falls.jpg";
 
 const FAQS = [
   {

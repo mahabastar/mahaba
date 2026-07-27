@@ -6,7 +6,7 @@ import rwenzoriHikers from "@/assets/uploads/nile-bridge-aerial.jpg";
 import batwaDance from "@/assets/uploads/batwa-dance.jpg";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
 import gorillaSilverback from "@/assets/uploads/gorilla-silverback-insects.jpg";
-import sceneBunyonyi from "@/assets/uploads/buffalo-waterhole.jpg";
+import sceneBunyonyi from "@/assets/uploads/crater-lake-sunset.jpg";
 
 const FAQS = [
   {

@@ -5,11 +5,11 @@ import expSipi from "@/assets/uploads/nile-bridge-aerial.jpg";
 import expCoffee from "@/assets/uploads/batwa-firemaking.jpg";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
-import expLodge from "@/assets/uploads/elephant-road.jpg";
+import expLodge from "@/assets/uploads/safari-lodge-pool.jpg";
 import ctaSunset from "@/assets/uploads/elephant-road.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
-import sceneFalls from "@/assets/uploads/nile-bridge-aerial.jpg";
+import sceneFalls from "@/assets/uploads/murchison-falls.jpg";
 
 const FAQS = [
   {

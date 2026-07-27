@@ -1,6 +1,6 @@
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import expChimp from "@/assets/uploads/chimp-kibale.jpg";
-import sceneFalls from "@/assets/uploads/nile-bridge-aerial.jpg";
+import sceneFalls from "@/assets/uploads/murchison-falls.jpg";
 import sceneElephants from "@/assets/uploads/elephant-road.jpg";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
 import gorillaBacklit from "@/assets/uploads/gorilla-lookup.jpg";

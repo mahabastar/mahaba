@@ -4,7 +4,7 @@ import sceneLion from "@/assets/scene-lion.jpg";
 import expChimp from "@/assets/uploads/chimp-kibale.jpg";
 import semulikiHotSprings from "@/assets/uploads/semuliki-hot-springs.jpg";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
-import sceneFalls from "@/assets/uploads/nile-bridge-aerial.jpg";
+import sceneFalls from "@/assets/uploads/murchison-falls.jpg";
 import elephantSavanna from "@/assets/uploads/elephant-savanna.jpg";
 import expSipi from "@/assets/uploads/nile-bridge-aerial.jpg";
 import ctaSunset from "@/assets/uploads/elephant-road.jpg";

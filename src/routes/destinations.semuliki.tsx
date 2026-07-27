@@ -3,7 +3,7 @@ import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import semulikiHotSprings from "@/assets/uploads/semuliki-hot-springs.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
-import expLodge from "@/assets/uploads/elephant-road.jpg";
+import expLodge from "@/assets/uploads/safari-lodge-pool.jpg";
 import rwenzoriHikers from "@/assets/uploads/nile-bridge-aerial.jpg";
 import expChimp from "@/assets/uploads/chimp-kibale.jpg";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";

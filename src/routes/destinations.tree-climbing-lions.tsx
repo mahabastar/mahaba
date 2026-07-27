@@ -5,11 +5,11 @@ import sceneLion from "@/assets/scene-lion.jpg";
 import sceneElephants from "@/assets/uploads/elephant-road.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
 import expBalloon from "@/assets/uploads/giraffe-savanna.jpg";
-import expLodge from "@/assets/uploads/leopard-tree.jpg";
+import expLodge from "@/assets/uploads/safari-lodge-pool.jpg";
 import ctaSunset from "@/assets/uploads/elephant-road.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
-import sceneFalls from "@/assets/uploads/nile-bridge-aerial.jpg";
-import sceneBunyonyi from "@/assets/uploads/buffalo-waterhole.jpg";
+import sceneFalls from "@/assets/uploads/murchison-falls.jpg";
+import sceneBunyonyi from "@/assets/uploads/crater-lake-sunset.jpg";
 import expSipi from "@/assets/uploads/nile-bridge-aerial.jpg";
 
 const FAQS = [
