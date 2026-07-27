@@ -6,12 +6,12 @@ import { SiteFooter } from "@/components/SiteFooter";
 
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
-import sceneFalls from "@/assets/scene-falls.jpg";
-import expSipi from "@/assets/exp-sipi.jpg";
-import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
-import expChimp from "@/assets/exp-chimp.jpg";
+import sceneFalls from "@/assets/uploads/nile-bridge-aerial.jpg";
+import expSipi from "@/assets/uploads/nile-bridge-aerial.jpg";
+import sceneBunyonyi from "@/assets/uploads/buffalo-waterhole.jpg";
+import expChimp from "@/assets/uploads/chimp-kibale.jpg";
 import nileBridgeAerial from "@/assets/uploads/nile-bridge-aerial.jpg";
-import sceneElephants from "@/assets/scene-elephants.jpg";
+import sceneElephants from "@/assets/uploads/elephant-road.jpg";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
 import { SITE_CONFIG } from "@/lib/site-config";
 

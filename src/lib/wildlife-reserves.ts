@@ -1,6 +1,6 @@
 import elephantSavanna from "@/assets/uploads/elephant-savanna.jpg";
 import semulikiHotSprings from "@/assets/uploads/semuliki-hot-springs.jpg";
-import sceneCrane from "@/assets/scene-crane.jpg";
+import sceneCrane from "@/assets/shoebill-real.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
 
 import type { CategoryItem } from "@/components/CategoryHub";

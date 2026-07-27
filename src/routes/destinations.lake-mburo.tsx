@@ -1,12 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
-import ctaSunset from "@/assets/cta-sunset.jpg";
+import ctaSunset from "@/assets/uploads/elephant-road.jpg";
 import elephantSavanna from "@/assets/uploads/elephant-savanna.jpg";
-import expLodge from "@/assets/exp-lodge.jpg";
+import expLodge from "@/assets/uploads/elephant-road.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
 import gorillaSilverback from "@/assets/uploads/gorilla-silverback-insects.jpg";
-import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
+import sceneBunyonyi from "@/assets/uploads/buffalo-waterhole.jpg";
 
 const FAQS = [
   {

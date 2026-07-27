@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { GuidePage } from "@/components/GuidePage";
-import expCoffee from "@/assets/exp-coffee.jpg";
+import expCoffee from "@/assets/uploads/batwa-firemaking.jpg";
 import { SITE_CONFIG } from "@/lib/site-config";
 
 export const Route = createFileRoute("/coffee-tea-guide")({

@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { GuidePage } from "@/components/GuidePage";
-import expBalloon from "@/assets/exp-balloon.jpg";
+import expBalloon from "@/assets/uploads/giraffe-savanna.jpg";
 import { SITE_CONFIG } from "@/lib/site-config";
 
 export const Route = createFileRoute("/weather")({
