@@ -5,7 +5,7 @@ import sceneElephants from "@/assets/uploads/elephant-road.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
 import expChimp from "@/assets/uploads/chimp-kibale.jpg";
 import sceneCrane from "@/assets/shoebill-real.jpg";
-import expLodge from "@/assets/uploads/elephant-road.jpg";
+import expLodge from "@/assets/uploads/qenp-zebra-buffalo.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneBunyonyi from "@/assets/uploads/buffalo-waterhole.jpg";
 

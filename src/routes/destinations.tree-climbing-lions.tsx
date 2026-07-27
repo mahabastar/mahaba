@@ -5,7 +5,7 @@ import sceneLion from "@/assets/scene-lion.jpg";
 import sceneElephants from "@/assets/uploads/elephant-road.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
 import expBalloon from "@/assets/uploads/giraffe-savanna.jpg";
-import expLodge from "@/assets/uploads/elephant-road.jpg";
+import expLodge from "@/assets/uploads/leopard-tree.jpg";
 import ctaSunset from "@/assets/uploads/elephant-road.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneFalls from "@/assets/uploads/nile-bridge-aerial.jpg";
