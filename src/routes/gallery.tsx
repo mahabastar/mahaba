@@ -23,6 +23,16 @@ import giraffeSavanna from "@/assets/uploads/giraffe-savanna.jpg";
 import qenpZebraBuffalo from "@/assets/uploads/qenp-zebra-buffalo.jpg";
 import rwenzoriSummit from "@/assets/uploads/rwenzori-summit.jpg";
 import mburoZebras from "@/assets/uploads/mburo-zebras.jpg";
+import murchisonFalls from "@/assets/uploads/murchison-falls.jpg";
+import safariLodgePool from "@/assets/uploads/safari-lodge-pool.jpg";
+import craterLakeSunset from "@/assets/uploads/crater-lake-sunset.jpg";
+import chimpFamily from "@/assets/uploads/chimp-family.jpg";
+import elephantPortrait from "@/assets/uploads/elephant-portrait.jpg";
+import baboonsRoadside from "@/assets/uploads/baboons-roadside.jpg";
+import pythonAntelope from "@/assets/uploads/python-antelope.jpg";
+import lionessStanding from "@/assets/uploads/lioness-standing.jpg";
+import cheetahMound from "@/assets/uploads/cheetah-mound.jpg";
+import rhinoZiwa from "@/assets/uploads/rhino-ziwa.jpg";
 import { SITE_CONFIG } from "@/lib/site-config";
 
 export const Route = createFileRoute("/gallery")({
