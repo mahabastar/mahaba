@@ -6,9 +6,9 @@ import { SiteFooter } from "@/components/SiteFooter";
 
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
-import sceneFalls from "@/assets/uploads/nile-bridge-aerial.jpg";
+import sceneFalls from "@/assets/uploads/murchison-falls.jpg";
 import expSipi from "@/assets/uploads/nile-bridge-aerial.jpg";
-import sceneBunyonyi from "@/assets/uploads/buffalo-waterhole.jpg";
+import sceneBunyonyi from "@/assets/uploads/crater-lake-sunset.jpg";
 import expChimp from "@/assets/uploads/chimp-kibale.jpg";
 import nileBridgeAerial from "@/assets/uploads/nile-bridge-aerial.jpg";
 import sceneElephants from "@/assets/uploads/elephant-road.jpg";

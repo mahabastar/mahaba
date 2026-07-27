@@ -5,7 +5,7 @@ import expSipi from "@/assets/uploads/nile-bridge-aerial.jpg";
 import expCoffee from "@/assets/uploads/batwa-firemaking.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
 import rwenzoriHikers from "@/assets/uploads/nile-bridge-aerial.jpg";
-import sceneFalls from "@/assets/uploads/nile-bridge-aerial.jpg";
+import sceneFalls from "@/assets/uploads/murchison-falls.jpg";
 
 const FAQS = [
   {

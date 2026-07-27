@@ -1,6 +1,6 @@
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
 import semulikiHotSprings from "@/assets/uploads/semuliki-hot-springs.jpg";
-import sceneBunyonyi from "@/assets/uploads/buffalo-waterhole.jpg";
+import sceneBunyonyi from "@/assets/uploads/crater-lake-sunset.jpg";
 import sceneElephants from "@/assets/uploads/elephant-road.jpg";
 import expSipi from "@/assets/uploads/nile-bridge-aerial.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";

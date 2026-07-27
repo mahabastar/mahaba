@@ -4,9 +4,9 @@ import { buildDestinationHead } from "@/lib/destination-head";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
 import expChimp from "@/assets/uploads/chimp-kibale.jpg";
 import expCoffee from "@/assets/uploads/batwa-firemaking.jpg";
-import expLodge from "@/assets/uploads/rwenzori-summit.jpg";
+import expLodge from "@/assets/uploads/safari-lodge-pool.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
-import sceneFalls from "@/assets/uploads/nile-bridge-aerial.jpg";
+import sceneFalls from "@/assets/uploads/murchison-falls.jpg";
 
 const FAQS = [
   {

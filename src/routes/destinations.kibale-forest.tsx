@@ -4,11 +4,11 @@ import { buildDestinationHead } from "@/lib/destination-head";
 import expChimp from "@/assets/uploads/chimp-kibale.jpg";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
 import expCoffee from "@/assets/uploads/batwa-firemaking.jpg";
-import expLodge from "@/assets/uploads/elephant-road.jpg";
+import expLodge from "@/assets/uploads/safari-lodge-pool.jpg";
 import sceneCrane from "@/assets/shoebill-real.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
-import sceneFalls from "@/assets/uploads/nile-bridge-aerial.jpg";
+import sceneFalls from "@/assets/uploads/murchison-falls.jpg";
 
 const FAQS = [
   {
