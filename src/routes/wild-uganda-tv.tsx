@@ -4,13 +4,13 @@ import { useEffect, useState } from "react";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 
-import sceneFalls from "@/assets/scene-falls.jpg";
+import sceneFalls from "@/assets/uploads/nile-bridge-aerial.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
 import expShoebill from "@/assets/exp-shoebill.jpg";
-import expCoffee from "@/assets/exp-coffee.jpg";
+import expCoffee from "@/assets/uploads/batwa-firemaking.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
-import expSipi from "@/assets/exp-sipi.jpg";
-import expLodge from "@/assets/exp-lodge.jpg";
+import expSipi from "@/assets/uploads/nile-bridge-aerial.jpg";
+import expLodge from "@/assets/uploads/elephant-road.jpg";
 import gorillaBacklit from "@/assets/uploads/gorilla-lookup.jpg";
 import { SITE_CONFIG } from "@/lib/site-config";
 

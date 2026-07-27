@@ -2,15 +2,15 @@ import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import sceneLion from "@/assets/scene-lion.jpg";
-import sceneElephants from "@/assets/scene-elephants.jpg";
+import sceneElephants from "@/assets/uploads/elephant-road.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
-import expBalloon from "@/assets/exp-balloon.jpg";
-import expLodge from "@/assets/exp-lodge.jpg";
-import ctaSunset from "@/assets/cta-sunset.jpg";
+import expBalloon from "@/assets/uploads/giraffe-savanna.jpg";
+import expLodge from "@/assets/uploads/leopard-tree.jpg";
+import ctaSunset from "@/assets/uploads/elephant-road.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
-import sceneFalls from "@/assets/scene-falls.jpg";
-import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
-import expSipi from "@/assets/exp-sipi.jpg";
+import sceneFalls from "@/assets/uploads/nile-bridge-aerial.jpg";
+import sceneBunyonyi from "@/assets/uploads/buffalo-waterhole.jpg";
+import expSipi from "@/assets/uploads/nile-bridge-aerial.jpg";
 
 const FAQS = [
   {

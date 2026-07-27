@@ -1,13 +1,13 @@
 import gorillaBacklit from "@/assets/uploads/gorilla-lookup.jpg";
 import gorillaLookup from "@/assets/uploads/gorilla-lookup.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
-import expChimp from "@/assets/exp-chimp.jpg";
+import expChimp from "@/assets/uploads/chimp-kibale.jpg";
 import semulikiHotSprings from "@/assets/uploads/semuliki-hot-springs.jpg";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
-import sceneFalls from "@/assets/scene-falls.jpg";
+import sceneFalls from "@/assets/uploads/nile-bridge-aerial.jpg";
 import elephantSavanna from "@/assets/uploads/elephant-savanna.jpg";
-import expSipi from "@/assets/exp-sipi.jpg";
-import ctaSunset from "@/assets/cta-sunset.jpg";
+import expSipi from "@/assets/uploads/nile-bridge-aerial.jpg";
+import ctaSunset from "@/assets/uploads/elephant-road.jpg";
 
 export type ParkRegion =
   | "South-western Uganda"

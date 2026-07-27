@@ -1,5 +1,5 @@
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
-import expSipi from "@/assets/exp-sipi.jpg";
+import expSipi from "@/assets/uploads/nile-bridge-aerial.jpg";
 import gorillaLookup from "@/assets/uploads/gorilla-lookup.jpg";
 import rwenzoriHikers from "@/assets/uploads/nile-bridge-aerial.jpg";
 

@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CategoryHub } from "@/components/CategoryHub";
 import { LAKES } from "@/lib/lakes";
-import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
+import sceneBunyonyi from "@/assets/uploads/buffalo-waterhole.jpg";
 import { SITE_CONFIG } from "@/lib/site-config";
 
 export const Route = createFileRoute("/lakes")({

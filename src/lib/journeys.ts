@@ -1,9 +1,9 @@
 import heroGorilla from "@/assets/hero-gorilla.jpg";
-import expChimp from "@/assets/exp-chimp.jpg";
-import sceneFalls from "@/assets/scene-falls.jpg";
-import sceneElephants from "@/assets/scene-elephants.jpg";
+import expChimp from "@/assets/uploads/chimp-kibale.jpg";
+import sceneFalls from "@/assets/uploads/nile-bridge-aerial.jpg";
+import sceneElephants from "@/assets/uploads/elephant-road.jpg";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
-import gorillaBacklit from "@/assets/gorilla-backlit.jpg";
+import gorillaBacklit from "@/assets/uploads/gorilla-lookup.jpg";
 
 export type JourneyDay = {
   day: number | string;

@@ -6,7 +6,7 @@ import gorillaBabyEating from "@/assets/uploads/gorilla-baby-eating.jpg";
 import batwaDance from "@/assets/uploads/batwa-dance.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
-import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
+import sceneBunyonyi from "@/assets/uploads/buffalo-waterhole.jpg";
 
 const FAQS = [
   {

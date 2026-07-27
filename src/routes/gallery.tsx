@@ -11,6 +11,18 @@ import sceneLion from "@/assets/scene-lion.jpg";
 import expShoebill from "@/assets/exp-shoebill.jpg";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
+import gorillaLookup from "@/assets/uploads/gorilla-lookup.jpg";
+import gorillaBaby from "@/assets/uploads/gorilla-baby-eating.jpg";
+import elephantRoad from "@/assets/uploads/elephant-road.jpg";
+import chimpKibale from "@/assets/uploads/chimp-kibale.jpg";
+import batwaFire from "@/assets/uploads/batwa-firemaking.jpg";
+import buffaloWaterhole from "@/assets/uploads/buffalo-waterhole.jpg";
+import lionessCloseup from "@/assets/uploads/lioness-closeup.jpg";
+import leopardTree from "@/assets/uploads/leopard-tree.jpg";
+import giraffeSavanna from "@/assets/uploads/giraffe-savanna.jpg";
+import qenpZebraBuffalo from "@/assets/uploads/qenp-zebra-buffalo.jpg";
+import rwenzoriSummit from "@/assets/uploads/rwenzori-summit.jpg";
+import mburoZebras from "@/assets/uploads/mburo-zebras.jpg";
 import { SITE_CONFIG } from "@/lib/site-config";
 
 export const Route = createFileRoute("/gallery")({
@@ -31,11 +43,23 @@ export const Route = createFileRoute("/gallery")({
 
 const PHOTOS = [
   { src: heroGorilla, alt: "Silverback mountain gorilla in Bwindi", caption: "A silverback in Bwindi, unbothered by an audience." },
+  { src: elephantRoad, alt: "Bull elephant on a murram track at golden hour", caption: "Right of way — a bull elephant on the park track." },
+  { src: lionessCloseup, alt: "Lioness snarling in long grass", caption: "A lioness, mid-yawn and unimpressed." },
+  { src: leopardTree, alt: "Leopard standing on a tree branch", caption: "A leopard holding the high ground." },
+  { src: chimpKibale, alt: "Chimpanzee sitting in the canopy of Kibale Forest", caption: "A chimp in the Kibale canopy, looking down on the trek." },
   { src: sceneLion, alt: "Lions resting in a fig tree, Ishasha", caption: "An Ishasha morning — lions draped over a fig branch." },
+  { src: buffaloWaterhole, alt: "Buffalo herd drinking at a waterhole", caption: "The whole herd, at the only waterhole that matters." },
+  { src: giraffeSavanna, alt: "Rothschild's giraffe beside a termite mound", caption: "A Rothschild's giraffe browsing the ridge." },
+  { src: qenpZebraBuffalo, alt: "Zebra and buffalo together in Queen Elizabeth National Park", caption: "Zebra and buffalo sharing the road, Queen Elizabeth NP." },
+  { src: mburoZebras, alt: "Zebras drinking at Lake Mburo", caption: "Zebra at the water's edge, Lake Mburo." },
+  { src: rwenzoriSummit, alt: "Climbers roped up on the Rwenzori glaciers", caption: "Roped up on the snow — the Rwenzori summit push." },
   { src: sceneRwenzori, alt: "Trekking group in the Rwenzori Mountains", caption: "Snow on the equator: crossing the Rwenzori glaciers." },
+  { src: batwaFire, alt: "Batwa elders making fire in the forest", caption: "Batwa elders coaxing a fire out of dry leaves." },
+  { src: sceneCulture, alt: "Batwa community dance", caption: "A Batwa welcome dance in the hills of the south-west." },
+  { src: gorillaLookup, alt: "Mountain gorilla looking upward", caption: "A gorilla, mid-thought." },
+  { src: gorillaBaby, alt: "Baby mountain gorilla feeding", caption: "Breakfast, taken very seriously." },
   { src: expShoebill, alt: "Shoebill stork in a papyrus swamp", caption: "A shoebill, mid-swamp and entirely unimpressed." },
   { src: semulikiHotSprings, alt: "Sempaya hot springs, Semuliki National Park", caption: "The boiling springs of Sempaya, Semuliki National Park." },
-  { src: sceneCulture, alt: "Batwa community dance", caption: "A Batwa welcome dance in the hills of the south-west." },
   { src: elephantSavanna, alt: "African elephant in the savanna", caption: "An elephant at last light." },
   { src: nileBridgeAerial, alt: "A bridge spanning the Nile", caption: "The Nile, seen from above." },
 ];

@@ -5,10 +5,10 @@ import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 
 import heroGorilla from "@/assets/hero-gorilla.jpg";
-import expChimp from "@/assets/exp-chimp.jpg";
-import sceneElephants from "@/assets/scene-elephants.jpg";
+import expChimp from "@/assets/uploads/chimp-kibale.jpg";
+import sceneElephants from "@/assets/uploads/elephant-road.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
-import sceneCrane from "@/assets/scene-crane.jpg";
+import sceneCrane from "@/assets/shoebill-real.jpg";
 import expShoebill from "@/assets/exp-shoebill.jpg";
 import { SITE_CONFIG } from "@/lib/site-config";
 
