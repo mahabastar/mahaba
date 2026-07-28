@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CategoryHub } from "@/components/CategoryHub";
 import { WILDLIFE_RESERVES } from "@/lib/wildlife-reserves";
-import elephantSavanna from "@/assets/uploads/elephant-savanna.jpg";
+import elephantSavanna from "@/assets/elephant-savanna.jpg";
 import { SITE_CONFIG } from "@/lib/site-config";
 
 export const Route = createFileRoute("/wildlife-reserves")({

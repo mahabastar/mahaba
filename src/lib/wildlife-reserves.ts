@@ -1,7 +1,7 @@
-import elephantSavanna from "@/assets/uploads/elephant-savanna.jpg";
-import semulikiHotSprings from "@/assets/uploads/semuliki-hot-springs.jpg";
-import sceneCrane from "@/assets/shoebill-real.jpg";
-import sceneCulture from "@/assets/scene-culture.jpg";
+import rhinoZiwa from "@/assets/rhino-ziwa.jpg";
+import semulikiHotSprings from "@/assets/semuliki-hot-springs.jpg";
+import cheetahMound from "@/assets/cheetah-mound.jpg";
+import qenpZebraBuffalo from "@/assets/qenp-zebra-buffalo.jpg";
 
 import type { CategoryItem } from "@/components/CategoryHub";
 
@@ -13,7 +13,7 @@ export const WILDLIFE_RESERVES: CategoryItem[] = [
     knownFor: "Southern white rhino tracking",
     blurb:
       "The only place to see rhinos in Uganda — a community-run sanctuary reintroducing southern white rhinos on foot, guided trekking included.",
-    img: elephantSavanna,
+    img: rhinoZiwa,
     to: "/destinations/ziwa-rhino-sanctuary",
   },
   {
@@ -32,7 +32,7 @@ export const WILDLIFE_RESERVES: CategoryItem[] = [
     knownFor: "Cheetah & roan antelope",
     blurb:
       "Uganda's second-largest protected area — vast, little-visited Karamoja savanna holding the country's best odds of a wild cheetah sighting.",
-    img: sceneCrane,
+    img: cheetahMound,
   },
   {
     slug: "kabwoya-wildlife-reserve",
@@ -41,6 +41,6 @@ export const WILDLIFE_RESERVES: CategoryItem[] = [
     knownFor: "Lakeshore game drives & hot springs",
     blurb:
       "A compact reserve on Lake Albert's escarpment, combining game drives with sweeping Rift Valley views and nearby geothermal springs.",
-    img: sceneCulture,
+    img: qenpZebraBuffalo,
   },
 ];

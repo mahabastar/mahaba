@@ -14,18 +14,14 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "@/lib/lovable-error-reporting";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { trackPageview } from "@/lib/analytics";
-import logo from "@/assets/logo.png";
+import logoAsset from "@/assets/wild-uganda-treks-logo.png.asset.json";
 
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-charcoal grain px-6 text-center">
       <div className="max-w-lg">
         <Link to="/" className="mx-auto flex w-fit items-center gap-3 text-ivory">
-          <img
-            src={logo}
-            alt="Wild Uganda Treks"
-            className="h-10 w-10 shrink-0 rounded-full object-cover"
-          />
+          <img src={logoAsset.url} alt="Wild Uganda Treks logo" className="h-10 w-10 shrink-0 rounded-full object-cover ring-1 ring-gold/50" />
           <span className="font-display text-xl leading-none">
             Wild Uganda <span className="text-gold">Treks</span>
           </span>
@@ -69,11 +65,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
     <div className="flex min-h-screen items-center justify-center bg-charcoal grain px-6 text-center">
       <div className="max-w-lg">
         <div className="mx-auto flex w-fit items-center gap-3 text-ivory">
-          <img
-            src={logo}
-            alt="Wild Uganda Treks"
-            className="h-10 w-10 shrink-0 rounded-full object-cover"
-          />
+          <img src={logoAsset.url} alt="Wild Uganda Treks logo" className="h-10 w-10 shrink-0 rounded-full object-cover ring-1 ring-gold/50" />
           <span className="font-display text-xl leading-none">
             Wild Uganda <span className="text-gold">Treks</span>
           </span>
@@ -133,7 +125,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     ],
     links: [
       { rel: "stylesheet", href: appCss },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
+      { rel: "apple-touch-icon", href: "/favicon.png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {

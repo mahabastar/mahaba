@@ -1,12 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
-import gorillaLookup from "@/assets/uploads/gorilla-lookup.jpg";
-import rwenzoriHikers from "@/assets/uploads/nile-bridge-aerial.jpg";
-import batwaDance from "@/assets/uploads/batwa-dance.jpg";
+import gorillaLookup from "@/assets/gorilla-lookup.jpg";
+import rwenzoriHikers from "@/assets/nile-bridge-aerial.jpg";
+import batwaDance from "@/assets/batwa-dance.jpg";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
-import gorillaSilverback from "@/assets/uploads/gorilla-silverback-insects.jpg";
-import sceneBunyonyi from "@/assets/uploads/crater-lake-sunset.jpg";
+import gorillaSilverback from "@/assets/gorilla-silverback-insects.jpg";
+import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
 
 const FAQS = [
   {

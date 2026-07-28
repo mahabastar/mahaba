@@ -17,6 +17,7 @@ import { Route as VisaGuideRouteImport } from './routes/visa-guide'
 import { Route as UntoldSecretsRouteImport } from './routes/untold-secrets'
 import { Route as UgandaExplorerRouteImport } from './routes/uganda-explorer'
 import { Route as TravelJournalRouteImport } from './routes/travel-journal'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SeasonalSafariCalendarRouteImport } from './routes/seasonal-safari-calendar'
 import { Route as SafariBudgetCalculatorRouteImport } from './routes/safari-budget-calculator'
 import { Route as RiversRouteImport } from './routes/rivers'
@@ -44,6 +45,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as TravelJournalIndexRouteImport } from './routes/travel-journal.index'
 import { Route as ExperiencesIndexRouteImport } from './routes/experiences.index'
 import { Route as TravelJournalSlugRouteImport } from './routes/travel-journal.$slug'
+import { Route as RegionsRegionRouteImport } from './routes/regions.$region'
 import { Route as JourneysSlugRouteImport } from './routes/journeys.$slug'
 import { Route as ExperiencesSlugRouteImport } from './routes/experiences.$slug'
 import { Route as DestinationsZiwaRhinoSanctuaryRouteImport } from './routes/destinations.ziwa-rhino-sanctuary'
@@ -65,6 +67,7 @@ import { Route as DestinationsEntebbeRouteImport } from './routes/destinations.e
 import { Route as DestinationsCraterLakesRouteImport } from './routes/destinations.crater-lakes'
 import { Route as DestinationsChimpanzeeTrekkingRouteImport } from './routes/destinations.chimpanzee-trekking'
 import { Route as DestinationsBwindiImpenetrableRouteImport } from './routes/destinations.bwindi-impenetrable'
+import { Route as AdminBookingsRouteImport } from './routes/admin.bookings'
 
 const WildlifeReservesRoute = WildlifeReservesRouteImport.update({
   id: '/wildlife-reserves',
@@ -104,6 +107,11 @@ const UgandaExplorerRoute = UgandaExplorerRouteImport.update({
 const TravelJournalRoute = TravelJournalRouteImport.update({
   id: '/travel-journal',
   path: '/travel-journal',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SeasonalSafariCalendarRoute = SeasonalSafariCalendarRouteImport.update({
@@ -241,6 +249,11 @@ const TravelJournalSlugRoute = TravelJournalSlugRouteImport.update({
   path: '/$slug',
   getParentRoute: () => TravelJournalRoute,
 } as any)
+const RegionsRegionRoute = RegionsRegionRouteImport.update({
+  id: '/regions/$region',
+  path: '/regions/$region',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const JourneysSlugRoute = JourneysSlugRouteImport.update({
   id: '/journeys/$slug',
   path: '/journeys/$slug',
@@ -359,6 +372,11 @@ const DestinationsBwindiImpenetrableRoute =
     path: '/destinations/bwindi-impenetrable',
     getParentRoute: () => rootRouteImport,
   } as any)
+const AdminBookingsRoute = AdminBookingsRouteImport.update({
+  id: '/admin/bookings',
+  path: '/admin/bookings',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
@@ -385,6 +403,7 @@ export interface FileRoutesByFullPath {
   '/rivers': typeof RiversRoute
   '/safari-budget-calculator': typeof SafariBudgetCalculatorRoute
   '/seasonal-safari-calendar': typeof SeasonalSafariCalendarRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/travel-journal': typeof TravelJournalRouteWithChildren
   '/uganda-explorer': typeof UgandaExplorerRoute
   '/untold-secrets': typeof UntoldSecretsRoute
@@ -393,6 +412,7 @@ export interface FileRoutesByFullPath {
   '/wild-uganda-tv': typeof WildUgandaTvRoute
   '/wildlife-encyclopedia': typeof WildlifeEncyclopediaRoute
   '/wildlife-reserves': typeof WildlifeReservesRoute
+  '/admin/bookings': typeof AdminBookingsRoute
   '/destinations/bwindi-impenetrable': typeof DestinationsBwindiImpenetrableRoute
   '/destinations/chimpanzee-trekking': typeof DestinationsChimpanzeeTrekkingRoute
   '/destinations/crater-lakes': typeof DestinationsCraterLakesRoute
@@ -414,6 +434,7 @@ export interface FileRoutesByFullPath {
   '/destinations/ziwa-rhino-sanctuary': typeof DestinationsZiwaRhinoSanctuaryRoute
   '/experiences/$slug': typeof ExperiencesSlugRoute
   '/journeys/$slug': typeof JourneysSlugRoute
+  '/regions/$region': typeof RegionsRegionRoute
   '/travel-journal/$slug': typeof TravelJournalSlugRoute
   '/experiences/': typeof ExperiencesIndexRoute
   '/travel-journal/': typeof TravelJournalIndexRoute
@@ -442,6 +463,7 @@ export interface FileRoutesByTo {
   '/rivers': typeof RiversRoute
   '/safari-budget-calculator': typeof SafariBudgetCalculatorRoute
   '/seasonal-safari-calendar': typeof SeasonalSafariCalendarRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/uganda-explorer': typeof UgandaExplorerRoute
   '/untold-secrets': typeof UntoldSecretsRoute
   '/visa-guide': typeof VisaGuideRoute
@@ -449,6 +471,7 @@ export interface FileRoutesByTo {
   '/wild-uganda-tv': typeof WildUgandaTvRoute
   '/wildlife-encyclopedia': typeof WildlifeEncyclopediaRoute
   '/wildlife-reserves': typeof WildlifeReservesRoute
+  '/admin/bookings': typeof AdminBookingsRoute
   '/destinations/bwindi-impenetrable': typeof DestinationsBwindiImpenetrableRoute
   '/destinations/chimpanzee-trekking': typeof DestinationsChimpanzeeTrekkingRoute
   '/destinations/crater-lakes': typeof DestinationsCraterLakesRoute
@@ -470,6 +493,7 @@ export interface FileRoutesByTo {
   '/destinations/ziwa-rhino-sanctuary': typeof DestinationsZiwaRhinoSanctuaryRoute
   '/experiences/$slug': typeof ExperiencesSlugRoute
   '/journeys/$slug': typeof JourneysSlugRoute
+  '/regions/$region': typeof RegionsRegionRoute
   '/travel-journal/$slug': typeof TravelJournalSlugRoute
   '/experiences': typeof ExperiencesIndexRoute
   '/travel-journal': typeof TravelJournalIndexRoute
@@ -500,6 +524,7 @@ export interface FileRoutesById {
   '/rivers': typeof RiversRoute
   '/safari-budget-calculator': typeof SafariBudgetCalculatorRoute
   '/seasonal-safari-calendar': typeof SeasonalSafariCalendarRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
   '/travel-journal': typeof TravelJournalRouteWithChildren
   '/uganda-explorer': typeof UgandaExplorerRoute
   '/untold-secrets': typeof UntoldSecretsRoute
@@ -508,6 +533,7 @@ export interface FileRoutesById {
   '/wild-uganda-tv': typeof WildUgandaTvRoute
   '/wildlife-encyclopedia': typeof WildlifeEncyclopediaRoute
   '/wildlife-reserves': typeof WildlifeReservesRoute
+  '/admin/bookings': typeof AdminBookingsRoute
   '/destinations/bwindi-impenetrable': typeof DestinationsBwindiImpenetrableRoute
   '/destinations/chimpanzee-trekking': typeof DestinationsChimpanzeeTrekkingRoute
   '/destinations/crater-lakes': typeof DestinationsCraterLakesRoute
@@ -529,6 +555,7 @@ export interface FileRoutesById {
   '/destinations/ziwa-rhino-sanctuary': typeof DestinationsZiwaRhinoSanctuaryRoute
   '/experiences/$slug': typeof ExperiencesSlugRoute
   '/journeys/$slug': typeof JourneysSlugRoute
+  '/regions/$region': typeof RegionsRegionRoute
   '/travel-journal/$slug': typeof TravelJournalSlugRoute
   '/experiences/': typeof ExperiencesIndexRoute
   '/travel-journal/': typeof TravelJournalIndexRoute
@@ -560,6 +587,7 @@ export interface FileRouteTypes {
     | '/rivers'
     | '/safari-budget-calculator'
     | '/seasonal-safari-calendar'
+    | '/sitemap.xml'
     | '/travel-journal'
     | '/uganda-explorer'
     | '/untold-secrets'
@@ -568,6 +596,7 @@ export interface FileRouteTypes {
     | '/wild-uganda-tv'
     | '/wildlife-encyclopedia'
     | '/wildlife-reserves'
+    | '/admin/bookings'
     | '/destinations/bwindi-impenetrable'
     | '/destinations/chimpanzee-trekking'
     | '/destinations/crater-lakes'
@@ -589,6 +618,7 @@ export interface FileRouteTypes {
     | '/destinations/ziwa-rhino-sanctuary'
     | '/experiences/$slug'
     | '/journeys/$slug'
+    | '/regions/$region'
     | '/travel-journal/$slug'
     | '/experiences/'
     | '/travel-journal/'
@@ -617,6 +647,7 @@ export interface FileRouteTypes {
     | '/rivers'
     | '/safari-budget-calculator'
     | '/seasonal-safari-calendar'
+    | '/sitemap.xml'
     | '/uganda-explorer'
     | '/untold-secrets'
     | '/visa-guide'
@@ -624,6 +655,7 @@ export interface FileRouteTypes {
     | '/wild-uganda-tv'
     | '/wildlife-encyclopedia'
     | '/wildlife-reserves'
+    | '/admin/bookings'
     | '/destinations/bwindi-impenetrable'
     | '/destinations/chimpanzee-trekking'
     | '/destinations/crater-lakes'
@@ -645,6 +677,7 @@ export interface FileRouteTypes {
     | '/destinations/ziwa-rhino-sanctuary'
     | '/experiences/$slug'
     | '/journeys/$slug'
+    | '/regions/$region'
     | '/travel-journal/$slug'
     | '/experiences'
     | '/travel-journal'
@@ -674,6 +707,7 @@ export interface FileRouteTypes {
     | '/rivers'
     | '/safari-budget-calculator'
     | '/seasonal-safari-calendar'
+    | '/sitemap.xml'
     | '/travel-journal'
     | '/uganda-explorer'
     | '/untold-secrets'
@@ -682,6 +716,7 @@ export interface FileRouteTypes {
     | '/wild-uganda-tv'
     | '/wildlife-encyclopedia'
     | '/wildlife-reserves'
+    | '/admin/bookings'
     | '/destinations/bwindi-impenetrable'
     | '/destinations/chimpanzee-trekking'
     | '/destinations/crater-lakes'
@@ -703,6 +738,7 @@ export interface FileRouteTypes {
     | '/destinations/ziwa-rhino-sanctuary'
     | '/experiences/$slug'
     | '/journeys/$slug'
+    | '/regions/$region'
     | '/travel-journal/$slug'
     | '/experiences/'
     | '/travel-journal/'
@@ -733,6 +769,7 @@ export interface RootRouteChildren {
   RiversRoute: typeof RiversRoute
   SafariBudgetCalculatorRoute: typeof SafariBudgetCalculatorRoute
   SeasonalSafariCalendarRoute: typeof SeasonalSafariCalendarRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TravelJournalRoute: typeof TravelJournalRouteWithChildren
   UgandaExplorerRoute: typeof UgandaExplorerRoute
   UntoldSecretsRoute: typeof UntoldSecretsRoute
@@ -741,6 +778,7 @@ export interface RootRouteChildren {
   WildUgandaTvRoute: typeof WildUgandaTvRoute
   WildlifeEncyclopediaRoute: typeof WildlifeEncyclopediaRoute
   WildlifeReservesRoute: typeof WildlifeReservesRoute
+  AdminBookingsRoute: typeof AdminBookingsRoute
   DestinationsBwindiImpenetrableRoute: typeof DestinationsBwindiImpenetrableRoute
   DestinationsChimpanzeeTrekkingRoute: typeof DestinationsChimpanzeeTrekkingRoute
   DestinationsCraterLakesRoute: typeof DestinationsCraterLakesRoute
@@ -761,6 +799,7 @@ export interface RootRouteChildren {
   DestinationsTreeClimbingLionsRoute: typeof DestinationsTreeClimbingLionsRoute
   DestinationsZiwaRhinoSanctuaryRoute: typeof DestinationsZiwaRhinoSanctuaryRoute
   JourneysSlugRoute: typeof JourneysSlugRoute
+  RegionsRegionRoute: typeof RegionsRegionRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -819,6 +858,13 @@ declare module '@tanstack/react-router' {
       path: '/travel-journal'
       fullPath: '/travel-journal'
       preLoaderRoute: typeof TravelJournalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/seasonal-safari-calendar': {
@@ -1010,6 +1056,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof TravelJournalSlugRouteImport
       parentRoute: typeof TravelJournalRoute
     }
+    '/regions/$region': {
+      id: '/regions/$region'
+      path: '/regions/$region'
+      fullPath: '/regions/$region'
+      preLoaderRoute: typeof RegionsRegionRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/journeys/$slug': {
       id: '/journeys/$slug'
       path: '/journeys/$slug'
@@ -1157,6 +1210,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof DestinationsBwindiImpenetrableRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin/bookings': {
+      id: '/admin/bookings'
+      path: '/admin/bookings'
+      fullPath: '/admin/bookings'
+      preLoaderRoute: typeof AdminBookingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -1213,6 +1273,7 @@ const rootRouteChildren: RootRouteChildren = {
   RiversRoute: RiversRoute,
   SafariBudgetCalculatorRoute: SafariBudgetCalculatorRoute,
   SeasonalSafariCalendarRoute: SeasonalSafariCalendarRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
   TravelJournalRoute: TravelJournalRouteWithChildren,
   UgandaExplorerRoute: UgandaExplorerRoute,
   UntoldSecretsRoute: UntoldSecretsRoute,
@@ -1221,6 +1282,7 @@ const rootRouteChildren: RootRouteChildren = {
   WildUgandaTvRoute: WildUgandaTvRoute,
   WildlifeEncyclopediaRoute: WildlifeEncyclopediaRoute,
   WildlifeReservesRoute: WildlifeReservesRoute,
+  AdminBookingsRoute: AdminBookingsRoute,
   DestinationsBwindiImpenetrableRoute: DestinationsBwindiImpenetrableRoute,
   DestinationsChimpanzeeTrekkingRoute: DestinationsChimpanzeeTrekkingRoute,
   DestinationsCraterLakesRoute: DestinationsCraterLakesRoute,
@@ -1242,6 +1304,7 @@ const rootRouteChildren: RootRouteChildren = {
   DestinationsTreeClimbingLionsRoute: DestinationsTreeClimbingLionsRoute,
   DestinationsZiwaRhinoSanctuaryRoute: DestinationsZiwaRhinoSanctuaryRoute,
   JourneysSlugRoute: JourneysSlugRoute,
+  RegionsRegionRoute: RegionsRegionRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

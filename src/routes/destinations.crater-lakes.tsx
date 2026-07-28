@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
-import sceneBunyonyi from "@/assets/uploads/crater-lake-sunset.jpg";
+import expCoffee from "@/assets/exp-coffee.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
-import expLodge from "@/assets/uploads/safari-lodge-pool.jpg";
+import expLodge from "@/assets/exp-lodge.jpg";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
-import expChimp from "@/assets/uploads/chimp-kibale.jpg";
+import expChimp from "@/assets/exp-chimp.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
 
 const FAQS = [
@@ -35,7 +35,7 @@ export const Route = createFileRoute("/destinations/crater-lakes")({
       title: "Uganda's Crater Lakes, Fort Portal — Guide & Best Lodges | Wild Uganda Treks",
       description:
         "The Ndali-Kasenda crater field near Fort Portal — around 50 volcanic lakes set among tea and coffee gardens, best paired with a Kibale chimp trek.",
-      ogImage: sceneBunyonyi,
+      ogImage: expCoffee,
       region: "Western Uganda",
       keywords: [
         "Uganda crater lakes",
@@ -53,8 +53,8 @@ export const Route = createFileRoute("/destinations/crater-lakes")({
       name="The Crater Lakes"
       tagline={<>Around fifty lakes, <em className="italic text-gold">one volcanic field</em>.</>}
       intro="Scattered across the rolling tea and coffee country around Fort Portal, roughly fifty volcanic explosion craters — some barely a few hundred metres wide, others over a kilometre — sit among Uganda's most photogenic farmland, minutes from Kibale National Park."
-      heroImage={sceneBunyonyi}
-      heroAlt="Still volcanic crater lake near Fort Portal"
+      heroImage={expCoffee}
+      heroAlt="Volcanic crater lake surrounded by tea and coffee gardens near Fort Portal"
       facts={[
         { label: "Location", value: "Fort Portal, western Uganda" },
         { label: "Crater count", value: "~50 in the Ndali-Kasenda field" },
@@ -76,7 +76,7 @@ export const Route = createFileRoute("/destinations/crater-lakes")({
         },
       ]}
       galleryImages={[
-        { src: sceneBunyonyi, alt: "A volcanic crater lake near Fort Portal" },
+        { src: expCoffee, alt: "Coffee gardens surrounding a crater lake near Fort Portal" },
         { src: sceneRwenzori, alt: "Rwenzori Mountains visible from the crater lakes region" },
         { src: expLodge, alt: "Crater-rim lodge near Fort Portal" },
         { src: sceneCulture, alt: "Local farming community around the Ndali-Kasenda crater field" },

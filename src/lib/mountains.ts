@@ -1,7 +1,7 @@
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
-import expSipi from "@/assets/uploads/nile-bridge-aerial.jpg";
-import gorillaLookup from "@/assets/uploads/gorilla-lookup.jpg";
-import rwenzoriHikers from "@/assets/uploads/nile-bridge-aerial.jpg";
+import expSipi from "@/assets/exp-sipi.jpg";
+import gorillaLookup from "@/assets/gorilla-lookup.jpg";
+import morotoPlains from "@/assets/giraffe-savanna.jpg";
 
 import type { CategoryItem } from "@/components/CategoryHub";
 
@@ -43,6 +43,6 @@ export const MOUNTAINS: CategoryItem[] = [
     knownFor: "Remote Karamojong highlands",
     blurb:
       "A little-visited highland forest reserve above the Karamoja plains, with dramatic escarpment views and genuine off-the-circuit trekking.",
-    img: rwenzoriHikers,
+    img: morotoPlains,
   },
 ];

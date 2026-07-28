@@ -1,10 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
+import { useServerFn } from "@tanstack/react-start";
 import { useState } from "react";
 
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import { buildWhatsAppHref } from "@/lib/site-config";
 import { planTrip, type TripPlan } from "@/lib/ai-trip-planner";
+import { draftItinerary, type ItineraryDraft } from "@/lib/trip-planner.functions";
+
 
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
 
@@ -28,18 +31,52 @@ function AiTripPlanner() {
   const [input, setInput] = useState("");
   const [thinking, setThinking] = useState(false);
   const [plan, setPlan] = useState<TripPlan | null>(null);
+  const [draft, setDraft] = useState<ItineraryDraft | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const draftFn = useServerFn(draftItinerary);
 
-  function handleSubmit() {
+  async function handleSubmit() {
     if (!input.trim()) return;
     setThinking(true);
     setPlan(null);
-    // Brief pause before showing the result — the matching itself is
-    // instant, but an instant flash-to-answer reads as broken, not fast.
-    window.setTimeout(() => {
-      setPlan(planTrip(input));
+    setDraft(null);
+    setError(null);
+
+    // Match against the real journeys/experiences first, then hand that
+    // grounding to the model so the draft can't invent products.
+    const matched = planTrip(input);
+    setPlan(matched);
+
+    try {
+      const result = await draftFn({
+        data: {
+          request: input.trim(),
+          journey: {
+            title: matched.journey.title,
+            days: matched.journey.days,
+            tagline: matched.journey.tagline,
+            overview: matched.journey.overview,
+            highlights: matched.journey.highlights,
+          },
+          experiences: matched.experiences.map((e) => ({ title: e.title, excerpt: e.excerpt })),
+        },
+      });
+      setDraft(result);
+    } catch (e) {
+      const message = e instanceof Error ? e.message : String(e);
+      setError(
+        message.includes("429")
+          ? "Our planner is busy right now — please try again in a minute."
+          : message.includes("402")
+            ? "The planner is temporarily unavailable. Please reach out on WhatsApp and we'll draft it by hand."
+            : "We couldn't draft the written itinerary just now, but your journey match below still stands.",
+      );
+    } finally {
       setThinking(false);
-    }, 900);
+    }
   }
+
+
 
   return (
     <div className="bg-ivory text-charcoal">
@@ -107,6 +144,39 @@ function AiTripPlanner() {
               A starting point — <em className="italic text-forest">not the final word</em>.
             </h2>
 
+            {error && (
+              <p className="mt-8 rounded-2xl border border-charcoal/10 bg-white p-5 text-sm text-charcoal/70">
+                {error}
+              </p>
+            )}
+
+            {draft && (
+              <div className="mt-10 rounded-3xl bg-white p-8 shadow-md">
+                <h3 className="font-display text-2xl text-charcoal md:text-3xl">{draft.headline}</h3>
+                <p className="mt-3 max-w-2xl text-sm leading-relaxed text-charcoal/70">{draft.summary}</p>
+
+                <ol className="mt-8 space-y-6 border-l border-charcoal/10 pl-6">
+                  {draft.days.map((d) => (
+                    <li key={d.day}>
+                      <div className="eyebrow">Day {d.day}</div>
+                      <h4 className="mt-1 font-display text-lg text-charcoal">{d.title}</h4>
+                      <p className="mt-2 text-sm leading-relaxed text-charcoal/70">{d.description}</p>
+                    </li>
+                  ))}
+                </ol>
+
+                {draft.notes.length > 0 && (
+                  <ul className="mt-8 space-y-2 border-t border-charcoal/10 pt-6">
+                    {draft.notes.map((n) => (
+                      <li key={n} className="text-xs text-charcoal/60">
+                        · {n}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            )}
+
             {/* Journey match */}
             <Link
               to="/journeys/$slug"
@@ -159,12 +229,13 @@ function AiTripPlanner() {
             )}
 
             <div className="mt-10 rounded-2xl border border-charcoal/10 bg-white p-6 text-sm text-charcoal/70">
-              This draft is matched from keywords in what you typed
-              {plan.dayHint ? ` (we picked up roughly ${plan.dayHint} days)` : ""} against our
-              real journeys and experiences — it isn't a live conversation, and it won't always
-              read your intent perfectly. Treat it as a fast starting point, then refine the
-              details with us directly.
+              This draft is written by our AI planner, grounded in the real journeys and
+              experiences we operate
+              {plan.dayHint ? ` (we picked up roughly ${plan.dayHint} days)` : ""}. Lodges,
+              permits and exact dates still need confirming by a human — treat it as a fast
+              starting point, then refine the details with us directly.
             </div>
+
 
             <div className="mt-8 flex flex-wrap gap-4">
               <Link

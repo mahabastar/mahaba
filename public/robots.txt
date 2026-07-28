@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.wildugandatreks.net/sitemap.xml
+Sitemap: https://www.wildugandatreks.org/sitemap.xml

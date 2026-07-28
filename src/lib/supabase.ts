@@ -1,27 +1,13 @@
-import { createClient } from "@supabase/supabase-js";
-
 /**
- * Traveler Dashboard backend.
+ * Traveler Dashboard backend types.
  *
- * Requires two env vars (see .env.example): VITE_SUPABASE_URL and
- * VITE_SUPABASE_ANON_KEY, both from your Supabase project's Settings ->
- * API page. The anon key is safe to expose client-side — it has no
- * power on its own; access is enforced entirely by the Row-Level
- * Security policies defined in supabase/schema.sql. Do not use the
- * service_role key here, ever — that key bypasses RLS and must never
- * reach the browser.
- *
- * If these vars are missing (e.g. local dev before setup, or a
- * preview deploy without secrets configured), `supabase` is null and
- * the dashboard route shows a clear setup message instead of crashing.
+ * The Supabase client itself lives in the generated integration module
+ * (`@/integrations/supabase/client`) and is wired up by Lovable Cloud —
+ * no .env copying, no manual keys. Row-Level Security scopes every
+ * booking read to the email address the traveler signed in with.
  */
 
-const url = import.meta.env.VITE_SUPABASE_URL as string | undefined;
-const anonKey = import.meta.env.VITE_SUPABASE_ANON_KEY as string | undefined;
-
-export const supabaseConfigured = Boolean(url && anonKey);
-
-export const supabase = supabaseConfigured ? createClient(url as string, anonKey as string) : null;
+export { supabase } from "@/integrations/supabase/client";
 
 export type BookingStatus = "inquiry" | "confirmed" | "in_progress" | "completed";
 

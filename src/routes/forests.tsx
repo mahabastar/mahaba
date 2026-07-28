@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CategoryHub } from "@/components/CategoryHub";
-import expChimp from "@/assets/uploads/chimp-kibale.jpg";
+import expChimp from "@/assets/exp-chimp.jpg";
 import { FORESTS } from "@/lib/forests";
 import { SITE_CONFIG } from "@/lib/site-config";
 

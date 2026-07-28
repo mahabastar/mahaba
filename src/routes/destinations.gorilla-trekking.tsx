@@ -2,15 +2,16 @@ import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
-import sceneBunyonyi from "@/assets/uploads/crater-lake-sunset.jpg";
+import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
+import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
-import expChimp from "@/assets/uploads/chimp-kibale.jpg";
-import expLodge from "@/assets/uploads/safari-lodge-pool.jpg";
+import expChimp from "@/assets/exp-chimp.jpg";
+import expLodge from "@/assets/exp-lodge.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
-import sceneFalls from "@/assets/uploads/murchison-falls.jpg";
-import gorillaBabyEating from "@/assets/uploads/gorilla-baby-eating.jpg";
-import gorillaBacklit from "@/assets/uploads/gorilla-lookup.jpg";
-import gorillaLookup from "@/assets/uploads/gorilla-lookup.jpg";
+import sceneFalls from "@/assets/scene-falls.jpg";
+import gorillaBabyEating from "@/assets/gorilla-baby-eating.jpg";
+import gorillaBacklit from "@/assets/gorilla-lookup.jpg";
+import gorillaLookup from "@/assets/gorilla-lookup.jpg";
 
 const FAQS = [
   {
@@ -87,11 +88,13 @@ export const Route = createFileRoute("/destinations/gorilla-trekking")({
       galleryImages={[
         { src: heroGorilla, alt: "Silverback gorilla in Bwindi" },
         { src: gorillaLookup, alt: "Mountain gorilla pausing mid-forage" },
-        { src: gorillaBabyEating, alt: "Infant gorilla feeding in the undergrowth" },
+        { src: expChimp, alt: "Primates of Uganda" },
         { src: gorillaBacklit, alt: "Silverback gorilla at first light in Bwindi" },
-        { src: sceneCulture, alt: "Local Batwa community" },
+        { src: sceneCulture, alt: "Local community" },
         { src: expLodge, alt: "Forest luxury lodge" },
-        { src: sceneBunyonyi, alt: "Lake Bunyonyi, a calm stop after the trek" },
+        { src: gorillaBabyEating, alt: "Infant gorilla feeding in the undergrowth" },
+        { src: sceneRwenzori, alt: "Trekking group in the Rwenzori Mountains" },
+        { src: sceneBunyonyi, alt: "Nearby crater lakes" },
       ]}
       highlights={[
         { title: "Face-to-face encounter", desc: "One hour, three metres, no barriers — the most personal wildlife moment on the planet." },

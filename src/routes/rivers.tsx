@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { CategoryHub } from "@/components/CategoryHub";
 import { RIVERS } from "@/lib/rivers";
-import nileBridgeAerial from "@/assets/uploads/nile-bridge-aerial.jpg";
+import nileBridgeAerial from "@/assets/nile-bridge-aerial.jpg";
 import { SITE_CONFIG } from "@/lib/site-config";
 
 export const Route = createFileRoute("/rivers")({

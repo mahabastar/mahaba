@@ -1,7 +1,7 @@
-import sceneFalls from "@/assets/uploads/murchison-falls.jpg";
-import nileBridgeAerial from "@/assets/uploads/nile-bridge-aerial.jpg";
-import sceneLion from "@/assets/scene-lion.jpg";
-import semulikiHotSprings from "@/assets/uploads/semuliki-hot-springs.jpg";
+import sceneFalls from "@/assets/scene-falls.jpg";
+import nileBridgeAerial from "@/assets/nile-bridge-aerial.jpg";
+import buffaloWaterhole from "@/assets/buffalo-waterhole.jpg";
+import semulikiHotSprings from "@/assets/semuliki-hot-springs.jpg";
 
 import type { CategoryItem } from "@/components/CategoryHub";
 
@@ -33,7 +33,7 @@ export const RIVERS: CategoryItem[] = [
     knownFor: "Highest hippo density in Africa",
     blurb:
       "A natural 40km channel linking Lakes Edward and George, and the setting for Uganda's most reliable boat safari.",
-    img: sceneLion,
+    img: buffaloWaterhole,
   },
   {
     slug: "semliki-river",

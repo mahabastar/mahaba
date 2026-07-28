@@ -5,7 +5,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 
 import sceneCulture from "@/assets/scene-culture.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
-import expLodge from "@/assets/uploads/safari-lodge-pool.jpg";
+import expLodge from "@/assets/exp-lodge.jpg";
 import { SITE_CONFIG } from "@/lib/site-config";
 
 export const Route = createFileRoute("/about")({
@@ -50,6 +50,22 @@ const VALUES = [
   },
 ];
 
+const FOUNDERS = [
+  {
+    name: "Xavaer Asaba",
+    initials: "XA",
+    role: "Co-founder & Lead Guide",
+    body: "Xavaer has spent over a decade leading treks through Uganda's forests and savannahs, with a deep knowledge of wildlife behaviour, terrain and timing that only comes from thousands of hours in the field. He has a gift for reading the environment — knowing exactly where the gorillas are likely to be, when the light will be perfect for photographs, and how to keep a group calm and curious even in the thick of the bush.",
+  },
+  {
+    name: "Herbert Muzoora",
+    initials: "HM",
+    role: "Co-founder & Head of Journeys",
+    body: "Herbert brings the same 12 years of hands-on experience, with an especially sharp instinct for logistics and route planning across some of Uganda's more remote and rewarding destinations. Well before Wild Uganda Treks, he built a reputation for turning long travel days into smooth, enjoyable parts of the journey — always ready with a story, a shortcut, or a well-timed stop at just the right viewpoint.",
+  },
+];
+
+
 function About() {
   return (
     <div className="bg-ivory text-charcoal">
@@ -68,27 +84,74 @@ function About() {
         </div>
       </section>
 
-      {/* Intro */}
+      {/* Intro / story */}
       <section className="bg-ivory">
         <div className="mx-auto max-w-[900px] px-6 py-20 md:px-10 md:py-28">
-          <div className="eyebrow !text-forest">Who we are</div>
+          <div className="eyebrow !text-forest">Our story</div>
           <div className="mt-5 space-y-5 text-lg leading-relaxed text-charcoal/80 text-pretty">
             <p>
-              Wild Uganda Treks is a Uganda-based safari operator. We plan and run trips
-              across the country's national parks, forests and lakes — gorilla and
-              chimpanzee trekking, savanna game drives, white water on the Nile, and the
-              slower, quieter destinations in between.
+              Wild Uganda Treks was built on one simple idea: the best adventures come from
+              people who actually know the land. Not a call centre in another time zone, not
+              a brochure written from a desk — guides who have spent their working lives in
+              these forests, on these roads, and at these viewpoints.
+            </p>
+            <p>
+              Between our two founders sit twenty-four years of professional guiding across
+              Uganda. Years of tracking gorillas in Bwindi before the mist lifts, of reading
+              which way a herd will move at Paraa, of knowing which lodge kitchen will still
+              feed you at ten at night after a long transfer from Kidepo. That knowledge
+              isn't something you can buy in; it's accumulated one trip at a time.
             </p>
             <p>
               We built this site the way we'd want a trip planned: with real information
               before a sales pitch. A wildlife guide you can search, a calendar that tells
               you honestly which month suits you, a calculator that gives you a number
-              before you have to ask for one. The goal is that by the time you talk to us,
-              you already know roughly what you want — we just help make it happen.
+              before you have to ask for one. Every photograph you see here was taken by us,
+              on our own trips. By the time you talk to us, you already know roughly what
+              you want — we just make it happen.
             </p>
           </div>
         </div>
       </section>
+
+      {/* Meet the founders */}
+      <section className="bg-forest-deep grain text-ivory">
+        <div className="mx-auto max-w-[1200px] px-6 py-20 md:px-10 md:py-28">
+          <div className="max-w-3xl">
+            <div className="eyebrow !text-gold">Meet the founders</div>
+            <h2 className="mt-4 font-display text-4xl text-ivory text-balance md:text-5xl">
+              Xavaer Asaba &amp; Herbert Muzoora — <em className="italic text-gold">your guides to the Pearl of Africa.</em>
+            </h2>
+            <p className="mt-5 text-base leading-relaxed text-ivory/75">
+              Two Ugandan-born guides with a combined 24 years of experience showing
+              travellers the very best this country has to offer.
+            </p>
+          </div>
+
+          <div className="mt-14 grid gap-10 md:grid-cols-2">
+            {FOUNDERS.map((f) => (
+              <article
+                key={f.name}
+                className="overflow-hidden rounded-3xl border border-ivory/12 bg-charcoal/30 backdrop-blur-sm"
+              >
+                {/* Portrait placeholder — drop in each founder's photo here. */}
+                <div className="relative flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-forest to-charcoal">
+                  <span className="font-display text-6xl text-gold/70">{f.initials}</span>
+                  <span className="absolute bottom-4 right-5 text-[0.6rem] uppercase tracking-widest text-ivory/35">
+                    Portrait coming soon
+                  </span>
+                </div>
+                <div className="p-7 md:p-9">
+                  <h3 className="font-display text-2xl text-ivory">{f.name}</h3>
+                  <div className="mt-1 text-xs uppercase tracking-widest text-gold">{f.role}</div>
+                  <p className="mt-5 text-sm leading-relaxed text-ivory/75">{f.body}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
 
       {/* Stats */}
       <section className="bg-charcoal grain text-ivory">

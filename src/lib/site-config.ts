@@ -9,7 +9,7 @@
 
 export const SITE_CONFIG = {
   name: "Wild Uganda Treks",
-  url: "https://www.wildugandatreks.net",
+  url: "https://www.wildugandatreks.org",
   email: "wildugandatreks@gmail.com",
   // Digits only, no "+" or spaces — required format for wa.me links.
   whatsappNumber: "256774959383",

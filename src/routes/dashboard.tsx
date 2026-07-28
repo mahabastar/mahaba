@@ -5,7 +5,9 @@ import type { Session } from "@supabase/supabase-js";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import { buildWhatsAppHref } from "@/lib/site-config";
-import { supabase, supabaseConfigured, type Booking, type BookingStatus } from "@/lib/supabase";
+import { supabase, type Booking, type BookingStatus } from "@/lib/supabase";
+import { lovable } from "@/integrations/lovable/index";
+
 
 export const Route = createFileRoute("/dashboard")({
   head: () => ({
@@ -36,32 +38,20 @@ function formatDate(d: string | null): string {
   return new Date(d).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
 }
 
-function SetupNotice() {
-  return (
-    <section className="bg-ivory">
-      <div className="mx-auto max-w-[700px] px-6 py-24 text-center md:px-10">
-        <div className="eyebrow">Setup required</div>
-        <h1 className="mt-4 font-display text-3xl text-charcoal">Dashboard isn't connected yet</h1>
-        <p className="mx-auto mt-4 max-w-md text-sm text-charcoal/60">
-          This page needs a Supabase project connected before it can show real traveler data.
-          Copy <code className="rounded bg-charcoal/5 px-1.5 py-0.5">.env.example</code> to{" "}
-          <code className="rounded bg-charcoal/5 px-1.5 py-0.5">.env</code>, fill in your project's
-          URL and anon key, and run{" "}
-          <code className="rounded bg-charcoal/5 px-1.5 py-0.5">supabase/schema.sql</code> in the
-          Supabase SQL editor.
-        </p>
-      </div>
-    </section>
-  );
-}
-
 function LoginForm() {
   const [email, setEmail] = useState("");
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
+  async function handleGoogle() {
+    const result = await lovable.auth.signInWithOAuth("google", {
+      redirect_uri: window.location.origin + "/dashboard",
+    });
+    if (result.error) setStatus("error");
+  }
+
   async function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    if (!email.trim() || !supabase) return;
+    if (!email.trim()) return;
     setStatus("sending");
     const { error } = await supabase.auth.signInWithOtp({
       email: email.trim(),
@@ -69,6 +59,7 @@ function LoginForm() {
     });
     setStatus(error ? "error" : "sent");
   }
+
 
   return (
     <section className="bg-ivory">
@@ -113,6 +104,21 @@ function LoginForm() {
             )}
           </form>
         )}
+
+        <div className="mt-6 flex items-center gap-3">
+          <span className="h-px flex-1 bg-charcoal/10" />
+          <span className="text-xs uppercase tracking-widest text-charcoal/40">or</span>
+          <span className="h-px flex-1 bg-charcoal/10" />
+        </div>
+
+        <button
+          type="button"
+          onClick={handleGoogle}
+          className="mt-6 w-full rounded-full border border-charcoal/15 bg-white px-7 py-4 text-sm font-medium text-charcoal transition-colors hover:border-forest hover:text-forest"
+        >
+          Continue with Google
+        </button>
+
 
         <p className="mt-8 text-center text-xs text-charcoal/40">
           Don't have a booking yet?{" "}
@@ -179,8 +185,8 @@ function BookingsView({ email, onSignOut }: { email: string; onSignOut: () => vo
   useEffect(() => {
     let cancelled = false;
     async function load() {
-      if (!supabase) return;
       const { data, error } = await supabase
+
         .from("bookings")
         .select("*")
         .order("created_at", { ascending: false });
@@ -246,14 +252,13 @@ function Dashboard() {
   const [session, setSession] = useState<Session | null | undefined>(undefined);
 
   useEffect(() => {
-    if (!supabase) return;
     supabase.auth.getSession().then(({ data }) => setSession(data.session));
     const { data: listener } = supabase.auth.onAuthStateChange((_event, s) => setSession(s));
     return () => listener.subscription.unsubscribe();
   }, []);
 
   async function handleSignOut() {
-    await supabase?.auth.signOut();
+    await supabase.auth.signOut();
     setSession(null);
   }
 
@@ -261,9 +266,7 @@ function Dashboard() {
     <div className="bg-ivory text-charcoal">
       <SiteNav />
 
-      {!supabaseConfigured ? (
-        <SetupNotice />
-      ) : session === undefined ? (
+      {session === undefined ? (
         <section className="bg-ivory">
           <div className="mx-auto max-w-[480px] px-6 py-24 text-center text-sm text-charcoal/50 md:px-10">
             Loading…
@@ -274,6 +277,7 @@ function Dashboard() {
       ) : (
         <BookingsView email={session.user.email ?? ""} onSignOut={handleSignOut} />
       )}
+
 
       <SiteFooter />
     </div>
