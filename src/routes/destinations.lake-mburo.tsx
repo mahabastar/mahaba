@@ -1,12 +1,12 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
-import ctaSunset from "@/assets/uploads/mburo-zebras.jpg";
-import elephantSavanna from "@/assets/uploads/elephant-savanna.jpg";
-import expLodge from "@/assets/uploads/safari-lodge-pool.jpg";
+import ctaSunset from "@/assets/cta-sunset.jpg";
+import mburoZebras from "@/assets/mburo-zebras.jpg";
+import expLodge from "@/assets/exp-lodge.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
-import gorillaSilverback from "@/assets/uploads/gorilla-silverback-insects.jpg";
-import sceneBunyonyi from "@/assets/uploads/crater-lake-sunset.jpg";
+import gorillaSilverback from "@/assets/gorilla-silverback-insects.jpg";
+import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
 
 const FAQS = [
   {
@@ -77,7 +77,7 @@ export const Route = createFileRoute("/destinations/lake-mburo")({
       ]}
       galleryImages={[
         { src: ctaSunset, alt: "Sunset over Lake Mburo's savanna plains" },
-        { src: elephantSavanna, alt: "Zebra and plains game grazing at Lake Mburo" },
+        { src: mburoZebras, alt: "Zebra drinking at a waterhole in Lake Mburo National Park" },
         { src: expLodge, alt: "Lakeside safari lodge at Lake Mburo" },
         { src: sceneCulture, alt: "Ankole long-horned cattle country near Lake Mburo" },
       ]}

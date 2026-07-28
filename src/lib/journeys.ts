@@ -1,9 +1,9 @@
 import heroGorilla from "@/assets/hero-gorilla.jpg";
-import expChimp from "@/assets/uploads/chimp-kibale.jpg";
-import sceneFalls from "@/assets/uploads/murchison-falls.jpg";
-import sceneElephants from "@/assets/uploads/elephant-road.jpg";
+import expChimp from "@/assets/exp-chimp.jpg";
+import sceneFalls from "@/assets/scene-falls.jpg";
+import sceneElephants from "@/assets/scene-elephants.jpg";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
-import gorillaBacklit from "@/assets/uploads/gorilla-lookup.jpg";
+import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
 
 export type JourneyDay = {
   day: number | string;
@@ -156,7 +156,7 @@ export const JOURNEYS: Journey[] = [
     days: "21",
     tagline: "Three weeks to feel Uganda become a part of who you are.",
     copy: "Three weeks to feel Uganda become a part of who you are.",
-    img: gorillaBacklit,
+    img: sceneBunyonyi,
     overview:
       "Our longest and most complete route — everything in Ultimate Uganda, plus Sipi Falls and the eastern coffee highlands, a second gorilla trek, and enough breathing room throughout that three weeks never once feels rushed.",
     highlights: ["Source of the Nile at Jinja", "Murchison Falls", "Remote Kidepo Valley", "Rwenzori foothills & tea country", "Two gorilla treks in Bwindi", "Tree-climbing lions in Ishasha", "Sipi Falls & coffee country", "A proper rest on Lake Bunyonyi"],

@@ -1,7 +1,7 @@
-import gorillaSilverback from "@/assets/uploads/gorilla-silverback-insects.jpg";
-import expChimp from "@/assets/uploads/chimp-kibale.jpg";
-import expBalloon from "@/assets/uploads/giraffe-savanna.jpg";
-import semulikiHotSprings from "@/assets/uploads/semuliki-hot-springs.jpg";
+import gorillaSilverback from "@/assets/gorilla-silverback-insects.jpg";
+import expChimp from "@/assets/exp-chimp.jpg";
+import expBalloon from "@/assets/exp-balloon.jpg";
+import semulikiHotSprings from "@/assets/semuliki-hot-springs.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
 
 import type { CategoryItem } from "@/components/CategoryHub";

@@ -4,14 +4,14 @@ import { useEffect, useState } from "react";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 
-import sceneFalls from "@/assets/uploads/murchison-falls.jpg";
+import sceneFalls from "@/assets/scene-falls.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
 import expShoebill from "@/assets/exp-shoebill.jpg";
-import expCoffee from "@/assets/uploads/batwa-firemaking.jpg";
+import expCoffee from "@/assets/exp-coffee.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
-import expSipi from "@/assets/uploads/nile-bridge-aerial.jpg";
-import expLodge from "@/assets/uploads/safari-lodge-pool.jpg";
-import gorillaBacklit from "@/assets/uploads/gorilla-lookup.jpg";
+import expSipi from "@/assets/exp-sipi.jpg";
+import expLodge from "@/assets/exp-lodge.jpg";
+import gorillaBacklit from "@/assets/gorilla-lookup.jpg";
 import { SITE_CONFIG } from "@/lib/site-config";
 
 export const Route = createFileRoute("/wild-uganda-tv")({

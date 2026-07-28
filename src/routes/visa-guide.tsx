@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { GuidePage } from "@/components/GuidePage";
-import ctaSunset from "@/assets/uploads/elephant-road.jpg";
+import ctaSunset from "@/assets/cta-sunset.jpg";
 import { SITE_CONFIG } from "@/lib/site-config";
 
 export const Route = createFileRoute("/visa-guide")({

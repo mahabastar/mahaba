@@ -5,8 +5,8 @@ import { SiteFooter } from "@/components/SiteFooter";
 
 import sceneCulture from "@/assets/scene-culture.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
-import expLodge from "@/assets/uploads/safari-lodge-pool.jpg";
-import expCoffee from "@/assets/uploads/batwa-firemaking.jpg";
+import expLodge from "@/assets/exp-lodge.jpg";
+import expCoffee from "@/assets/exp-coffee.jpg";
 import { SITE_CONFIG } from "@/lib/site-config";
 
 export const Route = createFileRoute("/responsible-tourism")({

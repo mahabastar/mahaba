@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { GuidePage } from "@/components/GuidePage";
-import batwaDance from "@/assets/uploads/batwa-dance.jpg";
+import batwaDance from "@/assets/batwa-dance.jpg";
 import { SITE_CONFIG } from "@/lib/site-config";
 
 export const Route = createFileRoute("/cultural-heritage")({

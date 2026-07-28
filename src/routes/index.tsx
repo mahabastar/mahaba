@@ -7,23 +7,20 @@ import { JOURNAL_POSTS } from "@/lib/journal-posts";
 import { SITE_CONFIG, buildWhatsAppHref } from "@/lib/site-config";
 import { JOURNEYS } from "@/lib/journeys";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
-import sceneElephants from "@/assets/uploads/elephant-road.jpg";
-import sceneFalls from "@/assets/uploads/murchison-falls.jpg";
+import sceneElephants from "@/assets/scene-elephants.jpg";
+import sceneFalls from "@/assets/scene-falls.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
-import sceneBunyonyi from "@/assets/uploads/crater-lake-sunset.jpg";
+import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
-import sceneCrane from "@/assets/shoebill-real.jpg";
-import expChimp from "@/assets/uploads/chimp-kibale.jpg";
-import expBalloon from "@/assets/uploads/giraffe-savanna.jpg";
-import expLodge from "@/assets/uploads/safari-lodge-pool.jpg";
-import expSipi from "@/assets/uploads/nile-bridge-aerial.jpg";
-import expCoffee from "@/assets/uploads/batwa-firemaking.jpg";
+import sceneCrane from "@/assets/scene-crane.jpg";
+import expChimp from "@/assets/exp-chimp.jpg";
+import expBalloon from "@/assets/exp-balloon.jpg";
+import expLodge from "@/assets/exp-lodge.jpg";
+import expSipi from "@/assets/exp-sipi.jpg";
+import expCoffee from "@/assets/exp-coffee.jpg";
 import expShoebill from "@/assets/exp-shoebill.jpg";
-import ctaSunset from "@/assets/uploads/elephant-road.jpg";
-import elephantSavanna from "@/assets/uploads/elephant-savanna.jpg";
-import gorillaLookup from "@/assets/uploads/gorilla-lookup.jpg";
-import gorillaBabyEating from "@/assets/uploads/gorilla-baby-eating.jpg";
+import ctaSunset from "@/assets/cta-sunset.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -109,15 +106,16 @@ function Hero() {
             most extraordinary destination, waiting to be explored.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
-            <a
-              href="#discover"
+            <Link
+              to="/uganda-explorer"
               className="group inline-flex items-center gap-3 rounded-full bg-forest px-7 py-4 text-sm font-medium tracking-wide text-ivory shadow-md transition-all duration-500 hover:scale-105 hover:bg-forest-deep"
             >
               Explore Uganda
               <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M5 12h14M13 5l7 7-7 7" />
               </svg>
-            </a>
+            </Link>
+
             <Link
               to="/build-my-safari"
               className="inline-flex items-center gap-3 rounded-full border border-forest/70 px-7 py-4 text-sm font-medium tracking-wide text-ivory backdrop-blur-md transition-colors hover:border-gold hover:text-gold"
@@ -155,12 +153,12 @@ function Hero() {
 
 /* ---------------- Scroll storytelling ---------------- */
 const scenes = [
-  { n: "01", title: "Welcome to Uganda", sub: "Where nature still reigns.", img: elephantSavanna },
+  { n: "01", title: "Welcome to Uganda", sub: "Where nature still reigns.", img: sceneBunyonyi },
   { n: "02", title: "Home of Mountain Gorillas", sub: "Half the world's population lives here.", img: heroGorilla },
-  { n: "03", title: "Africa's Primate Capital", sub: "13 species, one impossible forest.", img: gorillaLookup },
+  { n: "03", title: "Africa's Primate Capital", sub: "13 species, one impossible forest.", img: expChimp },
   { n: "04", title: "Where the Nile Begins", sub: "The world's longest river, born in Jinja.", img: sceneFalls },
   { n: "05", title: "Tree-Climbing Lions", sub: "A phenomenon of Ishasha.", img: sceneLion },
-  { n: "06", title: "A Birder's Paradise", sub: "Over 1,000 species take flight.", img: expShoebill },
+  { n: "06", title: "A Birder's Paradise", sub: "Over 1,000 species take flight.", img: sceneCrane },
   { n: "07", title: "Snow on the Equator", sub: "The mythic Rwenzori range.", img: sceneRwenzori },
   { n: "08", title: "Warm Smiles. Rich Cultures.", sub: "Fifty languages, one welcome.", img: sceneCulture },
   { n: "09", title: "Golden Hour on the Plains", sub: "Elephants against a burning sky.", img: sceneElephants },
@@ -258,7 +256,7 @@ const whyCards = [
   { title: "Source of the Nile", desc: "Stand at the birthplace of the world's longest river.", img: sceneFalls, to: "/destinations/jinja-source-of-the-nile" },
   { title: "Tree-Climbing Lions", desc: "A rare spectacle above the plains of Ishasha.", img: sceneLion, to: "/destinations/tree-climbing-lions" },
   { title: "1,000+ Bird Species", desc: "One of Africa's greatest birding paradises.", img: sceneCrane, to: "/bird-guide" },
-  { title: "Primate Diversity", desc: "The richest concentration of primates on the continent.", img: gorillaBabyEating, to: "/forests" },
+  { title: "Primate Diversity", desc: "The richest concentration of primates on the continent.", img: expChimp, to: "/destinations/chimpanzee-trekking" },
   { title: "The Pearl of Africa", desc: "Named by Churchill. Confirmed by everyone who visits.", img: sceneBunyonyi, to: "/uganda-explorer" },
 ];
 
@@ -336,19 +334,20 @@ function Numbers() {
 }
 
 /* ---------------- Experiences ---------------- */
-const experiences = [
-  { t: "Gorilla Trekking", img: heroGorilla, tall: true },
-  { t: "Wildlife Safaris", img: sceneElephants },
-  { t: "Chimpanzees", img: expChimp },
-  { t: "Birding", img: sceneCrane, tall: true },
-  { t: "Luxury Lodges", img: expLodge },
-  { t: "Hot Air Balloon", img: expBalloon },
-  { t: "Photography", img: sceneLion, tall: true },
-  { t: "Culture", img: sceneCulture },
-  { t: "Coffee Origins", img: expCoffee },
-  { t: "Hiking Rwenzori", img: sceneRwenzori, tall: true },
-  { t: "Shoebill Tracking", img: expShoebill },
-  { t: "Sipi Falls", img: expSipi },
+const experiences: { t: string; img: string; tall?: boolean; to: string; params?: { slug: string } }[] = [
+  { t: "Gorilla Trekking", img: heroGorilla, tall: true, to: "/destinations/gorilla-trekking" },
+  { t: "Wildlife Safaris", img: sceneElephants, to: "/national-parks" },
+  { t: "Chimpanzee Tracking", img: expChimp, to: "/destinations/chimpanzee-trekking" },
+  { t: "Bird Watching", img: sceneCrane, tall: true, to: "/bird-guide" },
+  { t: "Luxury Safaris", img: expLodge, to: "/experiences/$slug", params: { slug: "luxury-safaris" } },
+  { t: "Boat Cruises", img: expBalloon, to: "/destinations/murchison-falls" },
+  { t: "Photography", img: sceneLion, tall: true, to: "/gallery" },
+  { t: "Cultural Experiences", img: sceneCulture, to: "/cultural-heritage" },
+  { t: "Coffee & Tea Origins", img: expCoffee, to: "/coffee-tea-guide" },
+  { t: "Hiking Rwenzori", img: sceneRwenzori, tall: true, to: "/destinations/rwenzori-mountains" },
+  { t: "Adventure Activities", img: expShoebill, to: "/experiences/$slug", params: { slug: "adventure-safaris" } },
+  { t: "Sipi Falls", img: expSipi, to: "/destinations/sipi-falls" },
+
 ];
 
 function Experiences() {
@@ -360,15 +359,17 @@ function Experiences() {
             eyebrow="Explore by experience"
             title={<>Choose the <em className="italic text-forest">feeling</em> you want to remember.</>}
           />
-          <a href="#journeys" className="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-forest hover:text-gold">
+          <Link to="/experiences" className="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-forest hover:text-gold">
             All experiences <span aria-hidden>→</span>
-          </a>
+          </Link>
         </div>
         <div className="mt-16 grid auto-rows-[260px] grid-cols-2 gap-4 md:grid-cols-4 md:gap-6">
           {experiences.map((e) => (
-            <a
+            <Link
               key={e.t}
-              href="#journeys"
+              to={e.to}
+              params={e.params as never}
+
               className={`group relative block overflow-hidden rounded-2xl hover-lift ${
                 e.tall ? "row-span-2" : ""
               }`}
@@ -383,7 +384,7 @@ function Experiences() {
               <div className="absolute inset-x-5 bottom-5">
                 <div className="font-display text-xl text-ivory md:text-2xl">{e.t}</div>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>
@@ -391,14 +392,16 @@ function Experiences() {
   );
 }
 
+
 /* ---------------- Regions map ---------------- */
 const regions = [
-  { name: "Western Uganda", desc: "Gorillas, chimps, Rwenzori peaks, crater lakes.", x: 22, y: 55 },
-  { name: "Northern Uganda", desc: "Murchison Falls, Kidepo's untouched savanna.", x: 50, y: 22 },
-  { name: "Eastern Uganda", desc: "Sipi Falls, Mount Elgon, white-water Nile.", x: 78, y: 45 },
-  { name: "Central Uganda", desc: "Kampala, Entebbe, Ssese Islands, Mabamba.", x: 52, y: 60 },
-  { name: "Karamoja", desc: "Warrior culture, dramatic mountains, wild frontier.", x: 76, y: 25 },
+  { name: "Western Uganda", slug: "western-uganda", desc: "Gorillas, chimps, Rwenzori peaks, crater lakes.", x: 22, y: 55 },
+  { name: "Northern Uganda", slug: "northern-uganda", desc: "Murchison Falls, Kidepo's untouched savanna.", x: 50, y: 22 },
+  { name: "Eastern Uganda", slug: "eastern-uganda", desc: "Sipi Falls, Mount Elgon, white-water Nile.", x: 78, y: 45 },
+  { name: "Central Uganda", slug: "central-uganda", desc: "Kampala, Entebbe, Ssese Islands, Mabamba.", x: 52, y: 60 },
+  { name: "Karamoja", slug: "karamoja", desc: "Warrior culture, dramatic mountains, wild frontier.", x: 76, y: 25 },
 ];
+
 
 function Regions() {
   const [active, setActive] = useState(0);
@@ -444,7 +447,8 @@ function Regions() {
             {regions.map((r, i) => (
               <Link
                 key={r.name}
-                to="/national-parks"
+                to="/regions/$region"
+                params={{ region: r.slug }}
                 onMouseEnter={() => setActive(i)}
                 onFocus={() => setActive(i)}
                 className={`group flex items-baseline justify-between gap-6 border-b border-ivory/15 py-5 text-left transition-all ${
@@ -458,6 +462,7 @@ function Regions() {
                 <span className={`text-gold transition-transform ${active === i ? "translate-x-1" : ""}`}>→</span>
               </Link>
             ))}
+
           </div>
         </div>
       </div>
@@ -466,21 +471,22 @@ function Regions() {
 }
 
 /* ---------------- Bucket list masonry ---------------- */
-const bucket: { t: string; img: string; span?: string; to?: string }[] = [
+const bucket: { t: string; img: string; span?: string; to: string }[] = [
   { t: "Gorilla Trekking", img: heroGorilla, span: "row-span-2", to: "/destinations/gorilla-trekking" },
-  { t: "Chimpanzees", img: expChimp },
+  { t: "Chimpanzees", img: expChimp, to: "/destinations/chimpanzee-trekking" },
   { t: "Murchison Falls", img: sceneFalls, span: "col-span-2", to: "/destinations/murchison-falls" },
   { t: "Sipi Falls", img: expSipi, to: "/destinations/sipi-falls" },
-  { t: "White Water Rafting", img: sceneFalls },
+  { t: "White Water Rafting", img: sceneFalls, to: "/destinations/jinja-source-of-the-nile" },
   { t: "Lake Bunyonyi", img: sceneBunyonyi, span: "col-span-2 row-span-2", to: "/destinations/lake-bunyonyi" },
   { t: "Tree-Climbing Lions", img: sceneLion, to: "/destinations/tree-climbing-lions" },
-  { t: "Shoebill Tracking", img: expShoebill },
-  { t: "Tea & Coffee Plantations", img: expCoffee, to: "/destinations/sipi-falls" },
-  { t: "Batwa Experience", img: sceneCulture },
+  { t: "Shoebill Tracking", img: expShoebill, to: "/bird-guide" },
+  { t: "Tea & Coffee Plantations", img: expCoffee, to: "/coffee-tea-guide" },
+  { t: "Batwa Experience", img: sceneCulture, to: "/cultural-heritage" },
   { t: "Homestay Experience", img: sceneCulture, to: "/responsible-tourism" },
-  { t: "Hot Air Balloon", img: expBalloon, span: "col-span-2" },
-  { t: "Sunset Game Drives", img: ctaSunset },
+  { t: "Boat Cruises", img: expBalloon, span: "col-span-2", to: "/destinations/queen-elizabeth-national-park" },
+  { t: "Sunset Game Drives", img: ctaSunset, to: "/national-parks" },
 ];
+
 
 function Bucket() {
   return (
@@ -504,15 +510,14 @@ function Bucket() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent opacity-90 group-hover:opacity-100" />
                 <div className="absolute inset-x-4 bottom-3 flex items-center gap-2 font-display text-lg text-ivory md:text-xl">
                   {b.t}
-                  {b.to && <span className="text-gold text-sm" aria-hidden>→</span>}
+                  <span className="text-gold text-sm" aria-hidden>→</span>
                 </div>
               </>
             );
-            return b.to ? (
+            return (
               <Link key={b.t} to={b.to} className={className}>{inner}</Link>
-            ) : (
-              <a key={b.t} href="#journeys" className={className}>{inner}</a>
             );
+
           })}
         </div>
       </div>
@@ -664,16 +669,17 @@ function Stories() {
 /* ---------------- Planning hub ---------------- */
 function Planning() {
   const items: { label: string; to?: string; ask?: boolean }[] = [
-    { label: "Visa Guide", ask: true },
+    { label: "Visa Guide", to: "/visa-guide" },
     { label: "Best Time to Visit", to: "/seasonal-safari-calendar" },
-    { label: "Packing Guide", ask: true },
-    { label: "Weather", to: "/seasonal-safari-calendar" },
+    { label: "Packing Guide", to: "/packing-guide" },
+    { label: "Weather", to: "/weather" },
     { label: "Safari Costs", to: "/safari-budget-calculator" },
-    { label: "Gorilla Permits", to: "/destinations/gorilla-trekking" },
+    { label: "Gorilla Permits", to: "/gorilla-permit-guide" },
     { label: "Travel Tips", to: "/travel-journal" },
     { label: "Currency", ask: true },
     { label: "Safety", ask: true },
-    { label: "FAQs", ask: true },
+    { label: "FAQs", to: "/faqs" },
+
   ];
   return (
     <section id="plan" className="bg-ivory">

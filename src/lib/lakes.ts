@@ -1,9 +1,9 @@
 import expShoebill from "@/assets/exp-shoebill.jpg";
-import nileBridgeAerial from "@/assets/uploads/nile-bridge-aerial.jpg";
+import nileBridgeAerial from "@/assets/nile-bridge-aerial.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
-import sceneBunyonyi from "@/assets/uploads/crater-lake-sunset.jpg";
-import ctaSunset from "@/assets/uploads/elephant-road.jpg";
-import expCoffee from "@/assets/uploads/batwa-firemaking.jpg";
+import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
+import ctaSunset from "@/assets/cta-sunset.jpg";
+import expCoffee from "@/assets/exp-coffee.jpg";
 
 import type { CategoryItem } from "@/components/CategoryHub";
 

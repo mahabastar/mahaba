@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 
 import { SITE_CONFIG, buildWhatsAppHref } from "@/lib/site-config";
-import logo from "@/assets/logo.png";
+import logoAsset from "@/assets/wild-uganda-treks-logo.png.asset.json";
 
 type FooterItem = { label: string; to?: string; ask?: boolean };
 
@@ -74,15 +74,32 @@ const COLS: { h: string; items: FooterItem[] }[] = [
 export function SiteFooter() {
   return (
     <footer className="bg-charcoal text-ivory">
+      {/* Health & safety advisory — visible site-wide */}
+      <div className="border-b border-ivory/10 bg-forest-deep/60">
+        <div className="mx-auto flex max-w-[1400px] flex-col gap-3 px-6 py-5 md:flex-row md:items-center md:gap-6 md:px-10">
+          <div className="shrink-0 text-[0.65rem] uppercase tracking-widest text-gold">
+            Travel Health Notice · Ebola
+          </div>
+          <p className="text-xs leading-relaxed text-ivory/70">
+            Uganda is safe for travel. There is no Ebola outbreak affecting tourist areas, and
+            the national parks, gorilla trekking sectors and travel routes we use are fully
+            open and operating normally. Uganda has a long, well-proven record of containing
+            isolated outbreaks quickly, with screening at Entebbe International Airport and at
+            park entry points. We monitor Ministry of Health and WHO updates daily and will
+            always tell you directly if anything on your itinerary is affected —{" "}
+            <a href={askHref("the current Ebola and health situation")} className="text-gold underline underline-offset-4 hover:text-ivory">
+              ask us anything about current conditions
+            </a>
+            .
+          </p>
+        </div>
+      </div>
+
       <div className="mx-auto max-w-[1400px] px-6 py-20 md:px-10">
         <div className="grid gap-14 md:grid-cols-12">
           <div className="md:col-span-4">
             <div className="flex items-center gap-3">
-              <img
-                src={logo}
-                alt="Wild Uganda Treks"
-                className="h-10 w-10 shrink-0 rounded-full object-cover"
-              />
+              <img src={logoAsset.url} alt="Wild Uganda Treks logo" className="h-10 w-10 shrink-0 rounded-full object-cover ring-1 ring-gold/50" />
               <span className="font-display text-2xl">Wild Uganda Treks</span>
             </div>
             <p className="mt-6 max-w-sm text-ivory/70">

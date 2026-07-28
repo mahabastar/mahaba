@@ -1,14 +1,14 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
-import expChimp from "@/assets/uploads/chimp-kibale.jpg";
+import expChimp from "@/assets/exp-chimp.jpg";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
-import expCoffee from "@/assets/uploads/batwa-firemaking.jpg";
-import expLodge from "@/assets/uploads/safari-lodge-pool.jpg";
-import sceneCrane from "@/assets/shoebill-real.jpg";
+import expCoffee from "@/assets/exp-coffee.jpg";
+import expLodge from "@/assets/exp-lodge.jpg";
+import sceneCrane from "@/assets/scene-crane.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
-import sceneFalls from "@/assets/uploads/murchison-falls.jpg";
+import sceneFalls from "@/assets/scene-falls.jpg";
 
 const FAQS = [
   {

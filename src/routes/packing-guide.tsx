@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { GuidePage } from "@/components/GuidePage";
-import rwenzoriHikers from "@/assets/uploads/nile-bridge-aerial.jpg";
+import rwenzoriHikers from "@/assets/nile-bridge-aerial.jpg";
 import { SITE_CONFIG } from "@/lib/site-config";
 
 export const Route = createFileRoute("/packing-guide")({

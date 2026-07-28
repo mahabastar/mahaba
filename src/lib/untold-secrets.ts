@@ -1,10 +1,10 @@
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
-import semulikiHotSprings from "@/assets/uploads/semuliki-hot-springs.jpg";
-import sceneBunyonyi from "@/assets/uploads/crater-lake-sunset.jpg";
-import sceneElephants from "@/assets/uploads/elephant-road.jpg";
-import expSipi from "@/assets/uploads/nile-bridge-aerial.jpg";
+import semulikiHotSprings from "@/assets/semuliki-hot-springs.jpg";
+import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
+import sceneElephants from "@/assets/scene-elephants.jpg";
+import expSipi from "@/assets/exp-sipi.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
-import elephantSavanna from "@/assets/uploads/elephant-savanna.jpg";
+import elephantSavanna from "@/assets/elephant-savanna.jpg";
 import expShoebill from "@/assets/exp-shoebill.jpg";
 
 import type { CategoryItem } from "@/components/CategoryHub";

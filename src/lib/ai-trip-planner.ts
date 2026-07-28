@@ -2,16 +2,14 @@ import { JOURNEYS, type Journey } from "@/lib/journeys";
 import { EXPERIENCES, type Experience } from "@/lib/experiences";
 
 /**
- * A lightweight, fully client-side matcher. No backend or LLM API call —
- * this site has no server component to hold an API key safely, so wiring
- * a live model call here would just fail silently once deployed.
- * Instead this scores real JOURNEYS/EXPERIENCES data against keywords
- * and a requested trip length pulled from the free-text input.
+ * Deterministic grounding layer for the trip planner. It scores the real
+ * JOURNEYS/EXPERIENCES data against keywords and a requested trip length,
+ * so the model never has to invent products that don't exist.
  *
- * If a real conversational LLM backend is added later, swap the body of
- * planTrip() for an API call and keep the same return shape — the UI
- * layer doesn't need to change.
+ * The narrative day-by-day draft itself comes from a real model call —
+ * see src/lib/trip-planner.functions.ts (server-side, Lovable AI).
  */
+
 
 export type TripPlan = {
   journey: Journey;

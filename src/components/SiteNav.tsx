@@ -2,7 +2,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 
 import { SEARCH_INDEX } from "@/lib/search-index";
-import logo from "@/assets/logo.png";
+import logoAsset from "@/assets/wild-uganda-treks-logo.png.asset.json";
 
 const NAV_LINKS: { label: string; hash: string }[] = [
   { label: "Discover", hash: "discover" },
@@ -120,11 +120,7 @@ export function SiteNav() {
         }`}
       >
         <Link to="/" className="flex items-center gap-3 text-ivory">
-          <img
-            src={logo}
-            alt="Wild Uganda Treks"
-            className="h-9 w-9 shrink-0 rounded-full object-cover"
-          />
+          <img src={logoAsset.url} alt="Wild Uganda Treks logo" className="h-9 w-9 shrink-0 rounded-full object-cover ring-1 ring-gold/50" />
           <span className="font-display text-xl leading-none">
             Wild Uganda <span className="text-gold">Treks</span>
           </span>
@@ -257,11 +253,7 @@ export function SiteNav() {
         <div className="fixed inset-0 z-[60] flex flex-col bg-charcoal grain md:hidden">
           <div className="flex items-center justify-between px-6 py-6">
             <Link to="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-3 text-ivory">
-              <img
-                src={logo}
-                alt="Wild Uganda Treks"
-                className="h-9 w-9 shrink-0 rounded-full object-cover"
-              />
+              <img src={logoAsset.url} alt="Wild Uganda Treks logo" className="h-9 w-9 shrink-0 rounded-full object-cover ring-1 ring-gold/50" />
               <span className="font-display text-xl leading-none">
                 Wild Uganda <span className="text-gold">Treks</span>
               </span>

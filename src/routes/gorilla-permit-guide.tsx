@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { GuidePage } from "@/components/GuidePage";
-import gorillaSilverback from "@/assets/uploads/gorilla-silverback-insects.jpg";
+import gorillaSilverback from "@/assets/gorilla-silverback-insects.jpg";
 import { SITE_CONFIG } from "@/lib/site-config";
 
 export const Route = createFileRoute("/gorilla-permit-guide")({

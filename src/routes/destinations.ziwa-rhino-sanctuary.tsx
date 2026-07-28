@@ -1,11 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
-import elephantSavanna from "@/assets/uploads/rhino-ziwa.jpg";
-import sceneCrane from "@/assets/shoebill-real.jpg";
+import rhinoZiwa from "@/assets/rhino-ziwa.jpg";
+import sceneCrane from "@/assets/scene-crane.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
-import expLodge from "@/assets/uploads/safari-lodge-pool.jpg";
-import sceneFalls from "@/assets/uploads/murchison-falls.jpg";
+import expLodge from "@/assets/exp-lodge.jpg";
+import sceneFalls from "@/assets/scene-falls.jpg";
 
 const FAQS = [
   {
@@ -34,7 +34,7 @@ export const Route = createFileRoute("/destinations/ziwa-rhino-sanctuary")({
       title: "Ziwa Rhino Sanctuary, Uganda — Rhino Tracking on Foot | Wild Uganda Treks",
       description:
         "The only place to see rhinos in Uganda — guided walking treks to southern white rhinos at a community-run sanctuary between Kampala and Murchison Falls.",
-      ogImage: elephantSavanna,
+      ogImage: rhinoZiwa,
       region: "Central Uganda",
       keywords: [
         "Ziwa Rhino Sanctuary",
@@ -52,8 +52,8 @@ export const Route = createFileRoute("/destinations/ziwa-rhino-sanctuary")({
       name="Ziwa Rhino Sanctuary"
       tagline={<>Uganda's rhinos, <em className="italic text-gold">brought back on foot</em>.</>}
       intro="Uganda's wild rhinos were poached to extinction by the late 1980s. Ziwa is the reason that's no longer the whole story — a community-run sanctuary where southern white rhinos, reintroduced and now breeding, can be tracked on foot within a few metres."
-      heroImage={elephantSavanna}
-      heroAlt="Savanna landscape at Ziwa Rhino Sanctuary, Uganda"
+      heroImage={rhinoZiwa}
+      heroAlt="Southern white rhino at Ziwa Rhino Sanctuary, Uganda"
       facts={[
         { label: "Location", value: "Nakasongola, central Uganda" },
         { label: "Activity", value: "Guided rhino tracking on foot" },
@@ -75,7 +75,7 @@ export const Route = createFileRoute("/destinations/ziwa-rhino-sanctuary")({
         },
       ]}
       galleryImages={[
-        { src: elephantSavanna, alt: "Savanna landscape at Ziwa Rhino Sanctuary" },
+        { src: rhinoZiwa, alt: "Southern white rhino at Ziwa Rhino Sanctuary" },
         { src: sceneCrane, alt: "Birdlife at Ziwa Rhino Sanctuary's wetlands" },
         { src: sceneCulture, alt: "Community conservation team at Ziwa" },
         { src: expLodge, alt: "Lodge accommodation near Ziwa Rhino Sanctuary" },

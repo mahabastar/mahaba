@@ -1,11 +1,11 @@
 import heroGorilla from "@/assets/hero-gorilla.jpg";
-import sceneBunyonyi from "@/assets/uploads/crater-lake-sunset.jpg";
-import ctaSunset from "@/assets/uploads/elephant-road.jpg";
-import nileBridgeAerial from "@/assets/uploads/nile-bridge-aerial.jpg";
-import sceneElephants from "@/assets/uploads/elephant-road.jpg";
-import expLodge from "@/assets/uploads/safari-lodge-pool.jpg";
+import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
+import ctaSunset from "@/assets/cta-sunset.jpg";
+import nileBridgeAerial from "@/assets/nile-bridge-aerial.jpg";
+import sceneElephants from "@/assets/scene-elephants.jpg";
+import expLodge from "@/assets/exp-lodge.jpg";
 import expShoebill from "@/assets/exp-shoebill.jpg";
-import elephantSavanna from "@/assets/uploads/elephant-savanna.jpg";
+import elephantSavanna from "@/assets/elephant-savanna.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
 
 export type Experience = {
