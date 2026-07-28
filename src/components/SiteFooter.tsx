@@ -118,7 +118,7 @@ export function SiteFooter() {
                 <span className="text-ivory/50">Email: </span>
                 <a href={`mailto:${SITE_CONFIG.email}`} className="hover:text-gold">{SITE_CONFIG.email}</a>
               </div>
-              <div><span className="text-ivory/50">Web: </span>www.wildugandatreks.net</div>
+              <div><span className="text-ivory/50">Web: </span>www.wildugandatreks.org</div>
             </div>
             <div className="mt-8 flex gap-3">
               {[
