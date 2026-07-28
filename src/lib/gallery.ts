@@ -7,8 +7,6 @@ import g_gorilla_silverback from "@/assets/gallery/gorilla-silverback.jpg";
 import g_gorilla_tracking_1 from "@/assets/gallery/gorilla-tracking-1.jpg";
 import g_gorilla_tracking_2 from "@/assets/gallery/gorilla-tracking-2.jpg";
 import g_gorilla_tracking_3 from "@/assets/gallery/gorilla-tracking-3.jpg";
-import g_gorilla_tracking_4 from "@/assets/gallery/gorilla-tracking-4.jpg";
-import g_gorilla_tracking_5 from "@/assets/gallery/gorilla-tracking-5.jpg";
 import g_baboon_road from "@/assets/gallery/baboon-road.jpg";
 import g_baboon_troop from "@/assets/gallery/baboon-troop.jpg";
 import g_chimp_roadside from "@/assets/gallery/chimp-roadside.jpg";
@@ -16,12 +14,10 @@ import g_chimp_trekking_1 from "@/assets/gallery/chimp-trekking-1.jpg";
 import g_chimp_trekking_2 from "@/assets/gallery/chimp-trekking-2.jpg";
 import g_chimp_trekking_3 from "@/assets/gallery/chimp-trekking-3.jpg";
 import g_chimpanzee_1 from "@/assets/gallery/chimpanzee-1.jpg";
-import g_chimpanzee_2 from "@/assets/gallery/chimpanzee-2.jpg";
 import g_golden_monkey_1 from "@/assets/gallery/golden-monkey-1.jpg";
 import g_golden_monkey_2 from "@/assets/gallery/golden-monkey-2.jpg";
 import g_monkey_roadside from "@/assets/gallery/monkey-roadside.jpg";
 import g_monkey_vehicle from "@/assets/gallery/monkey-vehicle.jpg";
-import g_african_elephant from "@/assets/gallery/african-elephant.jpg";
 import g_african_elephant_2 from "@/assets/gallery/african-elephant-2.jpg";
 import g_buffalo_waterhole from "@/assets/gallery/buffalo-waterhole.jpg";
 import g_cheetah_mound from "@/assets/gallery/cheetah-mound.jpg";
@@ -32,12 +28,9 @@ import g_elephant_tusker from "@/assets/gallery/elephant-tusker.jpg";
 import g_giraffe_1 from "@/assets/gallery/giraffe-1.jpg";
 import g_giraffe_2 from "@/assets/gallery/giraffe-2.jpg";
 import g_hippo_road from "@/assets/gallery/hippo-road.jpg";
-import g_leopard_grass from "@/assets/gallery/leopard-grass.jpg";
 import g_leopard_tree from "@/assets/gallery/leopard-tree.jpg";
-import g_lion_cub_grass from "@/assets/gallery/lion-cub-grass.jpg";
 import g_lion_cubs_tree from "@/assets/gallery/lion-cubs-tree.jpg";
 import g_lion_resting from "@/assets/gallery/lion-resting.jpg";
-import g_lioness_closeup from "@/assets/gallery/lioness-closeup.jpg";
 import g_lioness_portrait from "@/assets/gallery/lioness-portrait.jpg";
 import g_lioness_standing from "@/assets/gallery/lioness-standing.jpg";
 import g_mammals_1 from "@/assets/gallery/mammals-1.jpg";
@@ -65,19 +58,16 @@ import g_entebbe_5 from "@/assets/gallery/entebbe-5.jpg";
 import g_entebbe_6 from "@/assets/gallery/entebbe-6.jpg";
 import g_entebbe_7 from "@/assets/gallery/entebbe-7.jpg";
 import g_golden_hour_plains from "@/assets/gallery/golden-hour-plains.jpg";
-import g_kidepo from "@/assets/gallery/kidepo.jpg";
 import g_mburo_1 from "@/assets/gallery/mburo-1.jpg";
 import g_mburo_2 from "@/assets/gallery/mburo-2.jpg";
 import g_mburo_3 from "@/assets/gallery/mburo-3.jpg";
 import g_mburo_4 from "@/assets/gallery/mburo-4.jpg";
 import g_mburo_5 from "@/assets/gallery/mburo-5.jpg";
-import g_mburo_6 from "@/assets/gallery/mburo-6.jpg";
 import g_mburo_7 from "@/assets/gallery/mburo-7.jpg";
 import g_murchison_falls_1 from "@/assets/gallery/murchison-falls-1.jpg";
 import g_murchison_falls_2 from "@/assets/gallery/murchison-falls-2.jpg";
 import g_murchison_falls_3 from "@/assets/gallery/murchison-falls-3.jpg";
 import g_murchison_falls_4 from "@/assets/gallery/murchison-falls-4.jpg";
-import g_murchison_falls_5 from "@/assets/gallery/murchison-falls-5.jpg";
 import g_murchison_moments_1 from "@/assets/gallery/murchison-moments-1.jpg";
 import g_murchison_moments_2 from "@/assets/gallery/murchison-moments-2.jpg";
 import g_murchison_moments_3 from "@/assets/gallery/murchison-moments-3.jpg";
@@ -99,7 +89,6 @@ import g_rwenzori_2 from "@/assets/gallery/rwenzori-2.jpg";
 import g_rwenzori_3 from "@/assets/gallery/rwenzori-3.jpg";
 import g_rwenzori_4 from "@/assets/gallery/rwenzori-4.jpg";
 import g_rwenzori_5 from "@/assets/gallery/rwenzori-5.jpg";
-import g_rwenzori_scene from "@/assets/gallery/rwenzori-scene.jpg";
 import g_rwenzori_snow from "@/assets/gallery/rwenzori-snow.jpg";
 import g_semuliki_springs from "@/assets/gallery/semuliki-springs.jpg";
 import g_sipi_falls_1 from "@/assets/gallery/sipi-falls-1.jpg";
@@ -114,7 +103,6 @@ import g_batwa_dance from "@/assets/gallery/batwa-dance.jpg";
 import g_batwa_fire_1 from "@/assets/gallery/batwa-fire-1.jpg";
 import g_batwa_fire_2 from "@/assets/gallery/batwa-fire-2.jpg";
 import g_coffee from "@/assets/gallery/coffee.jpg";
-import g_culture_community from "@/assets/gallery/culture-community.jpg";
 import g_equator_1 from "@/assets/gallery/equator-1.jpg";
 import g_equator_2 from "@/assets/gallery/equator-2.jpg";
 import g_equator_3 from "@/assets/gallery/equator-3.jpg";
@@ -134,6 +122,108 @@ import g_overland_truck from "@/assets/gallery/overland-truck.jpg";
 import g_private_adventure from "@/assets/gallery/private-adventure.jpg";
 import g_rwenzori_hikers from "@/assets/gallery/rwenzori-hikers.jpg";
 import g_sipi_hike from "@/assets/gallery/sipi-hike.jpg";
+import g_batwa_moments_1 from "@/assets/gallery/batwa-moments-1.jpg";
+import g_boat_cruise_1 from "@/assets/gallery/boat-cruise-1.jpg";
+import g_coffee_tea_1 from "@/assets/gallery/coffee-tea-1.jpg";
+import g_coffee_tea_2 from "@/assets/gallery/coffee-tea-2.jpg";
+import g_coffee_tea_3 from "@/assets/gallery/coffee-tea-3.jpg";
+import g_coffee_tea_4 from "@/assets/gallery/coffee-tea-4.jpg";
+import g_coffee_tea_5 from "@/assets/gallery/coffee-tea-5.jpg";
+import g_coffee_tea_6 from "@/assets/gallery/coffee-tea-6.jpg";
+import g_coffee_tea_7 from "@/assets/gallery/coffee-tea-7.jpg";
+import g_coffee_tea_8 from "@/assets/gallery/coffee-tea-8.jpg";
+import g_coffee_tea_9 from "@/assets/gallery/coffee-tea-9.jpg";
+import g_coffee_tea_10 from "@/assets/gallery/coffee-tea-10.jpg";
+import g_coffee_tea_11 from "@/assets/gallery/coffee-tea-11.jpg";
+import g_batwa_moments_2 from "@/assets/gallery/batwa-moments-2.jpg";
+import g_uganda_culture_1 from "@/assets/gallery/uganda-culture-1.jpg";
+import g_karamojong_1 from "@/assets/gallery/karamojong-1.jpg";
+import g_karamojong_2 from "@/assets/gallery/karamojong-2.jpg";
+import g_karamojong_3 from "@/assets/gallery/karamojong-3.jpg";
+import g_entebbe_moments_1 from "@/assets/gallery/entebbe-moments-1.jpg";
+import g_homestay_1 from "@/assets/gallery/homestay-1.jpg";
+import g_homestay_2 from "@/assets/gallery/homestay-2.jpg";
+import g_boat_cruise_2 from "@/assets/gallery/boat-cruise-2.jpg";
+import g_mburo_moments_1 from "@/assets/gallery/mburo-moments-1.jpg";
+import g_mburo_moments_2 from "@/assets/gallery/mburo-moments-2.jpg";
+import g_mburo_moments_3 from "@/assets/gallery/mburo-moments-3.jpg";
+import g_entebbe_moments_2 from "@/assets/gallery/entebbe-moments-2.jpg";
+import g_shoebill_1 from "@/assets/gallery/shoebill-1.jpg";
+import g_ngamba_chimps_1 from "@/assets/gallery/ngamba-chimps-1.jpg";
+import g_balloon_safari_1 from "@/assets/gallery/balloon-safari-1.jpg";
+import g_source_of_the_nile_1 from "@/assets/gallery/source-of-the-nile-1.jpg";
+import g_source_of_the_nile_2 from "@/assets/gallery/source-of-the-nile-2.jpg";
+import g_kidepo_moments_1 from "@/assets/gallery/kidepo-moments-1.jpg";
+import g_kidepo_moments_2 from "@/assets/gallery/kidepo-moments-2.jpg";
+import g_kidepo_moments_3 from "@/assets/gallery/kidepo-moments-3.jpg";
+import g_kidepo_moments_4 from "@/assets/gallery/kidepo-moments-4.jpg";
+import g_kidepo_moments_5 from "@/assets/gallery/kidepo-moments-5.jpg";
+import g_mburo_moments_4 from "@/assets/gallery/mburo-moments-4.jpg";
+import g_mburo_moments_5 from "@/assets/gallery/mburo-moments-5.jpg";
+import g_mburo_moments_6 from "@/assets/gallery/mburo-moments-6.jpg";
+import g_murchison_moments_new_1 from "@/assets/gallery/murchison-moments-new-1.jpg";
+import g_coffee_tea_12 from "@/assets/gallery/coffee-tea-12.jpg";
+import g_boat_cruise_3 from "@/assets/gallery/boat-cruise-3.jpg";
+import g_sipi_moments_1 from "@/assets/gallery/sipi-moments-1.jpg";
+import g_entebbe_moments_3 from "@/assets/gallery/entebbe-moments-3.jpg";
+import g_murchison_moments_new_2 from "@/assets/gallery/murchison-moments-new-2.jpg";
+import g_sipi_moments_2 from "@/assets/gallery/sipi-moments-2.jpg";
+import g_sipi_moments_3 from "@/assets/gallery/sipi-moments-3.jpg";
+import g_sipi_moments_4 from "@/assets/gallery/sipi-moments-4.jpg";
+import g_sipi_moments_5 from "@/assets/gallery/sipi-moments-5.jpg";
+import g_kidepo_moments_6 from "@/assets/gallery/kidepo-moments-6.jpg";
+import g_white_water_rafting_1 from "@/assets/gallery/white-water-rafting-1.jpg";
+import g_coffee_tea_13 from "@/assets/gallery/coffee-tea-13.jpg";
+import g_entebbe_moments_4 from "@/assets/gallery/entebbe-moments-4.jpg";
+import g_ngamba_chimps_2 from "@/assets/gallery/ngamba-chimps-2.jpg";
+import g_source_of_the_nile_3 from "@/assets/gallery/source-of-the-nile-3.jpg";
+import g_source_of_the_nile_4 from "@/assets/gallery/source-of-the-nile-4.jpg";
+import g_karamojong_4 from "@/assets/gallery/karamojong-4.jpg";
+import g_kidepo_moments_7 from "@/assets/gallery/kidepo-moments-7.jpg";
+import g_kidepo_moments_8 from "@/assets/gallery/kidepo-moments-8.jpg";
+import g_kidepo_moments_9 from "@/assets/gallery/kidepo-moments-9.jpg";
+import g_kidepo_moments_10 from "@/assets/gallery/kidepo-moments-10.jpg";
+import g_mburo_moments_7 from "@/assets/gallery/mburo-moments-7.jpg";
+import g_murchison_moments_new_3 from "@/assets/gallery/murchison-moments-new-3.jpg";
+import g_murchison_moments_new_4 from "@/assets/gallery/murchison-moments-new-4.jpg";
+import g_murchison_moments_new_5 from "@/assets/gallery/murchison-moments-new-5.jpg";
+import g_sipi_moments_6 from "@/assets/gallery/sipi-moments-6.jpg";
+import g_sipi_moments_7 from "@/assets/gallery/sipi-moments-7.jpg";
+import g_source_of_the_nile_5 from "@/assets/gallery/source-of-the-nile-5.jpg";
+import g_boat_cruise_4 from "@/assets/gallery/boat-cruise-4.jpg";
+import g_boat_cruise_5 from "@/assets/gallery/boat-cruise-5.jpg";
+import g_homestay_3 from "@/assets/gallery/homestay-3.jpg";
+import g_homestay_4 from "@/assets/gallery/homestay-4.jpg";
+import g_mburo_moments_8 from "@/assets/gallery/mburo-moments-8.jpg";
+import g_white_water_rafting_2 from "@/assets/gallery/white-water-rafting-2.jpg";
+import g_white_water_rafting_3 from "@/assets/gallery/white-water-rafting-3.jpg";
+import g_ngamba_chimps_3 from "@/assets/gallery/ngamba-chimps-3.jpg";
+import g_entebbe_moments_5 from "@/assets/gallery/entebbe-moments-5.jpg";
+import g_murchison_moments_new_6 from "@/assets/gallery/murchison-moments-new-6.jpg";
+import g_shoebill_2 from "@/assets/gallery/shoebill-2.jpg";
+import g_batwa_moments_3 from "@/assets/gallery/batwa-moments-3.jpg";
+import g_batwa_moments_4 from "@/assets/gallery/batwa-moments-4.jpg";
+import g_karamojong_5 from "@/assets/gallery/karamojong-5.jpg";
+import g_shoebill_3 from "@/assets/gallery/shoebill-3.jpg";
+import g_shoebill_4 from "@/assets/gallery/shoebill-4.jpg";
+import g_kidepo_moments_11 from "@/assets/gallery/kidepo-moments-11.jpg";
+import g_murchison_moments_new_7 from "@/assets/gallery/murchison-moments-new-7.jpg";
+import g_mount_elgon_1 from "@/assets/gallery/mount-elgon-1.jpg";
+import g_mount_elgon_2 from "@/assets/gallery/mount-elgon-2.jpg";
+import g_mount_elgon_3 from "@/assets/gallery/mount-elgon-3.jpg";
+import g_mount_elgon_4 from "@/assets/gallery/mount-elgon-4.jpg";
+import g_mount_elgon_5 from "@/assets/gallery/mount-elgon-5.jpg";
+import g_mount_elgon_6 from "@/assets/gallery/mount-elgon-6.jpg";
+import g_murchison_moments_new_8 from "@/assets/gallery/murchison-moments-new-8.jpg";
+import g_shoebill_5 from "@/assets/gallery/shoebill-5.jpg";
+import g_shoebill_6 from "@/assets/gallery/shoebill-6.jpg";
+import g_sipi_moments_8 from "@/assets/gallery/sipi-moments-8.jpg";
+import g_sipi_moments_9 from "@/assets/gallery/sipi-moments-9.jpg";
+import g_source_of_the_nile_6 from "@/assets/gallery/source-of-the-nile-6.jpg";
+import g_source_of_the_nile_7 from "@/assets/gallery/source-of-the-nile-7.jpg";
+import g_kidepo_moments_12 from "@/assets/gallery/kidepo-moments-12.jpg";
+import g_white_water_rafting_4 from "@/assets/gallery/white-water-rafting-4.jpg";
+import g_entebbe_moments_6 from "@/assets/gallery/entebbe-moments-6.jpg";
 
 export const GALLERY_CATEGORIES = [
   "Gorilla Trekking",
@@ -163,8 +253,6 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   { slug: "gorilla-tracking-1", src: g_gorilla_tracking_1, title: "Moments from gorilla tracking", category: "Gorilla Trekking" },
   { slug: "gorilla-tracking-2", src: g_gorilla_tracking_2, title: "Face to face on a gorilla trek", category: "Gorilla Trekking" },
   { slug: "gorilla-tracking-3", src: g_gorilla_tracking_3, title: "Trackers on the gorilla trail", category: "Gorilla Trekking" },
-  { slug: "gorilla-tracking-4", src: g_gorilla_tracking_4, title: "Gorilla family in Bwindi", category: "Gorilla Trekking" },
-  { slug: "gorilla-tracking-5", src: g_gorilla_tracking_5, title: "Silverback resting in dense forest", category: "Gorilla Trekking" },
   { slug: "baboon-road", src: g_baboon_road, title: "Baboon crossing the park road", category: "Chimpanzees & Primates" },
   { slug: "baboon-troop", src: g_baboon_troop, title: "Baboon troop on the forest track", category: "Chimpanzees & Primates" },
   { slug: "chimp-roadside", src: g_chimp_roadside, title: "Chimpanzee in a roadside tree", category: "Chimpanzees & Primates" },
@@ -172,12 +260,10 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   { slug: "chimp-trekking-2", src: g_chimp_trekking_2, title: "Chimpanzee high in the canopy", category: "Chimpanzees & Primates" },
   { slug: "chimp-trekking-3", src: g_chimp_trekking_3, title: "Moments from a chimpanzee trek", category: "Chimpanzees & Primates" },
   { slug: "chimpanzee-1", src: g_chimpanzee_1, title: "Chimpanzee portrait, Kibale", category: "Chimpanzees & Primates" },
-  { slug: "chimpanzee-2", src: g_chimpanzee_2, title: "Chimpanzee on the forest floor", category: "Chimpanzees & Primates" },
   { slug: "golden-monkey-1", src: g_golden_monkey_1, title: "Golden monkey, Mgahinga", category: "Chimpanzees & Primates" },
   { slug: "golden-monkey-2", src: g_golden_monkey_2, title: "Golden monkey in the bamboo", category: "Chimpanzees & Primates" },
   { slug: "monkey-roadside", src: g_monkey_roadside, title: "Primate spotted from the road", category: "Chimpanzees & Primates" },
   { slug: "monkey-vehicle", src: g_monkey_vehicle, title: "Monkey on a safari vehicle, Kibale", category: "Chimpanzees & Primates" },
-  { slug: "african-elephant", src: g_african_elephant, title: "African elephant on the plains", category: "Wildlife" },
   { slug: "african-elephant-2", src: g_african_elephant_2, title: "Elephant bull, Queen Elizabeth", category: "Wildlife" },
   { slug: "buffalo-waterhole", src: g_buffalo_waterhole, title: "Buffalo herd at a waterhole", category: "Wildlife" },
   { slug: "cheetah-mound", src: g_cheetah_mound, title: "Cheetah on a termite mound, Kidepo", category: "Wildlife" },
@@ -188,12 +274,9 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   { slug: "giraffe-1", src: g_giraffe_1, title: "Rothschild's giraffe browsing", category: "Wildlife" },
   { slug: "giraffe-2", src: g_giraffe_2, title: "Giraffe in the northern savanna", category: "Wildlife" },
   { slug: "hippo-road", src: g_hippo_road, title: "Hippo out of the water at dawn", category: "Wildlife" },
-  { slug: "leopard-grass", src: g_leopard_grass, title: "Leopard hidden in tall grass", category: "Wildlife" },
   { slug: "leopard-tree", src: g_leopard_tree, title: "Leopard draped along a branch", category: "Wildlife" },
-  { slug: "lion-cub-grass", src: g_lion_cub_grass, title: "Lion cub in the grass", category: "Wildlife" },
   { slug: "lion-cubs-tree", src: g_lion_cubs_tree, title: "Lion cubs in a tree, Ishasha", category: "Wildlife" },
   { slug: "lion-resting", src: g_lion_resting, title: "Lion resting in the open savanna", category: "Wildlife" },
-  { slug: "lioness-closeup", src: g_lioness_closeup, title: "Lioness close up", category: "Wildlife" },
   { slug: "lioness-portrait", src: g_lioness_portrait, title: "Lioness portrait in long grass", category: "Wildlife" },
   { slug: "lioness-standing", src: g_lioness_standing, title: "Lioness on the move", category: "Wildlife" },
   { slug: "mammals-1", src: g_mammals_1, title: "Uganda's savanna mammals", category: "Wildlife" },
@@ -221,19 +304,16 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   { slug: "entebbe-6", src: g_entebbe_6, title: "Entebbe green space", category: "Landscapes" },
   { slug: "entebbe-7", src: g_entebbe_7, title: "The Entebbe experience", category: "Landscapes" },
   { slug: "golden-hour-plains", src: g_golden_hour_plains, title: "Golden hour on the plains", category: "Landscapes" },
-  { slug: "kidepo", src: g_kidepo, title: "The Kidepo Valley experience", category: "Landscapes" },
   { slug: "mburo-1", src: g_mburo_1, title: "Lake Mburo National Park", category: "Landscapes" },
   { slug: "mburo-2", src: g_mburo_2, title: "Zebra country, Lake Mburo", category: "Landscapes" },
   { slug: "mburo-3", src: g_mburo_3, title: "Lake Mburo shoreline", category: "Landscapes" },
   { slug: "mburo-4", src: g_mburo_4, title: "Game drive in Lake Mburo", category: "Landscapes" },
   { slug: "mburo-5", src: g_mburo_5, title: "Lake Mburo wetlands", category: "Landscapes" },
-  { slug: "mburo-6", src: g_mburo_6, title: "Acacia woodland, Lake Mburo", category: "Landscapes" },
   { slug: "mburo-7", src: g_mburo_7, title: "Lake Mburo at golden hour", category: "Landscapes" },
   { slug: "murchison-falls-1", src: g_murchison_falls_1, title: "Murchison Falls", category: "Landscapes" },
   { slug: "murchison-falls-2", src: g_murchison_falls_2, title: "The Nile squeezing through Murchison", category: "Landscapes" },
   { slug: "murchison-falls-3", src: g_murchison_falls_3, title: "Murchison Falls from the gorge", category: "Landscapes" },
   { slug: "murchison-falls-4", src: g_murchison_falls_4, title: "The top of Murchison Falls", category: "Landscapes" },
-  { slug: "murchison-falls-5", src: g_murchison_falls_5, title: "Murchison Falls from the river", category: "Landscapes" },
   { slug: "murchison-moments-1", src: g_murchison_moments_1, title: "Moments at Murchison Falls", category: "Landscapes" },
   { slug: "murchison-moments-2", src: g_murchison_moments_2, title: "On the Nile below the falls", category: "Landscapes" },
   { slug: "murchison-moments-3", src: g_murchison_moments_3, title: "Murchison Falls National Park", category: "Landscapes" },
@@ -255,7 +335,6 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   { slug: "rwenzori-3", src: g_rwenzori_3, title: "Rwenzori valleys", category: "Landscapes" },
   { slug: "rwenzori-4", src: g_rwenzori_4, title: "Trekking the Rwenzori", category: "Landscapes" },
   { slug: "rwenzori-5", src: g_rwenzori_5, title: "Rwenzori Mountains of the Moon", category: "Landscapes" },
-  { slug: "rwenzori-scene", src: g_rwenzori_scene, title: "Rwenzori landscape", category: "Landscapes" },
   { slug: "rwenzori-snow", src: g_rwenzori_snow, title: "Snow on the equator, Rwenzori", category: "Landscapes" },
   { slug: "semuliki-springs", src: g_semuliki_springs, title: "Sempaya hot springs, Semuliki", category: "Landscapes" },
   { slug: "sipi-falls-1", src: g_sipi_falls_1, title: "Sipi Falls, Mount Elgon", category: "Landscapes" },
@@ -270,7 +349,6 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   { slug: "batwa-fire-1", src: g_batwa_fire_1, title: "Batwa elder making fire", category: "Culture" },
   { slug: "batwa-fire-2", src: g_batwa_fire_2, title: "Fire-making the traditional way", category: "Culture" },
   { slug: "coffee", src: g_coffee, title: "Ugandan coffee, from tree to cup", category: "Culture" },
-  { slug: "culture-community", src: g_culture_community, title: "Community visit in the south-west", category: "Culture" },
   { slug: "equator-1", src: g_equator_1, title: "The Equator monument, Kayabwe", category: "Culture" },
   { slug: "equator-2", src: g_equator_2, title: "Standing on the Equator", category: "Culture" },
   { slug: "equator-3", src: g_equator_3, title: "Uganda's Equator crossing", category: "Culture" },
@@ -290,4 +368,106 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   { slug: "private-adventure", src: g_private_adventure, title: "A private adventure, just your group", category: "Adventure" },
   { slug: "rwenzori-hikers", src: g_rwenzori_hikers, title: "Hikers in the Rwenzori", category: "Adventure" },
   { slug: "sipi-hike", src: g_sipi_hike, title: "Hiking the Sipi Falls trails", category: "Adventure" },
+  { slug: "batwa-moments-1", src: g_batwa_moments_1, title: "Batwa cultural experience", category: "Culture" },
+  { slug: "boat-cruise-1", src: g_boat_cruise_1, title: "Boat cruise on the Victoria Nile", category: "Adventure" },
+  { slug: "coffee-tea-1", src: g_coffee_tea_1, title: "Coffee and tea tour moments", category: "Culture" },
+  { slug: "coffee-tea-2", src: g_coffee_tea_2, title: "Coffee and tea tour moments", category: "Culture" },
+  { slug: "coffee-tea-3", src: g_coffee_tea_3, title: "Coffee and tea tour moments", category: "Culture" },
+  { slug: "coffee-tea-4", src: g_coffee_tea_4, title: "Coffee and tea tour moments", category: "Culture" },
+  { slug: "coffee-tea-5", src: g_coffee_tea_5, title: "Coffee and tea tour moments", category: "Culture" },
+  { slug: "coffee-tea-6", src: g_coffee_tea_6, title: "Coffee and tea tour moments", category: "Culture" },
+  { slug: "coffee-tea-7", src: g_coffee_tea_7, title: "Coffee and tea tour moments", category: "Culture" },
+  { slug: "coffee-tea-8", src: g_coffee_tea_8, title: "Coffee and tea tour moments", category: "Culture" },
+  { slug: "coffee-tea-9", src: g_coffee_tea_9, title: "Coffee and tea tour moments", category: "Culture" },
+  { slug: "coffee-tea-10", src: g_coffee_tea_10, title: "Coffee and tea tour moments", category: "Culture" },
+  { slug: "coffee-tea-11", src: g_coffee_tea_11, title: "Coffee and tea tour moments", category: "Culture" },
+  { slug: "batwa-moments-2", src: g_batwa_moments_2, title: "Batwa cultural experience", category: "Culture" },
+  { slug: "uganda-culture-1", src: g_uganda_culture_1, title: "Cultural encounter in Uganda", category: "Culture" },
+  { slug: "karamojong-1", src: g_karamojong_1, title: "Karamojong cultural experience", category: "Culture" },
+  { slug: "karamojong-2", src: g_karamojong_2, title: "Karamojong cultural experience", category: "Culture" },
+  { slug: "karamojong-3", src: g_karamojong_3, title: "Karamojong cultural experience", category: "Culture" },
+  { slug: "entebbe-moments-1", src: g_entebbe_moments_1, title: "Moments in Entebbe", category: "Landscapes" },
+  { slug: "homestay-1", src: g_homestay_1, title: "Homestay experience with local families", category: "Culture" },
+  { slug: "homestay-2", src: g_homestay_2, title: "Homestay experience with local families", category: "Culture" },
+  { slug: "boat-cruise-2", src: g_boat_cruise_2, title: "Boat cruise on the Victoria Nile", category: "Adventure" },
+  { slug: "mburo-moments-1", src: g_mburo_moments_1, title: "Moments in Lake Mburo National Park", category: "Landscapes" },
+  { slug: "mburo-moments-2", src: g_mburo_moments_2, title: "Moments in Lake Mburo National Park", category: "Landscapes" },
+  { slug: "mburo-moments-3", src: g_mburo_moments_3, title: "Moments in Lake Mburo National Park", category: "Landscapes" },
+  { slug: "entebbe-moments-2", src: g_entebbe_moments_2, title: "Moments in Entebbe", category: "Landscapes" },
+  { slug: "shoebill-1", src: g_shoebill_1, title: "Shoebill stork in the Mabamba swamp", category: "Birding" },
+  { slug: "ngamba-chimps-1", src: g_ngamba_chimps_1, title: "Chimpanzees on Ngamba Island", category: "Chimpanzees & Primates" },
+  { slug: "balloon-safari-1", src: g_balloon_safari_1, title: "Hot air balloon safari over the savanna", category: "Adventure" },
+  { slug: "source-of-the-nile-1", src: g_source_of_the_nile_1, title: "At the Source of the Nile, Jinja", category: "Landscapes" },
+  { slug: "source-of-the-nile-2", src: g_source_of_the_nile_2, title: "At the Source of the Nile, Jinja", category: "Landscapes" },
+  { slug: "kidepo-moments-1", src: g_kidepo_moments_1, title: "Moments in Kidepo Valley National Park", category: "Landscapes" },
+  { slug: "kidepo-moments-2", src: g_kidepo_moments_2, title: "Moments in Kidepo Valley National Park", category: "Landscapes" },
+  { slug: "kidepo-moments-3", src: g_kidepo_moments_3, title: "Moments in Kidepo Valley National Park", category: "Landscapes" },
+  { slug: "kidepo-moments-4", src: g_kidepo_moments_4, title: "Moments in Kidepo Valley National Park", category: "Landscapes" },
+  { slug: "kidepo-moments-5", src: g_kidepo_moments_5, title: "Moments in Kidepo Valley National Park", category: "Landscapes" },
+  { slug: "mburo-moments-4", src: g_mburo_moments_4, title: "Moments in Lake Mburo National Park", category: "Landscapes" },
+  { slug: "mburo-moments-5", src: g_mburo_moments_5, title: "Moments in Lake Mburo National Park", category: "Landscapes" },
+  { slug: "mburo-moments-6", src: g_mburo_moments_6, title: "Moments in Lake Mburo National Park", category: "Landscapes" },
+  { slug: "murchison-moments-new-1", src: g_murchison_moments_new_1, title: "Moments at Murchison Falls", category: "Landscapes" },
+  { slug: "coffee-tea-12", src: g_coffee_tea_12, title: "Coffee and tea tour moments", category: "Culture" },
+  { slug: "boat-cruise-3", src: g_boat_cruise_3, title: "Boat cruise on the Victoria Nile", category: "Adventure" },
+  { slug: "sipi-moments-1", src: g_sipi_moments_1, title: "Moments at Sipi Falls", category: "Landscapes" },
+  { slug: "entebbe-moments-3", src: g_entebbe_moments_3, title: "Moments in Entebbe", category: "Landscapes" },
+  { slug: "murchison-moments-new-2", src: g_murchison_moments_new_2, title: "Moments at Murchison Falls", category: "Landscapes" },
+  { slug: "sipi-moments-2", src: g_sipi_moments_2, title: "Moments at Sipi Falls", category: "Landscapes" },
+  { slug: "sipi-moments-3", src: g_sipi_moments_3, title: "Moments at Sipi Falls", category: "Landscapes" },
+  { slug: "sipi-moments-4", src: g_sipi_moments_4, title: "Moments at Sipi Falls", category: "Landscapes" },
+  { slug: "sipi-moments-5", src: g_sipi_moments_5, title: "Moments at Sipi Falls", category: "Landscapes" },
+  { slug: "kidepo-moments-6", src: g_kidepo_moments_6, title: "Moments in Kidepo Valley National Park", category: "Landscapes" },
+  { slug: "white-water-rafting-1", src: g_white_water_rafting_1, title: "White-water rafting on the Nile", category: "Adventure" },
+  { slug: "coffee-tea-13", src: g_coffee_tea_13, title: "Coffee and tea tour moments", category: "Culture" },
+  { slug: "entebbe-moments-4", src: g_entebbe_moments_4, title: "Moments in Entebbe", category: "Landscapes" },
+  { slug: "ngamba-chimps-2", src: g_ngamba_chimps_2, title: "Chimpanzees on Ngamba Island", category: "Chimpanzees & Primates" },
+  { slug: "source-of-the-nile-3", src: g_source_of_the_nile_3, title: "At the Source of the Nile, Jinja", category: "Landscapes" },
+  { slug: "source-of-the-nile-4", src: g_source_of_the_nile_4, title: "At the Source of the Nile, Jinja", category: "Landscapes" },
+  { slug: "karamojong-4", src: g_karamojong_4, title: "Karamojong cultural experience", category: "Culture" },
+  { slug: "kidepo-moments-7", src: g_kidepo_moments_7, title: "Moments in Kidepo Valley National Park", category: "Landscapes" },
+  { slug: "kidepo-moments-8", src: g_kidepo_moments_8, title: "Moments in Kidepo Valley National Park", category: "Landscapes" },
+  { slug: "kidepo-moments-9", src: g_kidepo_moments_9, title: "Moments in Kidepo Valley National Park", category: "Landscapes" },
+  { slug: "kidepo-moments-10", src: g_kidepo_moments_10, title: "Moments in Kidepo Valley National Park", category: "Landscapes" },
+  { slug: "mburo-moments-7", src: g_mburo_moments_7, title: "Moments in Lake Mburo National Park", category: "Landscapes" },
+  { slug: "murchison-moments-new-3", src: g_murchison_moments_new_3, title: "Moments at Murchison Falls", category: "Landscapes" },
+  { slug: "murchison-moments-new-4", src: g_murchison_moments_new_4, title: "Moments at Murchison Falls", category: "Landscapes" },
+  { slug: "murchison-moments-new-5", src: g_murchison_moments_new_5, title: "Moments at Murchison Falls", category: "Landscapes" },
+  { slug: "sipi-moments-6", src: g_sipi_moments_6, title: "Moments at Sipi Falls", category: "Landscapes" },
+  { slug: "sipi-moments-7", src: g_sipi_moments_7, title: "Moments at Sipi Falls", category: "Landscapes" },
+  { slug: "source-of-the-nile-5", src: g_source_of_the_nile_5, title: "At the Source of the Nile, Jinja", category: "Landscapes" },
+  { slug: "boat-cruise-4", src: g_boat_cruise_4, title: "Boat cruise on the Victoria Nile", category: "Adventure" },
+  { slug: "boat-cruise-5", src: g_boat_cruise_5, title: "Boat cruise on the Victoria Nile", category: "Adventure" },
+  { slug: "homestay-3", src: g_homestay_3, title: "Homestay experience with local families", category: "Culture" },
+  { slug: "homestay-4", src: g_homestay_4, title: "Homestay experience with local families", category: "Culture" },
+  { slug: "mburo-moments-8", src: g_mburo_moments_8, title: "Moments in Lake Mburo National Park", category: "Landscapes" },
+  { slug: "white-water-rafting-2", src: g_white_water_rafting_2, title: "White-water rafting on the Nile", category: "Adventure" },
+  { slug: "white-water-rafting-3", src: g_white_water_rafting_3, title: "White-water rafting on the Nile", category: "Adventure" },
+  { slug: "ngamba-chimps-3", src: g_ngamba_chimps_3, title: "Chimpanzees on Ngamba Island", category: "Chimpanzees & Primates" },
+  { slug: "entebbe-moments-5", src: g_entebbe_moments_5, title: "Moments in Entebbe", category: "Landscapes" },
+  { slug: "murchison-moments-new-6", src: g_murchison_moments_new_6, title: "Moments at Murchison Falls", category: "Landscapes" },
+  { slug: "shoebill-2", src: g_shoebill_2, title: "Shoebill stork in the Mabamba swamp", category: "Birding" },
+  { slug: "batwa-moments-3", src: g_batwa_moments_3, title: "Batwa cultural experience", category: "Culture" },
+  { slug: "batwa-moments-4", src: g_batwa_moments_4, title: "Batwa cultural experience", category: "Culture" },
+  { slug: "karamojong-5", src: g_karamojong_5, title: "Karamojong cultural experience", category: "Culture" },
+  { slug: "shoebill-3", src: g_shoebill_3, title: "Shoebill stork in the Mabamba swamp", category: "Birding" },
+  { slug: "shoebill-4", src: g_shoebill_4, title: "Shoebill stork in the Mabamba swamp", category: "Birding" },
+  { slug: "kidepo-moments-11", src: g_kidepo_moments_11, title: "Moments in Kidepo Valley National Park", category: "Landscapes" },
+  { slug: "murchison-moments-new-7", src: g_murchison_moments_new_7, title: "Moments at Murchison Falls", category: "Landscapes" },
+  { slug: "mount-elgon-1", src: g_mount_elgon_1, title: "The Mount Elgon experience", category: "Landscapes" },
+  { slug: "mount-elgon-2", src: g_mount_elgon_2, title: "The Mount Elgon experience", category: "Landscapes" },
+  { slug: "mount-elgon-3", src: g_mount_elgon_3, title: "The Mount Elgon experience", category: "Landscapes" },
+  { slug: "mount-elgon-4", src: g_mount_elgon_4, title: "The Mount Elgon experience", category: "Landscapes" },
+  { slug: "mount-elgon-5", src: g_mount_elgon_5, title: "The Mount Elgon experience", category: "Landscapes" },
+  { slug: "mount-elgon-6", src: g_mount_elgon_6, title: "The Mount Elgon experience", category: "Landscapes" },
+  { slug: "murchison-moments-new-8", src: g_murchison_moments_new_8, title: "Moments at Murchison Falls", category: "Landscapes" },
+  { slug: "shoebill-5", src: g_shoebill_5, title: "Shoebill stork in the Mabamba swamp", category: "Birding" },
+  { slug: "shoebill-6", src: g_shoebill_6, title: "Shoebill stork in the Mabamba swamp", category: "Birding" },
+  { slug: "sipi-moments-8", src: g_sipi_moments_8, title: "Moments at Sipi Falls", category: "Landscapes" },
+  { slug: "sipi-moments-9", src: g_sipi_moments_9, title: "Moments at Sipi Falls", category: "Landscapes" },
+  { slug: "source-of-the-nile-6", src: g_source_of_the_nile_6, title: "At the Source of the Nile, Jinja", category: "Landscapes" },
+  { slug: "source-of-the-nile-7", src: g_source_of_the_nile_7, title: "At the Source of the Nile, Jinja", category: "Landscapes" },
+  { slug: "kidepo-moments-12", src: g_kidepo_moments_12, title: "Moments in Kidepo Valley National Park", category: "Landscapes" },
+  { slug: "white-water-rafting-4", src: g_white_water_rafting_4, title: "White-water rafting on the Nile", category: "Adventure" },
+  { slug: "entebbe-moments-6", src: g_entebbe_moments_6, title: "Moments in Entebbe", category: "Landscapes" },
 ];
