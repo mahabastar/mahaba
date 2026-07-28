@@ -1,6 +1,7 @@
 import "./lib/error-capture";
 
 import { consumeLastCapturedError } from "./lib/error-capture";
+import { getDomainRedirect } from "./lib/domain-redirect";
 import { renderErrorPage } from "./lib/error-page";
 
 type ServerEntry = {
@@ -47,6 +48,9 @@ function isH3SwallowedErrorBody(body: string): boolean {
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
+      const redirect = getDomainRedirect(request);
+      if (redirect) return redirect;
+
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
       return await normalizeCatastrophicSsrResponse(response);
