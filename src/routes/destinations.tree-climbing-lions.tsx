@@ -2,15 +2,16 @@ import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import sceneLion from "@/assets/scene-lion.jpg";
-import sceneElephants from "@/assets/scene-elephants.jpg";
-import sceneCulture from "@/assets/scene-culture.jpg";
-import expBalloon from "@/assets/exp-balloon.jpg";
-import expLodge from "@/assets/exp-lodge.jpg";
-import ctaSunset from "@/assets/cta-sunset.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneFalls from "@/assets/scene-falls.jpg";
 import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
 import expSipi from "@/assets/exp-sipi.jpg";
+import g_tree_lion from "@/assets/gallery/tree-lion.jpg";
+import g_tree_lions from "@/assets/gallery/tree-lions.jpg";
+import g_lion_cubs_tree from "@/assets/gallery/lion-cubs-tree.jpg";
+import g_lion_resting from "@/assets/gallery/lion-resting.jpg";
+import g_lioness_portrait from "@/assets/gallery/lioness-portrait.jpg";
+import g_leopard_tree from "@/assets/gallery/leopard-tree.jpg";
 
 const FAQS = [
   {
@@ -85,12 +86,12 @@ export const Route = createFileRoute("/destinations/tree-climbing-lions")({
         },
       ]}
       galleryImages={[
-        { src: sceneLion, alt: "Lion in fig tree" },
-        { src: sceneElephants, alt: "Elephants on the plains" },
-        { src: expBalloon, alt: "Balloon safari" },
-        { src: ctaSunset, alt: "Sunset over the savannah" },
-        { src: expLodge, alt: "Savannah lodge" },
-        { src: sceneCulture, alt: "Local community" },
+        { src: g_tree_lion, alt: "Tree-climbing lion in Ishasha" },
+        { src: g_tree_lions, alt: "Lions resting in a fig tree, Ishasha" },
+        { src: g_lion_cubs_tree, alt: "Lion cubs in the branches" },
+        { src: g_lion_resting, alt: "Lion resting on the Ishasha plains" },
+        { src: g_lioness_portrait, alt: "Lioness portrait, Queen Elizabeth" },
+        { src: g_leopard_tree, alt: "Leopard in a tree, Ishasha sector" },
       ]}
       highlights={[
         { title: "Rare wildlife spectacle", desc: "One of only two places on earth to see lions habitually climb trees." },

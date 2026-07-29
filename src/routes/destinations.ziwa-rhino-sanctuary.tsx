@@ -2,10 +2,10 @@ import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import rhinoZiwa from "@/assets/rhino-ziwa.jpg";
-import sceneCrane from "@/assets/scene-crane.jpg";
-import sceneCulture from "@/assets/scene-culture.jpg";
-import expLodge from "@/assets/exp-lodge.jpg";
 import sceneFalls from "@/assets/scene-falls.jpg";
+import g_rhino_ziwa from "@/assets/gallery/rhino-ziwa.jpg";
+import g_mammals_1 from "@/assets/gallery/mammals-1.jpg";
+import g_shoebill_2 from "@/assets/gallery/shoebill-2.jpg";
 
 const FAQS = [
   {
@@ -75,10 +75,9 @@ export const Route = createFileRoute("/destinations/ziwa-rhino-sanctuary")({
         },
       ]}
       galleryImages={[
-        { src: rhinoZiwa, alt: "Southern white rhino at Ziwa Rhino Sanctuary" },
-        { src: sceneCrane, alt: "Birdlife at Ziwa Rhino Sanctuary's wetlands" },
-        { src: sceneCulture, alt: "Community conservation team at Ziwa" },
-        { src: expLodge, alt: "Lodge accommodation near Ziwa Rhino Sanctuary" },
+        { src: g_rhino_ziwa, alt: "White rhino grazing at Ziwa" },
+        { src: g_mammals_1, alt: "Wildlife at Ziwa Rhino Sanctuary" },
+        { src: g_shoebill_2, alt: "Shoebill in the Ziwa wetlands" },
       ]}
       highlights={[
         { title: "The only rhinos in Uganda", desc: "Southern white rhinos, reintroduced after the species was poached to local extinction." },

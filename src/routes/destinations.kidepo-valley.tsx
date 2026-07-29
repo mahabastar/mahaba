@@ -2,11 +2,14 @@ import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import sceneElephants from "@/assets/scene-elephants.jpg";
-import ctaSunset from "@/assets/cta-sunset.jpg";
-import sceneCrane from "@/assets/scene-crane.jpg";
-import expLodge from "@/assets/exp-lodge.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneFalls from "@/assets/scene-falls.jpg";
+import g_kidepo_moments_1 from "@/assets/gallery/kidepo-moments-1.jpg";
+import g_kidepo_moments_2 from "@/assets/gallery/kidepo-moments-2.jpg";
+import g_kidepo_moments_3 from "@/assets/gallery/kidepo-moments-3.jpg";
+import g_kidepo_moments_4 from "@/assets/gallery/kidepo-moments-4.jpg";
+import g_kidepo_moments_5 from "@/assets/gallery/kidepo-moments-5.jpg";
+import g_kidepo_moments_6 from "@/assets/gallery/kidepo-moments-6.jpg";
 
 const FAQS = [
   {
@@ -81,10 +84,12 @@ export const Route = createFileRoute("/destinations/kidepo-valley")({
         },
       ]}
       galleryImages={[
-        { src: sceneElephants, alt: "Elephants on Kidepo's open savanna" },
-        { src: ctaSunset, alt: "Sunset over the Narus Valley" },
-        { src: sceneCrane, alt: "Birdlife in Kidepo's wetlands" },
-        { src: expLodge, alt: "Remote safari lodge" },
+        { src: g_kidepo_moments_1, alt: "Kidepo Valley's open savanna" },
+        { src: g_kidepo_moments_2, alt: "Game drive in the Narus Valley" },
+        { src: g_kidepo_moments_3, alt: "Wildlife of Kidepo Valley" },
+        { src: g_kidepo_moments_4, alt: "Kidepo's remote wilderness" },
+        { src: g_kidepo_moments_5, alt: "Moments in Kidepo Valley" },
+        { src: g_kidepo_moments_6, alt: "Kidepo Valley National Park" },
       ]}
       highlights={[
         { title: "Uganda's only wild ostriches", desc: "Found nowhere else in the country's protected areas." },

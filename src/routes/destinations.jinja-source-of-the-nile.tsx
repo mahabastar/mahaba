@@ -2,11 +2,15 @@ import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import nileBridgeAerial from "@/assets/nile-bridge-aerial.jpg";
-import ctaSunset from "@/assets/cta-sunset.jpg";
-import expLodge from "@/assets/exp-lodge.jpg";
 import sceneFalls from "@/assets/scene-falls.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import expSipi from "@/assets/exp-sipi.jpg";
+import g_source_of_the_nile_1 from "@/assets/gallery/source-of-the-nile-1.jpg";
+import g_source_of_the_nile_2 from "@/assets/gallery/source-of-the-nile-2.jpg";
+import g_white_water_rafting_1 from "@/assets/gallery/white-water-rafting-1.jpg";
+import g_white_water_rafting_2 from "@/assets/gallery/white-water-rafting-2.jpg";
+import g_nile_bridge from "@/assets/gallery/nile-bridge.jpg";
+import g_source_of_the_nile_3 from "@/assets/gallery/source-of-the-nile-3.jpg";
 
 const FAQS = [
   {
@@ -81,10 +85,12 @@ export const Route = createFileRoute("/destinations/jinja-source-of-the-nile")({
         },
       ]}
       galleryImages={[
-        { src: nileBridgeAerial, alt: "Aerial view of the Nile River near Jinja" },
-        { src: ctaSunset, alt: "Sunset over the Nile" },
-        { src: expLodge, alt: "Riverside lodge on the Nile" },
-        { src: sceneFalls, alt: "The Nile River" },
+        { src: g_source_of_the_nile_1, alt: "The Source of the Nile at Jinja" },
+        { src: g_source_of_the_nile_2, alt: "Where Lake Victoria becomes the Nile" },
+        { src: g_white_water_rafting_1, alt: "White-water rafting on the Nile" },
+        { src: g_white_water_rafting_2, alt: "Grade 5 rapids below Jinja" },
+        { src: g_nile_bridge, alt: "The Nile River near Jinja from the air" },
+        { src: g_source_of_the_nile_3, alt: "Boat trip to the Source of the Nile" },
       ]}
       highlights={[
         { title: "Grade 3–5 white water", desc: "Roughly 20km of rapids on the White Nile, running consistently year-round." },

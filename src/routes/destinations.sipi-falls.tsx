@@ -2,14 +2,16 @@ import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import expSipi from "@/assets/exp-sipi.jpg";
-import expCoffee from "@/assets/exp-coffee.jpg";
-import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
-import sceneCulture from "@/assets/scene-culture.jpg";
-import expLodge from "@/assets/exp-lodge.jpg";
 import ctaSunset from "@/assets/cta-sunset.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
 import sceneFalls from "@/assets/scene-falls.jpg";
+import g_sipi_falls_1 from "@/assets/gallery/sipi-falls-1.jpg";
+import g_sipi_moments_1 from "@/assets/gallery/sipi-moments-1.jpg";
+import g_sipi_falls_2 from "@/assets/gallery/sipi-falls-2.jpg";
+import g_sipi_hike from "@/assets/gallery/sipi-hike.jpg";
+import g_sipi_morning_1 from "@/assets/gallery/sipi-morning-1.jpg";
+import g_sipi_moments_2 from "@/assets/gallery/sipi-moments-2.jpg";
 
 const FAQS = [
   {
@@ -84,12 +86,12 @@ export const Route = createFileRoute("/destinations/sipi-falls")({
         },
       ]}
       galleryImages={[
-        { src: expSipi, alt: "The main Sipi waterfall" },
-        { src: expCoffee, alt: "Arabica coffee harvest" },
-        { src: sceneRwenzori, alt: "Mountain landscape" },
-        { src: sceneCulture, alt: "Sabiny community" },
-        { src: expLodge, alt: "Escarpment eco-lodge" },
-        { src: ctaSunset, alt: "Sunset over the plains" },
+        { src: g_sipi_falls_1, alt: "Sipi Falls in full flow" },
+        { src: g_sipi_moments_1, alt: "Moments at Sipi Falls" },
+        { src: g_sipi_falls_2, alt: "The main drop at Sipi Falls" },
+        { src: g_sipi_hike, alt: "Hiking the Sipi Falls trail" },
+        { src: g_sipi_morning_1, alt: "Morning above Sipi Falls" },
+        { src: g_sipi_moments_2, alt: "Sipi Falls escarpment" },
       ]}
       highlights={[
         { title: "Three-falls hike", desc: "A magical 4–5 hour loop linking all three cascades through forest and farmland." },

@@ -2,11 +2,14 @@ import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import ctaSunset from "@/assets/cta-sunset.jpg";
-import mburoZebras from "@/assets/mburo-zebras.jpg";
-import expLodge from "@/assets/exp-lodge.jpg";
-import sceneCulture from "@/assets/scene-culture.jpg";
 import gorillaSilverback from "@/assets/gorilla-silverback-insects.jpg";
 import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
+import g_mburo_1 from "@/assets/gallery/mburo-1.jpg";
+import g_mburo_moments_1 from "@/assets/gallery/mburo-moments-1.jpg";
+import g_mburo_2 from "@/assets/gallery/mburo-2.jpg";
+import g_mburo_moments_2 from "@/assets/gallery/mburo-moments-2.jpg";
+import g_mburo_3 from "@/assets/gallery/mburo-3.jpg";
+import g_mburo_moments_3 from "@/assets/gallery/mburo-moments-3.jpg";
 
 const FAQS = [
   {
@@ -76,10 +79,12 @@ export const Route = createFileRoute("/destinations/lake-mburo")({
         },
       ]}
       galleryImages={[
-        { src: ctaSunset, alt: "Sunset over Lake Mburo's savanna plains" },
-        { src: mburoZebras, alt: "Zebra drinking at a waterhole in Lake Mburo National Park" },
-        { src: expLodge, alt: "Lakeside safari lodge at Lake Mburo" },
-        { src: sceneCulture, alt: "Ankole long-horned cattle country near Lake Mburo" },
+        { src: g_mburo_1, alt: "Zebras in Lake Mburo National Park" },
+        { src: g_mburo_moments_1, alt: "Moments at Lake Mburo" },
+        { src: g_mburo_2, alt: "Impala on the Mburo plains" },
+        { src: g_mburo_moments_2, alt: "Game drive at Lake Mburo" },
+        { src: g_mburo_3, alt: "Lake Mburo's acacia woodland" },
+        { src: g_mburo_moments_3, alt: "Wildlife at Lake Mburo" },
       ]}
       highlights={[
         { title: "Walking safaris", desc: "Uganda's only park where guided walks among plains game are a routine activity." },

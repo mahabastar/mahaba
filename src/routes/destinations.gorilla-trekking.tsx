@@ -2,16 +2,19 @@ import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
-import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
 import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
-import sceneCulture from "@/assets/scene-culture.jpg";
 import expChimp from "@/assets/exp-chimp.jpg";
-import expLodge from "@/assets/exp-lodge.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
 import sceneFalls from "@/assets/scene-falls.jpg";
-import gorillaBabyEating from "@/assets/gorilla-baby-eating.jpg";
-import gorillaBacklit from "@/assets/gorilla-lookup.jpg";
-import gorillaLookup from "@/assets/gorilla-lookup.jpg";
+import g_gorilla_silverback from "@/assets/gallery/gorilla-silverback.jpg";
+import g_gorilla_lookup from "@/assets/gallery/gorilla-lookup.jpg";
+import g_gorilla_baby from "@/assets/gallery/gorilla-baby.jpg";
+import g_gorilla_backlit from "@/assets/gallery/gorilla-backlit.jpg";
+import g_gorilla_tracking_1 from "@/assets/gallery/gorilla-tracking-1.jpg";
+import g_gorilla_tracking_2 from "@/assets/gallery/gorilla-tracking-2.jpg";
+import g_gorilla_tracking_3 from "@/assets/gallery/gorilla-tracking-3.jpg";
+import g_virunga_volcanoes from "@/assets/gallery/virunga-volcanoes.jpg";
+import g_golden_monkey_1 from "@/assets/gallery/golden-monkey-1.jpg";
 
 const FAQS = [
   {
@@ -86,15 +89,15 @@ export const Route = createFileRoute("/destinations/gorilla-trekking")({
         },
       ]}
       galleryImages={[
-        { src: heroGorilla, alt: "Silverback gorilla in Bwindi" },
-        { src: gorillaLookup, alt: "Mountain gorilla pausing mid-forage" },
-        { src: expChimp, alt: "Primates of Uganda" },
-        { src: gorillaBacklit, alt: "Silverback gorilla at first light in Bwindi" },
-        { src: sceneCulture, alt: "Local community" },
-        { src: expLodge, alt: "Forest luxury lodge" },
-        { src: gorillaBabyEating, alt: "Infant gorilla feeding in the undergrowth" },
-        { src: sceneRwenzori, alt: "Trekking group in the Rwenzori Mountains" },
-        { src: sceneBunyonyi, alt: "Nearby crater lakes" },
+        { src: g_gorilla_silverback, alt: "Silverback gorilla in Bwindi" },
+        { src: g_gorilla_lookup, alt: "Mountain gorilla pausing mid-forage" },
+        { src: g_gorilla_baby, alt: "Infant gorilla feeding in the undergrowth" },
+        { src: g_gorilla_backlit, alt: "Gorilla backlit in the forest canopy" },
+        { src: g_gorilla_tracking_1, alt: "Moments from gorilla tracking" },
+        { src: g_gorilla_tracking_2, alt: "Face to face on a gorilla trek" },
+        { src: g_gorilla_tracking_3, alt: "Trackers on the gorilla trail" },
+        { src: g_virunga_volcanoes, alt: "The Virunga volcanoes above the gorilla forests" },
+        { src: g_golden_monkey_1, alt: "Golden monkey in the Virunga bamboo" },
       ]}
       highlights={[
         { title: "Face-to-face encounter", desc: "One hour, three metres, no barriers — the most personal wildlife moment on the planet." },

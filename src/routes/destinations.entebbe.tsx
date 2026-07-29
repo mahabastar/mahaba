@@ -2,11 +2,14 @@ import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import expChimp from "@/assets/exp-chimp.jpg";
-import ctaSunset from "@/assets/cta-sunset.jpg";
-import sceneCrane from "@/assets/scene-crane.jpg";
-import expLodge from "@/assets/exp-lodge.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneFalls from "@/assets/scene-falls.jpg";
+import g_entebbe_1 from "@/assets/gallery/entebbe-1.jpg";
+import g_entebbe_moments_1 from "@/assets/gallery/entebbe-moments-1.jpg";
+import g_entebbe_2 from "@/assets/gallery/entebbe-2.jpg";
+import g_entebbe_moments_2 from "@/assets/gallery/entebbe-moments-2.jpg";
+import g_ngamba_chimps_2 from "@/assets/gallery/ngamba-chimps-2.jpg";
+import g_entebbe_3 from "@/assets/gallery/entebbe-3.jpg";
 
 const FAQS = [
   {
@@ -81,10 +84,12 @@ export const Route = createFileRoute("/destinations/entebbe")({
         },
       ]}
       galleryImages={[
-        { src: expChimp, alt: "Chimpanzee at Ngamba Island sanctuary" },
-        { src: ctaSunset, alt: "Sunset over Lake Victoria" },
-        { src: sceneCrane, alt: "Birdlife in Entebbe's Botanical Gardens" },
-        { src: expLodge, alt: "Lakeside accommodation in Entebbe" },
+        { src: g_entebbe_1, alt: "Lake Victoria shoreline at Entebbe" },
+        { src: g_entebbe_moments_1, alt: "Moments in Entebbe" },
+        { src: g_entebbe_2, alt: "Entebbe Botanical Gardens" },
+        { src: g_entebbe_moments_2, alt: "On the lake at Entebbe" },
+        { src: g_ngamba_chimps_2, alt: "Chimpanzee at Ngamba Island sanctuary" },
+        { src: g_entebbe_3, alt: "Lakeside Entebbe" },
       ]}
       highlights={[
         { title: "Ngamba Island chimpanzee sanctuary", desc: "Over 50 rescued chimpanzees, viewable from a platform during feeding sessions." },

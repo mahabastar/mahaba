@@ -1,12 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
-import gorillaLookup from "@/assets/gorilla-lookup.jpg";
-import rwenzoriHikers from "@/assets/nile-bridge-aerial.jpg";
-import batwaDance from "@/assets/batwa-dance.jpg";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
 import gorillaSilverback from "@/assets/gorilla-silverback-insects.jpg";
 import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
+import g_virunga_volcanoes from "@/assets/gallery/virunga-volcanoes.jpg";
+import g_virunga_volcanoes_2 from "@/assets/gallery/virunga-volcanoes-2.jpg";
+import g_golden_monkey_1 from "@/assets/gallery/golden-monkey-1.jpg";
+import g_golden_monkey_2 from "@/assets/gallery/golden-monkey-2.jpg";
 
 const FAQS = [
   {
@@ -76,10 +77,10 @@ export const Route = createFileRoute("/destinations/mgahinga-gorilla")({
         },
       ]}
       galleryImages={[
-        { src: sceneRwenzori, alt: "Volcanic peaks over Mgahinga's valley" },
-        { src: gorillaLookup, alt: "A mountain gorilla in Mgahinga's forest" },
-        { src: rwenzoriHikers, alt: "Trekkers climbing one of Mgahinga's volcanoes" },
-        { src: batwaDance, alt: "Batwa cultural trail near Mgahinga" },
+        { src: g_virunga_volcanoes, alt: "The Virunga volcanoes above Mgahinga" },
+        { src: g_virunga_volcanoes_2, alt: "Volcano slopes on the Mgahinga border" },
+        { src: g_golden_monkey_1, alt: "Golden monkey, Mgahinga" },
+        { src: g_golden_monkey_2, alt: "Golden monkey in the bamboo" },
       ]}
       highlights={[
         { title: "Three-country volcano summit", desc: "Mount Sabinyo's ridge trail touches Uganda, Rwanda and DR Congo at its peak." },

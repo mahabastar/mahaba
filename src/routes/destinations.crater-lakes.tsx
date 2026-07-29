@@ -2,11 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import expCoffee from "@/assets/exp-coffee.jpg";
-import sceneCulture from "@/assets/scene-culture.jpg";
-import expLodge from "@/assets/exp-lodge.jpg";
-import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
 import expChimp from "@/assets/exp-chimp.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
+import g_crater_lakes_1 from "@/assets/gallery/crater-lakes-1.jpg";
+import g_crater_lakes_2 from "@/assets/gallery/crater-lakes-2.jpg";
+import g_where_nature_reigns from "@/assets/gallery/where-nature-reigns.jpg";
+import g_lodge_kyaninga from "@/assets/gallery/lodge-kyaninga.jpg";
 
 const FAQS = [
   {
@@ -76,10 +77,10 @@ export const Route = createFileRoute("/destinations/crater-lakes")({
         },
       ]}
       galleryImages={[
-        { src: expCoffee, alt: "Coffee gardens surrounding a crater lake near Fort Portal" },
-        { src: sceneRwenzori, alt: "Rwenzori Mountains visible from the crater lakes region" },
-        { src: expLodge, alt: "Crater-rim lodge near Fort Portal" },
-        { src: sceneCulture, alt: "Local farming community around the Ndali-Kasenda crater field" },
+        { src: g_crater_lakes_1, alt: "Crater lake in the Ndali-Kasenda field" },
+        { src: g_crater_lakes_2, alt: "Volcanic crater lake near Fort Portal" },
+        { src: g_where_nature_reigns, alt: "Crater lake country at sunset" },
+        { src: g_lodge_kyaninga, alt: "Crater-rim lodge near Fort Portal" },
       ]}
       highlights={[
         { title: "Around 50 volcanic craters", desc: "The Ndali-Kasenda field, one of the densest crater-lake clusters in East Africa." },
