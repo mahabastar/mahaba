@@ -2,10 +2,13 @@ import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import expSipi from "@/assets/exp-sipi.jpg";
-import expCoffee from "@/assets/exp-coffee.jpg";
-import sceneCulture from "@/assets/scene-culture.jpg";
-import rwenzoriHikers from "@/assets/nile-bridge-aerial.jpg";
 import sceneFalls from "@/assets/scene-falls.jpg";
+import g_mount_elgon_1 from "@/assets/gallery/mount-elgon-1.jpg";
+import g_mount_elgon_2 from "@/assets/gallery/mount-elgon-2.jpg";
+import g_mount_elgon_3 from "@/assets/gallery/mount-elgon-3.jpg";
+import g_mount_elgon_4 from "@/assets/gallery/mount-elgon-4.jpg";
+import g_mount_elgon_5 from "@/assets/gallery/mount-elgon-5.jpg";
+import g_mount_elgon_6 from "@/assets/gallery/mount-elgon-6.jpg";
 
 const FAQS = [
   {
@@ -80,10 +83,12 @@ export const Route = createFileRoute("/destinations/mount-elgon")({
         },
       ]}
       galleryImages={[
-        { src: expSipi, alt: "Sipi Falls on Mount Elgon's lower slopes" },
-        { src: expCoffee, alt: "Coffee terraces on Mount Elgon's fertile foothills" },
-        { src: sceneCulture, alt: "Bagisu community life on Mount Elgon's slopes" },
-        { src: rwenzoriHikers, alt: "Trekkers on Mount Elgon's caldera rim trail" },
+        { src: g_mount_elgon_1, alt: "Mount Elgon's caldera country" },
+        { src: g_mount_elgon_2, alt: "Trekking on Mount Elgon" },
+        { src: g_mount_elgon_3, alt: "Mount Elgon slopes" },
+        { src: g_mount_elgon_4, alt: "Moments on Mount Elgon" },
+        { src: g_mount_elgon_5, alt: "Mount Elgon National Park" },
+        { src: g_mount_elgon_6, alt: "High ground on Mount Elgon" },
       ]}
       highlights={[
         { title: "One of the world's largest calderas", desc: "A roughly 40km-wide volcanic caldera formed over millions of years." },

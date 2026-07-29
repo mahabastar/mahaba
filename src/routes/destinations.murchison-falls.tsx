@@ -2,14 +2,16 @@ import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import sceneFalls from "@/assets/scene-falls.jpg";
-import sceneElephants from "@/assets/scene-elephants.jpg";
-import sceneCrane from "@/assets/scene-crane.jpg";
-import expShoebill from "@/assets/exp-shoebill.jpg";
-import expLodge from "@/assets/exp-lodge.jpg";
 import ctaSunset from "@/assets/cta-sunset.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
 import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
+import g_murchison_falls_1 from "@/assets/gallery/murchison-falls-1.jpg";
+import g_murchison_moments_1 from "@/assets/gallery/murchison-moments-1.jpg";
+import g_murchison_falls_2 from "@/assets/gallery/murchison-falls-2.jpg";
+import g_murchison_moments_2 from "@/assets/gallery/murchison-moments-2.jpg";
+import g_paara_1 from "@/assets/gallery/paara-1.jpg";
+import g_murchison_moments_3 from "@/assets/gallery/murchison-moments-3.jpg";
 
 const FAQS = [
   {
@@ -84,12 +86,12 @@ export const Route = createFileRoute("/destinations/murchison-falls")({
         },
       ]}
       galleryImages={[
-        { src: sceneFalls, alt: "The Nile at Murchison Falls" },
-        { src: sceneElephants, alt: "Elephants on the plains" },
-        { src: sceneCrane, alt: "Crested cranes over the wetlands" },
-        { src: expShoebill, alt: "Shoebill stork on the delta" },
-        { src: expLodge, alt: "Riverside lodge" },
-        { src: ctaSunset, alt: "Sunset over the Nile" },
+        { src: g_murchison_falls_1, alt: "The Nile forced through Murchison Falls" },
+        { src: g_murchison_moments_1, alt: "Moments at Murchison Falls" },
+        { src: g_murchison_falls_2, alt: "Murchison Falls from the viewpoint" },
+        { src: g_murchison_moments_2, alt: "On the Nile below the falls" },
+        { src: g_paara_1, alt: "Game drive on the Paara plains" },
+        { src: g_murchison_moments_3, alt: "Murchison Falls National Park" },
       ]}
       highlights={[
         { title: "Top-of-the-falls hike", desc: "A short trail brings you to the thundering lip of the world's most powerful waterfall." },

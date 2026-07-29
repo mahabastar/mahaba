@@ -3,10 +3,14 @@ import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
 import expChimp from "@/assets/exp-chimp.jpg";
-import expCoffee from "@/assets/exp-coffee.jpg";
-import expLodge from "@/assets/exp-lodge.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneFalls from "@/assets/scene-falls.jpg";
+import g_rwenzori_snow from "@/assets/gallery/rwenzori-snow.jpg";
+import g_rwenzori_1 from "@/assets/gallery/rwenzori-1.jpg";
+import g_rwenzori_hikers from "@/assets/gallery/rwenzori-hikers.jpg";
+import g_rwenzori_2 from "@/assets/gallery/rwenzori-2.jpg";
+import g_rwenzori_3 from "@/assets/gallery/rwenzori-3.jpg";
+import g_rwenzori_4 from "@/assets/gallery/rwenzori-4.jpg";
 
 const FAQS = [
   {
@@ -81,10 +85,12 @@ export const Route = createFileRoute("/destinations/rwenzori-mountains")({
         },
       ]}
       galleryImages={[
-        { src: sceneRwenzori, alt: "Trekking group crossing the Rwenzori glaciers" },
-        { src: expCoffee, alt: "Tea and coffee terraces in the Rwenzori foothills" },
-        { src: expChimp, alt: "Primates of the Rwenzori forest zone" },
-        { src: expLodge, alt: "Trekkers' lodge at the base of the range" },
+        { src: g_rwenzori_snow, alt: "Snow on the Rwenzori ridges" },
+        { src: g_rwenzori_1, alt: "Rwenzori Mountains trekking route" },
+        { src: g_rwenzori_hikers, alt: "Hikers in the Rwenzori" },
+        { src: g_rwenzori_2, alt: "Rwenzori high camp country" },
+        { src: g_rwenzori_3, alt: "Moments in the Rwenzori" },
+        { src: g_rwenzori_4, alt: "Rwenzori Mountains National Park" },
       ]}
       highlights={[
         { title: "Africa's third-highest peak", desc: "Margherita Peak, 5,109m, reached via glacier travel and fixed ropes on the final approach." },

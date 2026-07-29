@@ -2,13 +2,15 @@ import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import expChimp from "@/assets/exp-chimp.jpg";
-import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
 import expCoffee from "@/assets/exp-coffee.jpg";
-import expLodge from "@/assets/exp-lodge.jpg";
-import sceneCrane from "@/assets/scene-crane.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
 import sceneFalls from "@/assets/scene-falls.jpg";
+import g_chimp_trekking_1 from "@/assets/gallery/chimp-trekking-1.jpg";
+import g_chimpanzee_1 from "@/assets/gallery/chimpanzee-1.jpg";
+import g_monkey_vehicle from "@/assets/gallery/monkey-vehicle.jpg";
+import g_monkey_roadside from "@/assets/gallery/monkey-roadside.jpg";
+import g_coffee_tea_1 from "@/assets/gallery/coffee-tea-1.jpg";
 
 const FAQS = [
   {
@@ -83,11 +85,11 @@ export const Route = createFileRoute("/destinations/kibale-forest")({
         },
       ]}
       galleryImages={[
-        { src: expChimp, alt: "Chimpanzee in Kibale Forest" },
-        { src: sceneRwenzori, alt: "The Rwenzori Mountains seen from Fort Portal" },
-        { src: expCoffee, alt: "Tea and coffee terraces near Fort Portal" },
-        { src: expLodge, alt: "Forest-edge lodge" },
-        { src: sceneCrane, alt: "Grey crowned crane in wetland habitat" },
+        { src: g_chimp_trekking_1, alt: "Chimpanzee in Kibale Forest" },
+        { src: g_chimpanzee_1, alt: "Chimpanzee portrait, Kibale" },
+        { src: g_monkey_vehicle, alt: "Monkey on a safari vehicle, Kibale" },
+        { src: g_monkey_roadside, alt: "Primate spotted from the forest road" },
+        { src: g_coffee_tea_1, alt: "Tea and coffee country near Fort Portal" },
       ]}
       highlights={[
         { title: "Highest primate density in Africa", desc: "Thirteen primate species in one forest, led by over 1,500 wild chimpanzees." },

@@ -2,11 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import semulikiHotSprings from "@/assets/semuliki-hot-springs.jpg";
-import sceneCulture from "@/assets/scene-culture.jpg";
-import expLodge from "@/assets/exp-lodge.jpg";
-import rwenzoriHikers from "@/assets/nile-bridge-aerial.jpg";
 import expChimp from "@/assets/exp-chimp.jpg";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
+import g_semuliki_springs from "@/assets/gallery/semuliki-springs.jpg";
+import g_shoebill_1 from "@/assets/gallery/shoebill-1.jpg";
+import g_birding from "@/assets/gallery/birding.jpg";
 
 const FAQS = [
   {
@@ -76,10 +76,9 @@ export const Route = createFileRoute("/destinations/semuliki")({
         },
       ]}
       galleryImages={[
-        { src: semulikiHotSprings, alt: "Steam rising from the Sempaya hot springs" },
-        { src: sceneCulture, alt: "Bakonzo and Batwa community life near Semuliki" },
-        { src: expLodge, alt: "Forest-edge lodge near Semuliki National Park" },
-        { src: rwenzoriHikers, alt: "Trekking into Semuliki's lowland rainforest" },
+        { src: g_semuliki_springs, alt: "The Sempaya hot springs in Semuliki" },
+        { src: g_shoebill_1, alt: "Shoebill in the Semliki wetlands" },
+        { src: g_birding, alt: "Birding in western Uganda" },
       ]}
       highlights={[
         { title: "Sempaya hot springs", desc: "Boiling geothermal springs reachable on an easy guided forest walk." },

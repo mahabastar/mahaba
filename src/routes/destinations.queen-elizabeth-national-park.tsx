@@ -3,11 +3,14 @@ import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import sceneElephants from "@/assets/scene-elephants.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
-import expChimp from "@/assets/exp-chimp.jpg";
-import sceneCrane from "@/assets/scene-crane.jpg";
-import expLodge from "@/assets/exp-lodge.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
+import g_qenp_1 from "@/assets/gallery/qenp-1.jpg";
+import g_qenp_2 from "@/assets/gallery/qenp-2.jpg";
+import g_qenp_gate from "@/assets/gallery/qenp-gate.jpg";
+import g_hippo_road from "@/assets/gallery/hippo-road.jpg";
+import g_tree_lion from "@/assets/gallery/tree-lion.jpg";
+import g_qenp_3 from "@/assets/gallery/qenp-3.jpg";
 
 const FAQS = [
   {
@@ -82,11 +85,12 @@ export const Route = createFileRoute("/destinations/queen-elizabeth-national-par
         },
       ]}
       galleryImages={[
-        { src: sceneElephants, alt: "Elephants on the Kasenyi Plains" },
-        { src: sceneLion, alt: "Tree-climbing lions of Ishasha, part of Queen Elizabeth NP" },
-        { src: expChimp, alt: "Chimpanzee in Kyambura Gorge" },
-        { src: sceneCrane, alt: "Water birds along the Kazinga Channel" },
-        { src: expLodge, alt: "Lodge overlooking the Kazinga Channel" },
+        { src: g_qenp_1, alt: "Queen Elizabeth National Park plains" },
+        { src: g_qenp_2, alt: "Wildlife of Queen Elizabeth National Park" },
+        { src: g_qenp_gate, alt: "Entering Queen Elizabeth National Park" },
+        { src: g_hippo_road, alt: "Hippo beside the park road" },
+        { src: g_tree_lion, alt: "Tree-climbing lion in Ishasha" },
+        { src: g_qenp_3, alt: "Kazinga Channel country" },
       ]}
       highlights={[
         { title: "Kazinga Channel boat cruise", desc: "Two hours past one of Africa's largest hippo concentrations — widely rated the park's best activity." },

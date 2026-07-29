@@ -2,15 +2,16 @@ import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
-import sceneCulture from "@/assets/scene-culture.jpg";
-import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
-import expLodge from "@/assets/exp-lodge.jpg";
-import expCoffee from "@/assets/exp-coffee.jpg";
-import ctaSunset from "@/assets/cta-sunset.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
 import sceneFalls from "@/assets/scene-falls.jpg";
 import expSipi from "@/assets/exp-sipi.jpg";
+import g_bunyonyi_1 from "@/assets/gallery/bunyonyi-1.jpg";
+import g_bunyonyi_2 from "@/assets/gallery/bunyonyi-2.jpg";
+import g_bunyonyi_canoe from "@/assets/gallery/bunyonyi-canoe.jpg";
+import g_bunyonyi_3 from "@/assets/gallery/bunyonyi-3.jpg";
+import g_bunyonyi_4 from "@/assets/gallery/bunyonyi-4.jpg";
+import g_bunyonyi_5 from "@/assets/gallery/bunyonyi-5.jpg";
 
 const FAQS = [
   {
@@ -85,12 +86,12 @@ export const Route = createFileRoute("/destinations/lake-bunyonyi")({
         },
       ]}
       galleryImages={[
-        { src: sceneBunyonyi, alt: "Lake Bunyonyi at dawn" },
-        { src: sceneCulture, alt: "Bakiga community" },
-        { src: sceneRwenzori, alt: "Terraced hills" },
-        { src: expLodge, alt: "Lakeside eco-lodge" },
-        { src: expCoffee, alt: "Coffee on the lake" },
-        { src: ctaSunset, alt: "Sunset on Lake Bunyonyi" },
+        { src: g_bunyonyi_1, alt: "Lake Bunyonyi at dawn" },
+        { src: g_bunyonyi_2, alt: "Islands on Lake Bunyonyi" },
+        { src: g_bunyonyi_canoe, alt: "Dugout canoe on Lake Bunyonyi" },
+        { src: g_bunyonyi_3, alt: "Terraced hills above Lake Bunyonyi" },
+        { src: g_bunyonyi_4, alt: "Lakeside calm at Bunyonyi" },
+        { src: g_bunyonyi_5, alt: "Evening on Lake Bunyonyi" },
       ]}
       highlights={[
         { title: "Dugout canoe safaris", desc: "Paddle between the islands with local Bakiga guides — no engines, no rush." },

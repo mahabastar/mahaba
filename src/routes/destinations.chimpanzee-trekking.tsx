@@ -2,12 +2,15 @@ import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import expChimp from "@/assets/exp-chimp.jpg";
-import sceneCulture from "@/assets/scene-culture.jpg";
-import expLodge from "@/assets/exp-lodge.jpg";
 import sceneFalls from "@/assets/scene-falls.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
-import rwenzoriHikers from "@/assets/nile-bridge-aerial.jpg";
+import g_chimp_trekking_1 from "@/assets/gallery/chimp-trekking-1.jpg";
+import g_chimp_trekking_2 from "@/assets/gallery/chimp-trekking-2.jpg";
+import g_chimp_trekking_3 from "@/assets/gallery/chimp-trekking-3.jpg";
+import g_chimpanzee_1 from "@/assets/gallery/chimpanzee-1.jpg";
+import g_chimp_roadside from "@/assets/gallery/chimp-roadside.jpg";
+import g_ngamba_chimps_1 from "@/assets/gallery/ngamba-chimps-1.jpg";
 
 const FAQS = [
   {
@@ -78,10 +81,12 @@ export const Route = createFileRoute("/destinations/chimpanzee-trekking")({
         },
       ]}
       galleryImages={[
-        { src: expChimp, alt: "Wild chimpanzee foraging in Kibale's canopy" },
-        { src: rwenzoriHikers, alt: "Trekkers following a chimpanzee community through the forest" },
-        { src: sceneCulture, alt: "Local community life near Uganda's chimp-trekking forests" },
-        { src: expLodge, alt: "Forest lodge near a chimpanzee trekking site" },
+        { src: g_chimp_trekking_1, alt: "Chimpanzee trekking in Kibale Forest" },
+        { src: g_chimp_trekking_2, alt: "Chimpanzee high in the forest canopy" },
+        { src: g_chimp_trekking_3, alt: "Moments from a chimpanzee trek" },
+        { src: g_chimpanzee_1, alt: "Chimpanzee portrait in Kibale" },
+        { src: g_chimp_roadside, alt: "Chimpanzee in a roadside tree" },
+        { src: g_ngamba_chimps_1, alt: "Rescued chimpanzees at Ngamba Island" },
       ]}
       highlights={[
         { title: "Africa's highest chimp density", desc: "Kibale holds over 1,500 wild chimpanzees, the best sighting odds on the continent." },
