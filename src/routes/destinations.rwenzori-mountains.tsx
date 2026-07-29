@@ -11,6 +11,7 @@ import g_rwenzori_hikers from "@/assets/gallery/rwenzori-hikers.jpg";
 import g_rwenzori_2 from "@/assets/gallery/rwenzori-2.jpg";
 import g_rwenzori_3 from "@/assets/gallery/rwenzori-3.jpg";
 import g_rwenzori_4 from "@/assets/gallery/rwenzori-4.jpg";
+import g_rwenzori_6 from "@/assets/gallery/rwenzori-6.jpg";
 
 const FAQS = [
   {
@@ -85,6 +86,7 @@ export const Route = createFileRoute("/destinations/rwenzori-mountains")({
         },
       ]}
       galleryImages={[
+        { src: g_rwenzori_6, alt: "Hiking the Rwenzori Mountains" },
         { src: g_rwenzori_snow, alt: "Snow on the Rwenzori ridges" },
         { src: g_rwenzori_1, alt: "Rwenzori Mountains trekking route" },
         { src: g_rwenzori_hikers, alt: "Hikers in the Rwenzori" },

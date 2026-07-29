@@ -8,6 +8,14 @@ import g_virunga_volcanoes from "@/assets/gallery/virunga-volcanoes.jpg";
 import g_virunga_volcanoes_2 from "@/assets/gallery/virunga-volcanoes-2.jpg";
 import g_golden_monkey_1 from "@/assets/gallery/golden-monkey-1.jpg";
 import g_golden_monkey_2 from "@/assets/gallery/golden-monkey-2.jpg";
+import g_mgahinga_moments_1 from "@/assets/gallery/mgahinga-moments-1.jpg";
+import g_mgahinga_moments_2 from "@/assets/gallery/mgahinga-moments-2.jpg";
+import g_mgahinga_moments_3 from "@/assets/gallery/mgahinga-moments-3.jpg";
+import g_mgahinga_moments_4 from "@/assets/gallery/mgahinga-moments-4.jpg";
+import g_mgahinga_moments_5 from "@/assets/gallery/mgahinga-moments-5.jpg";
+import g_mgahinga_moments_6 from "@/assets/gallery/mgahinga-moments-6.jpg";
+import g_mgahinga_moments_7 from "@/assets/gallery/mgahinga-moments-7.jpg";
+import g_mgahinga_moments_8 from "@/assets/gallery/mgahinga-moments-8.jpg";
 
 const FAQS = [
   {
@@ -77,6 +85,14 @@ export const Route = createFileRoute("/destinations/mgahinga-gorilla")({
         },
       ]}
       galleryImages={[
+        { src: g_mgahinga_moments_1, alt: "Moments from Mgahinga gorilla trekking" },
+        { src: g_mgahinga_moments_2, alt: "Trekking group in Mgahinga" },
+        { src: g_mgahinga_moments_3, alt: "Gorilla trekking in Mgahinga" },
+        { src: g_mgahinga_moments_4, alt: "On the Mgahinga gorilla trail" },
+        { src: g_mgahinga_moments_5, alt: "Mgahinga gorilla trekking moments" },
+        { src: g_mgahinga_moments_6, alt: "Mountain gorilla in Mgahinga" },
+        { src: g_mgahinga_moments_7, alt: "Trekkers in Mgahinga Gorilla National Park" },
+        { src: g_mgahinga_moments_8, alt: "Moments at Mgahinga" },
         { src: g_virunga_volcanoes, alt: "The Virunga volcanoes above Mgahinga" },
         { src: g_virunga_volcanoes_2, alt: "Volcano slopes on the Mgahinga border" },
         { src: g_golden_monkey_1, alt: "Golden monkey, Mgahinga" },
