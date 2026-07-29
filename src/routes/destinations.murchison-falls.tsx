@@ -12,6 +12,8 @@ import g_murchison_falls_2 from "@/assets/gallery/murchison-falls-2.jpg";
 import g_murchison_moments_2 from "@/assets/gallery/murchison-moments-2.jpg";
 import g_paara_1 from "@/assets/gallery/paara-1.jpg";
 import g_murchison_moments_3 from "@/assets/gallery/murchison-moments-3.jpg";
+import g_murchison_moments_new_9 from "@/assets/gallery/murchison-moments-new-9.jpg";
+import g_murchison_moments_new_10 from "@/assets/gallery/murchison-moments-new-10.jpg";
 
 const FAQS = [
   {
@@ -86,6 +88,8 @@ export const Route = createFileRoute("/destinations/murchison-falls")({
         },
       ]}
       galleryImages={[
+        { src: g_murchison_moments_new_9, alt: "Moments at Murchison Falls" },
+        { src: g_murchison_moments_new_10, alt: "The falls from the Nile below" },
         { src: g_murchison_falls_1, alt: "The Nile forced through Murchison Falls" },
         { src: g_murchison_moments_1, alt: "Moments at Murchison Falls" },
         { src: g_murchison_falls_2, alt: "Murchison Falls from the viewpoint" },

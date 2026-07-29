@@ -10,6 +10,7 @@ import g_kidepo_moments_3 from "@/assets/gallery/kidepo-moments-3.jpg";
 import g_kidepo_moments_4 from "@/assets/gallery/kidepo-moments-4.jpg";
 import g_kidepo_moments_5 from "@/assets/gallery/kidepo-moments-5.jpg";
 import g_kidepo_moments_6 from "@/assets/gallery/kidepo-moments-6.jpg";
+import g_kidepo_moments_13 from "@/assets/gallery/kidepo-moments-13.jpg";
 
 const FAQS = [
   {
@@ -84,6 +85,7 @@ export const Route = createFileRoute("/destinations/kidepo-valley")({
         },
       ]}
       galleryImages={[
+        { src: g_kidepo_moments_13, alt: "Kidepo Valley National Park" },
         { src: g_kidepo_moments_1, alt: "Kidepo Valley's open savanna" },
         { src: g_kidepo_moments_2, alt: "Game drive in the Narus Valley" },
         { src: g_kidepo_moments_3, alt: "Wildlife of Kidepo Valley" },

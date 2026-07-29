@@ -6,6 +6,11 @@ import sceneFalls from "@/assets/scene-falls.jpg";
 import g_rhino_ziwa from "@/assets/gallery/rhino-ziwa.jpg";
 import g_mammals_1 from "@/assets/gallery/mammals-1.jpg";
 import g_shoebill_2 from "@/assets/gallery/shoebill-2.jpg";
+import g_ziwa_moments_1 from "@/assets/gallery/ziwa-moments-1.jpg";
+import g_ziwa_moments_2 from "@/assets/gallery/ziwa-moments-2.jpg";
+import g_ziwa_moments_3 from "@/assets/gallery/ziwa-moments-3.jpg";
+import g_ziwa_moments_4 from "@/assets/gallery/ziwa-moments-4.jpg";
+import g_ziwa_moments_5 from "@/assets/gallery/ziwa-moments-5.jpg";
 
 const FAQS = [
   {
@@ -75,6 +80,11 @@ export const Route = createFileRoute("/destinations/ziwa-rhino-sanctuary")({
         },
       ]}
       galleryImages={[
+        { src: g_ziwa_moments_1, alt: "Moments from Ziwa Rhino Sanctuary" },
+        { src: g_ziwa_moments_2, alt: "Rhino tracking on foot at Ziwa" },
+        { src: g_ziwa_moments_3, alt: "White rhino at Ziwa Rhino Sanctuary" },
+        { src: g_ziwa_moments_4, alt: "Rangers and rhinos at Ziwa" },
+        { src: g_ziwa_moments_5, alt: "Ziwa Rhino Sanctuary grasslands" },
         { src: g_rhino_ziwa, alt: "White rhino grazing at Ziwa" },
         { src: g_mammals_1, alt: "Wildlife at Ziwa Rhino Sanctuary" },
         { src: g_shoebill_2, alt: "Shoebill in the Ziwa wetlands" },

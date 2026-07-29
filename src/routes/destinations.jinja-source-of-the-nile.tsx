@@ -11,6 +11,7 @@ import g_white_water_rafting_1 from "@/assets/gallery/white-water-rafting-1.jpg"
 import g_white_water_rafting_2 from "@/assets/gallery/white-water-rafting-2.jpg";
 import g_nile_bridge from "@/assets/gallery/nile-bridge.jpg";
 import g_source_of_the_nile_3 from "@/assets/gallery/source-of-the-nile-3.jpg";
+import g_source_of_the_nile_8 from "@/assets/gallery/source-of-the-nile-8.jpg";
 
 const FAQS = [
   {
@@ -85,6 +86,7 @@ export const Route = createFileRoute("/destinations/jinja-source-of-the-nile")({
         },
       ]}
       galleryImages={[
+        { src: g_source_of_the_nile_8, alt: "Moments at the Source of the Nile" },
         { src: g_source_of_the_nile_1, alt: "The Source of the Nile at Jinja" },
         { src: g_source_of_the_nile_2, alt: "Where Lake Victoria becomes the Nile" },
         { src: g_white_water_rafting_1, alt: "White-water rafting on the Nile" },
