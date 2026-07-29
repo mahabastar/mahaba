@@ -21,6 +21,12 @@ import expSipi from "@/assets/exp-sipi.jpg";
 import expCoffee from "@/assets/exp-coffee.jpg";
 import expShoebill from "@/assets/exp-shoebill.jpg";
 import ctaSunset from "@/assets/cta-sunset.jpg";
+import g_gorilla_silverback from "@/assets/gallery/gorilla-silverback.jpg";
+import g_source_of_the_nile_1 from "@/assets/gallery/source-of-the-nile-1.jpg";
+import g_tree_lion from "@/assets/gallery/tree-lion.jpg";
+import g_shoebill_1 from "@/assets/gallery/shoebill-1.jpg";
+import g_chimp_trekking_1 from "@/assets/gallery/chimp-trekking-1.jpg";
+import g_pearl_of_africa from "@/assets/gallery/pearl-of-africa.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -252,12 +258,12 @@ function SectionHeader({
 
 /* ---------------- Why Uganda ---------------- */
 const whyCards = [
-  { title: "Mountain Gorillas", desc: "Trek Bwindi's ancient rainforest to meet gentle giants face to face.", img: heroGorilla, to: "/destinations/gorilla-trekking" },
-  { title: "Source of the Nile", desc: "Stand at the birthplace of the world's longest river.", img: sceneFalls, to: "/destinations/jinja-source-of-the-nile" },
-  { title: "Tree-Climbing Lions", desc: "A rare spectacle above the plains of Ishasha.", img: sceneLion, to: "/destinations/tree-climbing-lions" },
-  { title: "1,000+ Bird Species", desc: "One of Africa's greatest birding paradises.", img: sceneCrane, to: "/bird-guide" },
-  { title: "Primate Diversity", desc: "The richest concentration of primates on the continent.", img: expChimp, to: "/destinations/chimpanzee-trekking" },
-  { title: "The Pearl of Africa", desc: "Named by Churchill. Confirmed by everyone who visits.", img: sceneBunyonyi, to: "/uganda-explorer" },
+  { title: "Mountain Gorillas", desc: "Trek Bwindi's ancient rainforest to meet gentle giants face to face.", img: g_gorilla_silverback, to: "/destinations/gorilla-trekking" },
+  { title: "Source of the Nile", desc: "Stand at the birthplace of the world's longest river.", img: g_source_of_the_nile_1, to: "/destinations/jinja-source-of-the-nile" },
+  { title: "Tree-Climbing Lions", desc: "A rare spectacle above the plains of Ishasha.", img: g_tree_lion, to: "/destinations/tree-climbing-lions" },
+  { title: "1,000+ Bird Species", desc: "One of Africa's greatest birding paradises.", img: g_shoebill_1, to: "/bird-guide" },
+  { title: "Primate Diversity", desc: "The richest concentration of primates on the continent.", img: g_chimp_trekking_1, to: "/destinations/chimpanzee-trekking" },
+  { title: "The Pearl of Africa", desc: "Named by Churchill. Confirmed by everyone who visits.", img: g_pearl_of_africa, to: "/uganda-explorer" },
 ];
 
 function WhyUganda() {
