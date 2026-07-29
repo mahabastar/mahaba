@@ -224,6 +224,35 @@ import g_source_of_the_nile_7 from "@/assets/gallery/source-of-the-nile-7.jpg";
 import g_kidepo_moments_12 from "@/assets/gallery/kidepo-moments-12.jpg";
 import g_white_water_rafting_4 from "@/assets/gallery/white-water-rafting-4.jpg";
 import g_entebbe_moments_6 from "@/assets/gallery/entebbe-moments-6.jpg";
+import g_qenp_moments_1 from "@/assets/gallery/qenp-moments-1.jpg";
+import g_qenp_moments_2 from "@/assets/gallery/qenp-moments-2.jpg";
+import g_qenp_moments_3 from "@/assets/gallery/qenp-moments-3.jpg";
+import g_qenp_moments_4 from "@/assets/gallery/qenp-moments-4.jpg";
+import g_mgahinga_moments_1 from "@/assets/gallery/mgahinga-moments-1.jpg";
+import g_mgahinga_moments_2 from "@/assets/gallery/mgahinga-moments-2.jpg";
+import g_mgahinga_moments_3 from "@/assets/gallery/mgahinga-moments-3.jpg";
+import g_mgahinga_moments_4 from "@/assets/gallery/mgahinga-moments-4.jpg";
+import g_mgahinga_moments_5 from "@/assets/gallery/mgahinga-moments-5.jpg";
+import g_mgahinga_moments_6 from "@/assets/gallery/mgahinga-moments-6.jpg";
+import g_mgahinga_moments_7 from "@/assets/gallery/mgahinga-moments-7.jpg";
+import g_mgahinga_moments_8 from "@/assets/gallery/mgahinga-moments-8.jpg";
+import g_ziwa_moments_1 from "@/assets/gallery/ziwa-moments-1.jpg";
+import g_ziwa_moments_2 from "@/assets/gallery/ziwa-moments-2.jpg";
+import g_ziwa_moments_3 from "@/assets/gallery/ziwa-moments-3.jpg";
+import g_ziwa_moments_4 from "@/assets/gallery/ziwa-moments-4.jpg";
+import g_ziwa_moments_5 from "@/assets/gallery/ziwa-moments-5.jpg";
+import g_murchison_moments_new_9 from "@/assets/gallery/murchison-moments-new-9.jpg";
+import g_murchison_moments_new_10 from "@/assets/gallery/murchison-moments-new-10.jpg";
+import g_source_of_the_nile_8 from "@/assets/gallery/source-of-the-nile-8.jpg";
+import g_family_safari from "@/assets/gallery/family-safari.jpg";
+import g_boat_cruise_6 from "@/assets/gallery/boat-cruise-6.jpg";
+import g_walking_safari from "@/assets/gallery/walking-safari.jpg";
+import g_self_drive_safari from "@/assets/gallery/self-drive-safari.jpg";
+import g_honeymoon_safari from "@/assets/gallery/honeymoon-safari.jpg";
+import g_rwenzori_6 from "@/assets/gallery/rwenzori-6.jpg";
+import g_kidepo_moments_13 from "@/assets/gallery/kidepo-moments-13.jpg";
+import g_cultural_respect from "@/assets/gallery/cultural-respect.jpg";
+import g_lodge_riverside_dinner from "@/assets/gallery/lodge-riverside-dinner.jpg";
 
 export const GALLERY_CATEGORIES = [
   "Gorilla Trekking",
@@ -470,4 +499,33 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   { slug: "kidepo-moments-12", src: g_kidepo_moments_12, title: "Moments in Kidepo Valley National Park (12 of 12)", category: "Landscapes" },
   { slug: "white-water-rafting-4", src: g_white_water_rafting_4, title: "White-water rafting on the Nile (4 of 4)", category: "Adventure" },
   { slug: "entebbe-moments-6", src: g_entebbe_moments_6, title: "Moments in Entebbe (6 of 6)", category: "Landscapes" },
+  { slug: "qenp-moments-1", src: g_qenp_moments_1, title: "Moments from Queen Elizabeth National Park (1 of 4)", category: "Landscapes" },
+  { slug: "qenp-moments-2", src: g_qenp_moments_2, title: "Moments from Queen Elizabeth National Park (2 of 4)", category: "Landscapes" },
+  { slug: "qenp-moments-3", src: g_qenp_moments_3, title: "Moments from Queen Elizabeth National Park (3 of 4)", category: "Landscapes" },
+  { slug: "qenp-moments-4", src: g_qenp_moments_4, title: "Moments from Queen Elizabeth National Park (4 of 4)", category: "Landscapes" },
+  { slug: "mgahinga-moments-1", src: g_mgahinga_moments_1, title: "Moments from Mgahinga gorilla trekking (1 of 8)", category: "Gorilla Trekking" },
+  { slug: "mgahinga-moments-2", src: g_mgahinga_moments_2, title: "Moments from Mgahinga gorilla trekking (2 of 8)", category: "Gorilla Trekking" },
+  { slug: "mgahinga-moments-3", src: g_mgahinga_moments_3, title: "Moments from Mgahinga gorilla trekking (3 of 8)", category: "Gorilla Trekking" },
+  { slug: "mgahinga-moments-4", src: g_mgahinga_moments_4, title: "Moments from Mgahinga gorilla trekking (4 of 8)", category: "Gorilla Trekking" },
+  { slug: "mgahinga-moments-5", src: g_mgahinga_moments_5, title: "Moments from Mgahinga gorilla trekking (5 of 8)", category: "Gorilla Trekking" },
+  { slug: "mgahinga-moments-6", src: g_mgahinga_moments_6, title: "Moments from Mgahinga gorilla trekking (6 of 8)", category: "Gorilla Trekking" },
+  { slug: "mgahinga-moments-7", src: g_mgahinga_moments_7, title: "Moments from Mgahinga gorilla trekking (7 of 8)", category: "Gorilla Trekking" },
+  { slug: "mgahinga-moments-8", src: g_mgahinga_moments_8, title: "Moments from Mgahinga gorilla trekking (8 of 8)", category: "Gorilla Trekking" },
+  { slug: "ziwa-moments-1", src: g_ziwa_moments_1, title: "Moments from Ziwa Rhino Sanctuary (1 of 5)", category: "Wildlife" },
+  { slug: "ziwa-moments-2", src: g_ziwa_moments_2, title: "Moments from Ziwa Rhino Sanctuary (2 of 5)", category: "Wildlife" },
+  { slug: "ziwa-moments-3", src: g_ziwa_moments_3, title: "Moments from Ziwa Rhino Sanctuary (3 of 5)", category: "Wildlife" },
+  { slug: "ziwa-moments-4", src: g_ziwa_moments_4, title: "Moments from Ziwa Rhino Sanctuary (4 of 5)", category: "Wildlife" },
+  { slug: "ziwa-moments-5", src: g_ziwa_moments_5, title: "Moments from Ziwa Rhino Sanctuary (5 of 5)", category: "Wildlife" },
+  { slug: "murchison-moments-new-9", src: g_murchison_moments_new_9, title: "Moments at Murchison Falls (10 of 11)", category: "Landscapes" },
+  { slug: "murchison-moments-new-10", src: g_murchison_moments_new_10, title: "Moments at Murchison Falls (11 of 11)", category: "Landscapes" },
+  { slug: "source-of-the-nile-8", src: g_source_of_the_nile_8, title: "At the Source of the Nile, Jinja (8 of 8)", category: "Landscapes" },
+  { slug: "family-safari", src: g_family_safari, title: "Family safari in Uganda", category: "Adventure" },
+  { slug: "boat-cruise-6", src: g_boat_cruise_6, title: "Boat cruise on the Kazinga Channel (6 of 6)", category: "Adventure" },
+  { slug: "walking-safari", src: g_walking_safari, title: "Guided walking safari", category: "Adventure" },
+  { slug: "self-drive-safari", src: g_self_drive_safari, title: "Self-drive safari across Uganda", category: "Adventure" },
+  { slug: "honeymoon-safari", src: g_honeymoon_safari, title: "Honeymoon safari in Uganda", category: "Adventure" },
+  { slug: "rwenzori-6", src: g_rwenzori_6, title: "Hiking the Rwenzori Mountains", category: "Landscapes" },
+  { slug: "kidepo-moments-13", src: g_kidepo_moments_13, title: "Kidepo Valley National Park (13 of 13)", category: "Landscapes" },
+  { slug: "cultural-respect", src: g_cultural_respect, title: "Cultural respect and community encounters", category: "Culture" },
+  { slug: "lodge-riverside-dinner", src: g_lodge_riverside_dinner, title: "Candlelit riverside dinner at a safari lodge", category: "Lodges" },
 ];
