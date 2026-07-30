@@ -115,6 +115,7 @@ import g_lodge_5 from "@/assets/gallery/lodge-5.jpg";
 import g_lodge_6 from "@/assets/gallery/lodge-6.jpg";
 import g_lodge_7 from "@/assets/gallery/lodge-7.jpg";
 import g_lodge_8 from "@/assets/gallery/lodge-8.jpg";
+import g_lodge_9 from "@/assets/gallery/lodge-9.jpg";
 import g_lodge_kyaninga from "@/assets/gallery/lodge-kyaninga.jpg";
 import g_lodge_room from "@/assets/gallery/lodge-room.jpg";
 import g_balloon from "@/assets/gallery/balloon.jpg";
@@ -217,6 +218,8 @@ import g_mount_elgon_6 from "@/assets/gallery/mount-elgon-6.jpg";
 import g_murchison_moments_new_8 from "@/assets/gallery/murchison-moments-new-8.jpg";
 import g_shoebill_5 from "@/assets/gallery/shoebill-5.jpg";
 import g_shoebill_6 from "@/assets/gallery/shoebill-6.jpg";
+import g_shoebill_7 from "@/assets/gallery/shoebill-7.jpg";
+import g_grey_crowned_crane from "@/assets/gallery/grey-crowned-crane.jpg";
 import g_sipi_moments_8 from "@/assets/gallery/sipi-moments-8.jpg";
 import g_sipi_moments_9 from "@/assets/gallery/sipi-moments-9.jpg";
 import g_source_of_the_nile_6 from "@/assets/gallery/source-of-the-nile-6.jpg";
@@ -390,6 +393,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   { slug: "lodge-6", src: g_lodge_6, title: "Lodge dining under the stars", category: "Lodges" },
   { slug: "lodge-7", src: g_lodge_7, title: "Guest suite with park views", category: "Lodges" },
   { slug: "lodge-8", src: g_lodge_8, title: "Lodge lounge and firepit", category: "Lodges" },
+  { slug: "lodge-9", src: g_lodge_9, title: "Thatched lodge and pool deck, western Uganda", category: "Lodges" },
   { slug: "lodge-kyaninga", src: g_lodge_kyaninga, title: "Kyaninga Lodge, Fort Portal", category: "Lodges" },
   { slug: "lodge-room", src: g_lodge_room, title: "Lodge bedroom with lake views", category: "Lodges" },
   { slug: "balloon", src: g_balloon, title: "Hot air balloon over the savanna", category: "Adventure" },
@@ -492,6 +496,8 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   { slug: "murchison-moments-new-8", src: g_murchison_moments_new_8, title: "Moments at Murchison Falls (9 of 9)", category: "Landscapes" },
   { slug: "shoebill-5", src: g_shoebill_5, title: "Shoebill stork in the Mabamba swamp (5 of 6)", category: "Birding" },
   { slug: "shoebill-6", src: g_shoebill_6, title: "Shoebill stork in the Mabamba swamp (6 of 6)", category: "Birding" },
+  { slug: "shoebill-7", src: g_shoebill_7, title: "Shoebill standing in the papyrus, Mabamba Bay", category: "Birding" },
+  { slug: "grey-crowned-crane", src: g_grey_crowned_crane, title: "Grey crowned crane, Uganda's national bird", category: "Birding" },
   { slug: "sipi-moments-8", src: g_sipi_moments_8, title: "Moments at Sipi Falls (8 of 9)", category: "Landscapes" },
   { slug: "sipi-moments-9", src: g_sipi_moments_9, title: "Moments at Sipi Falls (9 of 9)", category: "Landscapes" },
   { slug: "source-of-the-nile-6", src: g_source_of_the_nile_6, title: "At the Source of the Nile, Jinja (6 of 7)", category: "Landscapes" },
