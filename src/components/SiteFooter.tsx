@@ -43,10 +43,10 @@ const COLS: { h: string; items: FooterItem[] }[] = [
       { label: "Wildlife Encyclopedia", to: "/wildlife-encyclopedia" },
       { label: "Seasonal Safari Calendar", to: "/seasonal-safari-calendar" },
       { label: "Safari Budget Calculator", to: "/safari-budget-calculator" },
-      { label: "Visa & Entry", ask: true },
-      { label: "Packing", ask: true },
+      { label: "Visa & Entry", to: "/visa-guide" },
+      { label: "Packing", to: "/packing-guide" },
       { label: "Safety", ask: true },
-      { label: "FAQs", ask: true },
+      { label: "FAQs", to: "/faqs" },
     ],
   },
   {

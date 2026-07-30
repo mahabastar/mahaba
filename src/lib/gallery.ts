@@ -249,6 +249,9 @@ import g_murchison_moments_new_10 from "@/assets/gallery/murchison-moments-new-1
 import g_source_of_the_nile_8 from "@/assets/gallery/source-of-the-nile-8.jpg";
 import g_family_safari from "@/assets/gallery/family-safari.jpg";
 import g_boat_cruise_6 from "@/assets/gallery/boat-cruise-6.jpg";
+import g_boat_cruise_7 from "@/assets/gallery/boat-cruise-7.jpg";
+import g_mburo_9 from "@/assets/gallery/mburo-9.jpg";
+import g_batwa_dance_2 from "@/assets/gallery/batwa-dance-2.jpg";
 import g_walking_safari from "@/assets/gallery/walking-safari.jpg";
 import g_self_drive_safari from "@/assets/gallery/self-drive-safari.jpg";
 import g_honeymoon_safari from "@/assets/gallery/honeymoon-safari.jpg";
@@ -527,6 +530,9 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   { slug: "source-of-the-nile-8", src: g_source_of_the_nile_8, title: "At the Source of the Nile, Jinja (8 of 8)", category: "Landscapes" },
   { slug: "family-safari", src: g_family_safari, title: "Family safari in Uganda", category: "Adventure" },
   { slug: "boat-cruise-6", src: g_boat_cruise_6, title: "Boat cruise on the Kazinga Channel (6 of 6)", category: "Adventure" },
+  { slug: "boat-cruise-7", src: g_boat_cruise_7, title: "Double-decker boat cruise below Murchison Falls", category: "Adventure" },
+  { slug: "mburo-9", src: g_mburo_9, title: "Zebras and buffalo at a Lake Mburo waterhole", category: "Wildlife" },
+  { slug: "batwa-dance-2", src: g_batwa_dance_2, title: "Dancing with a Batwa community", category: "Culture" },
   { slug: "walking-safari", src: g_walking_safari, title: "Guided walking safari", category: "Adventure" },
   { slug: "self-drive-safari", src: g_self_drive_safari, title: "Self-drive safari across Uganda", category: "Adventure" },
   { slug: "honeymoon-safari", src: g_honeymoon_safari, title: "Honeymoon safari in Uganda", category: "Adventure" },
