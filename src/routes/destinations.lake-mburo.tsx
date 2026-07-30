@@ -4,6 +4,7 @@ import { buildDestinationHead } from "@/lib/destination-head";
 import ctaSunset from "@/assets/cta-sunset.jpg";
 import gorillaSilverback from "@/assets/gorilla-silverback-insects.jpg";
 import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
+import g_mburo_zebras from "@/assets/gallery/mburo-9.jpg";
 import g_mburo_1 from "@/assets/gallery/mburo-1.jpg";
 import g_mburo_moments_1 from "@/assets/gallery/mburo-moments-1.jpg";
 import g_mburo_2 from "@/assets/gallery/mburo-2.jpg";
@@ -38,7 +39,7 @@ export const Route = createFileRoute("/destinations/lake-mburo")({
       title: "Lake Mburo National Park, Uganda — Walking Safaris & Zebra | Wild Uganda Treks",
       description:
         "Uganda's most compact savanna park, closest to Kampala — walking and horseback safaris among zebra and impala, with a signature boat cruise.",
-      ogImage: ctaSunset,
+      ogImage: g_mburo_zebras,
       region: "Western Uganda",
       keywords: [
         "Lake Mburo National Park",
@@ -56,8 +57,8 @@ export const Route = createFileRoute("/destinations/lake-mburo")({
       name="Lake Mburo"
       tagline={<>Small park, <em className="italic text-gold">close enough for a stopover</em>.</>}
       intro="Uganda's most compact savanna park sits just a few hours from Kampala, in the rolling grassland of Ankole cattle country. Without elephants or lions to complicate things, Lake Mburo is the one park in Uganda where walking and horseback safaris among zebra and impala are simply routine — a different pace entirely from the country's bigger parks."
-      heroImage={ctaSunset}
-      heroAlt="Sunset over Lake Mburo's savanna plains"
+      heroImage={g_mburo_zebras}
+      heroAlt="Zebras and buffalo at a waterhole in Lake Mburo National Park"
       facts={[
         { label: "Location", value: "Western Uganda (Ankole)" },
         { label: "Park size", value: "370 km²" },
@@ -79,6 +80,7 @@ export const Route = createFileRoute("/destinations/lake-mburo")({
         },
       ]}
       galleryImages={[
+        { src: g_mburo_zebras, alt: "Zebras and buffalo at a Lake Mburo waterhole" },
         { src: g_mburo_1, alt: "Zebras in Lake Mburo National Park" },
         { src: g_mburo_moments_1, alt: "Moments at Lake Mburo" },
         { src: g_mburo_2, alt: "Impala on the Mburo plains" },

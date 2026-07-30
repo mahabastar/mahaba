@@ -16,6 +16,8 @@ import sceneCulture from "@/assets/scene-culture.jpg";
 import sceneCrane from "@/assets/scene-crane.jpg";
 import expChimp from "@/assets/exp-chimp.jpg";
 import expBalloon from "@/assets/exp-balloon.jpg";
+import boatCruiseMurchison from "@/assets/gallery/boat-cruise-7.jpg";
+import batwaDanceCulture from "@/assets/gallery/batwa-dance-2.jpg";
 import expLodge from "@/assets/exp-lodge.jpg";
 import expSipi from "@/assets/exp-sipi.jpg";
 import expCoffee from "@/assets/exp-coffee.jpg";
@@ -346,9 +348,9 @@ const experiences: { t: string; img: string; tall?: boolean; to: string; params?
   { t: "Chimpanzee Tracking", img: expChimp, to: "/destinations/chimpanzee-trekking" },
   { t: "Bird Watching", img: sceneCrane, tall: true, to: "/bird-guide" },
   { t: "Luxury Safaris", img: expLodge, to: "/experiences/$slug", params: { slug: "luxury-safaris" } },
-  { t: "Boat Cruises", img: expBalloon, to: "/destinations/murchison-falls" },
+  { t: "Boat Cruises", img: boatCruiseMurchison, to: "/destinations/murchison-falls" },
   { t: "Photography", img: sceneLion, tall: true, to: "/gallery" },
-  { t: "Cultural Experiences", img: sceneCulture, to: "/cultural-heritage" },
+  { t: "Cultural Experiences", img: batwaDanceCulture, to: "/cultural-heritage" },
   { t: "Coffee & Tea Origins", img: expCoffee, to: "/coffee-tea-guide" },
   { t: "Hiking Rwenzori", img: sceneRwenzori, tall: true, to: "/destinations/rwenzori-mountains" },
   { t: "Adventure Activities", img: expShoebill, to: "/experiences/$slug", params: { slug: "adventure-safaris" } },
@@ -487,9 +489,9 @@ const bucket: { t: string; img: string; span?: string; to: string }[] = [
   { t: "Tree-Climbing Lions", img: sceneLion, to: "/destinations/tree-climbing-lions" },
   { t: "Shoebill Tracking", img: expShoebill, to: "/bird-guide" },
   { t: "Tea & Coffee Plantations", img: expCoffee, to: "/coffee-tea-guide" },
-  { t: "Batwa Experience", img: sceneCulture, to: "/cultural-heritage" },
+  { t: "Batwa Experience", img: batwaDanceCulture, to: "/cultural-heritage" },
   { t: "Homestay Experience", img: sceneCulture, to: "/responsible-tourism" },
-  { t: "Boat Cruises", img: expBalloon, span: "col-span-2", to: "/destinations/queen-elizabeth-national-park" },
+  { t: "Boat Cruises", img: boatCruiseMurchison, span: "col-span-2", to: "/destinations/queen-elizabeth-national-park" },
   { t: "Sunset Game Drives", img: ctaSunset, to: "/national-parks" },
 ];
 
