@@ -9,6 +9,7 @@ import expChimp from "@/assets/exp-chimp.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
 import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
+import bunyonyiAerial from "@/assets/gallery/bunyonyi-aerial.jpg";
 import sceneElephants from "@/assets/scene-elephants.jpg";
 import sceneFalls from "@/assets/scene-falls.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
@@ -52,7 +53,7 @@ const REGIONS: Record<string, Region> = {
       { name: "Rwenzori Mountains", to: "/destinations/rwenzori-mountains", img: sceneRwenzori, blurb: "Glaciated peaks on the equator — Africa's third-highest summit." },
       { name: "Crater Lakes", to: "/destinations/crater-lakes", img: sceneBunyonyi, blurb: "A field of volcanic lakes between Fort Portal and Kibale." },
       { name: "Semuliki National Park", to: "/destinations/semuliki", img: semulikiHotSprings, blurb: "Boiling springs and Congo-basin birdlife found nowhere else in Uganda." },
-      { name: "Lake Bunyonyi", to: "/destinations/lake-bunyonyi", img: sceneBunyonyi, blurb: "Terraced hills, still water, and nothing at all on the schedule." },
+      { name: "Lake Bunyonyi", to: "/destinations/lake-bunyonyi", img: bunyonyiAerial, blurb: "Terraced hills, still water, and nothing at all on the schedule." },
       { name: "Lake Mburo National Park", to: "/destinations/lake-mburo", img: elephantSavanna, blurb: "Zebra, impala and walking safaris on the road west from Kampala." },
     ],
   },
