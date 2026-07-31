@@ -53,7 +53,9 @@ const VALUES = [
 const FOUNDERS = [
   {
     name: "Xavaer Asaba",
-    initials: "XA",
+    photo: founderXavaer,
+    photoAlt:
+      "Xavaer Asaba, co-founder of Wild Uganda Treks, at the snowy summit of Margherita Peak in the Rwenzori Mountains",
     role: "Co-founder & Lead Guide",
     body: "Xavaer has spent over a decade leading treks through Uganda's forests and savannahs, with a deep knowledge of wildlife behaviour, terrain and timing that only comes from thousands of hours in the field. He has a gift for reading the environment — knowing exactly where the gorillas are likely to be, when the light will be perfect for photographs, and how to keep a group calm and curious even in the thick of the bush.",
   },
