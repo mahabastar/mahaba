@@ -10,6 +10,12 @@ import sceneLion from "@/assets/scene-lion.jpg";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
 import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
 import bunyonyiAerial from "@/assets/gallery/bunyonyi-aerial.jpg";
+import mgahingaMoment from "@/assets/gallery/mgahinga-moments-1.jpg";
+import rwenzoriSnow from "@/assets/gallery/rwenzori-snow.jpg";
+import qenpPhoto from "@/assets/gallery/qenp-1.jpg";
+import treeLion from "@/assets/gallery/tree-lion.jpg";
+import craterLakes from "@/assets/gallery/crater-lakes-1.jpg";
+import mburoZebras from "@/assets/gallery/mburo-9.jpg";
 import sceneElephants from "@/assets/scene-elephants.jpg";
 import sceneFalls from "@/assets/scene-falls.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
@@ -46,15 +52,15 @@ const REGIONS: Record<string, Region> = {
     when: "June–September and December–February are driest, which makes forest trails firmer for trekking. Green-season months bring lower rates and better birding.",
     spots: [
       { name: "Bwindi Impenetrable Forest", to: "/destinations/bwindi-impenetrable", img: heroGorilla, blurb: "Roughly half the world's mountain gorillas, in ancient montane rainforest." },
-      { name: "Mgahinga Gorilla National Park", to: "/destinations/mgahinga-gorilla", img: sceneRwenzori, blurb: "Volcano slopes, golden monkeys and a quieter gorilla trek." },
+      { name: "Mgahinga Gorilla National Park", to: "/destinations/mgahinga-gorilla", img: mgahingaMoment, blurb: "Volcano slopes, golden monkeys and a quieter gorilla trek." },
       { name: "Kibale Forest", to: "/destinations/kibale-forest", img: expChimp, blurb: "The highest primate density in Africa, led by wild chimpanzees." },
-      { name: "Queen Elizabeth National Park", to: "/destinations/queen-elizabeth-national-park", img: sceneElephants, blurb: "The Kazinga Channel, Kasenyi plains and Kyambura Gorge." },
-      { name: "Tree-Climbing Lions, Ishasha", to: "/destinations/tree-climbing-lions", img: sceneLion, blurb: "Lions draped over fig branches in the park's southern sector." },
-      { name: "Rwenzori Mountains", to: "/destinations/rwenzori-mountains", img: sceneRwenzori, blurb: "Glaciated peaks on the equator — Africa's third-highest summit." },
-      { name: "Crater Lakes", to: "/destinations/crater-lakes", img: sceneBunyonyi, blurb: "A field of volcanic lakes between Fort Portal and Kibale." },
+      { name: "Queen Elizabeth National Park", to: "/destinations/queen-elizabeth-national-park", img: qenpPhoto, blurb: "The Kazinga Channel, Kasenyi plains and Kyambura Gorge." },
+      { name: "Tree-Climbing Lions, Ishasha", to: "/destinations/tree-climbing-lions", img: treeLion, blurb: "Lions draped over fig branches in the park's southern sector." },
+      { name: "Rwenzori Mountains", to: "/destinations/rwenzori-mountains", img: rwenzoriSnow, blurb: "Glaciated peaks on the equator — Africa's third-highest summit." },
+      { name: "Crater Lakes", to: "/destinations/crater-lakes", img: craterLakes, blurb: "A field of volcanic lakes between Fort Portal and Kibale." },
       { name: "Semuliki National Park", to: "/destinations/semuliki", img: semulikiHotSprings, blurb: "Boiling springs and Congo-basin birdlife found nowhere else in Uganda." },
       { name: "Lake Bunyonyi", to: "/destinations/lake-bunyonyi", img: bunyonyiAerial, blurb: "Terraced hills, still water, and nothing at all on the schedule." },
-      { name: "Lake Mburo National Park", to: "/destinations/lake-mburo", img: elephantSavanna, blurb: "Zebra, impala and walking safaris on the road west from Kampala." },
+      { name: "Lake Mburo National Park", to: "/destinations/lake-mburo", img: mburoZebras, blurb: "Zebra, impala and walking safaris on the road west from Kampala." },
     ],
   },
   "central-uganda": {
