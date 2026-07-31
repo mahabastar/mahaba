@@ -43,12 +43,22 @@ function Gallery() {
   const [filter, setFilter] = useState<(typeof FILTERS)[number]>("All");
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-  const photos = useMemo(
-    () => (filter === "All" ? GALLERY_PHOTOS : GALLERY_PHOTOS.filter((p) => p.category === filter)),
-    [filter],
-  );
+  const sections = useMemo(() => {
+    const cats = (filter === "All" ? GALLERY_CATEGORIES : [filter]) as readonly GalleryCategory[];
+    return cats
+      .map((category) => ({
+        category,
+        meta: GALLERY_SECTION_CTAS[category],
+        photos: GALLERY_PHOTOS.filter((p) => p.category === category),
+      }))
+      .filter((s) => s.photos.length > 0);
+  }, [filter]);
 
-  const open = (i: number) => {
+  const photos = useMemo(() => sections.flatMap((s) => s.photos), [sections]);
+
+  const open = (slug: string) => {
+    const i = photos.findIndex((p) => p.slug === slug);
+    if (i < 0) return;
     setOpenIndex(i);
     trackEvent("gallery_photo_open", {
       photo_slug: photos[i].slug,
@@ -69,13 +79,13 @@ function Gallery() {
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-ivory/75">
             {GALLERY_PHOTOS.length} photographs from the field — no stock imagery, just what
-            was actually there. Tap any image to see it full size and start planning that
-            exact experience.
+            was actually there. Every section ends with a way to start planning that exact
+            experience.
           </p>
         </div>
       </section>
 
-      {/* Category filters */}
+      {/* Section filters */}
       <section className="sticky top-0 z-30 border-b border-charcoal/10 bg-ivory/95 backdrop-blur">
         <div className="mx-auto max-w-[1400px] px-6 py-4 md:px-10">
           <div className="flex snap-x gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
@@ -103,37 +113,76 @@ function Gallery() {
         </div>
       </section>
 
-      {/* Masonry grid */}
-      <section className="bg-ivory">
-        <div className="mx-auto max-w-[1400px] px-6 py-12 md:px-10 md:py-16">
-          <div className="columns-1 gap-4 sm:columns-2 lg:columns-3 xl:columns-4 [&>*]:mb-4">
-            {photos.map((p, i) => (
-              <button
-                key={p.slug}
-                type="button"
-                onClick={() => open(i)}
-                className="group relative block w-full break-inside-avoid overflow-hidden rounded-2xl text-left focus:outline-none focus:ring-2 focus:ring-forest"
-              >
-                <img
-                  src={p.src}
-                  alt={p.title}
-                  loading="lazy"
-                  decoding="async"
-                  className="w-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/10 to-transparent opacity-0 transition-opacity group-hover:opacity-100 group-focus:opacity-100" />
-                <div className="absolute inset-x-4 bottom-4 opacity-0 transition-opacity group-hover:opacity-100 group-focus:opacity-100">
-                  <div className="text-[0.6rem] uppercase tracking-widest text-gold">{p.category}</div>
-                  <div className="mt-1 text-sm text-ivory">{p.title}</div>
-                  <div className="mt-2 text-[0.65rem] uppercase tracking-widest text-ivory/70">
-                    Interested in this experience? →
-                  </div>
+      {/* Sections */}
+      <div className="bg-ivory">
+        {sections.map((section, idx) => (
+          <section
+            key={section.category}
+            id={section.category.toLowerCase().replace(/[^a-z]+/g, "-")}
+            className={idx % 2 === 1 ? "bg-sand/40" : ""}
+          >
+            <div className="mx-auto max-w-[1400px] px-6 py-14 md:px-10 md:py-20">
+              <div className="flex flex-wrap items-end justify-between gap-6">
+                <div className="max-w-xl">
+                  <div className="eyebrow">{section.photos.length} photographs</div>
+                  <h2 className="mt-3 font-display text-3xl text-charcoal md:text-5xl">
+                    {section.category}
+                  </h2>
+                  <p className="mt-3 text-charcoal/60">{section.meta.blurb}</p>
                 </div>
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
+                <Link
+                  to={section.meta.to}
+                  onClick={() =>
+                    trackEvent("gallery_section_cta", { photo_category: section.category })
+                  }
+                  className="inline-flex shrink-0 rounded-full border border-forest px-6 py-3 text-sm font-medium text-forest transition-all hover:bg-forest hover:text-ivory"
+                >
+                  {section.meta.cta} →
+                </Link>
+              </div>
+
+              <div className="mt-10 columns-1 gap-4 sm:columns-2 lg:columns-3 xl:columns-4 [&>*]:mb-4">
+                {section.photos.map((p) => (
+                  <button
+                    key={p.slug}
+                    type="button"
+                    onClick={() => open(p.slug)}
+                    className="group relative block w-full break-inside-avoid overflow-hidden rounded-2xl text-left focus:outline-none focus:ring-2 focus:ring-forest"
+                  >
+                    <img
+                      src={p.src}
+                      alt={p.title}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/10 to-transparent opacity-0 transition-opacity group-hover:opacity-100 group-focus:opacity-100" />
+                    <div className="absolute inset-x-4 bottom-4 opacity-0 transition-opacity group-hover:opacity-100 group-focus:opacity-100">
+                      <div className="text-[0.6rem] uppercase tracking-widest text-gold">{p.category}</div>
+                      <div className="mt-1 text-sm text-ivory">{p.title}</div>
+                      <div className="mt-2 text-[0.65rem] uppercase tracking-widest text-ivory/70">
+                        Interested in this experience? →
+                      </div>
+                    </div>
+                  </button>
+                ))}
+              </div>
+
+              <div className="mt-10 flex justify-center">
+                <Link
+                  to={section.meta.to}
+                  onClick={() =>
+                    trackEvent("gallery_section_cta_bottom", { photo_category: section.category })
+                  }
+                  className="inline-flex rounded-full bg-forest px-7 py-4 text-sm font-medium text-ivory shadow-md transition-all hover:scale-105 hover:bg-forest-deep"
+                >
+                  {section.meta.cta}
+                </Link>
+              </div>
+            </div>
+          </section>
+        ))}
+      </div>
 
       {/* CTA */}
       <section className="bg-charcoal grain">
