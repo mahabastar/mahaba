@@ -4,7 +4,12 @@ import { useMemo, useState } from "react";
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import { GalleryLightbox } from "@/components/GalleryLightbox";
-import { GALLERY_CATEGORIES, GALLERY_PHOTOS } from "@/lib/gallery";
+import {
+  GALLERY_CATEGORIES,
+  GALLERY_PHOTOS,
+  GALLERY_SECTION_CTAS,
+  type GalleryCategory,
+} from "@/lib/gallery";
 import { SITE_CONFIG } from "@/lib/site-config";
 import { trackEvent } from "@/lib/analytics";
 
