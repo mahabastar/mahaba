@@ -140,12 +140,13 @@ function About() {
                 key={f.name}
                 className="overflow-hidden rounded-3xl border border-ivory/12 bg-charcoal/30 backdrop-blur-sm"
               >
-                {/* Portrait placeholder — drop in each founder's photo here. */}
-                <div className="relative flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-forest to-charcoal">
-                  <span className="font-display text-6xl text-gold/70">{f.initials}</span>
-                  <span className="absolute bottom-4 right-5 text-[0.6rem] uppercase tracking-widest text-ivory/35">
-                    Portrait coming soon
-                  </span>
+                <div className="relative aspect-[4/5] w-full overflow-hidden bg-charcoal">
+                  <img
+                    src={f.photo}
+                    alt={f.photoAlt}
+                    className="h-full w-full object-cover object-top"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="p-7 md:p-9">
                   <h3 className="font-display text-2xl text-ivory">{f.name}</h3>
