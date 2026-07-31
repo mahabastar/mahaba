@@ -6,6 +6,8 @@ import { SiteFooter } from "@/components/SiteFooter";
 import sceneCulture from "@/assets/scene-culture.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import expLodge from "@/assets/exp-lodge.jpg";
+import founderXavaer from "@/assets/founders/xavaer-asaba.png";
+import founderHerbert from "@/assets/founders/herbert-muzoora.png";
 import { SITE_CONFIG } from "@/lib/site-config";
 
 export const Route = createFileRoute("/about")({
