@@ -259,6 +259,7 @@ import g_rwenzori_6 from "@/assets/gallery/rwenzori-6.jpg";
 import g_kidepo_moments_13 from "@/assets/gallery/kidepo-moments-13.jpg";
 import g_cultural_respect from "@/assets/gallery/cultural-respect.jpg";
 import g_lodge_riverside_dinner from "@/assets/gallery/lodge-riverside-dinner.jpg";
+import g_fly_in_safari from "@/assets/gallery/fly-in-safari.jpg";
 
 export const GALLERY_CATEGORIES = [
   "Gorilla Trekking",
@@ -269,6 +270,7 @@ export const GALLERY_CATEGORIES = [
   "Culture",
   "Lodges",
   "Adventure",
+  "Group Photos",
 ] as const;
 
 export type GalleryCategory = (typeof GALLERY_CATEGORIES)[number];
@@ -423,8 +425,8 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   { slug: "karamojong-2", src: g_karamojong_2, title: "Karamojong cultural experience (2 of 5)", category: "Culture" },
   { slug: "karamojong-3", src: g_karamojong_3, title: "Karamojong cultural experience (3 of 5)", category: "Culture" },
   { slug: "entebbe-moments-1", src: g_entebbe_moments_1, title: "Moments in Entebbe (1 of 6)", category: "Landscapes" },
-  { slug: "homestay-1", src: g_homestay_1, title: "Homestay experience with local families (1 of 4)", category: "Culture" },
-  { slug: "homestay-2", src: g_homestay_2, title: "Homestay experience with local families (2 of 4)", category: "Culture" },
+  { slug: "homestay-1", src: g_homestay_1, title: "Homestay experience with local families (1 of 4)", category: "Group Photos" },
+  { slug: "homestay-2", src: g_homestay_2, title: "Homestay experience with local families (2 of 4)", category: "Group Photos" },
   { slug: "boat-cruise-2", src: g_boat_cruise_2, title: "Boat cruise on the Victoria Nile (2 of 5)", category: "Adventure" },
   { slug: "mburo-moments-1", src: g_mburo_moments_1, title: "Moments in Lake Mburo National Park (1 of 8)", category: "Landscapes" },
   { slug: "mburo-moments-2", src: g_mburo_moments_2, title: "Moments in Lake Mburo National Park (2 of 8)", category: "Landscapes" },
@@ -474,8 +476,8 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   { slug: "source-of-the-nile-5", src: g_source_of_the_nile_5, title: "At the Source of the Nile, Jinja (5 of 7)", category: "Landscapes" },
   { slug: "boat-cruise-4", src: g_boat_cruise_4, title: "Boat cruise on the Victoria Nile (4 of 5)", category: "Adventure" },
   { slug: "boat-cruise-5", src: g_boat_cruise_5, title: "Boat cruise on the Victoria Nile (5 of 5)", category: "Adventure" },
-  { slug: "homestay-3", src: g_homestay_3, title: "Homestay experience with local families (3 of 4)", category: "Culture" },
-  { slug: "homestay-4", src: g_homestay_4, title: "Homestay experience with local families (4 of 4)", category: "Culture" },
+  { slug: "homestay-3", src: g_homestay_3, title: "Homestay experience with local families (3 of 4)", category: "Group Photos" },
+  { slug: "homestay-4", src: g_homestay_4, title: "Homestay experience with local families (4 of 4)", category: "Group Photos" },
   { slug: "mburo-moments-8", src: g_mburo_moments_8, title: "Moments in Lake Mburo National Park (8 of 8)", category: "Landscapes" },
   { slug: "white-water-rafting-2", src: g_white_water_rafting_2, title: "White-water rafting on the Nile (2 of 4)", category: "Adventure" },
   { slug: "white-water-rafting-3", src: g_white_water_rafting_3, title: "White-water rafting on the Nile (3 of 4)", category: "Adventure" },
@@ -528,16 +530,69 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   { slug: "murchison-moments-new-9", src: g_murchison_moments_new_9, title: "Moments at Murchison Falls (10 of 11)", category: "Landscapes" },
   { slug: "murchison-moments-new-10", src: g_murchison_moments_new_10, title: "Moments at Murchison Falls (11 of 11)", category: "Landscapes" },
   { slug: "source-of-the-nile-8", src: g_source_of_the_nile_8, title: "At the Source of the Nile, Jinja (8 of 8)", category: "Landscapes" },
-  { slug: "family-safari", src: g_family_safari, title: "Family safari in Uganda", category: "Adventure" },
+  { slug: "family-safari", src: g_family_safari, title: "Family safari in Uganda", category: "Group Photos" },
   { slug: "boat-cruise-6", src: g_boat_cruise_6, title: "Boat cruise on the Kazinga Channel (6 of 6)", category: "Adventure" },
   { slug: "boat-cruise-7", src: g_boat_cruise_7, title: "Double-decker boat cruise below Murchison Falls", category: "Adventure" },
   { slug: "mburo-9", src: g_mburo_9, title: "Zebras and buffalo at a Lake Mburo waterhole", category: "Wildlife" },
   { slug: "batwa-dance-2", src: g_batwa_dance_2, title: "Dancing with a Batwa community", category: "Culture" },
-  { slug: "walking-safari", src: g_walking_safari, title: "Guided walking safari", category: "Adventure" },
+  { slug: "walking-safari", src: g_walking_safari, title: "Guided walking safari", category: "Group Photos" },
   { slug: "self-drive-safari", src: g_self_drive_safari, title: "Self-drive safari across Uganda", category: "Adventure" },
   { slug: "honeymoon-safari", src: g_honeymoon_safari, title: "Honeymoon safari in Uganda", category: "Adventure" },
   { slug: "rwenzori-6", src: g_rwenzori_6, title: "Hiking the Rwenzori Mountains", category: "Landscapes" },
   { slug: "kidepo-moments-13", src: g_kidepo_moments_13, title: "Kidepo Valley National Park (13 of 13)", category: "Landscapes" },
   { slug: "cultural-respect", src: g_cultural_respect, title: "Cultural respect and community encounters", category: "Culture" },
   { slug: "lodge-riverside-dinner", src: g_lodge_riverside_dinner, title: "Candlelit riverside dinner at a safari lodge", category: "Lodges" },
+  { slug: "fly-in-safari", src: g_fly_in_safari, title: "Fly-in safari group at the airstrip", category: "Group Photos" },
 ];
+
+/** Per-section intro copy and call-to-action shown on the gallery page. */
+export const GALLERY_SECTION_CTAS: Record<
+  GalleryCategory,
+  { blurb: string; cta: string; to: string }
+> = {
+  "Gorilla Trekking": {
+    blurb: "An hour with a habituated gorilla family in Bwindi or Mgahinga.",
+    cta: "Plan a gorilla trek",
+    to: "/destinations/gorilla-trekking",
+  },
+  "Chimpanzees & Primates": {
+    blurb: "Kibale, Kyambura and Budongo — Uganda's primate capital.",
+    cta: "Plan a chimp trek",
+    to: "/destinations/chimpanzee-trekking",
+  },
+  Wildlife: {
+    blurb: "Tree-climbing lions, elephants, rhinos and the Big Five parks.",
+    cta: "See the wildlife parks",
+    to: "/national-parks",
+  },
+  Birding: {
+    blurb: "Over 1,000 species, including the shoebill and the grey crowned crane.",
+    cta: "Open the bird guide",
+    to: "/bird-guide",
+  },
+  Landscapes: {
+    blurb: "Glaciers on the equator, crater lakes, waterfalls and the Nile.",
+    cta: "Explore Uganda",
+    to: "/uganda-explorer",
+  },
+  Culture: {
+    blurb: "Batwa communities, kingdoms, coffee farms and homestays.",
+    cta: "Discover the culture",
+    to: "/cultural-heritage",
+  },
+  Lodges: {
+    blurb: "Where you sleep between the drives — bush camps to crater-rim lodges.",
+    cta: "See our journeys",
+    to: "/experiences",
+  },
+  Adventure: {
+    blurb: "Rafting, hiking, boat cruises, balloons and self-drive routes.",
+    cta: "Browse experiences",
+    to: "/experiences",
+  },
+  "Group Photos": {
+    blurb: "Families, friends and fly-in groups we have guided across Uganda.",
+    cta: "Plan a group safari",
+    to: "/build-my-safari",
+  },
+};

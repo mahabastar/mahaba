@@ -3,6 +3,7 @@ import { useEffect, useMemo, useState } from "react";
 
 import { SEARCH_INDEX } from "@/lib/search-index";
 import logoAsset from "@/assets/wild-uganda-treks-logo.png.asset.json";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 const NAV_LINKS: { label: string; hash: string }[] = [
   { label: "Discover", hash: "discover" },
@@ -210,6 +211,7 @@ export function SiteNav() {
         </nav>
 
         <div className="flex items-center gap-3">
+          <LanguageSwitcher className="hidden text-ivory/85 md:block" />
           <button
             onClick={() => setSearchOpen(true)}
             aria-label="Search"
@@ -270,6 +272,9 @@ export function SiteNav() {
           </div>
 
           <div className="flex-1 overflow-y-auto px-6 pb-10">
+            <div className="mb-6 flex justify-start text-ivory/85">
+              <LanguageSwitcher />
+            </div>
             <nav className="flex flex-col gap-1 border-b border-ivory/10 pb-6">
               {NAV_LINKS.map((l) =>
                 isHome ? (
