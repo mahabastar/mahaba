@@ -25,7 +25,6 @@ import expLodge from "@/assets/exp-lodge.jpg";
 import expShoebill from "@/assets/exp-shoebill.jpg";
 import nileBridgeAerial from "@/assets/nile-bridge-aerial.jpg";
 import semulikiHotSprings from "@/assets/semuliki-hot-springs.jpg";
-import elephantSavanna from "@/assets/elephant-savanna.jpg";
 import ctaSunset from "@/assets/cta-sunset.jpg";
 
 type Spot = { name: string; to: string; img: string; blurb: string };
