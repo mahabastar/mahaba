@@ -259,6 +259,7 @@ import g_rwenzori_6 from "@/assets/gallery/rwenzori-6.jpg";
 import g_kidepo_moments_13 from "@/assets/gallery/kidepo-moments-13.jpg";
 import g_cultural_respect from "@/assets/gallery/cultural-respect.jpg";
 import g_lodge_riverside_dinner from "@/assets/gallery/lodge-riverside-dinner.jpg";
+import g_fly_in_safari from "@/assets/gallery/fly-in-safari.jpg";
 
 export const GALLERY_CATEGORIES = [
   "Gorilla Trekking",
@@ -269,6 +270,7 @@ export const GALLERY_CATEGORIES = [
   "Culture",
   "Lodges",
   "Adventure",
+  "Group Photos",
 ] as const;
 
 export type GalleryCategory = (typeof GALLERY_CATEGORIES)[number];
