@@ -6,6 +6,8 @@ import { SiteFooter } from "@/components/SiteFooter";
 import sceneCulture from "@/assets/scene-culture.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import expLodge from "@/assets/exp-lodge.jpg";
+import founderXavaer from "@/assets/founders/xavaer-asaba.png";
+import founderHerbert from "@/assets/founders/herbert-muzoora.png";
 import { SITE_CONFIG } from "@/lib/site-config";
 
 export const Route = createFileRoute("/about")({
@@ -53,13 +55,17 @@ const VALUES = [
 const FOUNDERS = [
   {
     name: "Xavaer Asaba",
-    initials: "XA",
+    photo: founderXavaer,
+    photoAlt:
+      "Xavaer Asaba, co-founder of Wild Uganda Treks, at the snowy summit of Margherita Peak in the Rwenzori Mountains",
     role: "Co-founder & Lead Guide",
     body: "Xavaer has spent over a decade leading treks through Uganda's forests and savannahs, with a deep knowledge of wildlife behaviour, terrain and timing that only comes from thousands of hours in the field. He has a gift for reading the environment — knowing exactly where the gorillas are likely to be, when the light will be perfect for photographs, and how to keep a group calm and curious even in the thick of the bush.",
   },
   {
     name: "Herbert Muzoora",
-    initials: "HM",
+    photo: founderHerbert,
+    photoAlt:
+      "Herbert Muzoora, co-founder of Wild Uganda Treks, in Wild Uganda Treks branded cap and shirt in the forest",
     role: "Co-founder & Head of Journeys",
     body: "Herbert brings the same 12 years of hands-on experience, with an especially sharp instinct for logistics and route planning across some of Uganda's more remote and rewarding destinations. Well before Wild Uganda Treks, he built a reputation for turning long travel days into smooth, enjoyable parts of the journey — always ready with a story, a shortcut, or a well-timed stop at just the right viewpoint.",
   },
@@ -134,12 +140,13 @@ function About() {
                 key={f.name}
                 className="overflow-hidden rounded-3xl border border-ivory/12 bg-charcoal/30 backdrop-blur-sm"
               >
-                {/* Portrait placeholder — drop in each founder's photo here. */}
-                <div className="relative flex aspect-[4/3] items-center justify-center bg-gradient-to-br from-forest to-charcoal">
-                  <span className="font-display text-6xl text-gold/70">{f.initials}</span>
-                  <span className="absolute bottom-4 right-5 text-[0.6rem] uppercase tracking-widest text-ivory/35">
-                    Portrait coming soon
-                  </span>
+                <div className="relative aspect-[4/5] w-full overflow-hidden bg-charcoal">
+                  <img
+                    src={f.photo}
+                    alt={f.photoAlt}
+                    className="h-full w-full object-cover object-top"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="p-7 md:p-9">
                   <h3 className="font-display text-2xl text-ivory">{f.name}</h3>
