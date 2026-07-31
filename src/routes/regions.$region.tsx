@@ -6,9 +6,7 @@ import { SITE_CONFIG } from "@/lib/site-config";
 
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import expChimp from "@/assets/exp-chimp.jpg";
-import sceneLion from "@/assets/scene-lion.jpg";
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
-import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
 import bunyonyiAerial from "@/assets/gallery/bunyonyi-aerial.jpg";
 import mgahingaMoment from "@/assets/gallery/mgahinga-moments-1.jpg";
 import rwenzoriSnow from "@/assets/gallery/rwenzori-snow.jpg";
@@ -16,6 +14,8 @@ import qenpPhoto from "@/assets/gallery/qenp-1.jpg";
 import treeLion from "@/assets/gallery/tree-lion.jpg";
 import craterLakes from "@/assets/gallery/crater-lakes-1.jpg";
 import mburoZebras from "@/assets/gallery/mburo-9.jpg";
+import rhinoZiwa from "@/assets/gallery/rhino-ziwa.jpg";
+import mountElgon from "@/assets/gallery/mount-elgon-1.jpg";
 import sceneElephants from "@/assets/scene-elephants.jpg";
 import sceneFalls from "@/assets/scene-falls.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
@@ -74,7 +74,7 @@ const REGIONS: Record<string, Region> = {
     when: "Year-round. Mabamba's shoebill boat trips are best at first light, any month.",
     spots: [
       { name: "Entebbe", to: "/destinations/entebbe", img: expLodge, blurb: "Lakeside gateway city, botanical gardens and a chimpanzee island offshore." },
-      { name: "Ziwa Rhino Sanctuary", to: "/destinations/ziwa-rhino-sanctuary", img: elephantSavanna, blurb: "The only place to track rhinos in Uganda, on foot." },
+      { name: "Ziwa Rhino Sanctuary", to: "/destinations/ziwa-rhino-sanctuary", img: rhinoZiwa, blurb: "The only place to track rhinos in Uganda, on foot." },
       { name: "Shoebill & Mabamba Birding", to: "/bird-guide", img: expShoebill, blurb: "Papyrus channels holding one of Africa's most sought-after birds." },
       { name: "Cultural Heritage", to: "/cultural-heritage", img: sceneCulture, blurb: "Kingdoms, craft and the living traditions of the heartland." },
     ],
@@ -91,7 +91,7 @@ const REGIONS: Record<string, Region> = {
     spots: [
       { name: "Jinja & the Source of the Nile", to: "/destinations/jinja-source-of-the-nile", img: nileBridgeAerial, blurb: "Rafting, kayaking and the point where the Nile begins." },
       { name: "Sipi Falls", to: "/destinations/sipi-falls", img: expSipi, blurb: "Three waterfalls, coffee terraces, and views over the Karamoja plains." },
-      { name: "Mount Elgon", to: "/destinations/mount-elgon", img: sceneRwenzori, blurb: "The world's largest volcanic caldera, hiked over four to seven days." },
+      { name: "Mount Elgon", to: "/destinations/mount-elgon", img: mountElgon, blurb: "The world's largest volcanic caldera, hiked over four to seven days." },
       { name: "Coffee & Tea Origins", to: "/coffee-tea-guide", img: sceneCrane, blurb: "Washing stations and smallholder farms on Elgon's slopes." },
     ],
   },
@@ -106,7 +106,7 @@ const REGIONS: Record<string, Region> = {
     when: "December–February for concentrated game around the river; the boat cruise to the base of the falls runs year-round.",
     spots: [
       { name: "Murchison Falls National Park", to: "/destinations/murchison-falls", img: sceneFalls, blurb: "Game drives on the delta, and a boat cruise to the foot of the falls." },
-      { name: "Ziwa Rhino Sanctuary", to: "/destinations/ziwa-rhino-sanctuary", img: elephantSavanna, blurb: "A rhino tracking stopover on the drive north from Kampala." },
+      { name: "Ziwa Rhino Sanctuary", to: "/destinations/ziwa-rhino-sanctuary", img: rhinoZiwa, blurb: "A rhino tracking stopover on the drive north from Kampala." },
       { name: "Kidepo Valley National Park", to: "/destinations/kidepo-valley", img: ctaSunset, blurb: "Uganda's remotest park — cheetah, ostrich and complete isolation." },
       { name: "National Parks Overview", to: "/national-parks", img: sceneElephants, blurb: "How the northern parks compare, and how to combine them." },
     ],
