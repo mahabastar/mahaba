@@ -119,7 +119,7 @@ function Gallery() {
           <section
             key={section.category}
             id={section.category.toLowerCase().replace(/[^a-z]+/g, "-")}
-            className={idx % 2 === 1 ? "bg-sand/40" : ""}
+            className={idx % 2 === 1 ? "bg-charcoal/[0.03]" : ""}
           >
             <div className="mx-auto max-w-[1400px] px-6 py-14 md:px-10 md:py-20">
               <div className="flex flex-wrap items-end justify-between gap-6">
