@@ -61,7 +61,9 @@ const FOUNDERS = [
   },
   {
     name: "Herbert Muzoora",
-    initials: "HM",
+    photo: founderHerbert,
+    photoAlt:
+      "Herbert Muzoora, co-founder of Wild Uganda Treks, in Wild Uganda Treks branded cap and shirt in the forest",
     role: "Co-founder & Head of Journeys",
     body: "Herbert brings the same 12 years of hands-on experience, with an especially sharp instinct for logistics and route planning across some of Uganda's more remote and rewarding destinations. Well before Wild Uganda Treks, he built a reputation for turning long travel days into smooth, enjoyable parts of the journey — always ready with a story, a shortcut, or a well-timed stop at just the right viewpoint.",
   },
