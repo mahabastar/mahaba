@@ -16,10 +16,11 @@ import craterLakes from "@/assets/gallery/crater-lakes-1.jpg";
 import mburoZebras from "@/assets/gallery/mburo-9.jpg";
 import rhinoZiwa from "@/assets/gallery/rhino-ziwa.jpg";
 import mountElgon from "@/assets/gallery/mount-elgon-1.jpg";
+import coffeeTea from "@/assets/gallery/coffee-tea-1.jpg";
+import batwaDance from "@/assets/gallery/batwa-dance-2.jpg";
 import sceneElephants from "@/assets/scene-elephants.jpg";
 import sceneFalls from "@/assets/scene-falls.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
-import sceneCrane from "@/assets/scene-crane.jpg";
 import expSipi from "@/assets/exp-sipi.jpg";
 import expLodge from "@/assets/exp-lodge.jpg";
 import expShoebill from "@/assets/exp-shoebill.jpg";
@@ -91,7 +92,7 @@ const REGIONS: Record<string, Region> = {
       { name: "Jinja & the Source of the Nile", to: "/destinations/jinja-source-of-the-nile", img: nileBridgeAerial, blurb: "Rafting, kayaking and the point where the Nile begins." },
       { name: "Sipi Falls", to: "/destinations/sipi-falls", img: expSipi, blurb: "Three waterfalls, coffee terraces, and views over the Karamoja plains." },
       { name: "Mount Elgon", to: "/destinations/mount-elgon", img: mountElgon, blurb: "The world's largest volcanic caldera, hiked over four to seven days." },
-      { name: "Coffee & Tea Origins", to: "/coffee-tea-guide", img: sceneCrane, blurb: "Washing stations and smallholder farms on Elgon's slopes." },
+      { name: "Coffee & Tea Origins", to: "/coffee-tea-guide", img: coffeeTea, blurb: "Washing stations and smallholder farms on Elgon's slopes." },
     ],
   },
   "northern-uganda": {
@@ -123,7 +124,7 @@ const REGIONS: Record<string, Region> = {
       { name: "Kidepo Valley National Park", to: "/destinations/kidepo-valley", img: ctaSunset, blurb: "Mountain-ringed savanna with wildlife you'll usually have to yourself." },
       { name: "Karamojong Culture", to: "/cultural-heritage", img: sceneCulture, blurb: "Manyattas, cattle traditions and one of Uganda's most distinct cultures." },
       { name: "Mount Moroto & Elgon Highlands", to: "/mountains", img: sceneRwenzori, blurb: "Dry-country peaks rising straight out of the plains." },
-      { name: "Responsible Travel Here", to: "/responsible-tourism", img: sceneCulture, blurb: "How visits are arranged so revenue reaches the communities involved." },
+      { name: "Responsible Travel Here", to: "/responsible-tourism", img: batwaDance, blurb: "How visits are arranged so revenue reaches the communities involved." },
     ],
   },
 };
