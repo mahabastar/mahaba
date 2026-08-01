@@ -247,6 +247,7 @@ import g_ziwa_moments_5 from "@/assets/gallery/ziwa-moments-5.jpg";
 import g_murchison_moments_new_9 from "@/assets/gallery/murchison-moments-new-9.jpg";
 import g_murchison_moments_new_10 from "@/assets/gallery/murchison-moments-new-10.jpg";
 import g_source_of_the_nile_8 from "@/assets/gallery/source-of-the-nile-8.jpg";
+import g_nile_bungee_jump from "@/assets/gallery/nile-bungee-jump.jpg";
 import g_family_safari from "@/assets/gallery/family-safari.jpg";
 import g_boat_cruise_6 from "@/assets/gallery/boat-cruise-6.jpg";
 import g_boat_cruise_7 from "@/assets/gallery/boat-cruise-7.jpg";
