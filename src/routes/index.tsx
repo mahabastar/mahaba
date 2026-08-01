@@ -23,6 +23,7 @@ import expSipi from "@/assets/exp-sipi.jpg";
 import expCoffee from "@/assets/exp-coffee.jpg";
 import expShoebill from "@/assets/exp-shoebill.jpg";
 import ctaSunset from "@/assets/cta-sunset.jpg";
+import advRwenzoriHikers from "@/assets/gallery/adventure-rwenzori-hikers.jpg";
 import g_gorilla_silverback from "@/assets/gallery/gorilla-silverback.jpg";
 import g_source_of_the_nile_1 from "@/assets/gallery/source-of-the-nile-1.jpg";
 import g_tree_lion from "@/assets/gallery/tree-lion.jpg";
@@ -353,7 +354,7 @@ const experiences: { t: string; img: string; tall?: boolean; to: string; params?
   { t: "Cultural Experiences", img: batwaDanceCulture, to: "/cultural-heritage" },
   { t: "Coffee & Tea Origins", img: expCoffee, to: "/coffee-tea-guide" },
   { t: "Hiking Rwenzori", img: sceneRwenzori, tall: true, to: "/destinations/rwenzori-mountains" },
-  { t: "Adventure Activities", img: expShoebill, to: "/experiences/$slug", params: { slug: "adventure-safaris" } },
+  { t: "Adventure Activities", img: advRwenzoriHikers, to: "/experiences/$slug", params: { slug: "adventure-safaris" } },
   { t: "Sipi Falls", img: expSipi, to: "/destinations/sipi-falls" },
 
 ];
