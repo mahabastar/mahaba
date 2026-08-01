@@ -12,6 +12,8 @@ import g_white_water_rafting_2 from "@/assets/gallery/white-water-rafting-2.jpg"
 import g_nile_bridge from "@/assets/gallery/nile-bridge.jpg";
 import g_source_of_the_nile_3 from "@/assets/gallery/source-of-the-nile-3.jpg";
 import g_source_of_the_nile_8 from "@/assets/gallery/source-of-the-nile-8.jpg";
+import g_white_water_rafting_3 from "@/assets/gallery/white-water-rafting-3.jpg";
+import g_nile_bungee_jump from "@/assets/gallery/nile-bungee-jump.jpg";
 
 const FAQS = [
   {
