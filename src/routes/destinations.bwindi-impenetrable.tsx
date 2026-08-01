@@ -9,7 +9,7 @@ import g_gorilla_baby from "@/assets/gallery/gorilla-baby.jpg";
 import g_gorilla_tracking_1 from "@/assets/gallery/gorilla-tracking-1.jpg";
 import g_gorilla_tracking_2 from "@/assets/gallery/gorilla-tracking-2.jpg";
 import g_gorilla_lookup from "@/assets/gallery/gorilla-lookup.jpg";
-import g_batwa_moments_1 from "@/assets/gallery/batwa-moments-1.jpg";
+import g_gorilla_tracking_3 from "@/assets/gallery/gorilla-tracking-3.jpg";
 
 const FAQS = [
   {
@@ -89,7 +89,7 @@ export const Route = createFileRoute("/destinations/bwindi-impenetrable")({
         { src: g_gorilla_tracking_1, alt: "Trackers on the gorilla trail in Bwindi" },
         { src: g_gorilla_tracking_2, alt: "Face to face with a Bwindi gorilla family" },
         { src: g_gorilla_lookup, alt: "Mountain gorilla pausing mid-forage, Bwindi" },
-        { src: g_batwa_moments_1, alt: "Batwa community cultural experience near Bwindi" },
+        { src: g_gorilla_tracking_3, alt: "A gorilla family resting in the Bwindi undergrowth" },
       ]}
       highlights={[
         { title: "Half the world's mountain gorillas", desc: "The single largest population of mountain gorillas anywhere, across four trekking sectors." },

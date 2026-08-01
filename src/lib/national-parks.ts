@@ -8,6 +8,7 @@ import sceneFalls from "@/assets/scene-falls.jpg";
 import elephantSavanna from "@/assets/elephant-savanna.jpg";
 import expSipi from "@/assets/exp-sipi.jpg";
 import ctaSunset from "@/assets/cta-sunset.jpg";
+import mburoZebraWaterhole from "@/assets/gallery/mburo-zebra-waterhole.jpg";
 
 export type ParkRegion =
   | "South-western Uganda"
@@ -111,7 +112,7 @@ export const NATIONAL_PARKS: NationalPark[] = [
     knownFor: "Zebra & walking safaris",
     blurb:
       "Uganda's most compact savanna park, close enough for a stopover — the only one where a walking or horseback safari among zebra and impala is routine.",
-    img: ctaSunset,
+    img: mburoZebraWaterhole,
     to: "/destinations/lake-mburo",
   },
   {

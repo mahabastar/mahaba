@@ -27,6 +27,7 @@ import expShoebill from "@/assets/exp-shoebill.jpg";
 import nileBridgeAerial from "@/assets/nile-bridge-aerial.jpg";
 import semulikiHotSprings from "@/assets/semuliki-hot-springs.jpg";
 import ctaSunset from "@/assets/cta-sunset.jpg";
+import karamojongCulture from "@/assets/gallery/karamojong-culture.jpg";
 
 type Spot = { name: string; to: string; img: string; blurb: string };
 type Region = {
@@ -122,7 +123,7 @@ const REGIONS: Record<string, Region> = {
     when: "September–March. Access roads deteriorate quickly during the heaviest rains.",
     spots: [
       { name: "Kidepo Valley National Park", to: "/destinations/kidepo-valley", img: ctaSunset, blurb: "Mountain-ringed savanna with wildlife you'll usually have to yourself." },
-      { name: "Karamojong Culture", to: "/cultural-heritage", img: sceneCulture, blurb: "Manyattas, cattle traditions and one of Uganda's most distinct cultures." },
+      { name: "Karamojong Culture", to: "/cultural-heritage", img: karamojongCulture, blurb: "Manyattas, cattle traditions and one of Uganda's most distinct cultures." },
       { name: "Mount Moroto & Elgon Highlands", to: "/mountains", img: sceneRwenzori, blurb: "Dry-country peaks rising straight out of the plains." },
       { name: "Responsible Travel Here", to: "/responsible-tourism", img: batwaDance, blurb: "How visits are arranged so revenue reaches the communities involved." },
     ],
