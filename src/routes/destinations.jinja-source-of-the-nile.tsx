@@ -88,11 +88,13 @@ export const Route = createFileRoute("/destinations/jinja-source-of-the-nile")({
         },
       ]}
       galleryImages={[
+        { src: g_source_of_the_nile_1, alt: "The Source of the Nile sign at Jinja" },
+        { src: g_white_water_rafting_1, alt: "Rafting crew celebrating on the Nile at Jinja" },
+        { src: g_white_water_rafting_2, alt: "Raft dropping through a Grade 5 rapid below Jinja" },
+        { src: g_white_water_rafting_3, alt: "Kayakers on the White Nile rapids" },
+        { src: g_nile_bungee_jump, alt: "Bungee jump over the Nile at Jinja" },
         { src: g_source_of_the_nile_8, alt: "Moments at the Source of the Nile" },
-        { src: g_source_of_the_nile_1, alt: "The Source of the Nile at Jinja" },
         { src: g_source_of_the_nile_2, alt: "Where Lake Victoria becomes the Nile" },
-        { src: g_white_water_rafting_1, alt: "White-water rafting on the Nile" },
-        { src: g_white_water_rafting_2, alt: "Grade 5 rapids below Jinja" },
         { src: g_nile_bridge, alt: "The Nile River near Jinja from the air" },
         { src: g_source_of_the_nile_3, alt: "Boat trip to the Source of the Nile" },
       ]}
