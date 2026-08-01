@@ -535,6 +535,7 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   { slug: "boat-cruise-6", src: g_boat_cruise_6, title: "Boat cruise on the Kazinga Channel (6 of 6)", category: "Adventure" },
   { slug: "boat-cruise-7", src: g_boat_cruise_7, title: "Double-decker boat cruise below Murchison Falls", category: "Adventure" },
   { slug: "mburo-9", src: g_mburo_9, title: "Zebras and buffalo at a Lake Mburo waterhole", category: "Wildlife" },
+  { slug: "nile-bungee-jump", src: g_nile_bungee_jump, title: "44-metre bungee jump over the Nile, Jinja", category: "Adventure" },
   { slug: "batwa-dance-2", src: g_batwa_dance_2, title: "Dancing with a Batwa community", category: "Culture" },
   { slug: "walking-safari", src: g_walking_safari, title: "Guided walking safari", category: "Group Photos" },
   { slug: "self-drive-safari", src: g_self_drive_safari, title: "Self-drive safari across Uganda", category: "Adventure" },
