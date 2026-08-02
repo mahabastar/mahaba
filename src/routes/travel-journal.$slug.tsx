@@ -1,3 +1,4 @@
+import { SITE_CONFIG } from "@/lib/site-config";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 
 import { SiteNav } from "@/components/SiteNav";
@@ -11,17 +12,29 @@ export const Route = createFileRoute("/travel-journal/$slug")({
     if (!post) throw notFound();
     return post;
   },
-  head: ({ loaderData }) => ({
+  head: ({ params, loaderData }) => {
+    const url = `${SITE_CONFIG.url}/travel-journal/${params.slug}`;
+    const ogImage = loaderData ? `${SITE_CONFIG.url}${loaderData.img}` : undefined;
+    return {
     meta: loaderData
       ? [
           { title: `${loaderData.title} — Trek Wild Uganda Journal` },
           { name: "description", content: loaderData.excerpt },
           { property: "og:title", content: loaderData.title },
           { property: "og:description", content: loaderData.excerpt },
-          { property: "og:image", content: loaderData.img },
+          { property: "og:image", content: ogImage! },
+          { property: "og:url", content: url },
+          { property: "og:type", content: "article" },
+          { property: "og:site_name", content: SITE_CONFIG.name },
+          { name: "twitter:card", content: "summary_large_image" },
+          { name: "twitter:title", content: loaderData.title },
+          { name: "twitter:description", content: loaderData.excerpt ?? loaderData.overview },
+          { name: "twitter:image", content: ogImage! },
         ]
       : [],
-  }),
+      links: [{ rel: "canonical", href: url }],
+    };
+  },
   component: JournalArticle,
   errorComponent: (props) => <RouteErrorBoundary {...props} label="journal story" />,
   notFoundComponent: () => <RouteNotFoundBoundary label="journal story" />,
