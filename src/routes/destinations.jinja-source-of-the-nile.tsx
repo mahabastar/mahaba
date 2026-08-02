@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { DestinationPage } from "@/components/DestinationPage";
 import { buildDestinationHead } from "@/lib/destination-head";
 import nileBridgeAerial from "@/assets/nile-bridge-aerial.jpg";
+import sourceOfTheNileMain from "@/assets/gallery/source-of-the-nile-main.jpg";
 import sceneFalls from "@/assets/scene-falls.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import expSipi from "@/assets/exp-sipi.jpg";
@@ -46,7 +47,7 @@ export const Route = createFileRoute("/destinations/jinja-source-of-the-nile")({
       title: "Jinja & White Water Rafting on the Nile, Uganda | Wild Uganda Treks",
       description:
         "Raft Grade 3–5 rapids on the White Nile, visit the historic source of the Nile, and explore East Africa's adventure capital with Wild Uganda Treks.",
-      ogImage: nileBridgeAerial,
+      ogImage: sourceOfTheNileMain,
       region: "Eastern Uganda",
       keywords: [
         "Jinja Uganda",
@@ -65,8 +66,8 @@ export const Route = createFileRoute("/destinations/jinja-source-of-the-nile")({
       name="Jinja — Source of the Nile"
       tagline={<>Where the Nile <em className="italic text-gold">begins.</em></>}
       intro="The point where Lake Victoria tips into the world's longest river, and — a little further downstream — East Africa's undisputed adventure capital. Grade 5 white water, a 44-metre bungee, and a river journey that has drawn explorers here for over 160 years."
-      heroImage={nileBridgeAerial}
-      heroAlt="A bridge spanning the Nile River near Jinja, Uganda"
+      heroImage={sourceOfTheNileMain}
+      heroAlt="White water rushing over rocks at the Source of the Nile, Jinja, Uganda"
       facts={[
         { label: "Location", value: "Jinja, ~80km from Kampala" },
         { label: "Duration", value: "Half-day to 2 days" },
@@ -88,6 +89,7 @@ export const Route = createFileRoute("/destinations/jinja-source-of-the-nile")({
         },
       ]}
       galleryImages={[
+        { src: sourceOfTheNileMain, alt: "Rapids at the Source of the Nile, Jinja" },
         { src: g_source_of_the_nile_1, alt: "The Source of the Nile sign at Jinja" },
         { src: g_white_water_rafting_1, alt: "Rafting crew celebrating on the Nile at Jinja" },
         { src: g_white_water_rafting_2, alt: "Raft dropping through a Grade 5 rapid below Jinja" },

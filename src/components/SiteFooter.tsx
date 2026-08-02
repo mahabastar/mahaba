@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 
 import { SITE_CONFIG, buildWhatsAppHref } from "@/lib/site-config";
-import logoAsset from "@/assets/wild-uganda-treks-logo.png.asset.json";
+import logoAsset from "@/assets/wild-treks-uganda-logo.png.asset.json";
 
 type FooterItem = { label: string; to?: string; ask?: boolean };
 
@@ -99,7 +99,7 @@ export function SiteFooter() {
         <div className="grid gap-14 md:grid-cols-12">
           <div className="md:col-span-4">
             <div className="flex items-center gap-3">
-              <img src={logoAsset.url} alt="Wild Uganda Treks logo" className="h-10 w-10 shrink-0 rounded-full object-cover ring-1 ring-gold/50" />
+              <img src={logoAsset.url} alt="Wild Uganda Treks logo" className="h-12 w-12 shrink-0 rounded-full bg-ivory object-contain p-0.5 ring-1 ring-gold/50" />
               <span className="font-display text-2xl">Wild Uganda Treks</span>
             </div>
             <p className="mt-6 max-w-sm text-ivory/70">
@@ -118,7 +118,7 @@ export function SiteFooter() {
                 <span className="text-ivory/50">Email: </span>
                 <a href={`mailto:${SITE_CONFIG.email}`} className="hover:text-gold">{SITE_CONFIG.email}</a>
               </div>
-              <div><span className="text-ivory/50">Web: </span>www.wildugandatreks.org</div>
+              <div><span className="text-ivory/50">Web: </span>www.trekwilduganda.com</div>
             </div>
             <div className="mt-8 flex gap-3">
               {[

@@ -1,16 +1,18 @@
 // Host-level canonicalisation: any request arriving on the old
-// wildugandatreks.net domain (or the bare .org apex) is 301'd to the
-// canonical https://www.wildugandatreks.org origin, preserving the full
+// legacy wildugandatreks.net/.org domains (or the bare apex) is 301'd to the
+// canonical https://www.trekwilduganda.com origin, preserving the full
 // path, query string and hash-free URL so existing inbound links and
 // search-engine equity carry over.
 
-const CANONICAL_HOST = "www.wildugandatreks.org";
+const CANONICAL_HOST = "www.trekwilduganda.com";
 
 /** Hosts that must be permanently redirected to CANONICAL_HOST. */
 const LEGACY_HOSTS = new Set([
   "wildugandatreks.net",
   "www.wildugandatreks.net",
   "wildugandatreks.org",
+  "www.wildugandatreks.org",
+  "trekwilduganda.com",
 ]);
 
 /**

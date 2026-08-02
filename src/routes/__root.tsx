@@ -14,14 +14,14 @@ import appCss from "../styles.css?url";
 import { reportLovableError } from "@/lib/lovable-error-reporting";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { trackPageview } from "@/lib/analytics";
-import logoAsset from "@/assets/wild-uganda-treks-logo.png.asset.json";
+import logoAsset from "@/assets/wild-treks-uganda-logo.png.asset.json";
 
 function NotFoundComponent() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-charcoal grain px-6 text-center">
       <div className="max-w-lg">
         <Link to="/" className="mx-auto flex w-fit items-center gap-3 text-ivory">
-          <img src={logoAsset.url} alt="Wild Uganda Treks logo" className="h-10 w-10 shrink-0 rounded-full object-cover ring-1 ring-gold/50" />
+          <img src={logoAsset.url} alt="Wild Uganda Treks logo" className="h-12 w-12 shrink-0 rounded-full bg-ivory object-contain p-0.5 ring-1 ring-gold/50" />
           <span className="font-display text-xl leading-none">
             Wild Uganda <span className="text-gold">Treks</span>
           </span>
@@ -65,7 +65,7 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
     <div className="flex min-h-screen items-center justify-center bg-charcoal grain px-6 text-center">
       <div className="max-w-lg">
         <div className="mx-auto flex w-fit items-center gap-3 text-ivory">
-          <img src={logoAsset.url} alt="Wild Uganda Treks logo" className="h-10 w-10 shrink-0 rounded-full object-cover ring-1 ring-gold/50" />
+          <img src={logoAsset.url} alt="Wild Uganda Treks logo" className="h-12 w-12 shrink-0 rounded-full bg-ivory object-contain p-0.5 ring-1 ring-gold/50" />
           <span className="font-display text-xl leading-none">
             Wild Uganda <span className="text-gold">Treks</span>
           </span>
