@@ -2,7 +2,7 @@ import { Link, useRouterState } from "@tanstack/react-router";
 import { useEffect, useMemo, useState } from "react";
 
 import { SEARCH_INDEX } from "@/lib/search-index";
-import logoAsset from "@/assets/wild-treks-uganda-logo.png.asset.json";
+import logoAsset from "@/assets/trek-wild-uganda-logo.png.asset.json";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 const NAV_LINKS: { label: string; hash: string }[] = [

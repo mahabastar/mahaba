@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 
 import { SITE_CONFIG, buildWhatsAppHref } from "@/lib/site-config";
-import logoAsset from "@/assets/wild-treks-uganda-logo.png.asset.json";
+import logoAsset from "@/assets/trek-wild-uganda-logo.png.asset.json";
 
 type FooterItem = { label: string; to?: string; ask?: boolean };
 
