@@ -21,9 +21,9 @@ function NotFoundComponent() {
     <div className="flex min-h-screen items-center justify-center bg-charcoal grain px-6 text-center">
       <div className="max-w-lg">
         <Link to="/" className="mx-auto flex w-fit items-center gap-3 text-ivory">
-          <img src={logoAsset.url} alt="Wild Uganda Treks logo" className="h-12 w-12 shrink-0 rounded-full bg-ivory object-contain p-0.5 ring-1 ring-gold/50" />
+          <img src={logoAsset.url} alt="Trek Wild Uganda logo" className="h-12 w-12 shrink-0 rounded-full bg-ivory object-contain p-0.5 ring-1 ring-gold/50" />
           <span className="font-display text-xl leading-none">
-            Wild Uganda <span className="text-gold">Treks</span>
+            Trek Wild <span className="text-gold">Uganda</span>
           </span>
         </Link>
 
@@ -65,9 +65,9 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
     <div className="flex min-h-screen items-center justify-center bg-charcoal grain px-6 text-center">
       <div className="max-w-lg">
         <div className="mx-auto flex w-fit items-center gap-3 text-ivory">
-          <img src={logoAsset.url} alt="Wild Uganda Treks logo" className="h-12 w-12 shrink-0 rounded-full bg-ivory object-contain p-0.5 ring-1 ring-gold/50" />
+          <img src={logoAsset.url} alt="Trek Wild Uganda logo" className="h-12 w-12 shrink-0 rounded-full bg-ivory object-contain p-0.5 ring-1 ring-gold/50" />
           <span className="font-display text-xl leading-none">
-            Wild Uganda <span className="text-gold">Treks</span>
+            Trek Wild <span className="text-gold">Uganda</span>
           </span>
         </div>
 
@@ -106,15 +106,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Wild Uganda Treks — Discover the Pearl of Africa" },
+      { title: "Trek Wild Uganda — Discover the Pearl of Africa" },
       {
         name: "description",
         content:
-          "Wild Uganda Treks crafts luxury safaris across the Pearl of Africa — gorilla trekking, chimpanzee tracking, wildlife, birding, hiking, culture and honeymoons.",
+          "Trek Wild Uganda crafts luxury safaris across the Pearl of Africa — gorilla trekking, chimpanzee tracking, wildlife, birding, hiking, culture and honeymoons.",
       },
-      { name: "author", content: "Wild Uganda Treks" },
-      { property: "og:site_name", content: "Wild Uganda Treks" },
-      { property: "og:title", content: "Wild Uganda Treks — Discover the Pearl of Africa" },
+      { name: "author", content: "Trek Wild Uganda" },
+      { property: "og:site_name", content: "Trek Wild Uganda" },
+      { property: "og:title", content: "Trek Wild Uganda — Discover the Pearl of Africa" },
       {
         property: "og:description",
         content:

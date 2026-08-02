@@ -14,7 +14,7 @@ export const Route = createFileRoute("/travel-journal/$slug")({
   head: ({ loaderData }) => ({
     meta: loaderData
       ? [
-          { title: `${loaderData.title} — Wild Uganda Treks Journal` },
+          { title: `${loaderData.title} — Trek Wild Uganda Journal` },
           { name: "description", content: loaderData.excerpt },
           { property: "og:title", content: loaderData.title },
           { property: "og:description", content: loaderData.excerpt },

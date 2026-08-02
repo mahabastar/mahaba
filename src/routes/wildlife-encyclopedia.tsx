@@ -15,13 +15,13 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/wildlife-encyclopedia")({
   head: () => ({
     meta: [
-      { title: "Wildlife Encyclopedia — Wild Uganda Treks" },
+      { title: "Wildlife Encyclopedia — Trek Wild Uganda" },
       {
         name: "description",
         content:
           "A searchable guide to Uganda's mammals, primates, birds and reptiles — what to look for, where to see it, and when.",
       },
-      { property: "og:title", content: "Wildlife Encyclopedia — Wild Uganda Treks" },
+      { property: "og:title", content: "Wildlife Encyclopedia — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/wildlife-encyclopedia` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/wildlife-encyclopedia` }],

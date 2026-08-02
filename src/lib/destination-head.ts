@@ -16,7 +16,7 @@ export interface BuildDestinationHeadOptions {
   faqs?: DestinationFaq[];
 }
 
-const SITE_NAME = "Wild Uganda Treks";
+const SITE_NAME = "Trek Wild Uganda";
 const COUNTRY = "Uganda";
 
 export function buildDestinationHead(o: BuildDestinationHeadOptions) {

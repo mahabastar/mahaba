@@ -18,13 +18,13 @@ const REGION_NOTE: Record<string, string> = {
 export const Route = createFileRoute("/national-parks")({
   head: () => ({
     meta: [
-      { title: "Uganda's 10 National Parks — Wild Uganda Treks" },
+      { title: "Uganda's 10 National Parks — Trek Wild Uganda" },
       {
         name: "description",
         content:
           "All ten of Uganda's national parks in one place, grouped by region — gorillas in Bwindi, tree-climbing lions in Queen Elizabeth, the Nile at Murchison Falls, and more.",
       },
-      { property: "og:title", content: "Uganda's 10 National Parks — Wild Uganda Treks" },
+      { property: "og:title", content: "Uganda's 10 National Parks — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/national-parks` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/national-parks` }],

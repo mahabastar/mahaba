@@ -41,9 +41,9 @@ export const Route = createFileRoute("/destinations/sipi-falls")({
     buildDestinationHead({
       slug: "sipi-falls",
       name: "Sipi Falls & Mount Elgon",
-      title: "Sipi Falls & Mount Elgon, Uganda — Hikes, Coffee & Tours | Wild Uganda Treks",
+      title: "Sipi Falls & Mount Elgon, Uganda — Hikes, Coffee & Tours | Trek Wild Uganda",
       description:
-        "Hike between three cascading waterfalls on Mount Elgon, roast Arabica coffee with local farmers and watch the sun set over Karamoja — luxury Sipi Falls tours by Wild Uganda Treks.",
+        "Hike between three cascading waterfalls on Mount Elgon, roast Arabica coffee with local farmers and watch the sun set over Karamoja — luxury Sipi Falls tours by Trek Wild Uganda.",
       ogImage: expSipi,
       region: "Eastern Uganda",
       keywords: [
@@ -52,7 +52,7 @@ export const Route = createFileRoute("/destinations/sipi-falls")({
         "Uganda waterfalls",
         "Uganda coffee tour",
         "Uganda hiking",
-        "Wild Uganda Treks",
+        "Trek Wild Uganda",
       ],
       faqs: FAQS,
     }),

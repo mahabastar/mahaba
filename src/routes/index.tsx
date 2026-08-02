@@ -34,13 +34,13 @@ import g_pearl_of_africa from "@/assets/gallery/pearl-of-africa.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Wild Uganda Treks — Discover the Pearl of Africa" },
+      { title: "Trek Wild Uganda — Discover the Pearl of Africa" },
       {
         name: "description",
         content:
           "Cinematic luxury Uganda safaris — mountain gorillas, tree-climbing lions, the source of the Nile, Rwenzori peaks and warm cultures, crafted by trusted local experts.",
       },
-      { property: "og:title", content: "Wild Uganda Treks — Discover the Pearl of Africa" },
+      { property: "og:title", content: "Trek Wild Uganda — Discover the Pearl of Africa" },
       { property: "og:url", content: `${SITE_CONFIG.url}/` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/` }],
@@ -595,7 +595,7 @@ function Conservation() {
               Every journey <em className="italic text-forest">gives back</em> to the country that gives you so much.
             </h2>
             <p className="mt-6 text-lg text-charcoal/70">
-              Wild Uganda Treks reinvests directly in the wildlife, land, and people
+              Trek Wild Uganda reinvests directly in the wildlife, land, and people
               who make Uganda unforgettable. Travel here, and you become part of that story.
             </p>
           </div>
@@ -624,7 +624,7 @@ function Conservation() {
 const stories = [
   {
     quote:
-      "Meeting the gorillas felt sacred. Wild Uganda Treks made every moment effortless and profoundly personal.",
+      "Meeting the gorillas felt sacred. Trek Wild Uganda made every moment effortless and profoundly personal.",
     name: "Sofia R.",
     from: "Spain",
     trip: "7-Day Pearl of Africa",

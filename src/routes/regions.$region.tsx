@@ -139,15 +139,15 @@ export const Route = createFileRoute("/regions/$region")({
   head: ({ params }) => {
     const region = REGIONS[params.region];
     if (!region) {
-      return { meta: [{ title: "Region not found — Wild Uganda Treks" }, { name: "robots", content: "noindex" }] };
+      return { meta: [{ title: "Region not found — Trek Wild Uganda" }, { name: "robots", content: "noindex" }] };
     }
-    const title = `${region.name} — Safari Destinations & Highlights | Wild Uganda Treks`;
+    const title = `${region.name} — Safari Destinations & Highlights | Trek Wild Uganda`;
     const description = `${region.tagline} ${region.intro}`.slice(0, 155);
     return {
       meta: [
         { title },
         { name: "description", content: description },
-        { property: "og:title", content: `${region.name} — Wild Uganda Treks` },
+        { property: "og:title", content: `${region.name} — Trek Wild Uganda` },
         { property: "og:description", content: description },
         { property: "og:type", content: "website" },
         { name: "twitter:card", content: "summary_large_image" },

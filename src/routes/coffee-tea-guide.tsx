@@ -6,13 +6,13 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/coffee-tea-guide")({
   head: () => ({
     meta: [
-      { title: "Uganda Coffee & Tea Guide — Wild Uganda Treks" },
+      { title: "Uganda Coffee & Tea Guide — Trek Wild Uganda" },
       {
         name: "description",
         content:
           "Uganda is where Robusta coffee originates — farm visits on Mount Elgon and around Fort Portal, plus the tea estates of the western highlands.",
       },
-      { property: "og:title", content: "Uganda Coffee & Tea Guide — Wild Uganda Treks" },
+      { property: "og:title", content: "Uganda Coffee & Tea Guide — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/coffee-tea-guide` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/coffee-tea-guide` }],

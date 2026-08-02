@@ -32,7 +32,7 @@ export const Route = createFileRoute("/destinations/semuliki")({
     buildDestinationHead({
       slug: "semuliki",
       name: "Semuliki National Park",
-      title: "Semuliki National Park, Uganda — Hot Springs & Congo-Basin Birding | Wild Uganda Treks",
+      title: "Semuliki National Park, Uganda — Hot Springs & Congo-Basin Birding | Trek Wild Uganda",
       description:
         "Uganda's slice of the Congo Basin rainforest — boiling Sempaya hot springs and birding found nowhere else in East Africa, on the DR Congo border.",
       ogImage: semulikiHotSprings,
@@ -42,7 +42,7 @@ export const Route = createFileRoute("/destinations/semuliki")({
         "Sempaya hot springs",
         "Uganda birding",
         "Congo basin rainforest Uganda",
-        "Wild Uganda Treks",
+        "Trek Wild Uganda",
       ],
       faqs: FAQS,
     }),

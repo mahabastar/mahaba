@@ -12,13 +12,13 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/responsible-tourism")({
   head: () => ({
     meta: [
-      { title: "Responsible Tourism Centre — Wild Uganda Treks" },
+      { title: "Responsible Tourism Centre — Trek Wild Uganda" },
       {
         name: "description",
         content:
-          "How Wild Uganda Treks supports conservation and the communities bordering Uganda's national parks — and how you can travel responsibly too.",
+          "How Trek Wild Uganda supports conservation and the communities bordering Uganda's national parks — and how you can travel responsibly too.",
       },
-      { property: "og:title", content: "Responsible Tourism Centre — Wild Uganda Treks" },
+      { property: "og:title", content: "Responsible Tourism Centre — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/responsible-tourism` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/responsible-tourism` }],

@@ -7,13 +7,13 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/lakes")({
   head: () => ({
     meta: [
-      { title: "Uganda's Great Lakes — Wild Uganda Treks" },
+      { title: "Uganda's Great Lakes — Trek Wild Uganda" },
       {
         name: "description",
         content:
           "Lake Bunyonyi, Lake Victoria, Lake Albert and the Kazinga Channel — Uganda's most striking lakes and waterways, in one place.",
       },
-      { property: "og:title", content: "Uganda's Great Lakes — Wild Uganda Treks" },
+      { property: "og:title", content: "Uganda's Great Lakes — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/lakes` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/lakes` }],

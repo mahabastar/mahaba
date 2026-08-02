@@ -39,7 +39,7 @@ export const Route = createFileRoute("/destinations/bwindi-impenetrable")({
     buildDestinationHead({
       slug: "bwindi-impenetrable",
       name: "Bwindi Impenetrable National Park",
-      title: "Bwindi Impenetrable National Park, Uganda — Gorilla Trekking Guide | Wild Uganda Treks",
+      title: "Bwindi Impenetrable National Park, Uganda — Gorilla Trekking Guide | Trek Wild Uganda",
       description:
         "Home to half the world's mountain gorillas — Bwindi's four trekking sectors, permit costs, and how to plan a trip into Uganda's oldest rainforest.",
       ogImage: gorillaSilverback,
@@ -50,7 +50,7 @@ export const Route = createFileRoute("/destinations/bwindi-impenetrable")({
         "Uganda gorilla permit",
         "Buhoma",
         "Rushaga",
-        "Wild Uganda Treks",
+        "Trek Wild Uganda",
       ],
       faqs: FAQS,
     }),

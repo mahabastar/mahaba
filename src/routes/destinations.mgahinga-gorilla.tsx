@@ -41,7 +41,7 @@ export const Route = createFileRoute("/destinations/mgahinga-gorilla")({
     buildDestinationHead({
       slug: "mgahinga-gorilla",
       name: "Mgahinga Gorilla National Park",
-      title: "Mgahinga Gorilla National Park, Uganda — Volcanoes & Golden Monkeys | Wild Uganda Treks",
+      title: "Mgahinga Gorilla National Park, Uganda — Volcanoes & Golden Monkeys | Trek Wild Uganda",
       description:
         "Uganda's smallest national park — three Virunga volcanoes, golden monkey trekking, and a single habituated gorilla family, in the far south-west.",
       ogImage: sceneRwenzori,
@@ -51,7 +51,7 @@ export const Route = createFileRoute("/destinations/mgahinga-gorilla")({
         "Virunga volcanoes Uganda",
         "golden monkey trekking",
         "Mount Sabinyo",
-        "Wild Uganda Treks",
+        "Trek Wild Uganda",
       ],
       faqs: FAQS,
     }),

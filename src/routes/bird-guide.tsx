@@ -6,13 +6,13 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/bird-guide")({
   head: () => ({
     meta: [
-      { title: "Uganda Bird Guide — 1,000+ Species | Wild Uganda Treks" },
+      { title: "Uganda Bird Guide — 1,000+ Species | Trek Wild Uganda" },
       {
         name: "description",
         content:
           "Uganda's top birding sites and signature species, from the shoebill stork to Albertine Rift endemics — Africa's single best birding destination.",
       },
-      { property: "og:title", content: "Uganda Bird Guide — Wild Uganda Treks" },
+      { property: "og:title", content: "Uganda Bird Guide — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/bird-guide` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/bird-guide` }],

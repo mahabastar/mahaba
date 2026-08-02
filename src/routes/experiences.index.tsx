@@ -8,13 +8,13 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/experiences/")({
   head: () => ({
     meta: [
-      { title: "Uganda Safari Experiences — Wild Uganda Treks" },
+      { title: "Uganda Safari Experiences — Trek Wild Uganda" },
       {
         name: "description",
         content:
           "Uganda safaris built around how you actually want to travel — family, honeymoon, adventure, and how to choose between gorilla and chimp trekking.",
       },
-      { property: "og:title", content: "Uganda Safari Experiences — Wild Uganda Treks" },
+      { property: "og:title", content: "Uganda Safari Experiences — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/experiences` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/experiences` }],

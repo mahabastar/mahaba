@@ -7,13 +7,13 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/wildlife-reserves")({
   head: () => ({
     meta: [
-      { title: "Uganda's Wildlife Reserves — Wild Uganda Treks" },
+      { title: "Uganda's Wildlife Reserves — Trek Wild Uganda" },
       {
         name: "description",
         content:
           "Beyond the national parks — Ziwa Rhino Sanctuary, Pian Upe, Toro-Semliki and Kabwoya, Uganda's key wildlife reserves in one place.",
       },
-      { property: "og:title", content: "Uganda's Wildlife Reserves — Wild Uganda Treks" },
+      { property: "og:title", content: "Uganda's Wildlife Reserves — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/wildlife-reserves` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/wildlife-reserves` }],

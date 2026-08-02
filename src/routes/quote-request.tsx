@@ -9,13 +9,13 @@ import { trackEvent } from "@/lib/analytics";
 export const Route = createFileRoute("/quote-request")({
   head: () => ({
     meta: [
-      { title: "Request a Quote — Wild Uganda Treks" },
+      { title: "Request a Quote — Trek Wild Uganda" },
       {
         name: "description",
         content:
           "Get a fast, no-obligation quote for your Uganda safari — trip length, travel style and must-sees in one short form.",
       },
-      { property: "og:title", content: "Request a Quote — Wild Uganda Treks" },
+      { property: "og:title", content: "Request a Quote — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/quote-request` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/quote-request` }],

@@ -33,7 +33,7 @@ export const Route = createFileRoute("/destinations/crater-lakes")({
     buildDestinationHead({
       slug: "crater-lakes",
       name: "The Crater Lakes",
-      title: "Uganda's Crater Lakes, Fort Portal — Guide & Best Lodges | Wild Uganda Treks",
+      title: "Uganda's Crater Lakes, Fort Portal — Guide & Best Lodges | Trek Wild Uganda",
       description:
         "The Ndali-Kasenda crater field near Fort Portal — around 50 volcanic lakes set among tea and coffee gardens, best paired with a Kibale chimp trek.",
       ogImage: expCoffee,
@@ -43,7 +43,7 @@ export const Route = createFileRoute("/destinations/crater-lakes")({
         "Fort Portal crater lakes",
         "Ndali-Kasenda",
         "Lake Nyinambuga",
-        "Wild Uganda Treks",
+        "Trek Wild Uganda",
       ],
       faqs: FAQS,
     }),

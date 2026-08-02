@@ -7,13 +7,13 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/mountains")({
   head: () => ({
     meta: [
-      { title: "Uganda's Mountains — Wild Uganda Treks" },
+      { title: "Uganda's Mountains — Trek Wild Uganda" },
       {
         name: "description",
         content:
           "From equatorial glaciers on the Rwenzori to volcano summits in the Virunga range — Uganda's key mountains and multi-day treks.",
       },
-      { property: "og:title", content: "Uganda's Mountains — Wild Uganda Treks" },
+      { property: "og:title", content: "Uganda's Mountains — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/mountains` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/mountains` }],

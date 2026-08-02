@@ -121,9 +121,9 @@ export function SiteNav() {
         }`}
       >
         <Link to="/" className="flex items-center gap-3 text-ivory">
-          <img src={logoAsset.url} alt="Wild Uganda Treks logo" className="h-11 w-11 shrink-0 rounded-full bg-ivory object-contain p-0.5 ring-1 ring-gold/50 md:h-12 md:w-12" />
+          <img src={logoAsset.url} alt="Trek Wild Uganda logo" className="h-11 w-11 shrink-0 rounded-full bg-ivory object-contain p-0.5 ring-1 ring-gold/50 md:h-12 md:w-12" />
           <span className="font-display text-xl leading-none">
-            Wild Uganda <span className="text-gold">Treks</span>
+            Trek Wild <span className="text-gold">Uganda</span>
           </span>
         </Link>
 
@@ -255,9 +255,9 @@ export function SiteNav() {
         <div className="fixed inset-0 z-[60] flex flex-col bg-charcoal grain md:hidden">
           <div className="flex items-center justify-between px-6 py-6">
             <Link to="/" onClick={() => setMobileOpen(false)} className="flex items-center gap-3 text-ivory">
-              <img src={logoAsset.url} alt="Wild Uganda Treks logo" className="h-11 w-11 shrink-0 rounded-full bg-ivory object-contain p-0.5 ring-1 ring-gold/50 md:h-12 md:w-12" />
+              <img src={logoAsset.url} alt="Trek Wild Uganda logo" className="h-11 w-11 shrink-0 rounded-full bg-ivory object-contain p-0.5 ring-1 ring-gold/50 md:h-12 md:w-12" />
               <span className="font-display text-xl leading-none">
-                Wild Uganda <span className="text-gold">Treks</span>
+                Trek Wild <span className="text-gold">Uganda</span>
               </span>
             </Link>
             <button

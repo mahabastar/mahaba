@@ -13,7 +13,7 @@ export const Route = createFileRoute("/journeys/$slug")({
   head: ({ loaderData }) => ({
     meta: loaderData
       ? [
-          { title: `${loaderData.title} — ${loaderData.days}-Day Uganda Journey | Wild Uganda Treks` },
+          { title: `${loaderData.title} — ${loaderData.days}-Day Uganda Journey | Trek Wild Uganda` },
           { name: "description", content: loaderData.overview },
           { property: "og:title", content: loaderData.title },
           { property: "og:description", content: loaderData.tagline },

@@ -4,7 +4,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Wild Uganda Treks — cinematic luxury travel design system */
+/* Trek Wild Uganda — cinematic luxury travel design system */
 
 @theme inline {
   --font-serif: "Fraunces", ui-serif, Georgia, serif;

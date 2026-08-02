@@ -19,7 +19,7 @@ import g_golden_monkey_1 from "@/assets/gallery/golden-monkey-1.jpg";
 const FAQS = [
   {
     q: "How much does a Uganda gorilla trekking permit cost?",
-    a: "A Uganda Wildlife Authority gorilla permit costs USD 800 per person and includes one hour with a habituated gorilla family, ranger guides and park entry. Wild Uganda Treks secures permits on your behalf as part of every itinerary.",
+    a: "A Uganda Wildlife Authority gorilla permit costs USD 800 per person and includes one hour with a habituated gorilla family, ranger guides and park entry. Trek Wild Uganda secures permits on your behalf as part of every itinerary.",
   },
   {
     q: "When is the best time to go gorilla trekking in Bwindi?",
@@ -31,7 +31,7 @@ const FAQS = [
   },
   {
     q: "Is Uganda safe for gorilla trekking?",
-    a: "Yes. Bwindi and Mgahinga are two of Africa's safest, best-managed national parks. Every trek is led by armed Uganda Wildlife Authority rangers, and Wild Uganda Treks handles logistics, transfers and lodges throughout.",
+    a: "Yes. Bwindi and Mgahinga are two of Africa's safest, best-managed national parks. Every trek is led by armed Uganda Wildlife Authority rangers, and Trek Wild Uganda handles logistics, transfers and lodges throughout.",
   },
   {
     q: "How many people are in a gorilla trekking group?",
@@ -44,9 +44,9 @@ export const Route = createFileRoute("/destinations/gorilla-trekking")({
     buildDestinationHead({
       slug: "gorilla-trekking",
       name: "Gorilla Trekking in Bwindi",
-      title: "Gorilla Trekking in Bwindi, Uganda — Permits, Cost & Tours | Wild Uganda Treks",
+      title: "Gorilla Trekking in Bwindi, Uganda — Permits, Cost & Tours | Trek Wild Uganda",
       description:
-        "Trek Uganda's Bwindi Impenetrable Forest to meet endangered mountain gorillas face-to-face. Permits, best time to go, itineraries and expert-guided luxury tours from Wild Uganda Treks.",
+        "Trek Uganda's Bwindi Impenetrable Forest to meet endangered mountain gorillas face-to-face. Permits, best time to go, itineraries and expert-guided luxury tours from Trek Wild Uganda.",
       ogImage: heroGorilla,
       region: "South-western Uganda",
       keywords: [
@@ -55,7 +55,7 @@ export const Route = createFileRoute("/destinations/gorilla-trekking")({
         "mountain gorilla safari",
         "gorilla permit Uganda",
         "Uganda safari",
-        "Wild Uganda Treks",
+        "Trek Wild Uganda",
       ],
       faqs: FAQS,
     }),
@@ -85,7 +85,7 @@ export const Route = createFileRoute("/destinations/gorilla-trekking")({
         },
         {
           title: "Trekked with intention",
-          body: "Every permit funds ranger patrols, community projects and conservation of the forest itself. Group sizes are limited to eight guests per family, and Wild Uganda Treks pairs each trek with lodges and porters chosen from surrounding villages.",
+          body: "Every permit funds ranger patrols, community projects and conservation of the forest itself. Group sizes are limited to eight guests per family, and Trek Wild Uganda pairs each trek with lodges and porters chosen from surrounding villages.",
         },
       ]}
       galleryImages={[

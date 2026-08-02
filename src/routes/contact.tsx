@@ -9,13 +9,13 @@ import { trackEvent } from "@/lib/analytics";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Us — Wild Uganda Treks" },
+      { title: "Contact Us — Trek Wild Uganda" },
       {
         name: "description",
         content:
-          "Get in touch with Wild Uganda Treks — WhatsApp, email, or send us your trip details directly.",
+          "Get in touch with Trek Wild Uganda — WhatsApp, email, or send us your trip details directly.",
       },
-      { property: "og:title", content: "Contact Wild Uganda Treks" },
+      { property: "og:title", content: "Contact Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/contact` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/contact` }],

@@ -15,13 +15,13 @@ import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
 export const Route = createFileRoute("/build-my-safari")({
   head: () => ({
     meta: [
-      { title: "Build My Safari — Wild Uganda Treks" },
+      { title: "Build My Safari — Trek Wild Uganda" },
       {
         name: "description",
         content:
           "Answer a few questions and get personalised Uganda safari suggestions — destinations, trip length and travel style, tailored to you.",
       },
-      { property: "og:title", content: "Build My Safari — Wild Uganda Treks" },
+      { property: "og:title", content: "Build My Safari — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/build-my-safari` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/build-my-safari` }],
@@ -284,7 +284,7 @@ function BuildMySafari() {
                 </h2>
                 <p className="mt-4 max-w-lg text-charcoal/70">
                   Based on what you told us, these destinations fit best. Send us your answers
-                  and a Wild Uganda Treks specialist will turn this into a full itinerary.
+                  and a Trek Wild Uganda specialist will turn this into a full itinerary.
                 </p>
 
                 {suggested.length > 0 ? (
