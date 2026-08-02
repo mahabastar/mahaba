@@ -1,5 +1,5 @@
 /**
- * Single source of truth for Wild Uganda Treks' contact details.
+ * Single source of truth for Trek Wild Uganda' contact details.
  *
  * Previously these were hardcoded independently in ~6 different files
  * (WhatsAppButton, SiteFooter, contact, build-my-safari,
@@ -8,9 +8,9 @@
  */
 
 export const SITE_CONFIG = {
-  name: "Wild Uganda Treks",
+  name: "Trek Wild Uganda",
   url: "https://www.trekwilduganda.com",
-  email: "wildugandatreks@gmail.com",
+  email: "trekwilduganda@gmail.com",
   // Digits only, no "+" or spaces — required format for wa.me links.
   whatsappNumber: "256774959383",
   // Display-formatted phone numbers.

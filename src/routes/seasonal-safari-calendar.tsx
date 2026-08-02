@@ -8,13 +8,13 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/seasonal-safari-calendar")({
   head: () => ({
     meta: [
-      { title: "Seasonal Safari Calendar — Wild Uganda Treks" },
+      { title: "Seasonal Safari Calendar — Trek Wild Uganda" },
       {
         name: "description",
         content:
           "What's best each month in Uganda — weather, wildlife highlights, and which destinations to prioritise, from dry-season gorilla trekking to green-season birding.",
       },
-      { property: "og:title", content: "Seasonal Safari Calendar — Wild Uganda Treks" },
+      { property: "og:title", content: "Seasonal Safari Calendar — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/seasonal-safari-calendar` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/seasonal-safari-calendar` }],

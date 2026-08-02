@@ -51,7 +51,7 @@ export function GalleryLightbox({
   }, [onClose, onPrev, onNext]);
 
   const summary = [
-    "Safari enquiry from the Wild Uganda Treks gallery.",
+    "Safari enquiry from the Trek Wild Uganda gallery.",
     `Enquiry source (photo): ${photo.title} [${photo.slug}] — ${photo.category}`,
     name ? `Name: ${name}` : "",
     email ? `Email: ${email}` : "",

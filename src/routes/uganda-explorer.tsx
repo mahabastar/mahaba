@@ -18,13 +18,13 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/uganda-explorer")({
   head: () => ({
     meta: [
-      { title: "Uganda Explorer — Interactive Map | Wild Uganda Treks" },
+      { title: "Uganda Explorer — Interactive Map | Trek Wild Uganda" },
       {
         name: "description",
         content:
           "An interactive map of Uganda's national parks and destinations — gorilla trekking, tree-climbing lions, waterfalls and crater lakes, all in one place.",
       },
-      { property: "og:title", content: "Uganda Explorer — Wild Uganda Treks" },
+      { property: "og:title", content: "Uganda Explorer — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/uganda-explorer` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/uganda-explorer` }],

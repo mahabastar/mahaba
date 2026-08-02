@@ -6,13 +6,13 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/visa-guide")({
   head: () => ({
     meta: [
-      { title: "Uganda Visa Guide — How to Apply | Wild Uganda Treks" },
+      { title: "Uganda Visa Guide — How to Apply | Trek Wild Uganda" },
       {
         name: "description",
         content:
           "How to get a Uganda visa — single-entry vs the East Africa Tourist Visa, cost, processing time, and the yellow fever certificate requirement.",
       },
-      { property: "og:title", content: "Uganda Visa Guide — Wild Uganda Treks" },
+      { property: "og:title", content: "Uganda Visa Guide — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/visa-guide` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/visa-guide` }],

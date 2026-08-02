@@ -40,9 +40,9 @@ export const Route = createFileRoute("/destinations/kidepo-valley")({
     buildDestinationHead({
       slug: "kidepo-valley",
       name: "Kidepo Valley National Park",
-      title: "Kidepo Valley National Park, Uganda — Uganda's Wildest Frontier | Wild Uganda Treks",
+      title: "Kidepo Valley National Park, Uganda — Uganda's Wildest Frontier | Trek Wild Uganda",
       description:
-        "Uganda's most remote and dramatic national park — cheetah, ostrich and vast untouched savanna in the far north-east. Fly-in safaris and guided tours from Wild Uganda Treks.",
+        "Uganda's most remote and dramatic national park — cheetah, ostrich and vast untouched savanna in the far north-east. Fly-in safaris and guided tours from Trek Wild Uganda.",
       ogImage: sceneElephants,
       region: "North-eastern Uganda",
       keywords: [
@@ -51,7 +51,7 @@ export const Route = createFileRoute("/destinations/kidepo-valley")({
         "Karamoja Uganda",
         "remote Uganda safari",
         "Narus Valley",
-        "Wild Uganda Treks",
+        "Trek Wild Uganda",
       ],
       faqs: FAQS,
     }),

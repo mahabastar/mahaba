@@ -6,13 +6,13 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/faqs")({
   head: () => ({
     meta: [
-      { title: "Uganda Safari FAQs — Wild Uganda Treks" },
+      { title: "Uganda Safari FAQs — Trek Wild Uganda" },
       {
         name: "description",
         content:
           "Answers to the questions travellers ask most before a Uganda safari — visas, safety, money, gorilla trekking, best time to visit, and more.",
       },
-      { property: "og:title", content: "Uganda Safari FAQs — Wild Uganda Treks" },
+      { property: "og:title", content: "Uganda Safari FAQs — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/faqs` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/faqs` }],

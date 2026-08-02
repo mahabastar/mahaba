@@ -14,7 +14,7 @@ import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
 export const Route = createFileRoute("/ai-trip-planner")({
   head: () => ({
     meta: [
-      { title: "AI Trip Planner — Wild Uganda Treks" },
+      { title: "AI Trip Planner — Trek Wild Uganda" },
       { name: "robots", content: "noindex" },
     ],
   }),

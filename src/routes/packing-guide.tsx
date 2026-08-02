@@ -6,13 +6,13 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/packing-guide")({
   head: () => ({
     meta: [
-      { title: "Uganda Packing Guide — What to Bring | Wild Uganda Treks" },
+      { title: "Uganda Packing Guide — What to Bring | Trek Wild Uganda" },
       {
         name: "description",
         content:
           "What to pack for a Uganda safari — clothing, gorilla trekking gear, health essentials, and one clothing rule that surprises most first-time visitors.",
       },
-      { property: "og:title", content: "Uganda Packing Guide — Wild Uganda Treks" },
+      { property: "og:title", content: "Uganda Packing Guide — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/packing-guide` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/packing-guide` }],

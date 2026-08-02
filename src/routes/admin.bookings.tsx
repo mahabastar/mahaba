@@ -9,7 +9,7 @@ import { supabase, type Booking, type BookingStatus } from "@/lib/supabase";
 export const Route = createFileRoute("/admin/bookings")({
   head: () => ({
     meta: [
-      { title: "Bookings Management — Wild Uganda Treks" },
+      { title: "Bookings Management — Trek Wild Uganda" },
       { name: "description", content: "Internal console to review, filter and update traveler bookings." },
       { name: "robots", content: "noindex" },
     ],
@@ -537,7 +537,7 @@ function BookingsAdmin() {
       <Shell>
         <Notice
           title="No access"
-          body="This console is limited to Wild Uganda Treks staff. Ask an admin to grant your account access."
+          body="This console is limited to Trek Wild Uganda staff. Ask an admin to grant your account access."
         />
       </Shell>
     );

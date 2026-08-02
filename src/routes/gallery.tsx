@@ -16,13 +16,13 @@ import { trackEvent } from "@/lib/analytics";
 export const Route = createFileRoute("/gallery")({
   head: () => ({
     meta: [
-      { title: "Photo Gallery — Wild Uganda Treks" },
+      { title: "Photo Gallery — Trek Wild Uganda" },
       {
         name: "description",
         content:
           "Photographs from across Uganda — gorillas, chimpanzees, big game, mountains, lakes, lodges and culture. Every image shot in the field by our own guides.",
       },
-      { property: "og:title", content: "Photo Gallery — Wild Uganda Treks" },
+      { property: "og:title", content: "Photo Gallery — Trek Wild Uganda" },
       {
         property: "og:description",
         content:

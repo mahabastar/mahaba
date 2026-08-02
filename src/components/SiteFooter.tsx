@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 
 import { SITE_CONFIG, buildWhatsAppHref } from "@/lib/site-config";
-import logoAsset from "@/assets/wild-treks-uganda-logo.png.asset.json";
+import logoAsset from "@/assets/trek-wild-uganda-logo.png.asset.json";
 
 type FooterItem = { label: string; to?: string; ask?: boolean };
 
@@ -99,8 +99,8 @@ export function SiteFooter() {
         <div className="grid gap-14 md:grid-cols-12">
           <div className="md:col-span-4">
             <div className="flex items-center gap-3">
-              <img src={logoAsset.url} alt="Wild Uganda Treks logo" className="h-12 w-12 shrink-0 rounded-full bg-ivory object-contain p-0.5 ring-1 ring-gold/50" />
-              <span className="font-display text-2xl">Wild Uganda Treks</span>
+              <img src={logoAsset.url} alt="Trek Wild Uganda logo" className="h-12 w-12 shrink-0 rounded-full bg-ivory object-contain p-0.5 ring-1 ring-gold/50" />
+              <span className="font-display text-2xl">Trek Wild Uganda</span>
             </div>
             <p className="mt-6 max-w-sm text-ivory/70">
               Discover the Pearl of Africa. Cinematic, private safaris crafted by trusted
@@ -159,7 +159,7 @@ export function SiteFooter() {
           </div>
         </div>
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-ivory/10 pt-6 text-xs text-ivory/50 md:flex-row md:items-center">
-          <div>© {new Date().getFullYear()} Wild Uganda Treks. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} Trek Wild Uganda. All rights reserved.</div>
           <div>Discover the Pearl of Africa.</div>
         </div>
       </div>

@@ -32,7 +32,7 @@ const FAQS = [
   },
   {
     q: "Is Queen Elizabeth National Park safe?",
-    a: "Yes. It is one of Uganda's flagship national parks with a strong ranger presence, well-managed lodges and paved main access. All Wild Uganda Treks safaris include private guiding and 24/7 support.",
+    a: "Yes. It is one of Uganda's flagship national parks with a strong ranger presence, well-managed lodges and paved main access. All Trek Wild Uganda safaris include private guiding and 24/7 support.",
   },
 ];
 
@@ -41,9 +41,9 @@ export const Route = createFileRoute("/destinations/tree-climbing-lions")({
     buildDestinationHead({
       slug: "tree-climbing-lions",
       name: "Tree-Climbing Lions of Ishasha",
-      title: "Tree-Climbing Lions of Ishasha, Queen Elizabeth NP | Wild Uganda Treks",
+      title: "Tree-Climbing Lions of Ishasha, Queen Elizabeth NP | Trek Wild Uganda",
       description:
-        "Track the world-famous tree-climbing lions of Ishasha in Uganda's Queen Elizabeth National Park — expert-guided luxury safaris with Wild Uganda Treks.",
+        "Track the world-famous tree-climbing lions of Ishasha in Uganda's Queen Elizabeth National Park — expert-guided luxury safaris with Trek Wild Uganda.",
       ogImage: sceneLion,
       region: "Western Uganda",
       keywords: [
@@ -52,7 +52,7 @@ export const Route = createFileRoute("/destinations/tree-climbing-lions")({
         "Queen Elizabeth National Park",
         "Uganda safari",
         "lion safari Uganda",
-        "Wild Uganda Treks",
+        "Trek Wild Uganda",
       ],
       faqs: FAQS,
     }),

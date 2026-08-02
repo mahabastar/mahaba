@@ -6,13 +6,13 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/gorilla-permit-guide")({
   head: () => ({
     meta: [
-      { title: "Uganda Gorilla Permit Guide — Cost & Booking | Wild Uganda Treks" },
+      { title: "Uganda Gorilla Permit Guide — Cost & Booking | Trek Wild Uganda" },
       {
         name: "description",
         content:
           "Everything the USD 800 Uganda gorilla permit includes, how booking works, the Habituation Experience alternative, and how it compares to Rwanda.",
       },
-      { property: "og:title", content: "Uganda Gorilla Permit Guide — Wild Uganda Treks" },
+      { property: "og:title", content: "Uganda Gorilla Permit Guide — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/gorilla-permit-guide` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/gorilla-permit-guide` }],
@@ -37,7 +37,7 @@ export const Route = createFileRoute("/gorilla-permit-guide")({
         },
         {
           title: "How and when to book",
-          body: "Permits are allocated by the Uganda Wildlife Authority and must be booked through a registered tour operator, not directly by individual travellers. For peak season — June through September and December through February — book as far ahead as possible; popular sectors like Rushaga can sell out four to six months in advance. Wild Uganda Treks secures permits as part of every gorilla itinerary.",
+          body: "Permits are allocated by the Uganda Wildlife Authority and must be booked through a registered tour operator, not directly by individual travellers. For peak season — June through September and December through February — book as far ahead as possible; popular sectors like Rushaga can sell out four to six months in advance. Trek Wild Uganda secures permits as part of every gorilla itinerary.",
         },
         {
           title: "Uganda vs Rwanda: the cost difference",

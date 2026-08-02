@@ -6,13 +6,13 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/cultural-heritage")({
   head: () => ({
     meta: [
-      { title: "Uganda's Cultural Heritage — Wild Uganda Treks" },
+      { title: "Uganda's Cultural Heritage — Trek Wild Uganda" },
       {
         name: "description",
         content:
           "Uganda's traditional kingdoms, the Batwa forest people, Karamojong pastoralists, and how to visit respectfully.",
       },
-      { property: "og:title", content: "Uganda's Cultural Heritage — Wild Uganda Treks" },
+      { property: "og:title", content: "Uganda's Cultural Heritage — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/cultural-heritage` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/cultural-heritage` }],

@@ -6,13 +6,13 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/food-guide")({
   head: () => ({
     meta: [
-      { title: "Ugandan Food Guide — What to Eat | Wild Uganda Treks" },
+      { title: "Ugandan Food Guide — What to Eat | Trek Wild Uganda" },
       {
         name: "description",
         content:
           "What to eat in Uganda — matoke, Rolex street food, Luwombo, Lake Victoria tilapia, and how Uganda's food reflects its cultural mix.",
       },
-      { property: "og:title", content: "Ugandan Food Guide — Wild Uganda Treks" },
+      { property: "og:title", content: "Ugandan Food Guide — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/food-guide` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/food-guide` }],

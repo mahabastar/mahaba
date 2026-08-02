@@ -13,13 +13,13 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us — Wild Uganda Treks" },
+      { title: "About Us — Trek Wild Uganda" },
       {
         name: "description",
         content:
-          "Wild Uganda Treks is a Uganda-based safari operator built around local expertise, private guiding, and a genuine commitment to conservation and community.",
+          "Trek Wild Uganda is a Uganda-based safari operator built around local expertise, private guiding, and a genuine commitment to conservation and community.",
       },
-      { property: "og:title", content: "About Wild Uganda Treks" },
+      { property: "og:title", content: "About Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/about` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/about` }],
@@ -57,7 +57,7 @@ const FOUNDERS = [
     name: "Xavaer Asaba",
     photo: founderXavaer,
     photoAlt:
-      "Xavaer Asaba, co-founder of Wild Uganda Treks, at the snowy summit of Margherita Peak in the Rwenzori Mountains",
+      "Xavaer Asaba, co-founder of Trek Wild Uganda, at the snowy summit of Margherita Peak in the Rwenzori Mountains",
     role: "Co-founder & Lead Guide",
     body: "Xavaer has spent over a decade leading treks through Uganda's forests and savannahs, with a deep knowledge of wildlife behaviour, terrain and timing that only comes from thousands of hours in the field. He has a gift for reading the environment — knowing exactly where the gorillas are likely to be, when the light will be perfect for photographs, and how to keep a group calm and curious even in the thick of the bush.",
   },
@@ -65,9 +65,9 @@ const FOUNDERS = [
     name: "Herbert Muzoora",
     photo: founderHerbert,
     photoAlt:
-      "Herbert Muzoora, co-founder of Wild Uganda Treks, in Wild Uganda Treks branded cap and shirt in the forest",
+      "Herbert Muzoora, co-founder of Trek Wild Uganda, in Trek Wild Uganda branded cap and shirt in the forest",
     role: "Co-founder & Head of Journeys",
-    body: "Herbert brings the same 12 years of hands-on experience, with an especially sharp instinct for logistics and route planning across some of Uganda's more remote and rewarding destinations. Well before Wild Uganda Treks, he built a reputation for turning long travel days into smooth, enjoyable parts of the journey — always ready with a story, a shortcut, or a well-timed stop at just the right viewpoint.",
+    body: "Herbert brings the same 12 years of hands-on experience, with an especially sharp instinct for logistics and route planning across some of Uganda's more remote and rewarding destinations. Well before Trek Wild Uganda, he built a reputation for turning long travel days into smooth, enjoyable parts of the journey — always ready with a story, a shortcut, or a well-timed stop at just the right viewpoint.",
   },
 ];
 
@@ -96,7 +96,7 @@ function About() {
           <div className="eyebrow !text-forest">Our story</div>
           <div className="mt-5 space-y-5 text-lg leading-relaxed text-charcoal/80 text-pretty">
             <p>
-              Wild Uganda Treks was built on one simple idea: the best adventures come from
+              Trek Wild Uganda was built on one simple idea: the best adventures come from
               people who actually know the land. Not a call centre in another time zone, not
               a brochure written from a desk — guides who have spent their working lives in
               these forests, on these roads, and at these viewpoints.

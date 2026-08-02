@@ -44,9 +44,9 @@ export const Route = createFileRoute("/destinations/jinja-source-of-the-nile")({
     buildDestinationHead({
       slug: "jinja-source-of-the-nile",
       name: "Jinja — Source of the Nile",
-      title: "Jinja & White Water Rafting on the Nile, Uganda | Wild Uganda Treks",
+      title: "Jinja & White Water Rafting on the Nile, Uganda | Trek Wild Uganda",
       description:
-        "Raft Grade 3–5 rapids on the White Nile, visit the historic source of the Nile, and explore East Africa's adventure capital with Wild Uganda Treks.",
+        "Raft Grade 3–5 rapids on the White Nile, visit the historic source of the Nile, and explore East Africa's adventure capital with Trek Wild Uganda.",
       ogImage: sourceOfTheNileMain,
       region: "Eastern Uganda",
       keywords: [
@@ -55,7 +55,7 @@ export const Route = createFileRoute("/destinations/jinja-source-of-the-nile")({
         "Nile white water rafting",
         "Uganda adventure travel",
         "Jinja bungee jumping",
-        "Wild Uganda Treks",
+        "Trek Wild Uganda",
       ],
       faqs: FAQS,
     }),

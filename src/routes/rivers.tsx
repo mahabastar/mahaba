@@ -7,13 +7,13 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/rivers")({
   head: () => ({
     meta: [
-      { title: "Uganda's Rivers — Wild Uganda Treks" },
+      { title: "Uganda's Rivers — Trek Wild Uganda" },
       {
         name: "description",
         content:
           "The Nile at its source and at Murchison Falls, the Kazinga Channel, and the Semliki River — Uganda's defining waterways.",
       },
-      { property: "og:title", content: "Uganda's Rivers — Wild Uganda Treks" },
+      { property: "og:title", content: "Uganda's Rivers — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/rivers` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/rivers` }],

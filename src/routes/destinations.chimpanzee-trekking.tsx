@@ -36,7 +36,7 @@ export const Route = createFileRoute("/destinations/chimpanzee-trekking")({
     buildDestinationHead({
       slug: "chimpanzee-trekking",
       name: "Chimpanzee Trekking",
-      title: "Chimpanzee Trekking in Uganda — Kibale, Kyambura & Budongo | Wild Uganda Treks",
+      title: "Chimpanzee Trekking in Uganda — Kibale, Kyambura & Budongo | Trek Wild Uganda",
       description:
         "Track wild chimpanzees in Kibale, Kyambura Gorge or Budongo Forest — permits, cost, and how chimp trekking compares to gorilla trekking in Uganda.",
       ogImage: expChimp,
@@ -47,7 +47,7 @@ export const Route = createFileRoute("/destinations/chimpanzee-trekking")({
         "Kyambura Gorge",
         "Budongo Forest chimpanzees",
         "Chimpanzee Habituation Experience",
-        "Wild Uganda Treks",
+        "Trek Wild Uganda",
       ],
       faqs: FAQS,
     }),

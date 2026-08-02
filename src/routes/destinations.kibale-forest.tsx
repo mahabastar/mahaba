@@ -15,7 +15,7 @@ import g_coffee_tea_1 from "@/assets/gallery/coffee-tea-1.jpg";
 const FAQS = [
   {
     q: "How much does a Kibale chimpanzee trekking permit cost?",
-    a: "A standard chimpanzee trekking permit costs USD 250 per person and includes an hour with a habituated chimp community. A longer Chimpanzee Habituation Experience, spending a full day with researchers and rangers, costs USD 300 per person and is limited to a handful of guests. Wild Uganda Treks arranges permits as part of every itinerary.",
+    a: "A standard chimpanzee trekking permit costs USD 250 per person and includes an hour with a habituated chimp community. A longer Chimpanzee Habituation Experience, spending a full day with researchers and rangers, costs USD 300 per person and is limited to a handful of guests. Trek Wild Uganda arranges permits as part of every itinerary.",
   },
   {
     q: "How does chimp trekking compare to gorilla trekking?",
@@ -40,9 +40,9 @@ export const Route = createFileRoute("/destinations/kibale-forest")({
     buildDestinationHead({
       slug: "kibale-forest",
       name: "Chimpanzee Trekking in Kibale Forest",
-      title: "Chimpanzee Trekking in Kibale Forest, Uganda — Permits & Tours | Wild Uganda Treks",
+      title: "Chimpanzee Trekking in Kibale Forest, Uganda — Permits & Tours | Trek Wild Uganda",
       description:
-        "Track wild chimpanzees in Kibale National Park, the primate capital of East Africa. Permits, best time to go, and expert-guided tours from Wild Uganda Treks.",
+        "Track wild chimpanzees in Kibale National Park, the primate capital of East Africa. Permits, best time to go, and expert-guided tours from Trek Wild Uganda.",
       ogImage: expChimp,
       region: "Western Uganda",
       keywords: [
@@ -51,7 +51,7 @@ export const Route = createFileRoute("/destinations/kibale-forest")({
         "chimp permit Uganda",
         "Fort Portal Uganda",
         "primate safari Uganda",
-        "Wild Uganda Treks",
+        "Trek Wild Uganda",
       ],
       faqs: FAQS,
     }),

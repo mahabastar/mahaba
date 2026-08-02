@@ -7,13 +7,13 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/forests")({
   head: () => ({
     meta: [
-      { title: "Uganda's Forests — Wild Uganda Treks" },
+      { title: "Uganda's Forests — Trek Wild Uganda" },
       {
         name: "description",
         content:
           "Bwindi, Kibale, Mabira and Budongo — Uganda's key forests for gorilla and chimpanzee trekking, canopy tours, and birding.",
       },
-      { property: "og:title", content: "Uganda's Forests — Wild Uganda Treks" },
+      { property: "og:title", content: "Uganda's Forests — Trek Wild Uganda" },
       { property: "og:url", content: `${SITE_CONFIG.url}/forests` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/forests` }],
