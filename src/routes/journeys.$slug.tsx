@@ -27,7 +27,7 @@ export const Route = createFileRoute("/journeys/$slug")({
           { property: "og:site_name", content: SITE_CONFIG.name },
           { name: "twitter:card", content: "summary_large_image" },
           { name: "twitter:title", content: loaderData.title },
-          { name: "twitter:description", content: loaderData.excerpt ?? loaderData.overview },
+          { name: "twitter:description", content: loaderData.tagline },
           { name: "twitter:image", content: ogImage! },
         ]
       : [],
