@@ -67,7 +67,7 @@ export const Route = createFileRoute("/destinations/jinja-source-of-the-nile")({
       tagline={<>Where the Nile <em className="italic text-gold">begins.</em></>}
       intro="The point where Lake Victoria tips into the world's longest river, and — a little further downstream — East Africa's undisputed adventure capital. Grade 5 white water, a 44-metre bungee, and a river journey that has drawn explorers here for over 160 years."
       heroImage={sourceOfTheNileMain}
-      heroAlt="White water rushing over rocks at the Source of the Nile, Jinja, Uganda"
+      heroAlt="Aerial view of the Nile bridge at Jinja, Source of the Nile, Uganda"
       facts={[
         { label: "Location", value: "Jinja, ~80km from Kampala" },
         { label: "Duration", value: "Half-day to 2 days" },
