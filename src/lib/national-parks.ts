@@ -1,3 +1,4 @@
+import mburoHorseback from "@/assets/gallery/lake-mburo-horseback.jpg";
 import gorillaBacklit from "@/assets/gorilla-lookup.jpg";
 import gorillaLookup from "@/assets/gorilla-lookup.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
@@ -112,7 +113,7 @@ export const NATIONAL_PARKS: NationalPark[] = [
     knownFor: "Zebra & walking safaris",
     blurb:
       "Uganda's most compact savanna park, close enough for a stopover — the only one where a walking or horseback safari among zebra and impala is routine.",
-    img: mburoZebraWaterhole,
+    img: mburoHorseback,
     to: "/destinations/lake-mburo",
   },
   {
