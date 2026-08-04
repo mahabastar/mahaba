@@ -9,7 +9,6 @@ import sceneFalls from "@/assets/scene-falls.jpg";
 import elephantSavanna from "@/assets/elephant-savanna.jpg";
 import expSipi from "@/assets/exp-sipi.jpg";
 import ctaSunset from "@/assets/cta-sunset.jpg";
-import mburoZebraWaterhole from "@/assets/gallery/mburo-zebra-waterhole.jpg";
 
 export type ParkRegion =
   | "South-western Uganda"
