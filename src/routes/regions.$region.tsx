@@ -1,3 +1,4 @@
+import kidepoCheetahCard from "@/assets/gallery/kidepo-cheetah-card.jpg";
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 
 import { SiteNav } from "@/components/SiteNav";
@@ -108,7 +109,7 @@ const REGIONS: Record<string, Region> = {
     spots: [
       { name: "Murchison Falls National Park", to: "/destinations/murchison-falls", img: sceneFalls, blurb: "Game drives on the delta, and a boat cruise to the foot of the falls." },
       { name: "Ziwa Rhino Sanctuary", to: "/destinations/ziwa-rhino-sanctuary", img: rhinoZiwa, blurb: "A rhino tracking stopover on the drive north from Kampala." },
-      { name: "Kidepo Valley National Park", to: "/destinations/kidepo-valley", img: ctaSunset, blurb: "Uganda's remotest park — cheetah, ostrich and complete isolation." },
+      { name: "Kidepo Valley National Park", to: "/destinations/kidepo-valley", img: kidepoCheetahCard, blurb: "Uganda's remotest park — cheetah, ostrich and complete isolation." },
       { name: "National Parks Overview", to: "/national-parks", img: sceneElephants, blurb: "How the northern parks compare, and how to combine them." },
     ],
   },
@@ -122,7 +123,7 @@ const REGIONS: Record<string, Region> = {
     heroAlt: "Sunset over the plains of Karamoja",
     when: "September–March. Access roads deteriorate quickly during the heaviest rains.",
     spots: [
-      { name: "Kidepo Valley National Park", to: "/destinations/kidepo-valley", img: ctaSunset, blurb: "Mountain-ringed savanna with wildlife you'll usually have to yourself." },
+      { name: "Kidepo Valley National Park", to: "/destinations/kidepo-valley", img: kidepoCheetahCard, blurb: "Mountain-ringed savanna with wildlife you'll usually have to yourself." },
       { name: "Karamojong Culture", to: "/cultural-heritage", img: karamojongCulture, blurb: "Manyattas, cattle traditions and one of Uganda's most distinct cultures." },
       { name: "Mount Moroto & Elgon Highlands", to: "/mountains", img: sceneRwenzori, blurb: "Dry-country peaks rising straight out of the plains." },
       { name: "Responsible Travel Here", to: "/responsible-tourism", img: batwaDance, blurb: "How visits are arranged so revenue reaches the communities involved." },

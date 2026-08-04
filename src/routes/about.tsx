@@ -6,7 +6,7 @@ import { SiteFooter } from "@/components/SiteFooter";
 import sceneCulture from "@/assets/scene-culture.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import expLodge from "@/assets/exp-lodge.jpg";
-import founderXavaer from "@/assets/founders/xavaer-asaba.png";
+import founderXavier from "@/assets/founders/xavier-asaaba.png";
 import founderHerbert from "@/assets/founders/herbert-muzoora.png";
 import { SITE_CONFIG } from "@/lib/site-config";
 
@@ -54,12 +54,12 @@ const VALUES = [
 
 const FOUNDERS = [
   {
-    name: "Xavaer Asaba",
-    photo: founderXavaer,
+    name: "Xavier Asaaba",
+    photo: founderXavier,
     photoAlt:
-      "Xavaer Asaba, co-founder of Trek Wild Uganda, at the snowy summit of Margherita Peak in the Rwenzori Mountains",
+      "Xavier Asaaba, co-founder of Trek Wild Uganda, at the snowy summit of Margherita Peak in the Rwenzori Mountains",
     role: "Co-founder & Lead Guide",
-    body: "Xavaer has spent over a decade leading treks through Uganda's forests and savannahs, with a deep knowledge of wildlife behaviour, terrain and timing that only comes from thousands of hours in the field. He has a gift for reading the environment — knowing exactly where the gorillas are likely to be, when the light will be perfect for photographs, and how to keep a group calm and curious even in the thick of the bush.",
+    body: "Xavier has spent over a decade leading treks through Uganda's forests and savannahs, with a deep knowledge of wildlife behaviour, terrain and timing that only comes from thousands of hours in the field. He has a gift for reading the environment — knowing exactly where the gorillas are likely to be, when the light will be perfect for photographs, and how to keep a group calm and curious even in the thick of the bush.",
   },
   {
     name: "Herbert Muzoora",
@@ -126,7 +126,7 @@ function About() {
           <div className="max-w-3xl">
             <div className="eyebrow !text-gold">Meet the founders</div>
             <h2 className="mt-4 font-display text-4xl text-ivory text-balance md:text-5xl">
-              Xavaer Asaba &amp; Herbert Muzoora — <em className="italic text-gold">your guides to the Pearl of Africa.</em>
+              Xavier Asaaba &amp; Herbert Muzoora — <em className="italic text-gold">your guides to the Pearl of Africa.</em>
             </h2>
             <p className="mt-5 text-base leading-relaxed text-ivory/75">
               Two Ugandan-born guides with a combined 24 years of experience showing
