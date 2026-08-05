@@ -10,25 +10,65 @@ export type SearchItem = {
 };
 
 const DESTINATIONS: SearchItem[] = [
-  { label: "Gorilla Trekking, Bwindi", category: "Destination", to: "/destinations/gorilla-trekking" },
-  { label: "Chimpanzee Trekking", category: "Destination", to: "/destinations/chimpanzee-trekking" },
-  { label: "Tree-Climbing Lions, Ishasha", category: "Destination", to: "/destinations/tree-climbing-lions" },
-  { label: "Queen Elizabeth National Park", category: "Destination", to: "/destinations/queen-elizabeth-national-park" },
+  {
+    label: "Gorilla Trekking, Bwindi",
+    category: "Destination",
+    to: "/destinations/gorilla-trekking",
+  },
+  {
+    label: "Chimpanzee Trekking",
+    category: "Destination",
+    to: "/destinations/chimpanzee-trekking",
+  },
+  {
+    label: "Tree-Climbing Lions, Ishasha",
+    category: "Destination",
+    to: "/destinations/tree-climbing-lions",
+  },
+  {
+    label: "Queen Elizabeth National Park",
+    category: "Destination",
+    to: "/destinations/queen-elizabeth-national-park",
+  },
   { label: "Murchison Falls", category: "Destination", to: "/destinations/murchison-falls" },
-  { label: "Kidepo Valley National Park", category: "Destination", to: "/destinations/kidepo-valley" },
+  {
+    label: "Kidepo Valley National Park",
+    category: "Destination",
+    to: "/destinations/kidepo-valley",
+  },
   { label: "Rwenzori Mountains", category: "Destination", to: "/destinations/rwenzori-mountains" },
-  { label: "Jinja, Source of the Nile", category: "Destination", to: "/destinations/jinja-source-of-the-nile" },
+  {
+    label: "Jinja, Source of the Nile",
+    category: "Destination",
+    to: "/destinations/jinja-source-of-the-nile",
+  },
   { label: "Sipi Falls", category: "Destination", to: "/destinations/sipi-falls" },
   { label: "Lake Bunyonyi", category: "Destination", to: "/destinations/lake-bunyonyi" },
   { label: "Entebbe", category: "Destination", to: "/destinations/entebbe" },
-  { label: "Bwindi Impenetrable National Park", category: "Destination", to: "/destinations/bwindi-impenetrable" },
-  { label: "Mgahinga Gorilla National Park", category: "Destination", to: "/destinations/mgahinga-gorilla" },
+  {
+    label: "Bwindi Impenetrable National Park",
+    category: "Destination",
+    to: "/destinations/bwindi-impenetrable",
+  },
+  {
+    label: "Mgahinga Gorilla National Park",
+    category: "Destination",
+    to: "/destinations/mgahinga-gorilla",
+  },
   { label: "Semuliki National Park", category: "Destination", to: "/destinations/semuliki" },
   { label: "Mount Elgon National Park", category: "Destination", to: "/destinations/mount-elgon" },
   { label: "Lake Mburo National Park", category: "Destination", to: "/destinations/lake-mburo" },
   { label: "Kibale National Park", category: "Destination", to: "/destinations/kibale-forest" },
-  { label: "The Crater Lakes, Fort Portal", category: "Destination", to: "/destinations/crater-lakes" },
-  { label: "Ziwa Rhino Sanctuary", category: "Destination", to: "/destinations/ziwa-rhino-sanctuary" },
+  {
+    label: "The Crater Lakes, Fort Portal",
+    category: "Destination",
+    to: "/destinations/crater-lakes",
+  },
+  {
+    label: "Ziwa Rhino Sanctuary",
+    category: "Destination",
+    to: "/destinations/ziwa-rhino-sanctuary",
+  },
 ];
 
 const TOOLS: SearchItem[] = [
@@ -82,4 +122,10 @@ const EXPERIENCE_ITEMS: SearchItem[] = EXPERIENCES.map((e) => ({
   params: { slug: e.slug },
 }));
 
-export const SEARCH_INDEX: SearchItem[] = [...DESTINATIONS, ...TOOLS, ...JOURNEY_ITEMS, ...EXPERIENCE_ITEMS, ...JOURNAL];
+export const SEARCH_INDEX: SearchItem[] = [
+  ...DESTINATIONS,
+  ...TOOLS,
+  ...JOURNEY_ITEMS,
+  ...EXPERIENCE_ITEMS,
+  ...JOURNAL,
+];

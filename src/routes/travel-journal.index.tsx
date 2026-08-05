@@ -27,7 +27,8 @@ function TravelJournal() {
   const [category, setCategory] = useState<Category | "All">("All");
 
   const posts = useMemo(
-    () => (category === "All" ? JOURNAL_POSTS : JOURNAL_POSTS.filter((p) => p.category === category)),
+    () =>
+      category === "All" ? JOURNAL_POSTS : JOURNAL_POSTS.filter((p) => p.category === category),
     [category],
   );
 
@@ -44,8 +45,8 @@ function TravelJournal() {
             Stories from <em className="italic text-gold">the Pearl of Africa.</em>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-ivory/75">
-            Destinations, culture, conservation and travel advice — written by people who
-            have actually stood in the places they describe.
+            Destinations, culture, conservation and travel advice — written by people who have
+            actually stood in the places they describe.
           </p>
         </div>
       </section>
@@ -92,11 +93,15 @@ function TravelJournal() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent" />
                   <div className="absolute inset-x-6 bottom-6 md:inset-x-10 md:bottom-10">
-                    <div className="eyebrow !text-gold-soft">{featured.category} · {featured.readMins} min read</div>
+                    <div className="eyebrow !text-gold-soft">
+                      {featured.category} · {featured.readMins} min read
+                    </div>
                     <div className="mt-3 max-w-2xl font-display text-3xl text-ivory text-balance md:text-5xl">
                       {featured.title}
                     </div>
-                    <p className="mt-3 max-w-xl text-sm text-ivory/70 md:text-base">{featured.excerpt}</p>
+                    <p className="mt-3 max-w-xl text-sm text-ivory/70 md:text-base">
+                      {featured.excerpt}
+                    </p>
                   </div>
                 </Link>
               )}
@@ -119,9 +124,15 @@ function TravelJournal() {
                         />
                       </div>
                       <div className="flex flex-1 flex-col p-6">
-                        <div className="eyebrow !text-gold">{p.category} · {p.readMins} min read</div>
-                        <h3 className="mt-3 font-display text-xl text-charcoal text-balance">{p.title}</h3>
-                        <p className="mt-2 flex-1 text-sm leading-relaxed text-charcoal/65">{p.excerpt}</p>
+                        <div className="eyebrow !text-gold">
+                          {p.category} · {p.readMins} min read
+                        </div>
+                        <h3 className="mt-3 font-display text-xl text-charcoal text-balance">
+                          {p.title}
+                        </h3>
+                        <p className="mt-2 flex-1 text-sm leading-relaxed text-charcoal/65">
+                          {p.excerpt}
+                        </p>
                         <div className="mt-4 inline-flex items-center gap-1 text-xs font-medium uppercase tracking-widest text-forest">
                           Read the story <span aria-hidden>→</span>
                         </div>

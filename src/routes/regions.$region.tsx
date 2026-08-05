@@ -53,16 +53,66 @@ const REGIONS: Record<string, Region> = {
     heroAlt: "Mountain gorilla in the forests of western Uganda",
     when: "June–September and December–February are driest, which makes forest trails firmer for trekking. Green-season months bring lower rates and better birding.",
     spots: [
-      { name: "Bwindi Impenetrable Forest", to: "/destinations/bwindi-impenetrable", img: heroGorilla, blurb: "Roughly half the world's mountain gorillas, in ancient montane rainforest." },
-      { name: "Mgahinga Gorilla National Park", to: "/destinations/mgahinga-gorilla", img: mgahingaMoment, blurb: "Volcano slopes, golden monkeys and a quieter gorilla trek." },
-      { name: "Kibale Forest", to: "/destinations/kibale-forest", img: expChimp, blurb: "The highest primate density in Africa, led by wild chimpanzees." },
-      { name: "Queen Elizabeth National Park", to: "/destinations/queen-elizabeth-national-park", img: qenpPhoto, blurb: "The Kazinga Channel, Kasenyi plains and Kyambura Gorge." },
-      { name: "Tree-Climbing Lions, Ishasha", to: "/destinations/tree-climbing-lions", img: treeLion, blurb: "Lions draped over fig branches in the park's southern sector." },
-      { name: "Rwenzori Mountains", to: "/destinations/rwenzori-mountains", img: rwenzoriSnow, blurb: "Glaciated peaks on the equator — Africa's third-highest summit." },
-      { name: "Crater Lakes", to: "/destinations/crater-lakes", img: craterLakes, blurb: "A field of volcanic lakes between Fort Portal and Kibale." },
-      { name: "Semuliki National Park", to: "/destinations/semuliki", img: semulikiHotSprings, blurb: "Boiling springs and Congo-basin birdlife found nowhere else in Uganda." },
-      { name: "Lake Bunyonyi", to: "/destinations/lake-bunyonyi", img: bunyonyiAerial, blurb: "Terraced hills, still water, and nothing at all on the schedule." },
-      { name: "Lake Mburo National Park", to: "/destinations/lake-mburo", img: mburoZebras, blurb: "Zebra, impala and walking safaris on the road west from Kampala." },
+      {
+        name: "Bwindi Impenetrable Forest",
+        to: "/destinations/bwindi-impenetrable",
+        img: heroGorilla,
+        blurb: "Roughly half the world's mountain gorillas, in ancient montane rainforest.",
+      },
+      {
+        name: "Mgahinga Gorilla National Park",
+        to: "/destinations/mgahinga-gorilla",
+        img: mgahingaMoment,
+        blurb: "Volcano slopes, golden monkeys and a quieter gorilla trek.",
+      },
+      {
+        name: "Kibale Forest",
+        to: "/destinations/kibale-forest",
+        img: expChimp,
+        blurb: "The highest primate density in Africa, led by wild chimpanzees.",
+      },
+      {
+        name: "Queen Elizabeth National Park",
+        to: "/destinations/queen-elizabeth-national-park",
+        img: qenpPhoto,
+        blurb: "The Kazinga Channel, Kasenyi plains and Kyambura Gorge.",
+      },
+      {
+        name: "Tree-Climbing Lions, Ishasha",
+        to: "/destinations/tree-climbing-lions",
+        img: treeLion,
+        blurb: "Lions draped over fig branches in the park's southern sector.",
+      },
+      {
+        name: "Rwenzori Mountains",
+        to: "/destinations/rwenzori-mountains",
+        img: rwenzoriSnow,
+        blurb: "Glaciated peaks on the equator — Africa's third-highest summit.",
+      },
+      {
+        name: "Crater Lakes",
+        to: "/destinations/crater-lakes",
+        img: craterLakes,
+        blurb: "A field of volcanic lakes between Fort Portal and Kibale.",
+      },
+      {
+        name: "Semuliki National Park",
+        to: "/destinations/semuliki",
+        img: semulikiHotSprings,
+        blurb: "Boiling springs and Congo-basin birdlife found nowhere else in Uganda.",
+      },
+      {
+        name: "Lake Bunyonyi",
+        to: "/destinations/lake-bunyonyi",
+        img: bunyonyiAerial,
+        blurb: "Terraced hills, still water, and nothing at all on the schedule.",
+      },
+      {
+        name: "Lake Mburo National Park",
+        to: "/destinations/lake-mburo",
+        img: mburoZebras,
+        blurb: "Zebra, impala and walking safaris on the road west from Kampala.",
+      },
     ],
   },
   "central-uganda": {
@@ -75,10 +125,30 @@ const REGIONS: Record<string, Region> = {
     heroAlt: "Lakeside lodge in central Uganda",
     when: "Year-round. Mabamba's shoebill boat trips are best at first light, any month.",
     spots: [
-      { name: "Entebbe", to: "/destinations/entebbe", img: expLodge, blurb: "Lakeside gateway city, botanical gardens and a chimpanzee island offshore." },
-      { name: "Ziwa Rhino Sanctuary", to: "/destinations/ziwa-rhino-sanctuary", img: rhinoZiwa, blurb: "The only place to track rhinos in Uganda, on foot." },
-      { name: "Shoebill & Mabamba Birding", to: "/bird-guide", img: expShoebill, blurb: "Papyrus channels holding one of Africa's most sought-after birds." },
-      { name: "Cultural Heritage", to: "/cultural-heritage", img: sceneCulture, blurb: "Kingdoms, craft and the living traditions of the heartland." },
+      {
+        name: "Entebbe",
+        to: "/destinations/entebbe",
+        img: expLodge,
+        blurb: "Lakeside gateway city, botanical gardens and a chimpanzee island offshore.",
+      },
+      {
+        name: "Ziwa Rhino Sanctuary",
+        to: "/destinations/ziwa-rhino-sanctuary",
+        img: rhinoZiwa,
+        blurb: "The only place to track rhinos in Uganda, on foot.",
+      },
+      {
+        name: "Shoebill & Mabamba Birding",
+        to: "/bird-guide",
+        img: expShoebill,
+        blurb: "Papyrus channels holding one of Africa's most sought-after birds.",
+      },
+      {
+        name: "Cultural Heritage",
+        to: "/cultural-heritage",
+        img: sceneCulture,
+        blurb: "Kingdoms, craft and the living traditions of the heartland.",
+      },
     ],
   },
   "eastern-uganda": {
@@ -91,10 +161,30 @@ const REGIONS: Record<string, Region> = {
     heroAlt: "Sipi Falls on the slopes of Mount Elgon",
     when: "June–August and December–February for rafting and hiking; the trails on Elgon are considerably easier when dry.",
     spots: [
-      { name: "Jinja & the Source of the Nile", to: "/destinations/jinja-source-of-the-nile", img: nileBridgeAerial, blurb: "Rafting, kayaking and the point where the Nile begins." },
-      { name: "Sipi Falls", to: "/destinations/sipi-falls", img: expSipi, blurb: "Three waterfalls, coffee terraces, and views over the Karamoja plains." },
-      { name: "Mount Elgon", to: "/destinations/mount-elgon", img: mountElgon, blurb: "The world's largest volcanic caldera, hiked over four to seven days." },
-      { name: "Coffee & Tea Origins", to: "/coffee-tea-guide", img: coffeeTea, blurb: "Washing stations and smallholder farms on Elgon's slopes." },
+      {
+        name: "Jinja & the Source of the Nile",
+        to: "/destinations/jinja-source-of-the-nile",
+        img: nileBridgeAerial,
+        blurb: "Rafting, kayaking and the point where the Nile begins.",
+      },
+      {
+        name: "Sipi Falls",
+        to: "/destinations/sipi-falls",
+        img: expSipi,
+        blurb: "Three waterfalls, coffee terraces, and views over the Karamoja plains.",
+      },
+      {
+        name: "Mount Elgon",
+        to: "/destinations/mount-elgon",
+        img: mountElgon,
+        blurb: "The world's largest volcanic caldera, hiked over four to seven days.",
+      },
+      {
+        name: "Coffee & Tea Origins",
+        to: "/coffee-tea-guide",
+        img: coffeeTea,
+        blurb: "Washing stations and smallholder farms on Elgon's slopes.",
+      },
     ],
   },
   "northern-uganda": {
@@ -107,10 +197,30 @@ const REGIONS: Record<string, Region> = {
     heroAlt: "Murchison Falls on the Victoria Nile",
     when: "December–February for concentrated game around the river; the boat cruise to the base of the falls runs year-round.",
     spots: [
-      { name: "Murchison Falls National Park", to: "/destinations/murchison-falls", img: sceneFalls, blurb: "Game drives on the delta, and a boat cruise to the foot of the falls." },
-      { name: "Ziwa Rhino Sanctuary", to: "/destinations/ziwa-rhino-sanctuary", img: rhinoZiwa, blurb: "A rhino tracking stopover on the drive north from Kampala." },
-      { name: "Kidepo Valley National Park", to: "/destinations/kidepo-valley", img: kidepoCheetahCard, blurb: "Uganda's remotest park — cheetah, ostrich and complete isolation." },
-      { name: "National Parks Overview", to: "/national-parks", img: sceneElephants, blurb: "How the northern parks compare, and how to combine them." },
+      {
+        name: "Murchison Falls National Park",
+        to: "/destinations/murchison-falls",
+        img: sceneFalls,
+        blurb: "Game drives on the delta, and a boat cruise to the foot of the falls.",
+      },
+      {
+        name: "Ziwa Rhino Sanctuary",
+        to: "/destinations/ziwa-rhino-sanctuary",
+        img: rhinoZiwa,
+        blurb: "A rhino tracking stopover on the drive north from Kampala.",
+      },
+      {
+        name: "Kidepo Valley National Park",
+        to: "/destinations/kidepo-valley",
+        img: kidepoCheetahCard,
+        blurb: "Uganda's remotest park — cheetah, ostrich and complete isolation.",
+      },
+      {
+        name: "National Parks Overview",
+        to: "/national-parks",
+        img: sceneElephants,
+        blurb: "How the northern parks compare, and how to combine them.",
+      },
     ],
   },
   karamoja: {
@@ -123,10 +233,30 @@ const REGIONS: Record<string, Region> = {
     heroAlt: "Sunset over the plains of Karamoja",
     when: "September–March. Access roads deteriorate quickly during the heaviest rains.",
     spots: [
-      { name: "Kidepo Valley National Park", to: "/destinations/kidepo-valley", img: kidepoCheetahCard, blurb: "Mountain-ringed savanna with wildlife you'll usually have to yourself." },
-      { name: "Karamojong Culture", to: "/cultural-heritage", img: karamojongCulture, blurb: "Manyattas, cattle traditions and one of Uganda's most distinct cultures." },
-      { name: "Mount Moroto & Elgon Highlands", to: "/mountains", img: sceneRwenzori, blurb: "Dry-country peaks rising straight out of the plains." },
-      { name: "Responsible Travel Here", to: "/responsible-tourism", img: batwaDance, blurb: "How visits are arranged so revenue reaches the communities involved." },
+      {
+        name: "Kidepo Valley National Park",
+        to: "/destinations/kidepo-valley",
+        img: kidepoCheetahCard,
+        blurb: "Mountain-ringed savanna with wildlife you'll usually have to yourself.",
+      },
+      {
+        name: "Karamojong Culture",
+        to: "/cultural-heritage",
+        img: karamojongCulture,
+        blurb: "Manyattas, cattle traditions and one of Uganda's most distinct cultures.",
+      },
+      {
+        name: "Mount Moroto & Elgon Highlands",
+        to: "/mountains",
+        img: sceneRwenzori,
+        blurb: "Dry-country peaks rising straight out of the plains.",
+      },
+      {
+        name: "Responsible Travel Here",
+        to: "/responsible-tourism",
+        img: batwaDance,
+        blurb: "How visits are arranged so revenue reaches the communities involved.",
+      },
     ],
   },
 };
@@ -140,7 +270,12 @@ export const Route = createFileRoute("/regions/$region")({
   head: ({ params }) => {
     const region = REGIONS[params.region];
     if (!region) {
-      return { meta: [{ title: "Region not found — Trek Wild Uganda" }, { name: "robots", content: "noindex" }] };
+      return {
+        meta: [
+          { title: "Region not found — Trek Wild Uganda" },
+          { name: "robots", content: "noindex" },
+        ],
+      };
     }
     const title = `${region.name} — Safari Destinations & Highlights | Trek Wild Uganda`;
     const description = `${region.tagline} ${region.intro}`.slice(0, 155);
@@ -166,8 +301,12 @@ function RegionNotFound() {
     <div className="bg-ivory text-charcoal">
       <SiteNav />
       <section className="mx-auto max-w-[900px] px-6 pb-24 pt-40 text-center md:px-10">
-        <h1 className="font-display text-4xl text-charcoal md:text-5xl">That region doesn&rsquo;t exist</h1>
-        <p className="mt-4 text-charcoal/70">Try the Uganda Explorer for every destination we cover.</p>
+        <h1 className="font-display text-4xl text-charcoal md:text-5xl">
+          That region doesn&rsquo;t exist
+        </h1>
+        <p className="mt-4 text-charcoal/70">
+          Try the Uganda Explorer for every destination we cover.
+        </p>
         <Link
           to="/uganda-explorer"
           className="mt-8 inline-flex rounded-full bg-forest px-7 py-4 text-sm font-medium text-ivory hover:bg-forest-deep"

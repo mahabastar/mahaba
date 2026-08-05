@@ -10,7 +10,10 @@ export const Route = createFileRoute("/admin/bookings")({
   head: () => ({
     meta: [
       { title: "Bookings Management — Trek Wild Uganda" },
-      { name: "description", content: "Internal console to review, filter and update traveler bookings." },
+      {
+        name: "description",
+        content: "Internal console to review, filter and update traveler bookings.",
+      },
       { name: "robots", content: "noindex" },
     ],
   }),
@@ -35,7 +38,11 @@ const STATUS_COLOR: Record<BookingStatus, string> = {
 
 function formatDate(d: string | null): string {
   if (!d) return "TBC";
-  return new Date(d).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+  return new Date(d).toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
 }
 
 const inputClass =
@@ -97,7 +104,9 @@ function BookingRow({
       .from("bookings")
       .update({
         ...(values.trip_name !== undefined ? { trip_name: values.trip_name.trim() } : {}),
-        ...(values.traveler_email !== undefined ? { traveler_email: values.traveler_email.trim() } : {}),
+        ...(values.traveler_email !== undefined
+          ? { traveler_email: values.traveler_email.trim() }
+          : {}),
         ...(values.start_date !== undefined ? { start_date: values.start_date || null } : {}),
         ...(values.end_date !== undefined ? { end_date: values.end_date || null } : {}),
         ...(values.status !== undefined ? { status: values.status } : {}),
@@ -375,7 +384,9 @@ function ManageBookings({ email, onSignOut }: { email: string; onSignOut: () => 
       return matchesQuery && matchesStatus;
     });
     if (sort === "start_date") {
-      rows = rows.slice().sort((a, b) => (a.start_date ?? "9999").localeCompare(b.start_date ?? "9999"));
+      rows = rows
+        .slice()
+        .sort((a, b) => (a.start_date ?? "9999").localeCompare(b.start_date ?? "9999"));
     }
     return rows;
   }, [bookings, query, statusFilter, sort]);

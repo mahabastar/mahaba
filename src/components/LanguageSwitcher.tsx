@@ -54,7 +54,6 @@ const LANGUAGES: { code: string; label: string }[] = [
   { code: "zu", label: "isiZulu" },
 ];
 
-
 const SCRIPT_ID = "google-translate-script";
 
 function readCurrent(): string {
@@ -123,7 +122,13 @@ export function LanguageSwitcher({ className = "" }: { className?: string }) {
         aria-label="Change language"
         className="notranslate flex items-center gap-1.5 rounded-full border border-current/25 px-3 py-1.5 text-xs uppercase tracking-widest transition-colors hover:text-gold"
       >
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-4 w-4">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          className="h-4 w-4"
+        >
           <circle cx="12" cy="12" r="9" />
           <path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18" />
         </svg>

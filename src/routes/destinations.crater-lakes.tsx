@@ -52,7 +52,11 @@ export const Route = createFileRoute("/destinations/crater-lakes")({
       slug="crater-lakes"
       eyebrow="Fort Portal, Ndali-Kasenda Field"
       name="The Crater Lakes"
-      tagline={<>Around fifty lakes, <em className="italic text-gold">one volcanic field</em>.</>}
+      tagline={
+        <>
+          Around fifty lakes, <em className="italic text-gold">one volcanic field</em>.
+        </>
+      }
       intro="Scattered across the rolling tea and coffee country around Fort Portal, roughly fifty volcanic explosion craters — some barely a few hundred metres wide, others over a kilometre — sit among Uganda's most photogenic farmland, minutes from Kibale National Park."
       heroImage={expCoffee}
       heroAlt="Volcanic crater lake surrounded by tea and coffee gardens near Fort Portal"
@@ -83,22 +87,52 @@ export const Route = createFileRoute("/destinations/crater-lakes")({
         { src: g_lodge_kyaninga, alt: "Crater-rim lodge near Fort Portal" },
       ]}
       highlights={[
-        { title: "Around 50 volcanic craters", desc: "The Ndali-Kasenda field, one of the densest crater-lake clusters in East Africa." },
-        { title: "Swimmable lakes", desc: "Lake Nyinambuga and several others are safe and popular for a swim." },
-        { title: "Tea and coffee scenery", desc: "Crater rims wrapped in cultivated farmland, with Rwenzori views on clear days." },
-        { title: "Crater-rim lodges", desc: "Some of western Uganda's most scenic overnight stops, perched directly above the water." },
-        { title: "Guided ridge walks", desc: "Hiking trails link several craters for those who'd rather walk than drive between them." },
-        { title: "Minutes from Kibale", desc: "The natural overnight stop before or after a chimpanzee trek." },
+        {
+          title: "Around 50 volcanic craters",
+          desc: "The Ndali-Kasenda field, one of the densest crater-lake clusters in East Africa.",
+        },
+        {
+          title: "Swimmable lakes",
+          desc: "Lake Nyinambuga and several others are safe and popular for a swim.",
+        },
+        {
+          title: "Tea and coffee scenery",
+          desc: "Crater rims wrapped in cultivated farmland, with Rwenzori views on clear days.",
+        },
+        {
+          title: "Crater-rim lodges",
+          desc: "Some of western Uganda's most scenic overnight stops, perched directly above the water.",
+        },
+        {
+          title: "Guided ridge walks",
+          desc: "Hiking trails link several craters for those who'd rather walk than drive between them.",
+        },
+        {
+          title: "Minutes from Kibale",
+          desc: "The natural overnight stop before or after a chimpanzee trek.",
+        },
       ]}
       itinerary={[
-        { day: "Day 01", title: "Arrive & crater-lake drive", desc: "Settle into a crater-rim lodge, then spend the afternoon touring two or three lakes by road or on foot." },
-        { day: "Day 02", title: "Ridge walk or onward to Kibale", desc: "An optional morning ridge walk between craters, before continuing into Kibale for a chimpanzee trek." },
+        {
+          day: "Day 01",
+          title: "Arrive & crater-lake drive",
+          desc: "Settle into a crater-rim lodge, then spend the afternoon touring two or three lakes by road or on foot.",
+        },
+        {
+          day: "Day 02",
+          title: "Ridge walk or onward to Kibale",
+          desc: "An optional morning ridge walk between craters, before continuing into Kibale for a chimpanzee trek.",
+        },
       ]}
       bestTime="Visitable year-round given the region's moderate elevation. June–September and December–February are driest and offer the clearest mountain views; the wetter months bring lush, deep-green scenery."
       gettingThere="Roughly a 4–5 hour drive from Kampala via Mubende, or a short 20–30 minute drive from Fort Portal town itself, right beside Kibale National Park."
       related={[
         { name: "Kibale", to: "/destinations/kibale-forest", img: expChimp },
-        { name: "Queen Elizabeth National Park", to: "/destinations/queen-elizabeth-national-park", img: sceneLion },
+        {
+          name: "Queen Elizabeth National Park",
+          to: "/destinations/queen-elizabeth-national-park",
+          img: sceneLion,
+        },
       ]}
       faqs={FAQS}
     />

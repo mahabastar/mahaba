@@ -8,11 +8,16 @@ import { SITE_CONFIG, buildWhatsAppHref } from "@/lib/site-config";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 
 const REGION_NOTE: Record<string, string> = {
-  "South-western Uganda": "The primate circuit — gorillas, golden monkeys, and volcano country near the Rwanda and DR Congo borders.",
-  "Western Uganda": "Uganda's game-viewing heartland — savanna, chimpanzees, crater lakes and the Rwenzori glaciers, usually combined on one loop.",
-  "North-western Uganda": "A single, unmissable park built around the Nile's most dramatic stretch.",
-  "Eastern Uganda": "Highland country on the Kenyan border — waterfalls, coffee, and a volcano big enough to hike for days.",
-  "North-eastern Uganda": "Uganda's wild frontier — remote, semi-arid, and furthest from anywhere else on this list.",
+  "South-western Uganda":
+    "The primate circuit — gorillas, golden monkeys, and volcano country near the Rwanda and DR Congo borders.",
+  "Western Uganda":
+    "Uganda's game-viewing heartland — savanna, chimpanzees, crater lakes and the Rwenzori glaciers, usually combined on one loop.",
+  "North-western Uganda":
+    "A single, unmissable park built around the Nile's most dramatic stretch.",
+  "Eastern Uganda":
+    "Highland country on the Kenyan border — waterfalls, coffee, and a volcano big enough to hike for days.",
+  "North-eastern Uganda":
+    "Uganda's wild frontier — remote, semi-arid, and furthest from anywhere else on this list.",
 };
 
 export const Route = createFileRoute("/national-parks")({
@@ -55,8 +60,8 @@ function ParkCard({ park }: { park: NationalPark }) {
         src={park.img}
         alt={`${park.name} National Park, Uganda`}
         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-          loading="lazy"
-        />
+        loading="lazy"
+      />
       <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/25 to-transparent" />
 
       <div className="absolute left-4 top-4 rounded-full bg-charcoal/60 px-3 py-1 text-[0.65rem] uppercase tracking-widest text-ivory/85 backdrop-blur-sm">
@@ -75,14 +80,26 @@ function ParkCard({ park }: { park: NationalPark }) {
         {park.to ? (
           <span className="mt-4 inline-flex items-center gap-1.5 text-xs uppercase tracking-widest text-ivory/85">
             Explore the park
-            <svg viewBox="0 0 24 24" className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg
+              viewBox="0 0 24 24"
+              className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
               <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </span>
         ) : (
           <span className="mt-4 inline-flex items-center gap-1.5 text-xs uppercase tracking-widest text-ivory/85">
             Ask us about it directly
-            <svg viewBox="0 0 24 24" className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2">
+            <svg
+              viewBox="0 0 24 24"
+              className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            >
               <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </span>
@@ -91,7 +108,8 @@ function ParkCard({ park }: { park: NationalPark }) {
     </>
   );
 
-  const className = "group relative block aspect-[4/5] overflow-hidden rounded-3xl bg-charcoal hover-lift sm:aspect-[16/11]";
+  const className =
+    "group relative block aspect-[4/5] overflow-hidden rounded-3xl bg-charcoal hover-lift sm:aspect-[16/11]";
 
   if (park.to) {
     return (
@@ -105,7 +123,9 @@ function ParkCard({ park }: { park: NationalPark }) {
     <a
       key={park.slug}
       id={park.slug}
-      href={buildWhatsAppHref(`Hi! Could you tell me more about ${park.name} National Park for my Uganda trip?`)}
+      href={buildWhatsAppHref(
+        `Hi! Could you tell me more about ${park.name} National Park for my Uganda trip?`,
+      )}
       target="_blank"
       rel="noopener noreferrer"
       className={className}
@@ -122,7 +142,11 @@ function NationalParksHub() {
 
       {/* Hero */}
       <section className="relative min-h-[70svh] w-full overflow-hidden bg-charcoal grain">
-        <img src={heroGorilla} alt="Misty forest canopy in a Uganda national park" className="absolute inset-0 h-full w-full object-cover ken-burns opacity-60" />
+        <img
+          src={heroGorilla}
+          alt="Misty forest canopy in a Uganda national park"
+          className="absolute inset-0 h-full w-full object-cover ken-burns opacity-60"
+        />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="relative z-10 mx-auto flex min-h-[70svh] max-w-[1000px] flex-col justify-end px-6 pb-16 pt-40 text-center md:px-10 md:pb-20">
           <div className="eyebrow !text-gold">Ten Parks, One Country</div>
@@ -212,8 +236,8 @@ function NationalParksHub() {
             Not sure which parks fit your trip?
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-ivory/70">
-            Tell us how many days you have and what you want to see — we'll match you to the
-            right combination.
+            Tell us how many days you have and what you want to see — we'll match you to the right
+            combination.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Link
@@ -223,7 +247,9 @@ function NationalParksHub() {
               Build My Safari
             </Link>
             <a
-              href={buildWhatsAppHref("Hi! I'd like help choosing which Uganda national parks to visit.")}
+              href={buildWhatsAppHref(
+                "Hi! I'd like help choosing which Uganda national parks to visit.",
+              )}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full border border-forest/70 px-7 py-4 text-sm font-medium text-ivory hover:border-gold hover:text-gold"

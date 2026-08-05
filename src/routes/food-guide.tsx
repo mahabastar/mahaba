@@ -20,7 +20,11 @@ export const Route = createFileRoute("/food-guide")({
   component: () => (
     <GuidePage
       eyebrow="Eating Your Way Through Uganda"
-      title={<>Uganda's food, <em className="italic text-gold">explained</em>.</>}
+      title={
+        <>
+          Uganda's food, <em className="italic text-gold">explained</em>.
+        </>
+      }
       intro="Ugandan food doesn't get the international attention of some of its neighbours, but it's hearty, varied, and shaped by everything from Buganda tradition to British and Indian influence — and easy to eat well on safari."
       heroImage={sceneCulture}
       heroAlt="Ugandan food market and local ingredients"
@@ -62,10 +66,22 @@ export const Route = createFileRoute("/food-guide")({
         },
       ]}
       faqs={[
-        { q: "Is street food like the Rolex safe to eat?", a: "Generally yes from a busy, popular stand where turnover is high and food is cooked fresh in front of you — the same common-sense rules that apply to street food anywhere." },
-        { q: "Is Uganda good for vegetarians?", a: "Yes — beans, groundnut sauce and vegetable stews are everyday Ugandan staples, not a special request." },
-        { q: "What's the difference between matoke and posho?", a: "Matoke is steamed and mashed green banana with a subtle, slightly savoury flavour; posho is a firmer maize porridge closer to polenta. Both are common starch bases and often served together." },
-        { q: "Can I visit a local market?", a: "Yes — we can arrange a guided visit to a local market as part of your itinerary, a good way to see ingredients and daily life beyond the lodge circuit." },
+        {
+          q: "Is street food like the Rolex safe to eat?",
+          a: "Generally yes from a busy, popular stand where turnover is high and food is cooked fresh in front of you — the same common-sense rules that apply to street food anywhere.",
+        },
+        {
+          q: "Is Uganda good for vegetarians?",
+          a: "Yes — beans, groundnut sauce and vegetable stews are everyday Ugandan staples, not a special request.",
+        },
+        {
+          q: "What's the difference between matoke and posho?",
+          a: "Matoke is steamed and mashed green banana with a subtle, slightly savoury flavour; posho is a firmer maize porridge closer to polenta. Both are common starch bases and often served together.",
+        },
+        {
+          q: "Can I visit a local market?",
+          a: "Yes — we can arrange a guided visit to a local market as part of your itinerary, a good way to see ingredients and daily life beyond the lodge circuit.",
+        },
       ]}
       related={[
         { name: "Coffee & Tea Guide", to: "/coffee-tea-guide" },

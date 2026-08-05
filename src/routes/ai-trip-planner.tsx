@@ -8,15 +8,11 @@ import { buildWhatsAppHref } from "@/lib/site-config";
 import { planTrip, type TripPlan } from "@/lib/ai-trip-planner";
 import { draftItinerary, type ItineraryDraft } from "@/lib/trip-planner.functions";
 
-
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
 
 export const Route = createFileRoute("/ai-trip-planner")({
   head: () => ({
-    meta: [
-      { title: "AI Trip Planner — Trek Wild Uganda" },
-      { name: "robots", content: "noindex" },
-    ],
+    meta: [{ title: "AI Trip Planner — Trek Wild Uganda" }, { name: "robots", content: "noindex" }],
   }),
   component: AiTripPlanner,
 });
@@ -76,15 +72,16 @@ function AiTripPlanner() {
     }
   }
 
-
-
   return (
     <div className="bg-ivory text-charcoal">
       <SiteNav />
 
       {/* Hero */}
       <section className="relative min-h-[55svh] w-full overflow-hidden bg-charcoal grain">
-        <img src={sceneRwenzori} alt="Uganda landscape" className="absolute inset-0 h-full w-full object-cover opacity-40"
+        <img
+          src={sceneRwenzori}
+          alt="Uganda landscape"
+          className="absolute inset-0 h-full w-full object-cover opacity-40"
         />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="relative z-10 mx-auto flex min-h-[55svh] max-w-[900px] flex-col justify-end px-6 pb-16 pt-40 text-center md:px-10 md:pb-20">
@@ -93,9 +90,9 @@ function AiTripPlanner() {
             Describe your trip. <em className="italic text-gold">We'll draft it.</em>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-ivory/75">
-            Tell us roughly what you want in your own words — length, interests, pace, budget —
-            and we'll match you to a starting itinerary pulled from our real journeys and
-            experiences. It's a draft to react to, not a final booking.
+            Tell us roughly what you want in your own words — length, interests, pace, budget — and
+            we'll match you to a starting itinerary pulled from our real journeys and experiences.
+            It's a draft to react to, not a final booking.
           </p>
         </div>
       </section>
@@ -152,15 +149,21 @@ function AiTripPlanner() {
 
             {draft && (
               <div className="mt-10 rounded-3xl bg-white p-8 shadow-md">
-                <h3 className="font-display text-2xl text-charcoal md:text-3xl">{draft.headline}</h3>
-                <p className="mt-3 max-w-2xl text-sm leading-relaxed text-charcoal/70">{draft.summary}</p>
+                <h3 className="font-display text-2xl text-charcoal md:text-3xl">
+                  {draft.headline}
+                </h3>
+                <p className="mt-3 max-w-2xl text-sm leading-relaxed text-charcoal/70">
+                  {draft.summary}
+                </p>
 
                 <ol className="mt-8 space-y-6 border-l border-charcoal/10 pl-6">
                   {draft.days.map((d) => (
                     <li key={d.day}>
                       <div className="eyebrow">Day {d.day}</div>
                       <h4 className="mt-1 font-display text-lg text-charcoal">{d.title}</h4>
-                      <p className="mt-2 text-sm leading-relaxed text-charcoal/70">{d.description}</p>
+                      <p className="mt-2 text-sm leading-relaxed text-charcoal/70">
+                        {d.description}
+                      </p>
                     </li>
                   ))}
                 </ol>
@@ -188,12 +191,14 @@ function AiTripPlanner() {
                   src={plan.journey.img}
                   alt={plan.journey.title}
                   className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-          loading="lazy"
-        />
+                  loading="lazy"
+                />
               </div>
               <div className="flex flex-1 flex-col justify-center p-8">
                 <div className="eyebrow">{plan.journey.days} Days · Closest-matching journey</div>
-                <h3 className="mt-2 font-display text-2xl text-charcoal md:text-3xl">{plan.journey.title}</h3>
+                <h3 className="mt-2 font-display text-2xl text-charcoal md:text-3xl">
+                  {plan.journey.title}
+                </h3>
                 <p className="mt-3 text-sm text-charcoal/70">{plan.journey.tagline}</p>
                 <span className="mt-5 inline-flex items-center gap-2 text-sm uppercase tracking-widest text-forest">
                   See the full itinerary <span aria-hidden>→</span>
@@ -216,8 +221,8 @@ function AiTripPlanner() {
                         src={e.heroImg}
                         alt={e.title}
                         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-          loading="lazy"
-        />
+                        loading="lazy"
+                      />
                     </div>
                     <div className="flex flex-1 flex-col p-5">
                       <h4 className="font-display text-lg text-charcoal">{e.title}</h4>
@@ -229,13 +234,12 @@ function AiTripPlanner() {
             )}
 
             <div className="mt-10 rounded-2xl border border-charcoal/10 bg-white p-6 text-sm text-charcoal/70">
-              This draft is written by our AI planner, grounded in the real journeys and
-              experiences we operate
-              {plan.dayHint ? ` (we picked up roughly ${plan.dayHint} days)` : ""}. Lodges,
-              permits and exact dates still need confirming by a human — treat it as a fast
-              starting point, then refine the details with us directly.
+              This draft is written by our AI planner, grounded in the real journeys and experiences
+              we operate
+              {plan.dayHint ? ` (we picked up roughly ${plan.dayHint} days)` : ""}. Lodges, permits
+              and exact dates still need confirming by a human — treat it as a fast starting point,
+              then refine the details with us directly.
             </div>
-
 
             <div className="mt-8 flex flex-wrap gap-4">
               <Link

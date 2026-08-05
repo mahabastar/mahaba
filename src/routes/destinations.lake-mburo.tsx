@@ -55,7 +55,11 @@ export const Route = createFileRoute("/destinations/lake-mburo")({
       slug="lake-mburo"
       eyebrow="Lake Mburo National Park"
       name="Lake Mburo"
-      tagline={<>Small park, <em className="italic text-gold">close enough for a stopover</em>.</>}
+      tagline={
+        <>
+          Small park, <em className="italic text-gold">close enough for a stopover</em>.
+        </>
+      }
       intro="Uganda's most compact savanna park sits just a few hours from Kampala, in the rolling grassland of Ankole cattle country. Without elephants or lions to complicate things, Lake Mburo is the one park in Uganda where walking and horseback safaris among zebra and impala are simply routine — a different pace entirely from the country's bigger parks."
       heroImage={g_mburo_zebras}
       heroAlt="Zebras and buffalo at a waterhole in Lake Mburo National Park"
@@ -89,21 +93,51 @@ export const Route = createFileRoute("/destinations/lake-mburo")({
         { src: g_mburo_moments_3, alt: "Wildlife at Lake Mburo" },
       ]}
       highlights={[
-        { title: "Walking safaris", desc: "Uganda's only park where guided walks among plains game are a routine activity." },
-        { title: "Horseback safaris", desc: "See zebra and impala at eye level on a guided horse ride through the grassland." },
-        { title: "Closest savanna park to Kampala", desc: "Around 3.5–4 hours by road — an easy first or last stop on any itinerary." },
-        { title: "Boat cruise on Lake Mburo", desc: "Close hippo and crocodile sightings, with a chance of the rare shoebill stork." },
-        { title: "Ankole cattle country", desc: "Rolling grassland grazed by Uganda's iconic long-horned Ankole cattle." },
-        { title: "Compact enough for one night", desc: "A full safari experience without the multi-night commitment of Uganda's larger parks." },
+        {
+          title: "Walking safaris",
+          desc: "Uganda's only park where guided walks among plains game are a routine activity.",
+        },
+        {
+          title: "Horseback safaris",
+          desc: "See zebra and impala at eye level on a guided horse ride through the grassland.",
+        },
+        {
+          title: "Closest savanna park to Kampala",
+          desc: "Around 3.5–4 hours by road — an easy first or last stop on any itinerary.",
+        },
+        {
+          title: "Boat cruise on Lake Mburo",
+          desc: "Close hippo and crocodile sightings, with a chance of the rare shoebill stork.",
+        },
+        {
+          title: "Ankole cattle country",
+          desc: "Rolling grassland grazed by Uganda's iconic long-horned Ankole cattle.",
+        },
+        {
+          title: "Compact enough for one night",
+          desc: "A full safari experience without the multi-night commitment of Uganda's larger parks.",
+        },
       ]}
       itinerary={[
-        { day: "Day 01", title: "Arrive & game drive", desc: "Drive in from Kampala, settle into your lodge, and head out for an afternoon game drive." },
-        { day: "Day 02", title: "Walking safari & boat cruise", desc: "An early guided walk among zebra and impala, followed by a lake cruise before continuing your journey south." },
+        {
+          day: "Day 01",
+          title: "Arrive & game drive",
+          desc: "Drive in from Kampala, settle into your lodge, and head out for an afternoon game drive.",
+        },
+        {
+          day: "Day 02",
+          title: "Walking safari & boat cruise",
+          desc: "An early guided walk among zebra and impala, followed by a lake cruise before continuing your journey south.",
+        },
       ]}
       bestTime="Dry months from June–September and December–February offer the easiest walking conditions and best game visibility. The park is malaria-country year-round, so precautions are worth taking regardless of season."
       gettingThere="A straightforward 3.5–4 hour drive from Kampala or Entebbe on the road toward Mbarara, making it a natural stopover en route to Bwindi Impenetrable or Lake Bunyonyi."
       related={[
-        { name: "Bwindi Impenetrable", to: "/destinations/bwindi-impenetrable", img: gorillaSilverback },
+        {
+          name: "Bwindi Impenetrable",
+          to: "/destinations/bwindi-impenetrable",
+          img: gorillaSilverback,
+        },
         { name: "Lake Bunyonyi", to: "/destinations/lake-bunyonyi", img: sceneBunyonyi },
       ]}
       faqs={FAQS}

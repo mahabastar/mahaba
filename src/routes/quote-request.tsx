@@ -3,7 +3,7 @@ import { useState } from "react";
 
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
-import {buildWhatsAppHref, buildEmailHref, SITE_CONFIG } from "@/lib/site-config";
+import { buildWhatsAppHref, buildEmailHref, SITE_CONFIG } from "@/lib/site-config";
 import { trackEvent } from "@/lib/analytics";
 
 export const Route = createFileRoute("/quote-request")({
@@ -29,16 +29,35 @@ const STYLES = [
   { label: "Luxury", desc: "Premium camps & private guides" },
   { label: "Adventure", desc: "Lean, active, budget-conscious" },
 ];
-const INTERESTS = ["Gorillas & Chimps", "Big Game Safari", "Birding", "Adventure & Hiking", "Culture & Communities", "Honeymoon"];
+const INTERESTS = [
+  "Gorillas & Chimps",
+  "Big Game Safari",
+  "Birding",
+  "Adventure & Hiking",
+  "Culture & Communities",
+  "Honeymoon",
+];
 
-function OptionChip({ label, selected, onClick, sub }: { label: string; sub?: string; selected: boolean; onClick: () => void }) {
+function OptionChip({
+  label,
+  selected,
+  onClick,
+  sub,
+}: {
+  label: string;
+  sub?: string;
+  selected: boolean;
+  onClick: () => void;
+}) {
   return (
     <button
       type="button"
       onClick={onClick}
       aria-pressed={selected}
       className={`rounded-full border px-4 py-2.5 text-left text-sm transition-all ${
-        selected ? "border-forest bg-forest/5 text-forest" : "border-charcoal/15 text-charcoal/70 hover:border-forest/40"
+        selected
+          ? "border-forest bg-forest/5 text-forest"
+          : "border-charcoal/15 text-charcoal/70 hover:border-forest/40"
       }`}
     >
       <span className="font-medium">{label}</span>
@@ -91,9 +110,13 @@ function QuoteRequest() {
           <p className="mx-auto mt-6 max-w-xl text-lg text-ivory/75">
             No obligation, no lengthy wizard — just the essentials, and we'll come back to you
             directly with pricing and options. Want something more guided instead?{" "}
-            <Link to="/build-my-safari" className="underline decoration-gold/50 underline-offset-4 hover:text-gold">
+            <Link
+              to="/build-my-safari"
+              className="underline decoration-gold/50 underline-offset-4 hover:text-gold"
+            >
               Try Build My Safari
-            </Link>.
+            </Link>
+            .
           </p>
         </div>
       </section>
@@ -103,7 +126,10 @@ function QuoteRequest() {
         <div className="mx-auto max-w-[720px] px-6 py-16 md:px-10 md:py-20">
           <div className="grid gap-6 sm:grid-cols-2">
             <div>
-              <label htmlFor="qr-name" className="text-xs uppercase tracking-widest text-charcoal/50">
+              <label
+                htmlFor="qr-name"
+                className="text-xs uppercase tracking-widest text-charcoal/50"
+              >
                 Your name
               </label>
               <input
@@ -116,7 +142,10 @@ function QuoteRequest() {
               />
             </div>
             <div>
-              <label htmlFor="qr-email" className="text-xs uppercase tracking-widest text-charcoal/50">
+              <label
+                htmlFor="qr-email"
+                className="text-xs uppercase tracking-widest text-charcoal/50"
+              >
                 Email
               </label>
               <input
@@ -131,7 +160,10 @@ function QuoteRequest() {
           </div>
 
           <div className="mt-6">
-            <label htmlFor="qr-travelers" className="text-xs uppercase tracking-widest text-charcoal/50">
+            <label
+              htmlFor="qr-travelers"
+              className="text-xs uppercase tracking-widest text-charcoal/50"
+            >
               Number of travelers
             </label>
             <input
@@ -157,22 +189,38 @@ function QuoteRequest() {
             <div className="text-xs uppercase tracking-widest text-charcoal/50">Travel style</div>
             <div className="mt-3 flex flex-wrap gap-2">
               {STYLES.map((s) => (
-                <OptionChip key={s.label} label={s.label} sub={s.desc} selected={style === s.label} onClick={() => setStyle(s.label)} />
+                <OptionChip
+                  key={s.label}
+                  label={s.label}
+                  sub={s.desc}
+                  selected={style === s.label}
+                  onClick={() => setStyle(s.label)}
+                />
               ))}
             </div>
           </div>
 
           <div className="mt-8">
-            <div className="text-xs uppercase tracking-widest text-charcoal/50">Must-sees (pick any)</div>
+            <div className="text-xs uppercase tracking-widest text-charcoal/50">
+              Must-sees (pick any)
+            </div>
             <div className="mt-3 flex flex-wrap gap-2">
               {INTERESTS.map((i) => (
-                <OptionChip key={i} label={i} selected={interests.includes(i)} onClick={() => toggleInterest(i)} />
+                <OptionChip
+                  key={i}
+                  label={i}
+                  selected={interests.includes(i)}
+                  onClick={() => toggleInterest(i)}
+                />
               ))}
             </div>
           </div>
 
           <div className="mt-8">
-            <label htmlFor="qr-notes" className="text-xs uppercase tracking-widest text-charcoal/50">
+            <label
+              htmlFor="qr-notes"
+              className="text-xs uppercase tracking-widest text-charcoal/50"
+            >
               Anything else we should know?
             </label>
             <textarea
@@ -193,10 +241,13 @@ function QuoteRequest() {
               aria-disabled={!ready}
               onClick={(e) => {
                 if (!ready) e.preventDefault();
-                else trackEvent("quote_request_sent", { channel: "whatsapp", style, days, travelers });
+                else
+                  trackEvent("quote_request_sent", { channel: "whatsapp", style, days, travelers });
               }}
               className={`rounded-full px-7 py-4 text-sm font-medium text-ivory shadow-md transition-all ${
-                ready ? "bg-forest hover:scale-105 hover:bg-forest-deep" : "cursor-not-allowed bg-charcoal/20"
+                ready
+                  ? "bg-forest hover:scale-105 hover:bg-forest-deep"
+                  : "cursor-not-allowed bg-charcoal/20"
               }`}
             >
               Send via WhatsApp
@@ -209,15 +260,22 @@ function QuoteRequest() {
                 else trackEvent("quote_request_sent", { channel: "email", style, days, travelers });
               }}
               className={`rounded-full border px-7 py-4 text-sm font-medium transition-all ${
-                ready ? "border-forest/70 text-forest hover:border-forest hover:bg-forest/5" : "cursor-not-allowed border-charcoal/15 text-charcoal/30"
+                ready
+                  ? "border-forest/70 text-forest hover:border-forest hover:bg-forest/5"
+                  : "cursor-not-allowed border-charcoal/15 text-charcoal/30"
               }`}
             >
               Send via Email
             </a>
           </div>
-          {!ready && <p className="mt-4 text-xs text-charcoal/40">Name and email are needed before sending.</p>}
+          {!ready && (
+            <p className="mt-4 text-xs text-charcoal/40">
+              Name and email are needed before sending.
+            </p>
+          )}
           <p className="mt-6 text-xs text-charcoal/40">
-            This opens WhatsApp or your email client with your details pre-filled — nothing is sent automatically, and there's no account or commitment required.
+            This opens WhatsApp or your email client with your details pre-filled — nothing is sent
+            automatically, and there's no account or commitment required.
           </p>
         </div>
       </section>

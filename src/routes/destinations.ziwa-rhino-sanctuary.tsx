@@ -55,7 +55,11 @@ export const Route = createFileRoute("/destinations/ziwa-rhino-sanctuary")({
       slug="ziwa-rhino-sanctuary"
       eyebrow="Nakasongola, Central Uganda"
       name="Ziwa Rhino Sanctuary"
-      tagline={<>Uganda's rhinos, <em className="italic text-gold">brought back on foot</em>.</>}
+      tagline={
+        <>
+          Uganda's rhinos, <em className="italic text-gold">brought back on foot</em>.
+        </>
+      }
       intro="Uganda's wild rhinos were poached to extinction by the late 1980s. Ziwa is the reason that's no longer the whole story — a community-run sanctuary where southern white rhinos, reintroduced and now breeding, can be tracked on foot within a few metres."
       heroImage={rhinoZiwa}
       heroAlt="Southern white rhino at Ziwa Rhino Sanctuary, Uganda"
@@ -90,21 +94,41 @@ export const Route = createFileRoute("/destinations/ziwa-rhino-sanctuary")({
         { src: g_shoebill_2, alt: "Shoebill in the Ziwa wetlands" },
       ]}
       highlights={[
-        { title: "The only rhinos in Uganda", desc: "Southern white rhinos, reintroduced after the species was poached to local extinction." },
-        { title: "Guided tracking on foot", desc: "A quieter, closer encounter than a vehicle-based game drive." },
-        { title: "A genuine conservation success", desc: "Grown from a handful of donated rhinos to a breeding population in the dozens." },
-        { title: "Community-run sanctuary", desc: "Managed by Rhino Fund Uganda with strong local employment and education programmes." },
-        { title: "On the road to Murchison Falls", desc: "A natural stopover, not a detour, for anyone driving north." },
-        { title: "Birdlife on the side", desc: "The sanctuary's wetlands support a healthy variety of savanna and water birds." },
+        {
+          title: "The only rhinos in Uganda",
+          desc: "Southern white rhinos, reintroduced after the species was poached to local extinction.",
+        },
+        {
+          title: "Guided tracking on foot",
+          desc: "A quieter, closer encounter than a vehicle-based game drive.",
+        },
+        {
+          title: "A genuine conservation success",
+          desc: "Grown from a handful of donated rhinos to a breeding population in the dozens.",
+        },
+        {
+          title: "Community-run sanctuary",
+          desc: "Managed by Rhino Fund Uganda with strong local employment and education programmes.",
+        },
+        {
+          title: "On the road to Murchison Falls",
+          desc: "A natural stopover, not a detour, for anyone driving north.",
+        },
+        {
+          title: "Birdlife on the side",
+          desc: "The sanctuary's wetlands support a healthy variety of savanna and water birds.",
+        },
       ]}
       itinerary={[
-        { day: "Stopover", title: "Rhino tracking en route", desc: "Break the drive from Kampala to Murchison Falls with a 1–2 hour guided rhino tracking walk before continuing north." },
+        {
+          day: "Stopover",
+          title: "Rhino tracking en route",
+          desc: "Break the drive from Kampala to Murchison Falls with a 1–2 hour guided rhino tracking walk before continuing north.",
+        },
       ]}
       bestTime="Visitable year-round. Early morning tracking offers the coolest temperatures and the best chance of finding rhinos active and grazing."
       gettingThere="Roughly a 3-hour drive north from Kampala on the main highway toward Gulu — directly on the route to Murchison Falls National Park, about 2 hours further north."
-      related={[
-        { name: "Murchison Falls", to: "/destinations/murchison-falls", img: sceneFalls },
-      ]}
+      related={[{ name: "Murchison Falls", to: "/destinations/murchison-falls", img: sceneFalls }]}
       faqs={FAQS}
     />
   ),

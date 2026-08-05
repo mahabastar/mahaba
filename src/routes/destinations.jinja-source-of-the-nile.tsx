@@ -64,7 +64,11 @@ export const Route = createFileRoute("/destinations/jinja-source-of-the-nile")({
       slug="jinja-source-of-the-nile"
       eyebrow="Jinja, Eastern Uganda"
       name="Jinja — Source of the Nile"
-      tagline={<>Where the Nile <em className="italic text-gold">begins.</em></>}
+      tagline={
+        <>
+          Where the Nile <em className="italic text-gold">begins.</em>
+        </>
+      }
       intro="The point where Lake Victoria tips into the world's longest river, and — a little further downstream — East Africa's undisputed adventure capital. Grade 5 white water, a 44-metre bungee, and a river journey that has drawn explorers here for over 160 years."
       heroImage={sourceOfTheNileMain}
       heroAlt="Aerial view of the Nile bridge at Jinja, Source of the Nile, Uganda"
@@ -101,24 +105,58 @@ export const Route = createFileRoute("/destinations/jinja-source-of-the-nile")({
         { src: g_source_of_the_nile_3, alt: "Boat trip to the Source of the Nile" },
       ]}
       highlights={[
-        { title: "Grade 3–5 white water", desc: "Roughly 20km of rapids on the White Nile, running consistently year-round." },
-        { title: "44-metre bungee jump", desc: "A plunge over the Nile itself, at East Africa's only source-side bungee platform." },
-        { title: "Source of the Nile boat trip", desc: "A calm cruise out to the exact spot where Lake Victoria becomes a river." },
-        { title: "Options for every nerve level", desc: "From Grade 5 rapids to flat-water tubing, on the same stretch of river." },
-        { title: "Easy to combine", desc: "80km from Kampala — a natural first or last stop on a longer Uganda itinerary." },
-        { title: "Riverside evenings", desc: "Firepits, riverside restaurants and a genuinely international backpacker-meets-luxury atmosphere." },
+        {
+          title: "Grade 3–5 white water",
+          desc: "Roughly 20km of rapids on the White Nile, running consistently year-round.",
+        },
+        {
+          title: "44-metre bungee jump",
+          desc: "A plunge over the Nile itself, at East Africa's only source-side bungee platform.",
+        },
+        {
+          title: "Source of the Nile boat trip",
+          desc: "A calm cruise out to the exact spot where Lake Victoria becomes a river.",
+        },
+        {
+          title: "Options for every nerve level",
+          desc: "From Grade 5 rapids to flat-water tubing, on the same stretch of river.",
+        },
+        {
+          title: "Easy to combine",
+          desc: "80km from Kampala — a natural first or last stop on a longer Uganda itinerary.",
+        },
+        {
+          title: "Riverside evenings",
+          desc: "Firepits, riverside restaurants and a genuinely international backpacker-meets-luxury atmosphere.",
+        },
       ]}
       itinerary={[
-        { day: "Day 01", title: "Arrive in Jinja", desc: "A scenic drive east from Kampala or Entebbe, arriving in time for a boat cruise to the source of the Nile and a relaxed riverside evening." },
-        { day: "Day 02", title: "White water rafting", desc: "A full day on the river — a safety briefing, then a run through Grade 3 to Grade 5 rapids, with a riverside lunch along the way." },
-        { day: "Day 03", title: "Bungee, kayak, or move on", desc: "An optional bungee jump or kayaking session before continuing on to Murchison Falls, Sipi Falls, or back toward Entebbe." },
+        {
+          day: "Day 01",
+          title: "Arrive in Jinja",
+          desc: "A scenic drive east from Kampala or Entebbe, arriving in time for a boat cruise to the source of the Nile and a relaxed riverside evening.",
+        },
+        {
+          day: "Day 02",
+          title: "White water rafting",
+          desc: "A full day on the river — a safety briefing, then a run through Grade 3 to Grade 5 rapids, with a riverside lunch along the way.",
+        },
+        {
+          day: "Day 03",
+          title: "Bungee, kayak, or move on",
+          desc: "An optional bungee jump or kayaking session before continuing on to Murchison Falls, Sipi Falls, or back toward Entebbe.",
+        },
       ]}
       bestTime="Rafting runs year-round thanks to the steady, lake-fed flow of the Nile. The dry seasons of June–September and December–February bring the most settled weather for combining a rafting trip with other travel."
       gettingThere="Fly into Entebbe International Airport, then drive roughly 2–2.5 hours east to Jinja (about 80km from Kampala). No flight or long transfer required, making it an easy first or last stop on a Uganda itinerary."
       related={[
         { name: "Murchison Falls", to: "/destinations/murchison-falls", img: sceneFalls },
         { name: "Sipi Falls", to: "/destinations/sipi-falls", img: expSipi },
-        { name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking", img: heroGorilla },
+        {
+          name: "Gorilla Trekking, Bwindi",
+          to: "/destinations/gorilla-trekking",
+          img: heroGorilla,
+        },
       ]}
       faqs={FAQS}
     />

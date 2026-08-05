@@ -61,7 +61,11 @@ export const Route = createFileRoute("/destinations/tree-climbing-lions")({
       slug="tree-climbing-lions"
       eyebrow="Ishasha, Queen Elizabeth NP"
       name="Tree-Climbing Lions"
-      tagline={<>Lions in the <em className="italic text-gold">fig trees</em>.</>}
+      tagline={
+        <>
+          Lions in the <em className="italic text-gold">fig trees</em>.
+        </>
+      }
       intro="On the southern plains of Queen Elizabeth National Park, lions climb. Draped across the low limbs of ancient fig trees, they watch the herds below with unhurried curiosity. It is one of nature's rarest performances — witnessed almost nowhere else on earth."
       heroImage={sceneLion}
       heroAlt="Lions resting in a fig tree in Ishasha, Queen Elizabeth National Park"
@@ -94,18 +98,52 @@ export const Route = createFileRoute("/destinations/tree-climbing-lions")({
         { src: g_leopard_tree, alt: "Leopard in a tree, Ishasha sector" },
       ]}
       highlights={[
-        { title: "Rare wildlife spectacle", desc: "One of only two places on earth to see lions habitually climb trees." },
-        { title: "Uncrowded plains", desc: "Ishasha remains one of Uganda's quietest, most exclusive safari sectors." },
-        { title: "Kazinga Channel cruise", desc: "A slow boat safari past hundreds of elephants, hippos and pelicans." },
-        { title: "Big-cat photography", desc: "Long unhurried sightings — perfect for photographers of every level." },
-        { title: "Extend to Bwindi", desc: "Just a 3-hour drive from Bwindi — combine with gorilla trekking seamlessly." },
-        { title: "Sunset game drives", desc: "Golden light spills across the plains as prides begin to stir." },
+        {
+          title: "Rare wildlife spectacle",
+          desc: "One of only two places on earth to see lions habitually climb trees.",
+        },
+        {
+          title: "Uncrowded plains",
+          desc: "Ishasha remains one of Uganda's quietest, most exclusive safari sectors.",
+        },
+        {
+          title: "Kazinga Channel cruise",
+          desc: "A slow boat safari past hundreds of elephants, hippos and pelicans.",
+        },
+        {
+          title: "Big-cat photography",
+          desc: "Long unhurried sightings — perfect for photographers of every level.",
+        },
+        {
+          title: "Extend to Bwindi",
+          desc: "Just a 3-hour drive from Bwindi — combine with gorilla trekking seamlessly.",
+        },
+        {
+          title: "Sunset game drives",
+          desc: "Golden light spills across the plains as prides begin to stir.",
+        },
       ]}
       itinerary={[
-        { day: "Day 01", title: "Arrive Queen Elizabeth", desc: "Drive or fly into Mweya airstrip. Afternoon cruise on the Kazinga Channel among elephants and hippos." },
-        { day: "Day 02", title: "Ishasha lions", desc: "Full day of game drives across the Ishasha sector, searching the fig trees for lions and photographing the vast southern plains." },
-        { day: "Day 03", title: "Kyambura Gorge", desc: "Optional chimpanzee tracking in the 'Valley of Apes' before a slow lunch and sunset drive." },
-        { day: "Day 04", title: "On to Bwindi or Kibale", desc: "Extend south for gorilla trekking or north to Kibale's chimpanzees — Ishasha connects both effortlessly." },
+        {
+          day: "Day 01",
+          title: "Arrive Queen Elizabeth",
+          desc: "Drive or fly into Mweya airstrip. Afternoon cruise on the Kazinga Channel among elephants and hippos.",
+        },
+        {
+          day: "Day 02",
+          title: "Ishasha lions",
+          desc: "Full day of game drives across the Ishasha sector, searching the fig trees for lions and photographing the vast southern plains.",
+        },
+        {
+          day: "Day 03",
+          title: "Kyambura Gorge",
+          desc: "Optional chimpanzee tracking in the 'Valley of Apes' before a slow lunch and sunset drive.",
+        },
+        {
+          day: "Day 04",
+          title: "On to Bwindi or Kibale",
+          desc: "Extend south for gorilla trekking or north to Kibale's chimpanzees — Ishasha connects both effortlessly.",
+        },
       ]}
       bestTime="June–September and January–February — dry season, when the grasses are low and wildlife concentrates around water. Green-season months (March–May, November) are lush and quiet, ideal for photographers."
       gettingThere="Fly to Mweya or Kasese airstrip (1 hour from Entebbe), or drive 6–7 hours west from Kampala through the Rift Valley. Ishasha pairs beautifully with Bwindi (3 hours south) and Kibale Forest (3 hours north)."

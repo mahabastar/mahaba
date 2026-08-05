@@ -21,7 +21,11 @@ export const Route = createFileRoute("/lakes")({
   component: () => (
     <CategoryHub
       eyebrow="Uganda's Waterways"
-      title={<>Lakes that shape <em className="italic text-gold">every itinerary</em>.</>}
+      title={
+        <>
+          Lakes that shape <em className="italic text-gold">every itinerary</em>.
+        </>
+      }
       intro="Uganda sits inside the African Great Lakes region, and its lakes are rarely a detour — they're often the destination. From dugout canoes on Bunyonyi to the highest hippo density in Africa on the Kazinga Channel."
       heroImage={sceneBunyonyi}
       heroAlt="Terraced hills surrounding Lake Bunyonyi, Uganda"

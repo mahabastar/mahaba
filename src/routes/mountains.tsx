@@ -21,7 +21,11 @@ export const Route = createFileRoute("/mountains")({
   component: () => (
     <CategoryHub
       eyebrow="High Ground"
-      title={<>Glaciers on the equator, <em className="italic text-gold">volcanoes at the border</em>.</>}
+      title={
+        <>
+          Glaciers on the equator, <em className="italic text-gold">volcanoes at the border</em>.
+        </>
+      }
       intro="Uganda's mountains are as varied as its parks — an equatorial glacier range on the Congo border, a caldera the size of a small country in the east, and volcanoes shared with two neighbouring nations."
       heroImage={sceneRwenzori}
       heroAlt="Snow-capped Rwenzori Mountains peaks in Uganda"

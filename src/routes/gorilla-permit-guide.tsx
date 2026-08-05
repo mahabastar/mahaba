@@ -20,7 +20,11 @@ export const Route = createFileRoute("/gorilla-permit-guide")({
   component: () => (
     <GuidePage
       eyebrow="The Permit, Explained"
-      title={<>What your <em className="italic text-gold">gorilla permit</em> actually buys you.</>}
+      title={
+        <>
+          What your <em className="italic text-gold">gorilla permit</em> actually buys you.
+        </>
+      }
       intro="At USD 800, a Uganda gorilla permit is the single biggest line item on most itineraries — and also the most commonly misunderstood. Here's exactly what it includes, how booking works, and the alternatives worth knowing about."
       heroImage={gorillaSilverback}
       heroAlt="Silverback gorilla in Bwindi, the encounter a gorilla permit buys"
@@ -53,11 +57,26 @@ export const Route = createFileRoute("/gorilla-permit-guide")({
         },
       ]}
       faqs={[
-        { q: "Is there a minimum age for gorilla trekking?", a: "Yes — 15 years old, strictly enforced, for the gorillas' health as much as visitor safety. There is no exception process in Uganda for younger trekkers." },
-        { q: "Are there discounted permits at certain times of year?", a: "Uganda has occasionally offered discounted permits during the quieter April, May and November low season — availability and pricing change, so we confirm current rates when planning your trip." },
-        { q: "What happens if we don't find the gorillas?", a: "Sighting rates in Uganda are very high given experienced trackers and radio-collared or regularly monitored families, but it's genuinely wildlife, not guaranteed. Permits are not refunded for an unsuccessful trek." },
-        { q: "How fit do I need to be for gorilla trekking?", a: "Treks range from 1 to 8 hours round trip depending on where the family has moved that morning, over steep and often muddy terrain. A reasonable fitness level helps; porters are available for anyone who wants extra support." },
-        { q: "Can I photograph the gorillas?", a: "Yes, but flash photography is prohibited to protect their eyes — low-light technique matters more than equipment given the dense forest canopy." },
+        {
+          q: "Is there a minimum age for gorilla trekking?",
+          a: "Yes — 15 years old, strictly enforced, for the gorillas' health as much as visitor safety. There is no exception process in Uganda for younger trekkers.",
+        },
+        {
+          q: "Are there discounted permits at certain times of year?",
+          a: "Uganda has occasionally offered discounted permits during the quieter April, May and November low season — availability and pricing change, so we confirm current rates when planning your trip.",
+        },
+        {
+          q: "What happens if we don't find the gorillas?",
+          a: "Sighting rates in Uganda are very high given experienced trackers and radio-collared or regularly monitored families, but it's genuinely wildlife, not guaranteed. Permits are not refunded for an unsuccessful trek.",
+        },
+        {
+          q: "How fit do I need to be for gorilla trekking?",
+          a: "Treks range from 1 to 8 hours round trip depending on where the family has moved that morning, over steep and often muddy terrain. A reasonable fitness level helps; porters are available for anyone who wants extra support.",
+        },
+        {
+          q: "Can I photograph the gorillas?",
+          a: "Yes, but flash photography is prohibited to protect their eyes — low-light technique matters more than equipment given the dense forest canopy.",
+        },
       ]}
       related={[
         { name: "Gorilla Trekking Guide", to: "/destinations/gorilla-trekking" },

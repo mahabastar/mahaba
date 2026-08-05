@@ -56,7 +56,8 @@ export function RouteNotFoundBoundary({ label = "page" }: RouteNotFoundBoundaryP
           This {label} is <em className="italic text-gold">off the trail.</em>
         </h1>
         <p className="mx-auto mt-4 max-w-sm text-ivory/70">
-          It may have moved, or the link may be out of date. Explore Uganda from the main route instead.
+          It may have moved, or the link may be out of date. Explore Uganda from the main route
+          instead.
         </p>
 
         <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">

@@ -41,7 +41,8 @@ export const Route = createFileRoute("/destinations/mgahinga-gorilla")({
     buildDestinationHead({
       slug: "mgahinga-gorilla",
       name: "Mgahinga Gorilla National Park",
-      title: "Mgahinga Gorilla National Park, Uganda — Volcanoes & Golden Monkeys | Trek Wild Uganda",
+      title:
+        "Mgahinga Gorilla National Park, Uganda — Volcanoes & Golden Monkeys | Trek Wild Uganda",
       description:
         "Uganda's smallest national park — three Virunga volcanoes, golden monkey trekking, and a single habituated gorilla family, in the far south-west.",
       ogImage: sceneRwenzori,
@@ -60,7 +61,11 @@ export const Route = createFileRoute("/destinations/mgahinga-gorilla")({
       slug="mgahinga-gorilla"
       eyebrow="Mgahinga Gorilla National Park"
       name="Mgahinga Gorilla"
-      tagline={<>Three volcanoes, <em className="italic text-gold">one valley</em>.</>}
+      tagline={
+        <>
+          Three volcanoes, <em className="italic text-gold">one valley</em>.
+        </>
+      }
       intro="Uganda's smallest national park packs in an outsized landscape: three extinct Virunga volcanoes rising straight off the valley floor, bamboo forest thick with endangered golden monkeys, and a single, quieter gorilla family — all within a few hours' walk of each other, on the shared border with Rwanda and DR Congo."
       heroImage={sceneRwenzori}
       heroAlt="Volcanic peaks rising over Mgahinga's forested valley"
@@ -99,21 +104,51 @@ export const Route = createFileRoute("/destinations/mgahinga-gorilla")({
         { src: g_golden_monkey_2, alt: "Golden monkey in the bamboo" },
       ]}
       highlights={[
-        { title: "Three-country volcano summit", desc: "Mount Sabinyo's ridge trail touches Uganda, Rwanda and DR Congo at its peak." },
-        { title: "Golden monkey trekking", desc: "A rarer, endangered primate found only in the Virunga volcanoes' bamboo zone." },
-        { title: "A single, quieter gorilla family", desc: "Far fewer trekkers than Bwindi, ideal alongside a volcano climb." },
-        { title: "Batwa Trail", desc: "A guided walk retracing the forest life of Mgahinga's original inhabitants." },
-        { title: "Mount Muhabura day climb", desc: "A steep but achievable single-day summit with panoramic Virunga views." },
-        { title: "Natural pairing with Bwindi", desc: "A 2–3 hour drive links Mgahinga to Bwindi and Lake Bunyonyi on one south-western circuit." },
+        {
+          title: "Three-country volcano summit",
+          desc: "Mount Sabinyo's ridge trail touches Uganda, Rwanda and DR Congo at its peak.",
+        },
+        {
+          title: "Golden monkey trekking",
+          desc: "A rarer, endangered primate found only in the Virunga volcanoes' bamboo zone.",
+        },
+        {
+          title: "A single, quieter gorilla family",
+          desc: "Far fewer trekkers than Bwindi, ideal alongside a volcano climb.",
+        },
+        {
+          title: "Batwa Trail",
+          desc: "A guided walk retracing the forest life of Mgahinga's original inhabitants.",
+        },
+        {
+          title: "Mount Muhabura day climb",
+          desc: "A steep but achievable single-day summit with panoramic Virunga views.",
+        },
+        {
+          title: "Natural pairing with Bwindi",
+          desc: "A 2–3 hour drive links Mgahinga to Bwindi and Lake Bunyonyi on one south-western circuit.",
+        },
       ]}
       itinerary={[
-        { day: "Day 01", title: "Arrive & golden monkey trek", desc: "Settle in and head out for a half-day golden monkey trek in the bamboo zone." },
-        { day: "Day 02", title: "Gorilla trek or volcano climb", desc: "Choose between tracking Mgahinga's habituated gorilla family or summiting Mount Sabinyo or Muhabura." },
+        {
+          day: "Day 01",
+          title: "Arrive & golden monkey trek",
+          desc: "Settle in and head out for a half-day golden monkey trek in the bamboo zone.",
+        },
+        {
+          day: "Day 02",
+          title: "Gorilla trek or volcano climb",
+          desc: "Choose between tracking Mgahinga's habituated gorilla family or summiting Mount Sabinyo or Muhabura.",
+        },
       ]}
       bestTime="June–September and December–February are driest and best for both trekking and volcano climbs. Trails are steeper and muddier in the rainy months, but golden monkey trekking remains reliable year-round."
       gettingThere="Roughly a 9–10 hour drive from Kampala. Most visitors instead combine it with Bwindi and Lake Bunyonyi, driving the 2–3 hours between parks as part of a south-western Uganda circuit."
       related={[
-        { name: "Bwindi Impenetrable", to: "/destinations/bwindi-impenetrable", img: gorillaSilverback },
+        {
+          name: "Bwindi Impenetrable",
+          to: "/destinations/bwindi-impenetrable",
+          img: gorillaSilverback,
+        },
         { name: "Lake Bunyonyi", to: "/destinations/lake-bunyonyi", img: sceneBunyonyi },
       ]}
       faqs={FAQS}

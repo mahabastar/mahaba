@@ -59,7 +59,11 @@ export const Route = createFileRoute("/destinations/entebbe")({
       slug="entebbe"
       eyebrow="Entebbe, Lake Victoria"
       name="Entebbe"
-      tagline={<>Where every Uganda story <em className="italic text-gold">begins and ends</em>.</>}
+      tagline={
+        <>
+          Where every Uganda story <em className="italic text-gold">begins and ends</em>.
+        </>
+      }
       intro="Home to Uganda's international airport and the shore of Africa's largest lake, Entebbe is more than a stopover. A short boat ride reaches an island sanctuary for orphaned chimpanzees; a short walk reaches gardens laid out in 1898 that once stood in for a Hollywood jungle."
       heroImage={expChimp}
       heroAlt="Chimpanzee, representative of Entebbe's Ngamba Island sanctuary"
@@ -92,23 +96,57 @@ export const Route = createFileRoute("/destinations/entebbe")({
         { src: g_entebbe_3, alt: "Lakeside Entebbe" },
       ]}
       highlights={[
-        { title: "Ngamba Island chimpanzee sanctuary", desc: "Over 50 rescued chimpanzees, viewable from a platform during feeding sessions." },
-        { title: "Entebbe Botanical Gardens", desc: "Laid out in 1898, with rainforest, bamboo and palm zones on the lakeshore." },
-        { title: "Lake Victoria boat trips", desc: "Sunset cruises and fishing excursions on Africa's largest lake." },
-        { title: "A natural bookend", desc: "The obvious place to decompress before your flight home, or ease in on arrival." },
-        { title: "Mabamba Wetlands nearby", desc: "A short drive away, one of Uganda's most reliable spots for shoebill stork sightings." },
-        { title: "Uganda Wildlife Education Centre", desc: "A conservation-focused rescue centre for lions, rhinos and other native species." },
+        {
+          title: "Ngamba Island chimpanzee sanctuary",
+          desc: "Over 50 rescued chimpanzees, viewable from a platform during feeding sessions.",
+        },
+        {
+          title: "Entebbe Botanical Gardens",
+          desc: "Laid out in 1898, with rainforest, bamboo and palm zones on the lakeshore.",
+        },
+        {
+          title: "Lake Victoria boat trips",
+          desc: "Sunset cruises and fishing excursions on Africa's largest lake.",
+        },
+        {
+          title: "A natural bookend",
+          desc: "The obvious place to decompress before your flight home, or ease in on arrival.",
+        },
+        {
+          title: "Mabamba Wetlands nearby",
+          desc: "A short drive away, one of Uganda's most reliable spots for shoebill stork sightings.",
+        },
+        {
+          title: "Uganda Wildlife Education Centre",
+          desc: "A conservation-focused rescue centre for lions, rhinos and other native species.",
+        },
       ]}
       itinerary={[
-        { day: "Day 01", title: "Arrive & Botanical Gardens", desc: "Land at Entebbe, settle into your lakeside lodge, and spend the afternoon walking the Botanical Gardens." },
-        { day: "Day 02", title: "Ngamba Island", desc: "A morning boat ride to Ngamba Island for a chimpanzee feeding session, returning to Entebbe by early afternoon." },
+        {
+          day: "Day 01",
+          title: "Arrive & Botanical Gardens",
+          desc: "Land at Entebbe, settle into your lakeside lodge, and spend the afternoon walking the Botanical Gardens.",
+        },
+        {
+          day: "Day 02",
+          title: "Ngamba Island",
+          desc: "A morning boat ride to Ngamba Island for a chimpanzee feeding session, returning to Entebbe by early afternoon.",
+        },
       ]}
       bestTime="Entebbe is a year-round destination — its lakeside climate is milder than much of Uganda, and it works equally well at the start or end of a trip in any season."
       gettingThere="Entebbe International Airport is Uganda's main gateway — most visitors arrive here directly. Kampala is roughly 45 minutes to an hour away by road."
       related={[
         { name: "Chimpanzee Trekking, Kibale", to: "/destinations/kibale-forest", img: expChimp },
-        { name: "Jinja, Source of the Nile", to: "/destinations/jinja-source-of-the-nile", img: sceneFalls },
-        { name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking", img: heroGorilla },
+        {
+          name: "Jinja, Source of the Nile",
+          to: "/destinations/jinja-source-of-the-nile",
+          img: sceneFalls,
+        },
+        {
+          name: "Gorilla Trekking, Bwindi",
+          to: "/destinations/gorilla-trekking",
+          img: heroGorilla,
+        },
       ]}
       faqs={FAQS}
     />

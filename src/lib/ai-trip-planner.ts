@@ -10,7 +10,6 @@ import { EXPERIENCES, type Experience } from "@/lib/experiences";
  * see src/lib/trip-planner.functions.ts (server-side, Lovable AI).
  */
 
-
 export type TripPlan = {
   journey: Journey;
   experiences: Experience[];
@@ -68,8 +67,12 @@ export function planTrip(input: string): TripPlan {
   let bestJourney = JOURNEYS[2]; // Pearl of Africa (7 days) as a sane default
   let bestJourneyScore = -Infinity;
   for (const j of JOURNEYS) {
-    const journeyText = `${j.title} ${j.tagline} ${j.overview} ${j.highlights.join(" ")}`.toLowerCase();
-    let score = scoreText(journeyText, tags.flatMap((t) => KEYWORD_TAGS[t]));
+    const journeyText =
+      `${j.title} ${j.tagline} ${j.overview} ${j.highlights.join(" ")}`.toLowerCase();
+    let score = scoreText(
+      journeyText,
+      tags.flatMap((t) => KEYWORD_TAGS[t]),
+    );
     if (dayHint !== null) {
       const diff = Math.abs(parseInt(j.days, 10) - dayHint);
       score += Math.max(0, 6 - diff); // closer day count scores higher
@@ -83,13 +86,21 @@ export function planTrip(input: string): TripPlan {
   // Score experiences the same way, take the top 3 distinct matches.
   const scored = EXPERIENCES.map((e) => {
     const expText = `${e.title} ${e.tagline} ${e.excerpt} ${e.intro}`.toLowerCase();
-    const score = scoreText(expText, tags.flatMap((t) => KEYWORD_TAGS[t]));
+    const score = scoreText(
+      expText,
+      tags.flatMap((t) => KEYWORD_TAGS[t]),
+    );
     return { e, score };
   }).sort((a, b) => b.score - a.score);
 
-  const experiences = scored.filter((s) => s.score > 0).slice(0, 3).map((s) => s.e);
+  const experiences = scored
+    .filter((s) => s.score > 0)
+    .slice(0, 3)
+    .map((s) => s.e);
   // Fallback if nothing scored: show a couple of popular, broadly-appealing picks.
-  const fallback = EXPERIENCES.filter((e) => ["wildlife-safaris", "adventure-safaris"].includes(e.slug));
+  const fallback = EXPERIENCES.filter((e) =>
+    ["wildlife-safaris", "adventure-safaris"].includes(e.slug),
+  );
 
   return {
     journey: bestJourney,

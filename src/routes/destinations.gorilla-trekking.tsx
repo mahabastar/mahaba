@@ -64,7 +64,11 @@ export const Route = createFileRoute("/destinations/gorilla-trekking")({
       slug="gorilla-trekking"
       eyebrow="Bwindi Impenetrable Forest"
       name="Gorilla Trekking"
-      tagline={<>An hour with the <em className="italic text-gold">silverbacks</em>.</>}
+      tagline={
+        <>
+          An hour with the <em className="italic text-gold">silverbacks</em>.
+        </>
+      }
       intro="Descend into one of Africa's oldest rainforests and stand quietly, breathing the same misty air as a family of mountain gorillas. It is the rarest wildlife encounter on earth — and Uganda protects nearly half of the world's remaining population."
       heroImage={heroGorilla}
       heroAlt="Silverback mountain gorilla resting in the undergrowth of Bwindi rainforest"
@@ -100,18 +104,52 @@ export const Route = createFileRoute("/destinations/gorilla-trekking")({
         { src: g_golden_monkey_1, alt: "Golden monkey in the Virunga bamboo" },
       ]}
       highlights={[
-        { title: "Face-to-face encounter", desc: "One hour, three metres, no barriers — the most personal wildlife moment on the planet." },
-        { title: "Small, private groups", desc: "Only eight guests per gorilla family, guided by expert rangers from the community." },
-        { title: "Community porters", desc: "Optional local porters carry your pack — meaningful support for surrounding villages." },
-        { title: "Ancient rainforest", desc: "Trek through 25,000-year-old forest alive with birds, orchids and forest elephants." },
-        { title: "Conservation impact", desc: "Every permit directly funds anti-poaching patrols and gorilla healthcare." },
-        { title: "Boutique lodges", desc: "Sleep in intimate forest lodges built and staffed by neighbouring communities." },
+        {
+          title: "Face-to-face encounter",
+          desc: "One hour, three metres, no barriers — the most personal wildlife moment on the planet.",
+        },
+        {
+          title: "Small, private groups",
+          desc: "Only eight guests per gorilla family, guided by expert rangers from the community.",
+        },
+        {
+          title: "Community porters",
+          desc: "Optional local porters carry your pack — meaningful support for surrounding villages.",
+        },
+        {
+          title: "Ancient rainforest",
+          desc: "Trek through 25,000-year-old forest alive with birds, orchids and forest elephants.",
+        },
+        {
+          title: "Conservation impact",
+          desc: "Every permit directly funds anti-poaching patrols and gorilla healthcare.",
+        },
+        {
+          title: "Boutique lodges",
+          desc: "Sleep in intimate forest lodges built and staffed by neighbouring communities.",
+        },
       ]}
       itinerary={[
-        { day: "Day 01", title: "Kampala → Bwindi", desc: "A scenic drive south through the equator, tea estates and terraced hills to your forest lodge on the edge of Bwindi." },
-        { day: "Day 02", title: "Gorilla trek", desc: "An early briefing at the park headquarters, then a guided trek to a habituated gorilla family for your unforgettable hour." },
-        { day: "Day 03", title: "Batwa & community day", desc: "Spend the morning with the Batwa forest people, or hike to a waterfall through banana plantations before a slow evening at the lodge." },
-        { day: "Day 04", title: "Return via Lake Bunyonyi", desc: "Pause at Uganda's most beautiful lake for lunch on the water before continuing north or on to Rwanda." },
+        {
+          day: "Day 01",
+          title: "Kampala → Bwindi",
+          desc: "A scenic drive south through the equator, tea estates and terraced hills to your forest lodge on the edge of Bwindi.",
+        },
+        {
+          day: "Day 02",
+          title: "Gorilla trek",
+          desc: "An early briefing at the park headquarters, then a guided trek to a habituated gorilla family for your unforgettable hour.",
+        },
+        {
+          day: "Day 03",
+          title: "Batwa & community day",
+          desc: "Spend the morning with the Batwa forest people, or hike to a waterfall through banana plantations before a slow evening at the lodge.",
+        },
+        {
+          day: "Day 04",
+          title: "Return via Lake Bunyonyi",
+          desc: "Pause at Uganda's most beautiful lake for lunch on the water before continuing north or on to Rwanda.",
+        },
       ]}
       bestTime="June to September and December to February — the dry seasons — bring firmer trails and easier trekking. Gorilla trekking is possible year-round; the wet months of March–May and October–November mean fewer travellers and lush, cinematic light."
       gettingThere="Fly into Entebbe International Airport. Bwindi is a scenic 8–9 hour drive south, or a 1-hour scheduled flight to Kihihi or Kisoro airstrips followed by a 1–2 hour transfer to your lodge."

@@ -21,7 +21,11 @@ export const Route = createFileRoute("/forests")({
   component: () => (
     <CategoryHub
       eyebrow="Ancient Canopy"
-      title={<>Where the primates <em className="italic text-gold">actually live</em>.</>}
+      title={
+        <>
+          Where the primates <em className="italic text-gold">actually live</em>.
+        </>
+      }
       intro="Uganda's forests hold more primate diversity than almost anywhere on Earth — gorillas in the south-west, the continent's densest chimpanzee population in Kibale, and quieter escapes just outside Kampala."
       heroImage={expChimp}
       heroAlt="Chimpanzee in the forest canopy in Uganda"

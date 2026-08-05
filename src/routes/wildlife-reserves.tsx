@@ -21,7 +21,11 @@ export const Route = createFileRoute("/wildlife-reserves")({
   component: () => (
     <CategoryHub
       eyebrow="Beyond the National Parks"
-      title={<>Wildlife reserves, <em className="italic text-gold">off the main circuit</em>.</>}
+      title={
+        <>
+          Wildlife reserves, <em className="italic text-gold">off the main circuit</em>.
+        </>
+      }
       intro="Uganda's national parks aren't the whole story. These community and government-run reserves protect rhinos, cheetah, and landscapes most visitors never see — often with far fewer people around."
       heroImage={elephantSavanna}
       heroAlt="Savanna wildlife reserve landscape in Uganda"

@@ -34,8 +34,8 @@ function ExperiencesIndex() {
             However you want <em className="italic text-gold">to travel.</em>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-ivory/75">
-            The same country, built around a different kind of trip — family, honeymoon,
-            adventure, or a straight answer on gorillas versus chimps.
+            The same country, built around a different kind of trip — family, honeymoon, adventure,
+            or a straight answer on gorillas versus chimps.
           </p>
         </div>
       </section>

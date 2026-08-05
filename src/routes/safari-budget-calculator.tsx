@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
-import {buildWhatsAppHref, SITE_CONFIG } from "@/lib/site-config";
+import { buildWhatsAppHref, SITE_CONFIG } from "@/lib/site-config";
 import { trackEvent } from "@/lib/analytics";
 
 export const Route = createFileRoute("/safari-budget-calculator")({
@@ -29,9 +29,24 @@ export const Route = createFileRoute("/safari-budget-calculator")({
 // separately below since they're fixed, activity-specific government fees.
 
 const STYLES = [
-  { key: "adventure", label: "Adventure", desc: "Budget lodges, shared transport, simple meals", rate: 200 },
-  { key: "comfort", label: "Comfort", desc: "Mid-range lodges, private 4×4 & guide, full board", rate: 400 },
-  { key: "luxury", label: "Luxury", desc: "Premium camps & lodges, private guide, all-inclusive", rate: 800 },
+  {
+    key: "adventure",
+    label: "Adventure",
+    desc: "Budget lodges, shared transport, simple meals",
+    rate: 200,
+  },
+  {
+    key: "comfort",
+    label: "Comfort",
+    desc: "Mid-range lodges, private 4×4 & guide, full board",
+    rate: 400,
+  },
+  {
+    key: "luxury",
+    label: "Luxury",
+    desc: "Premium camps & lodges, private guide, all-inclusive",
+    rate: 800,
+  },
 ] as const;
 
 const GORILLA_PERMIT = 800; // USD, foreign non-resident, standard season
@@ -53,7 +68,8 @@ function SafariBudgetCalculator() {
   const { baseTotal, permitsTotal, grandTotal, perPerson, perPersonPerDay } = useMemo(() => {
     const base = style.rate * days * travelers;
     const gorillaRate = lowSeason ? GORILLA_PERMIT_LOW_SEASON : GORILLA_PERMIT;
-    const permits = (gorilla ? gorillaRate * travelers : 0) + (chimp ? CHIMP_PERMIT * travelers : 0);
+    const permits =
+      (gorilla ? gorillaRate * travelers : 0) + (chimp ? CHIMP_PERMIT * travelers : 0);
     const grand = base + permits;
     return {
       baseTotal: base,
@@ -81,8 +97,8 @@ function SafariBudgetCalculator() {
             Know the number <em className="italic text-gold">before you ask.</em>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-ivory/75">
-            A realistic, no-surprises estimate — adjust travel style, trip length and
-            group size to see how your budget shifts.
+            A realistic, no-surprises estimate — adjust travel style, trip length and group size to
+            see how your budget shifts.
           </p>
         </div>
       </section>
@@ -100,10 +116,16 @@ function SafariBudgetCalculator() {
                     key={s.key}
                     onClick={() => setStyleKey(s.key)}
                     className={`flex flex-col items-start rounded-2xl border px-4 py-4 text-left transition-all ${
-                      styleKey === s.key ? "border-forest bg-forest/5 shadow-md" : "border-charcoal/10 hover:border-forest/40"
+                      styleKey === s.key
+                        ? "border-forest bg-forest/5 shadow-md"
+                        : "border-charcoal/10 hover:border-forest/40"
                     }`}
                   >
-                    <span className={`text-sm font-medium ${styleKey === s.key ? "text-forest" : "text-charcoal"}`}>{s.label}</span>
+                    <span
+                      className={`text-sm font-medium ${styleKey === s.key ? "text-forest" : "text-charcoal"}`}
+                    >
+                      {s.label}
+                    </span>
                     <span className="mt-1 text-xs text-charcoal/50">{s.desc}</span>
                     <span className="mt-2 text-xs font-medium text-gold">~${s.rate}/day pp</span>
                   </button>
@@ -137,7 +159,12 @@ function SafariBudgetCalculator() {
                 />
                 {gorilla && (
                   <label className="ml-4 flex items-center gap-2 text-xs text-charcoal/60">
-                    <input type="checkbox" checked={lowSeason} onChange={(e) => setLowSeason(e.target.checked)} className="accent-forest" />
+                    <input
+                      type="checkbox"
+                      checked={lowSeason}
+                      onChange={(e) => setLowSeason(e.target.checked)}
+                      className="accent-forest"
+                    />
                     Traveling in low season (Apr / May / Nov) — ${GORILLA_PERMIT_LOW_SEASON} rate
                   </label>
                 )}
@@ -170,9 +197,9 @@ function SafariBudgetCalculator() {
               </div>
 
               <div className="mt-8 flex-1 rounded-2xl bg-ivory/5 p-4 text-xs leading-relaxed text-ivory/50">
-                This is a rough, general-market estimate for 2026 — actual costs vary by
-                specific lodges, season, and route. It excludes international flights,
-                visas, tips and travel insurance.
+                This is a rough, general-market estimate for 2026 — actual costs vary by specific
+                lodges, season, and route. It excludes international flights, visas, tips and travel
+                insurance.
               </div>
 
               <div className="mt-8 flex flex-col gap-3">
@@ -180,7 +207,9 @@ function SafariBudgetCalculator() {
                   href={whatsappHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => trackEvent("budget_calculator_sent", { travelers, days, style: style.label })}
+                  onClick={() =>
+                    trackEvent("budget_calculator_sent", { travelers, days, style: style.label })
+                  }
                   className="rounded-full bg-forest px-6 py-3.5 text-center text-sm font-medium text-ivory shadow-md transition-all hover:scale-105 hover:bg-forest-deep"
                 >
                   Get an exact quote via WhatsApp
@@ -204,7 +233,17 @@ function SafariBudgetCalculator() {
 
 /* ---------------- Bits ---------------- */
 
-function Stepper({ value, onChange, min, max }: { value: number; onChange: (v: number) => void; min: number; max: number }) {
+function Stepper({
+  value,
+  onChange,
+  min,
+  max,
+}: {
+  value: number;
+  onChange: (v: number) => void;
+  min: number;
+  max: number;
+}) {
   return (
     <div className="flex items-center gap-3 rounded-full border border-charcoal/15 px-2 py-1">
       <button
@@ -226,7 +265,17 @@ function Stepper({ value, onChange, min, max }: { value: number; onChange: (v: n
   );
 }
 
-function Toggle({ label, sub, checked, onChange }: { label: string; sub: string; checked: boolean; onChange: (v: boolean) => void }) {
+function Toggle({
+  label,
+  sub,
+  checked,
+  onChange,
+}: {
+  label: string;
+  sub: string;
+  checked: boolean;
+  onChange: (v: boolean) => void;
+}) {
   return (
     <button
       onClick={() => onChange(!checked)}
@@ -235,7 +284,9 @@ function Toggle({ label, sub, checked, onChange }: { label: string; sub: string;
       }`}
     >
       <span>
-        <span className={`block text-sm font-medium ${checked ? "text-forest" : "text-charcoal"}`}>{label}</span>
+        <span className={`block text-sm font-medium ${checked ? "text-forest" : "text-charcoal"}`}>
+          {label}
+        </span>
         <span className="block text-xs text-charcoal/50">{sub}</span>
       </span>
       <span

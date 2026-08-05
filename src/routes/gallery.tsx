@@ -78,9 +78,8 @@ function Gallery() {
             Uganda, <em className="italic text-gold">as we've seen it.</em>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-ivory/75">
-            {GALLERY_PHOTOS.length} photographs from the field — no stock imagery, just what
-            was actually there. Every section ends with a way to start planning that exact
-            experience.
+            {GALLERY_PHOTOS.length} photographs from the field — no stock imagery, just what was
+            actually there. Every section ends with a way to start planning that exact experience.
           </p>
         </div>
       </section>
@@ -90,7 +89,10 @@ function Gallery() {
         <div className="mx-auto max-w-[1400px] px-6 py-4 md:px-10">
           <div className="flex snap-x gap-2 overflow-x-auto pb-1 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {FILTERS.map((f) => {
-              const count = f === "All" ? GALLERY_PHOTOS.length : GALLERY_PHOTOS.filter((p) => p.category === f).length;
+              const count =
+                f === "All"
+                  ? GALLERY_PHOTOS.length
+                  : GALLERY_PHOTOS.filter((p) => p.category === f).length;
               if (count === 0) return null;
               const active = filter === f;
               return (
@@ -158,7 +160,9 @@ function Gallery() {
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/10 to-transparent opacity-0 transition-opacity group-hover:opacity-100 group-focus:opacity-100" />
                     <div className="absolute inset-x-4 bottom-4 opacity-0 transition-opacity group-hover:opacity-100 group-focus:opacity-100">
-                      <div className="text-[0.6rem] uppercase tracking-widest text-gold">{p.category}</div>
+                      <div className="text-[0.6rem] uppercase tracking-widest text-gold">
+                        {p.category}
+                      </div>
                       <div className="mt-1 text-sm text-ivory">{p.title}</div>
                       <div className="mt-2 text-[0.65rem] uppercase tracking-widest text-ivory/70">
                         Interested in this experience? →

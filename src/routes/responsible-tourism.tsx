@@ -29,10 +29,26 @@ export const Route = createFileRoute("/responsible-tourism")({
 /* ---------------- Data ---------------- */
 
 const STATS = [
-  { value: "20%", label: "Of Uganda Wildlife Authority's annual park revenue is shared directly with communities bordering the parks." },
-  { value: "$10", label: "From every gorilla permit sold goes straight to community projects around Bwindi & Mgahinga — 95% reaches the community level." },
-  { value: "35", label: "National parks, wildlife reserves and sanctuaries protected under Uganda's conservation estate." },
-  { value: "1,000+", label: "Mountain gorillas now living wild — more than half the world's population found in Uganda." },
+  {
+    value: "20%",
+    label:
+      "Of Uganda Wildlife Authority's annual park revenue is shared directly with communities bordering the parks.",
+  },
+  {
+    value: "$10",
+    label:
+      "From every gorilla permit sold goes straight to community projects around Bwindi & Mgahinga — 95% reaches the community level.",
+  },
+  {
+    value: "35",
+    label:
+      "National parks, wildlife reserves and sanctuaries protected under Uganda's conservation estate.",
+  },
+  {
+    value: "1,000+",
+    label:
+      "Mountain gorillas now living wild — more than half the world's population found in Uganda.",
+  },
 ];
 
 const PILLARS = [
@@ -76,7 +92,10 @@ function ResponsibleTourism() {
 
       {/* Hero */}
       <section className="relative min-h-[70svh] w-full overflow-hidden bg-charcoal grain">
-        <img src={sceneCulture} alt="Community members in south-western Uganda" className="absolute inset-0 h-full w-full object-cover opacity-50"
+        <img
+          src={sceneCulture}
+          alt="Community members in south-western Uganda"
+          className="absolute inset-0 h-full w-full object-cover opacity-50"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/60 to-charcoal/30" />
         <div className="relative mx-auto flex min-h-[70svh] max-w-[1000px] flex-col justify-end px-6 pb-16 pt-40 text-center md:px-10 md:pb-20 md:pt-48">
@@ -85,8 +104,8 @@ function ResponsibleTourism() {
             Travel that <em className="italic text-gold">gives back.</em>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-ivory/75">
-            Conservation and community wellbeing aren't a side note to a Uganda safari —
-            they're the reason there's still something extraordinary left to see.
+            Conservation and community wellbeing aren't a side note to a Uganda safari — they're the
+            reason there's still something extraordinary left to see.
           </p>
         </div>
       </section>
@@ -96,14 +115,18 @@ function ResponsibleTourism() {
         <div className="mx-auto max-w-[1400px] px-6 py-20 md:px-10 md:py-28">
           <div className="grid grid-cols-2 gap-6 md:grid-cols-4">
             {STATS.map((s) => (
-              <div key={s.label} className="rounded-3xl border border-charcoal/10 bg-white p-6 text-center md:p-8">
+              <div
+                key={s.label}
+                className="rounded-3xl border border-charcoal/10 bg-white p-6 text-center md:p-8"
+              >
                 <div className="font-display text-4xl text-forest md:text-5xl">{s.value}</div>
                 <p className="mt-3 text-xs leading-relaxed text-charcoal/60">{s.label}</p>
               </div>
             ))}
           </div>
           <p className="mt-6 text-center text-xs text-charcoal/40">
-            Figures based on Uganda Wildlife Authority's published revenue-sharing policy and conservation estate.
+            Figures based on Uganda Wildlife Authority's published revenue-sharing policy and
+            conservation estate.
           </p>
         </div>
       </section>
@@ -120,9 +143,12 @@ function ResponsibleTourism() {
             {PILLARS.map((p) => (
               <div key={p.title} className="overflow-hidden rounded-3xl border border-ivory/10">
                 <div className="aspect-[16/9] w-full overflow-hidden">
-                  <img src={p.img} alt={p.title} className="h-full w-full object-cover"
-          loading="lazy"
-        />
+                  <img
+                    src={p.img}
+                    alt={p.title}
+                    className="h-full w-full object-cover"
+                    loading="lazy"
+                  />
                 </div>
                 <div className="p-8">
                   <h3 className="font-display text-2xl text-ivory">{p.title}</h3>

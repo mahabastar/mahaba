@@ -8,7 +8,6 @@ import { buildWhatsAppHref } from "@/lib/site-config";
 import { supabase, type Booking, type BookingStatus } from "@/lib/supabase";
 import { lovable } from "@/integrations/lovable/index";
 
-
 export const Route = createFileRoute("/dashboard")({
   head: () => ({
     meta: [
@@ -35,7 +34,11 @@ const STATUS_COLOR: Record<BookingStatus, string> = {
 
 function formatDate(d: string | null): string {
   if (!d) return "TBC";
-  return new Date(d).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+  return new Date(d).toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "short",
+    year: "numeric",
+  });
 }
 
 function LoginForm() {
@@ -60,7 +63,6 @@ function LoginForm() {
     setStatus(error ? "error" : "sent");
   }
 
-
   return (
     <section className="bg-ivory">
       <div className="mx-auto max-w-[480px] px-6 py-24 md:px-10">
@@ -78,7 +80,10 @@ function LoginForm() {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="mt-8">
-            <label htmlFor="dash-email" className="text-xs uppercase tracking-widest text-charcoal/50">
+            <label
+              htmlFor="dash-email"
+              className="text-xs uppercase tracking-widest text-charcoal/50"
+            >
               Email address
             </label>
             <input
@@ -119,10 +124,12 @@ function LoginForm() {
           Continue with Google
         </button>
 
-
         <p className="mt-8 text-center text-xs text-charcoal/40">
           Don't have a booking yet?{" "}
-          <Link to="/quote-request" className="underline decoration-charcoal/20 underline-offset-4 hover:text-forest">
+          <Link
+            to="/quote-request"
+            className="underline decoration-charcoal/20 underline-offset-4 hover:text-forest"
+          >
             Request a quote
           </Link>{" "}
           to get started.
@@ -142,7 +149,9 @@ function BookingCard({ booking }: { booking: Booking }) {
             {formatDate(booking.start_date)} – {formatDate(booking.end_date)}
           </p>
         </div>
-        <span className={`rounded-full px-3 py-1 text-xs font-medium uppercase tracking-widest ${STATUS_COLOR[booking.status]}`}>
+        <span
+          className={`rounded-full px-3 py-1 text-xs font-medium uppercase tracking-widest ${STATUS_COLOR[booking.status]}`}
+        >
           {STATUS_LABEL[booking.status]}
         </span>
       </div>
@@ -154,7 +163,9 @@ function BookingCard({ booking }: { booking: Booking }) {
             .sort((a, b) => a.day - b.day)
             .map((item) => (
               <div key={item.day} className="flex gap-4">
-                <div className="w-14 shrink-0 text-xs uppercase tracking-widest text-charcoal/40">Day {item.day}</div>
+                <div className="w-14 shrink-0 text-xs uppercase tracking-widest text-charcoal/40">
+                  Day {item.day}
+                </div>
                 <div>
                   <div className="text-sm font-medium text-charcoal">{item.title}</div>
                   <p className="mt-1 text-sm text-charcoal/60">{item.description}</p>
@@ -231,7 +242,8 @@ function BookingsView({ email, onSignOut }: { email: string; onSignOut: () => vo
           {!error && bookings !== null && bookings.length === 0 && (
             <div className="rounded-2xl border border-charcoal/10 bg-white p-10 text-center">
               <p className="text-sm text-charcoal/60">
-                No bookings on file yet for this email. Once your trip is confirmed, it'll appear here.
+                No bookings on file yet for this email. Once your trip is confirmed, it'll appear
+                here.
               </p>
               <Link
                 to="/quote-request"
@@ -241,7 +253,9 @@ function BookingsView({ email, onSignOut }: { email: string; onSignOut: () => vo
               </Link>
             </div>
           )}
-          {bookings?.map((b) => <BookingCard key={b.id} booking={b} />)}
+          {bookings?.map((b) => (
+            <BookingCard key={b.id} booking={b} />
+          ))}
         </div>
       </div>
     </section>
@@ -277,7 +291,6 @@ function Dashboard() {
       ) : (
         <BookingsView email={session.user.email ?? ""} onSignOut={handleSignOut} />
       )}
-
 
       <SiteFooter />
     </div>

@@ -28,7 +28,9 @@ const DraftOutput = z.object({
       }),
     )
     .describe("Day-by-day outline, one entry per travel day."),
-  notes: z.array(z.string()).describe("2-4 short practical notes: pacing, permits, season, budget."),
+  notes: z
+    .array(z.string())
+    .describe("2-4 short practical notes: pacing, permits, season, budget."),
 });
 
 export type ItineraryDraft = z.infer<typeof DraftOutput>;

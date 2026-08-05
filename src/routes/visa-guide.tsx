@@ -20,7 +20,11 @@ export const Route = createFileRoute("/visa-guide")({
   component: () => (
     <GuidePage
       eyebrow="Entry Requirements"
-      title={<>Your Uganda visa, <em className="italic text-gold">sorted in advance</em>.</>}
+      title={
+        <>
+          Your Uganda visa, <em className="italic text-gold">sorted in advance</em>.
+        </>
+      }
       intro="Uganda's visa process is entirely online, straightforward, and worth completing well before you fly. Here's exactly what you need and which visa type actually suits your trip."
       heroImage={ctaSunset}
       heroAlt="Sunset over Uganda, a traveller's first view of the country"
@@ -51,10 +55,22 @@ export const Route = createFileRoute("/visa-guide")({
         },
       ]}
       faqs={[
-        { q: "Can I get a Uganda visa on arrival instead of applying online?", a: "It's technically possible at some points of entry, but strongly discouraged — online applications are processed faster, and arriving without a pre-approved visa risks delays or complications at immigration. Apply online before you fly." },
-        { q: "Do children need their own visa?", a: "Yes — every traveller, regardless of age, needs their own visa application and, for the yellow fever requirement, their own vaccination certificate." },
-        { q: "Is the East Africa Tourist Visa worth it if I'm only visiting Uganda?", a: "No — at USD 100 versus USD 50 for the single-entry Uganda visa, it only pays off if your trip also includes Kenya or Rwanda." },
-        { q: "Can I extend my visa once I'm in Uganda?", a: "Extensions are possible through the Directorate of Citizenship and Immigration Control in Kampala, though it's simpler to apply for the visa duration you actually need from the outset." },
+        {
+          q: "Can I get a Uganda visa on arrival instead of applying online?",
+          a: "It's technically possible at some points of entry, but strongly discouraged — online applications are processed faster, and arriving without a pre-approved visa risks delays or complications at immigration. Apply online before you fly.",
+        },
+        {
+          q: "Do children need their own visa?",
+          a: "Yes — every traveller, regardless of age, needs their own visa application and, for the yellow fever requirement, their own vaccination certificate.",
+        },
+        {
+          q: "Is the East Africa Tourist Visa worth it if I'm only visiting Uganda?",
+          a: "No — at USD 100 versus USD 50 for the single-entry Uganda visa, it only pays off if your trip also includes Kenya or Rwanda.",
+        },
+        {
+          q: "Can I extend my visa once I'm in Uganda?",
+          a: "Extensions are possible through the Directorate of Citizenship and Immigration Control in Kampala, though it's simpler to apply for the visa duration you actually need from the outset.",
+        },
       ]}
       related={[
         { name: "Packing Guide", to: "/packing-guide" },

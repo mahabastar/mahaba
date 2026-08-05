@@ -61,7 +61,11 @@ export const Route = createFileRoute("/destinations/sipi-falls")({
       slug="sipi-falls"
       eyebrow="Mount Elgon, Eastern Uganda"
       name="Sipi Falls"
-      tagline={<>Three <em className="italic text-gold">waterfalls</em>, one horizon.</>}
+      tagline={
+        <>
+          Three <em className="italic text-gold">waterfalls</em>, one horizon.
+        </>
+      }
       intro="On the western slopes of Mount Elgon, three waterfalls tumble in a graceful staircase from the cliffs. The air smells of Arabica coffee and rain-fresh eucalyptus, and the view stretches all the way to Karamoja. Sipi Falls is Uganda's most poetic mountain escape."
       heroImage={expSipi}
       heroAlt="The three cascading waterfalls of Sipi on the slopes of Mount Elgon"
@@ -94,18 +98,52 @@ export const Route = createFileRoute("/destinations/sipi-falls")({
         { src: g_sipi_moments_2, alt: "Sipi Falls escarpment" },
       ]}
       highlights={[
-        { title: "Three-falls hike", desc: "A magical 4–5 hour loop linking all three cascades through forest and farmland." },
-        { title: "Farm-to-cup coffee", desc: "Roast your own coffee with a local farmer on the volcanic slopes of Mount Elgon." },
-        { title: "Abseil the main falls", desc: "For the brave — descend 100 metres beside the roar of the main cascade." },
-        { title: "Karamoja views", desc: "From your lodge terrace, watch the sun set over the endless northern plains." },
-        { title: "Community walks", desc: "Meet the Sabiny people whose farms and villages surround the falls." },
-        { title: "Cool mountain air", desc: "A refreshing altitude break — perfect after warm days on safari." },
+        {
+          title: "Three-falls hike",
+          desc: "A magical 4–5 hour loop linking all three cascades through forest and farmland.",
+        },
+        {
+          title: "Farm-to-cup coffee",
+          desc: "Roast your own coffee with a local farmer on the volcanic slopes of Mount Elgon.",
+        },
+        {
+          title: "Abseil the main falls",
+          desc: "For the brave — descend 100 metres beside the roar of the main cascade.",
+        },
+        {
+          title: "Karamoja views",
+          desc: "From your lodge terrace, watch the sun set over the endless northern plains.",
+        },
+        {
+          title: "Community walks",
+          desc: "Meet the Sabiny people whose farms and villages surround the falls.",
+        },
+        {
+          title: "Cool mountain air",
+          desc: "A refreshing altitude break — perfect after warm days on safari.",
+        },
       ]}
       itinerary={[
-        { day: "Day 01", title: "Jinja → Sipi", desc: "Drive east through tea estates and up the Mount Elgon escarpment. Arrive in time for sunset over Karamoja." },
-        { day: "Day 02", title: "Three-falls hike", desc: "A full day walking between the three waterfalls, stopping at a coffee farm for a hands-on roasting experience." },
-        { day: "Day 03", title: "Optional abseil or Elgon hike", desc: "Choose between abseiling the main fall, a longer hike into Mount Elgon National Park, or a slow morning with a book on the terrace." },
-        { day: "Day 04", title: "Return to Jinja or fly to Kidepo", desc: "Return via Jinja for white-water rafting on the Nile, or connect north to Kidepo Valley for a wilder chapter." },
+        {
+          day: "Day 01",
+          title: "Jinja → Sipi",
+          desc: "Drive east through tea estates and up the Mount Elgon escarpment. Arrive in time for sunset over Karamoja.",
+        },
+        {
+          day: "Day 02",
+          title: "Three-falls hike",
+          desc: "A full day walking between the three waterfalls, stopping at a coffee farm for a hands-on roasting experience.",
+        },
+        {
+          day: "Day 03",
+          title: "Optional abseil or Elgon hike",
+          desc: "Choose between abseiling the main fall, a longer hike into Mount Elgon National Park, or a slow morning with a book on the terrace.",
+        },
+        {
+          day: "Day 04",
+          title: "Return to Jinja or fly to Kidepo",
+          desc: "Return via Jinja for white-water rafting on the Nile, or connect north to Kidepo Valley for a wilder chapter.",
+        },
       ]}
       bestTime="December to March and June to August are the driest months, best for hiking and photography. Green-season showers (April–May, September–November) make the falls thunder at their fullest."
       gettingThere="A scenic 6-hour drive east from Kampala via Jinja and Mbale, or a short scheduled flight to Soroti airstrip. Combine easily with white-water rafting on the Nile in Jinja."
@@ -113,7 +151,11 @@ export const Route = createFileRoute("/destinations/sipi-falls")({
         { name: "Gorilla Trekking", to: "/destinations/gorilla-trekking", img: heroGorilla },
         { name: "Tree-Climbing Lions", to: "/destinations/tree-climbing-lions", img: sceneLion },
         { name: "Murchison Falls", to: "/destinations/murchison-falls", img: sceneFalls },
-        { name: "Jinja, Source of the Nile", to: "/destinations/jinja-source-of-the-nile", img: ctaSunset },
+        {
+          name: "Jinja, Source of the Nile",
+          to: "/destinations/jinja-source-of-the-nile",
+          img: ctaSunset,
+        },
       ]}
       faqs={FAQS}
     />

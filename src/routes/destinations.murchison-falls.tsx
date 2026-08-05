@@ -63,7 +63,11 @@ export const Route = createFileRoute("/destinations/murchison-falls")({
       slug="murchison-falls"
       eyebrow="Northern Uganda"
       name="Murchison Falls"
-      tagline={<>Where the Nile <em className="italic text-gold">roars</em>.</>}
+      tagline={
+        <>
+          Where the Nile <em className="italic text-gold">roars</em>.
+        </>
+      }
       intro="The world's longest river squeezes through a seven-metre gorge and thunders 43 metres into the plains below. Around it: Uganda's largest national park — 3,800 square kilometres of golden savanna, borassus palms, herds of elephant and giraffe, and skies filled with fish eagles."
       heroImage={sceneFalls}
       heroAlt="Murchison Falls thundering through a narrow gorge on the Nile"
@@ -98,25 +102,63 @@ export const Route = createFileRoute("/destinations/murchison-falls")({
         { src: g_murchison_moments_3, alt: "Murchison Falls National Park" },
       ]}
       highlights={[
-        { title: "Top-of-the-falls hike", desc: "A short trail brings you to the thundering lip of the world's most powerful waterfall." },
-        { title: "Launch cruise", desc: "Boat upstream past hippo pods and elephants to the base of the falls." },
-        { title: "Big herds", desc: "Uganda's densest concentrations of giraffe, elephant and buffalo roam the northern plains." },
-        { title: "Shoebill delta", desc: "Search the Nile delta for the prehistoric shoebill stork — a birder's ultimate prize." },
-        { title: "Lion & leopard", desc: "The Buligi circuit is famous for regular sightings of both big cats at dawn and dusk." },
-        { title: "Sundowners on the Nile", desc: "End every day with a chilled drink and a burning sky above the river." },
+        {
+          title: "Top-of-the-falls hike",
+          desc: "A short trail brings you to the thundering lip of the world's most powerful waterfall.",
+        },
+        {
+          title: "Launch cruise",
+          desc: "Boat upstream past hippo pods and elephants to the base of the falls.",
+        },
+        {
+          title: "Big herds",
+          desc: "Uganda's densest concentrations of giraffe, elephant and buffalo roam the northern plains.",
+        },
+        {
+          title: "Shoebill delta",
+          desc: "Search the Nile delta for the prehistoric shoebill stork — a birder's ultimate prize.",
+        },
+        {
+          title: "Lion & leopard",
+          desc: "The Buligi circuit is famous for regular sightings of both big cats at dawn and dusk.",
+        },
+        {
+          title: "Sundowners on the Nile",
+          desc: "End every day with a chilled drink and a burning sky above the river.",
+        },
       ]}
       itinerary={[
-        { day: "Day 01", title: "Kampala → Murchison", desc: "Drive north via Ziwa Rhino Sanctuary for a rhino tracking walk on foot before continuing to your Nile-side lodge." },
-        { day: "Day 02", title: "Falls hike & cruise", desc: "Morning launch cruise upstream to the base of the falls, then hike to the top for the full thunder from above." },
-        { day: "Day 03", title: "Buligi game drives", desc: "Early game drive across the northern plains for giraffe, elephant, lion and Jackson's hartebeest. Delta cruise for shoebills." },
-        { day: "Day 04", title: "Return south", desc: "Slow drive back to Kampala or connect on to Kibale for chimpanzee tracking." },
+        {
+          day: "Day 01",
+          title: "Kampala → Murchison",
+          desc: "Drive north via Ziwa Rhino Sanctuary for a rhino tracking walk on foot before continuing to your Nile-side lodge.",
+        },
+        {
+          day: "Day 02",
+          title: "Falls hike & cruise",
+          desc: "Morning launch cruise upstream to the base of the falls, then hike to the top for the full thunder from above.",
+        },
+        {
+          day: "Day 03",
+          title: "Buligi game drives",
+          desc: "Early game drive across the northern plains for giraffe, elephant, lion and Jackson's hartebeest. Delta cruise for shoebills.",
+        },
+        {
+          day: "Day 04",
+          title: "Return south",
+          desc: "Slow drive back to Kampala or connect on to Kibale for chimpanzee tracking.",
+        },
       ]}
       bestTime="December to February and June to September are the driest months, when wildlife concentrates along the river. The wet season (March–May, October–November) turns the park a vivid green — spectacular for photography and birding."
       gettingThere="Fly from Entebbe to Pakuba or Bugungu airstrips (1 hour), or drive 5–6 hours north via Masindi. Murchison Falls pairs beautifully with Ziwa Rhino Sanctuary and Kidepo Valley."
       related={[
         { name: "Gorilla Trekking", to: "/destinations/gorilla-trekking", img: heroGorilla },
         { name: "Tree-Climbing Lions", to: "/destinations/tree-climbing-lions", img: sceneLion },
-        { name: "Jinja, Source of the Nile", to: "/destinations/jinja-source-of-the-nile", img: ctaSunset },
+        {
+          name: "Jinja, Source of the Nile",
+          to: "/destinations/jinja-source-of-the-nile",
+          img: ctaSunset,
+        },
         { name: "Lake Bunyonyi", to: "/destinations/lake-bunyonyi", img: sceneBunyonyi },
       ]}
       faqs={FAQS}

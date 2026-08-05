@@ -60,7 +60,11 @@ export const Route = createFileRoute("/destinations/kibale-forest")({
       slug="kibale-forest"
       eyebrow="Kibale National Park"
       name="Chimpanzee Trekking"
-      tagline={<>Uganda's <em className="italic text-gold">primate capital</em>.</>}
+      tagline={
+        <>
+          Uganda's <em className="italic text-gold">primate capital</em>.
+        </>
+      }
       intro="Walk into East Africa's densest primate forest and follow the calls of a wild chimpanzee community through the canopy. Kibale holds over a thousand chimpanzees and twelve other primate species — a forest that rarely goes quiet."
       heroImage={expChimp}
       heroAlt="Chimpanzee in the canopy of Kibale Forest, Uganda"
@@ -92,22 +96,56 @@ export const Route = createFileRoute("/destinations/kibale-forest")({
         { src: g_coffee_tea_1, alt: "Tea and coffee country near Fort Portal" },
       ]}
       highlights={[
-        { title: "Highest primate density in Africa", desc: "Thirteen primate species in one forest, led by over 1,500 wild chimpanzees." },
-        { title: "Shorter, gentler trek", desc: "A faster, more affordable primate encounter than gorilla trekking, well suited to families." },
-        { title: "Chimpanzee Habituation Experience", desc: "A full-day option for serious wildlife enthusiasts, spending dawn to dusk with researchers." },
-        { title: "Bigodi Wetland walk", desc: "A community-run sanctuary nearby, rich in birdlife and monkeys." },
-        { title: "Fort Portal's tea country", desc: "Rolling tea estates and crater lakes, with the Rwenzori as a backdrop." },
-        { title: "Easily combined", desc: "A natural addition to a Bwindi gorilla trek or Queen Elizabeth game drive." },
+        {
+          title: "Highest primate density in Africa",
+          desc: "Thirteen primate species in one forest, led by over 1,500 wild chimpanzees.",
+        },
+        {
+          title: "Shorter, gentler trek",
+          desc: "A faster, more affordable primate encounter than gorilla trekking, well suited to families.",
+        },
+        {
+          title: "Chimpanzee Habituation Experience",
+          desc: "A full-day option for serious wildlife enthusiasts, spending dawn to dusk with researchers.",
+        },
+        {
+          title: "Bigodi Wetland walk",
+          desc: "A community-run sanctuary nearby, rich in birdlife and monkeys.",
+        },
+        {
+          title: "Fort Portal's tea country",
+          desc: "Rolling tea estates and crater lakes, with the Rwenzori as a backdrop.",
+        },
+        {
+          title: "Easily combined",
+          desc: "A natural addition to a Bwindi gorilla trek or Queen Elizabeth game drive.",
+        },
       ]}
       itinerary={[
-        { day: "Day 01", title: "Arrive & transfer to Kibale", desc: "Fly or drive in from Entebbe to the Fort Portal region, settling into your lodge on the forest edge." },
-        { day: "Day 02", title: "Chimpanzee trekking", desc: "An early briefing, then into the forest on foot to find a habituated chimpanzee community for your hour with them." },
-        { day: "Day 03", title: "Bigodi Wetland or tea estate", desc: "A gentler morning — a guided wetland walk for birds and monkeys, or a visit to a working tea estate — before departing or continuing on." },
+        {
+          day: "Day 01",
+          title: "Arrive & transfer to Kibale",
+          desc: "Fly or drive in from Entebbe to the Fort Portal region, settling into your lodge on the forest edge.",
+        },
+        {
+          day: "Day 02",
+          title: "Chimpanzee trekking",
+          desc: "An early briefing, then into the forest on foot to find a habituated chimpanzee community for your hour with them.",
+        },
+        {
+          day: "Day 03",
+          title: "Bigodi Wetland or tea estate",
+          desc: "A gentler morning — a guided wetland walk for birds and monkeys, or a visit to a working tea estate — before departing or continuing on.",
+        },
       ]}
       bestTime="Chimp trekking runs year-round. June–September and December–February bring firmer trails; April, May and November are quieter, with occasional discounted low-season permit rates."
       gettingThere="Fly into Entebbe International Airport. Kibale is a 5–6 hour drive west, or roughly 45 minutes by scheduled light aircraft to Kasese airstrip, followed by a short transfer."
       related={[
-        { name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking", img: heroGorilla },
+        {
+          name: "Gorilla Trekking, Bwindi",
+          to: "/destinations/gorilla-trekking",
+          img: heroGorilla,
+        },
         { name: "The Crater Lakes", to: "/destinations/crater-lakes", img: expCoffee },
         { name: "Tree-Climbing Lions", to: "/destinations/tree-climbing-lions", img: sceneLion },
         { name: "Murchison Falls", to: "/destinations/murchison-falls", img: sceneFalls },

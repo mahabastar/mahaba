@@ -33,7 +33,9 @@ export interface DestinationPageProps {
 }
 
 export function DestinationPage(p: DestinationPageProps) {
-  const relatedPosts = JOURNAL_POSTS.filter((post) => post.destination?.to === `/destinations/${p.slug}`);
+  const relatedPosts = JOURNAL_POSTS.filter(
+    (post) => post.destination?.to === `/destinations/${p.slug}`,
+  );
 
   return (
     <div className="bg-ivory text-charcoal">
@@ -50,9 +52,13 @@ export function DestinationPage(p: DestinationPageProps) {
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-transparent to-charcoal/40" />
         <div className="relative z-10 mx-auto flex min-h-[92svh] max-w-[1400px] flex-col justify-end px-6 pb-24 pt-40 md:px-10 md:pb-32">
           <nav className="mb-8 text-xs uppercase tracking-widest text-ivory/70">
-            <Link to="/" className="hover:text-gold">Home</Link>
+            <Link to="/" className="hover:text-gold">
+              Home
+            </Link>
             <span className="mx-2 text-ivory/40">/</span>
-            <Link to="/national-parks" className="text-ivory/60 hover:text-gold">Destinations</Link>
+            <Link to="/national-parks" className="text-ivory/60 hover:text-gold">
+              Destinations
+            </Link>
             <span className="mx-2 text-ivory/40">/</span>
             <span className="text-gold">{p.name}</span>
           </nav>
@@ -64,14 +70,22 @@ export function DestinationPage(p: DestinationPageProps) {
             <h1 className="font-display text-[clamp(2.5rem,7vw,6.5rem)] text-ivory text-balance">
               {p.tagline}
             </h1>
-            <p className="mt-8 max-w-2xl text-lg leading-relaxed text-ivory/85 md:text-xl">{p.intro}</p>
+            <p className="mt-8 max-w-2xl text-lg leading-relaxed text-ivory/85 md:text-xl">
+              {p.intro}
+            </p>
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link
                 to="/build-my-safari"
                 className="group inline-flex items-center gap-3 rounded-full bg-forest px-7 py-4 text-sm font-medium tracking-wide text-ivory shadow-md transition-all duration-500 hover:scale-105 hover:bg-forest-deep"
               >
                 Plan This Journey
-                <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <svg
+                  className="h-4 w-4 transition-transform group-hover:translate-x-1"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
                   <path d="M5 12h14M13 5l7 7-7 7" />
                 </svg>
               </Link>
@@ -106,7 +120,8 @@ export function DestinationPage(p: DestinationPageProps) {
               <div className="sticky top-32">
                 <div className="eyebrow">The story</div>
                 <h2 className="mt-5 font-display text-4xl text-charcoal text-balance md:text-5xl">
-                  A place that <em className="italic text-forest">rearranges</em> what you thought travel could feel like.
+                  A place that <em className="italic text-forest">rearranges</em> what you thought
+                  travel could feel like.
                 </h2>
               </div>
             </div>
@@ -137,7 +152,12 @@ export function DestinationPage(p: DestinationPageProps) {
                   i % 6 === 3 ? "col-span-2" : ""
                 }`}
               >
-                <img src={g.src} alt={g.alt} loading="lazy" className="h-full w-full object-cover transition-transform duration-[1400ms] ease-luxe hover:scale-105" />
+                <img
+                  src={g.src}
+                  alt={g.alt}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-[1400ms] ease-luxe hover:scale-105"
+                />
               </div>
             ))}
           </div>
@@ -153,9 +173,18 @@ export function DestinationPage(p: DestinationPageProps) {
           </h2>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {p.highlights.map((h) => (
-              <div key={h.title} className="rounded-2xl border border-charcoal/10 bg-white p-8 hover-lift">
+              <div
+                key={h.title}
+                className="rounded-2xl border border-charcoal/10 bg-white p-8 hover-lift"
+              >
                 <div className="grid h-11 w-11 place-items-center rounded-full bg-forest/10 text-forest">
-                  <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.6">
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="h-5 w-5"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                  >
                     <path d="M12 2l2.6 6.2L21 9l-5 4.4L17.6 20 12 16.7 6.4 20 8 13.4 3 9l6.4-.8L12 2z" />
                   </svg>
                 </div>
@@ -176,7 +205,10 @@ export function DestinationPage(p: DestinationPageProps) {
           </h2>
           <div className="mt-14 space-y-4">
             {p.itinerary.map((d) => (
-              <div key={d.day} className="grid gap-4 rounded-2xl border border-ivory/15 bg-ivory/[0.03] p-6 md:grid-cols-12 md:items-baseline md:gap-8 md:p-8">
+              <div
+                key={d.day}
+                className="grid gap-4 rounded-2xl border border-ivory/15 bg-ivory/[0.03] p-6 md:grid-cols-12 md:items-baseline md:gap-8 md:p-8"
+              >
                 <div className="md:col-span-2">
                   <div className="eyebrow !text-gold">{d.day}</div>
                 </div>
@@ -221,11 +253,20 @@ export function DestinationPage(p: DestinationPageProps) {
                   className="group flex flex-col overflow-hidden rounded-3xl border border-charcoal/10 bg-white hover-lift"
                 >
                   <div className="aspect-[4/3] w-full overflow-hidden">
-                    <img src={post.img} alt={post.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                    <img
+                      src={post.img}
+                      alt={post.title}
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
                   </div>
                   <div className="p-6">
-                    <div className="eyebrow !text-gold">{post.category} · {post.readMins} min read</div>
-                    <h3 className="mt-3 font-display text-xl text-charcoal text-balance">{post.title}</h3>
+                    <div className="eyebrow !text-gold">
+                      {post.category} · {post.readMins} min read
+                    </div>
+                    <h3 className="mt-3 font-display text-xl text-charcoal text-balance">
+                      {post.title}
+                    </h3>
                     <p className="mt-2 text-sm leading-relaxed text-charcoal/65">{post.excerpt}</p>
                   </div>
                 </Link>
@@ -248,7 +289,9 @@ export function DestinationPage(p: DestinationPageProps) {
                 <details key={f.q} className="group py-6">
                   <summary className="flex cursor-pointer list-none items-start justify-between gap-6">
                     <span className="font-display text-xl text-charcoal md:text-2xl">{f.q}</span>
-                    <span className="mt-1 shrink-0 text-gold transition-transform group-open:rotate-45">＋</span>
+                    <span className="mt-1 shrink-0 text-gold transition-transform group-open:rotate-45">
+                      ＋
+                    </span>
                   </summary>
                   <p className="mt-4 max-w-3xl text-base leading-relaxed text-charcoal/75">{f.a}</p>
                 </details>
@@ -272,7 +315,12 @@ export function DestinationPage(p: DestinationPageProps) {
                 to={r.to}
                 className="group relative block h-[320px] overflow-hidden rounded-3xl hover-lift"
               >
-                <img src={r.img} alt={r.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-[1400ms] ease-luxe group-hover:scale-110" />
+                <img
+                  src={r.img}
+                  alt={r.name}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-[1400ms] ease-luxe group-hover:scale-110"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/40 to-transparent" />
                 <div className="absolute inset-x-6 bottom-6">
                   <div className="font-display text-2xl text-ivory">{r.name}</div>

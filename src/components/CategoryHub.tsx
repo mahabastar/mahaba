@@ -28,7 +28,8 @@ export interface CategoryHubProps {
 }
 
 function ItemCard({ item }: { item: CategoryItem }) {
-  const className = "group relative block aspect-[4/5] overflow-hidden rounded-3xl bg-charcoal hover-lift sm:aspect-[16/11]";
+  const className =
+    "group relative block aspect-[4/5] overflow-hidden rounded-3xl bg-charcoal hover-lift sm:aspect-[16/11]";
 
   const inner = (
     <>
@@ -36,8 +37,8 @@ function ItemCard({ item }: { item: CategoryItem }) {
         src={item.img}
         alt={item.name}
         className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-          loading="lazy"
-        />
+        loading="lazy"
+      />
       <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/25 to-transparent" />
 
       <div className="absolute left-4 top-4 rounded-full bg-charcoal/60 px-3 py-1 text-[0.65rem] uppercase tracking-widest text-ivory/85 backdrop-blur-sm">
@@ -55,7 +56,13 @@ function ItemCard({ item }: { item: CategoryItem }) {
         <p className="mt-2 max-w-md text-sm text-ivory/70">{item.blurb}</p>
         <span className="mt-4 inline-flex items-center gap-1.5 text-xs uppercase tracking-widest text-ivory/85">
           {item.to ? "Explore" : "Ask us directly"}
-          <svg viewBox="0 0 24 24" className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" strokeWidth="2">
+          <svg
+            viewBox="0 0 24 24"
+            className="h-3 w-3 transition-transform duration-300 group-hover:translate-x-1"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
             <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </span>
@@ -90,11 +97,17 @@ export function CategoryHub(p: CategoryHubProps) {
 
       {/* Hero */}
       <section className="relative min-h-[60svh] w-full overflow-hidden bg-charcoal grain">
-        <img src={p.heroImage} alt={p.heroAlt} className="absolute inset-0 h-full w-full object-cover ken-burns opacity-60" />
+        <img
+          src={p.heroImage}
+          alt={p.heroAlt}
+          className="absolute inset-0 h-full w-full object-cover ken-burns opacity-60"
+        />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="relative z-10 mx-auto flex min-h-[60svh] max-w-[1000px] flex-col justify-end px-6 pb-16 pt-40 text-center md:px-10 md:pb-20">
           <div className="eyebrow !text-gold">{p.eyebrow}</div>
-          <h1 className="mt-6 font-display text-[clamp(2.2rem,6vw,4.5rem)] text-ivory text-balance">{p.title}</h1>
+          <h1 className="mt-6 font-display text-[clamp(2.2rem,6vw,4.5rem)] text-ivory text-balance">
+            {p.title}
+          </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-ivory/75">{p.intro}</p>
         </div>
       </section>

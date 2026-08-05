@@ -38,7 +38,8 @@ export const Route = createFileRoute("/destinations/mount-elgon")({
     buildDestinationHead({
       slug: "mount-elgon",
       name: "Mount Elgon National Park",
-      title: "Mount Elgon National Park, Uganda — Caldera Hikes & Highland Coffee | Trek Wild Uganda",
+      title:
+        "Mount Elgon National Park, Uganda — Caldera Hikes & Highland Coffee | Trek Wild Uganda",
       description:
         "An extinct volcano with one of the world's largest calderas — multi-day hikes, Sipi Falls, and coffee-growing highlands on Uganda's eastern border.",
       ogImage: expSipi,
@@ -58,7 +59,12 @@ export const Route = createFileRoute("/destinations/mount-elgon")({
       slug="mount-elgon"
       eyebrow="Mount Elgon National Park"
       name="Mount Elgon"
-      tagline={<>An extinct volcano, <em className="italic text-gold">one of the world's largest calderas</em>.</>}
+      tagline={
+        <>
+          An extinct volcano,{" "}
+          <em className="italic text-gold">one of the world's largest calderas</em>.
+        </>
+      }
       intro="Straddling the Kenyan border in Uganda's east, Mount Elgon is an ancient shield volcano built up over millions of years — wide enough that its caldera, roughly 40 kilometres across, ranks among the largest intact calderas on Earth. Sipi Falls tumbles down its lower slopes; multi-day treks climb toward Wagagai Peak at its rim."
       heroImage={expSipi}
       heroAlt="Sipi Falls cascading down Mount Elgon's lower slopes"
@@ -91,24 +97,62 @@ export const Route = createFileRoute("/destinations/mount-elgon")({
         { src: g_mount_elgon_6, alt: "High ground on Mount Elgon" },
       ]}
       highlights={[
-        { title: "One of the world's largest calderas", desc: "A roughly 40km-wide volcanic caldera formed over millions of years." },
-        { title: "Wagagai Peak summit trek", desc: "A 4–5 day multi-day hike through five distinct vegetation zones." },
-        { title: "Sipi Falls", desc: "Three waterfalls and coffee terraces easily reached without a multi-day commitment." },
-        { title: "Highland Arabica coffee", desc: "Farm and washing-station visits on some of Uganda's most productive coffee land." },
-        { title: "Bagisu cultural heritage", desc: "The mountain's slopes are home to the Bagisu, known for the Imbalu circumcision ceremony." },
-        { title: "Far fewer trekkers than East Africa's other volcanoes", desc: "A quieter multi-day trekking alternative to Kilimanjaro or Mount Kenya." },
+        {
+          title: "One of the world's largest calderas",
+          desc: "A roughly 40km-wide volcanic caldera formed over millions of years.",
+        },
+        {
+          title: "Wagagai Peak summit trek",
+          desc: "A 4–5 day multi-day hike through five distinct vegetation zones.",
+        },
+        {
+          title: "Sipi Falls",
+          desc: "Three waterfalls and coffee terraces easily reached without a multi-day commitment.",
+        },
+        {
+          title: "Highland Arabica coffee",
+          desc: "Farm and washing-station visits on some of Uganda's most productive coffee land.",
+        },
+        {
+          title: "Bagisu cultural heritage",
+          desc: "The mountain's slopes are home to the Bagisu, known for the Imbalu circumcision ceremony.",
+        },
+        {
+          title: "Far fewer trekkers than East Africa's other volcanoes",
+          desc: "A quieter multi-day trekking alternative to Kilimanjaro or Mount Kenya.",
+        },
       ]}
       itinerary={[
-        { day: "Day 01", title: "Arrive & Sipi Falls", desc: "Drive from Mbale or Jinja and spend the afternoon exploring Sipi's three waterfalls and coffee terraces." },
-        { day: "Day 02", title: "Begin the caldera trek", desc: "Set out from the trailhead through montane forest and bamboo zone toward the first camp." },
-        { day: "Day 03–04", title: "Moorland to the rim", desc: "Continue through alpine moorland toward Wagagai Peak, with the caldera opening up below." },
-        { day: "Day 05", title: "Descend & depart", desc: "A final descent back to the trailhead, with time to visit a coffee washing station before departure." },
+        {
+          day: "Day 01",
+          title: "Arrive & Sipi Falls",
+          desc: "Drive from Mbale or Jinja and spend the afternoon exploring Sipi's three waterfalls and coffee terraces.",
+        },
+        {
+          day: "Day 02",
+          title: "Begin the caldera trek",
+          desc: "Set out from the trailhead through montane forest and bamboo zone toward the first camp.",
+        },
+        {
+          day: "Day 03–04",
+          title: "Moorland to the rim",
+          desc: "Continue through alpine moorland toward Wagagai Peak, with the caldera opening up below.",
+        },
+        {
+          day: "Day 05",
+          title: "Descend & depart",
+          desc: "A final descent back to the trailhead, with time to visit a coffee washing station before departure.",
+        },
       ]}
       bestTime="June–August and December–February are driest, with the clearest trails and views for multi-day treks. The wetter months bring lush scenery and fuller waterfalls at Sipi, with muddier hiking conditions higher up."
       gettingThere="Roughly a 4–5 hour drive from Kampala to Sipi, or 3 hours from Jinja. Most multi-day treks depart from trailheads near Kapchorwa or Budadiri, reached via Mbale."
       related={[
         { name: "Sipi Falls", to: "/destinations/sipi-falls", img: expSipi },
-        { name: "Jinja, Source of the Nile", to: "/destinations/jinja-source-of-the-nile", img: sceneFalls },
+        {
+          name: "Jinja, Source of the Nile",
+          to: "/destinations/jinja-source-of-the-nile",
+          img: sceneFalls,
+        },
       ]}
       faqs={FAQS}
     />
