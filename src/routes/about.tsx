@@ -71,7 +71,6 @@ const FOUNDERS = [
   },
 ];
 
-
 function About() {
   return (
     <div className="bg-ivory text-charcoal">
@@ -79,7 +78,10 @@ function About() {
 
       {/* Hero */}
       <section className="relative min-h-[65svh] w-full overflow-hidden bg-charcoal">
-        <img src={sceneCulture} alt="Community members in south-western Uganda" className="absolute inset-0 h-full w-full object-cover opacity-60"
+        <img
+          src={sceneCulture}
+          alt="Community members in south-western Uganda"
+          className="absolute inset-0 h-full w-full object-cover opacity-60"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/60 to-charcoal/30" />
         <div className="relative mx-auto flex min-h-[65svh] max-w-[900px] flex-col justify-end px-6 pb-16 pt-40 md:px-10">
@@ -96,25 +98,24 @@ function About() {
           <div className="eyebrow !text-forest">Our story</div>
           <div className="mt-5 space-y-5 text-lg leading-relaxed text-charcoal/80 text-pretty">
             <p>
-              Trek Wild Uganda was built on one simple idea: the best adventures come from
-              people who actually know the land. Not a call centre in another time zone, not
-              a brochure written from a desk — guides who have spent their working lives in
-              these forests, on these roads, and at these viewpoints.
+              Trek Wild Uganda was built on one simple idea: the best adventures come from people
+              who actually know the land. Not a call centre in another time zone, not a brochure
+              written from a desk — guides who have spent their working lives in these forests, on
+              these roads, and at these viewpoints.
             </p>
             <p>
-              Between our two founders sit twenty-four years of professional guiding across
-              Uganda. Years of tracking gorillas in Bwindi before the mist lifts, of reading
-              which way a herd will move at Paraa, of knowing which lodge kitchen will still
-              feed you at ten at night after a long transfer from Kidepo. That knowledge
-              isn't something you can buy in; it's accumulated one trip at a time.
+              Between our two founders sit twenty-four years of professional guiding across Uganda.
+              Years of tracking gorillas in Bwindi before the mist lifts, of reading which way a
+              herd will move at Paraa, of knowing which lodge kitchen will still feed you at ten at
+              night after a long transfer from Kidepo. That knowledge isn't something you can buy
+              in; it's accumulated one trip at a time.
             </p>
             <p>
-              We built this site the way we'd want a trip planned: with real information
-              before a sales pitch. A wildlife guide you can search, a calendar that tells
-              you honestly which month suits you, a calculator that gives you a number
-              before you have to ask for one. Every photograph you see here was taken by us,
-              on our own trips. By the time you talk to us, you already know roughly what
-              you want — we just make it happen.
+              We built this site the way we'd want a trip planned: with real information before a
+              sales pitch. A wildlife guide you can search, a calendar that tells you honestly which
+              month suits you, a calculator that gives you a number before you have to ask for one.
+              Every photograph you see here was taken by us, on our own trips. By the time you talk
+              to us, you already know roughly what you want — we just make it happen.
             </p>
           </div>
         </div>
@@ -126,11 +127,12 @@ function About() {
           <div className="max-w-3xl">
             <div className="eyebrow !text-gold">Meet the founders</div>
             <h2 className="mt-4 font-display text-4xl text-ivory text-balance md:text-5xl">
-              Xavier Asaaba &amp; Herbert Muzoora — <em className="italic text-gold">your guides to the Pearl of Africa.</em>
+              Xavier Asaaba &amp; Herbert Muzoora —{" "}
+              <em className="italic text-gold">your guides to the Pearl of Africa.</em>
             </h2>
             <p className="mt-5 text-base leading-relaxed text-ivory/75">
-              Two Ugandan-born guides with a combined 24 years of experience showing
-              travellers the very best this country has to offer.
+              Two Ugandan-born guides with a combined 24 years of experience showing travellers the
+              very best this country has to offer.
             </p>
           </div>
 
@@ -158,7 +160,6 @@ function About() {
           </div>
         </div>
       </section>
-
 
       {/* Stats */}
       <section className="bg-charcoal grain text-ivory">
@@ -202,11 +203,11 @@ function About() {
                 Drawn from the communities bordering the parks.
               </h2>
               <p className="mt-5 text-sm leading-relaxed text-ivory/75 md:text-base">
-                Many of the rangers, trackers and guides we work with grew up in villages on
-                a park boundary — they know the terrain and the wildlife's habits from a
-                lifetime spent nearby, not a training manual alone. It's also, practically,
-                how tourism revenue reaches the people whose cooperation keeps these parks
-                protected. More on how that works on our Responsible Tourism Centre.
+                Many of the rangers, trackers and guides we work with grew up in villages on a park
+                boundary — they know the terrain and the wildlife's habits from a lifetime spent
+                nearby, not a training manual alone. It's also, practically, how tourism revenue
+                reaches the people whose cooperation keeps these parks protected. More on how that
+                works on our Responsible Tourism Centre.
               </p>
               <Link
                 to="/responsible-tourism"
@@ -216,12 +217,18 @@ function About() {
               </Link>
             </div>
             <div className="grid grid-cols-2 gap-4">
-              <img src={heroGorilla} alt="Gorilla trekking guide in Bwindi" className="aspect-[3/4] w-full rounded-2xl object-cover"
-          loading="lazy"
-        />
-              <img src={expLodge} alt="Safari lodge" className="mt-8 aspect-[3/4] w-full rounded-2xl object-cover"
-          loading="lazy"
-        />
+              <img
+                src={heroGorilla}
+                alt="Gorilla trekking guide in Bwindi"
+                className="aspect-[3/4] w-full rounded-2xl object-cover"
+                loading="lazy"
+              />
+              <img
+                src={expLodge}
+                alt="Safari lodge"
+                className="mt-8 aspect-[3/4] w-full rounded-2xl object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>

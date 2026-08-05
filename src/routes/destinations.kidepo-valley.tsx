@@ -60,7 +60,11 @@ export const Route = createFileRoute("/destinations/kidepo-valley")({
       slug="kidepo-valley"
       eyebrow="Kidepo Valley National Park"
       name="Kidepo Valley"
-      tagline={<>Uganda's <em className="italic text-gold">last true wilderness</em>.</>}
+      tagline={
+        <>
+          Uganda's <em className="italic text-gold">last true wilderness</em>.
+        </>
+      }
       intro="Tucked into Uganda's remote north-eastern corner, bordering South Sudan and Kenya, Kidepo is everything Uganda's better-known parks aren't: vast, empty, and almost entirely undiscovered. It's also the only place in the country to see wild ostriches, and one of only two with cheetah."
       heroImage={sceneElephants}
       heroAlt="Savanna wildlife in Uganda's remote north-east"
@@ -94,23 +98,57 @@ export const Route = createFileRoute("/destinations/kidepo-valley")({
         { src: g_kidepo_moments_6, alt: "Kidepo Valley National Park" },
       ]}
       highlights={[
-        { title: "Uganda's only wild ostriches", desc: "Found nowhere else in the country's protected areas." },
-        { title: "Rare cheetah sightings", desc: "One of just two parks in Uganda with a resident cheetah population." },
-        { title: "Total isolation", desc: "Among Africa's least-visited major parks — genuine, uncrowded wilderness." },
-        { title: "Narus Valley game drives", desc: "Lions, buffalo herds and elephants concentrate here through the dry season." },
-        { title: "Recovering giraffe population", desc: "Rothschild's giraffe numbers have rebounded from near-extinction here." },
-        { title: "Karamojong culture", desc: "A chance to visit one of Uganda's most distinct and least-touristed cultural regions." },
+        {
+          title: "Uganda's only wild ostriches",
+          desc: "Found nowhere else in the country's protected areas.",
+        },
+        {
+          title: "Rare cheetah sightings",
+          desc: "One of just two parks in Uganda with a resident cheetah population.",
+        },
+        {
+          title: "Total isolation",
+          desc: "Among Africa's least-visited major parks — genuine, uncrowded wilderness.",
+        },
+        {
+          title: "Narus Valley game drives",
+          desc: "Lions, buffalo herds and elephants concentrate here through the dry season.",
+        },
+        {
+          title: "Recovering giraffe population",
+          desc: "Rothschild's giraffe numbers have rebounded from near-extinction here.",
+        },
+        {
+          title: "Karamojong culture",
+          desc: "A chance to visit one of Uganda's most distinct and least-touristed cultural regions.",
+        },
       ]}
       itinerary={[
-        { day: "Day 01", title: "Fly to Kidepo", desc: "A scheduled light-aircraft transfer from Entebbe direct to Kidepo's Apoka airstrip, with an afternoon game drive on arrival." },
-        { day: "Day 02", title: "Narus Valley game drives", desc: "A full day exploring the park's prime wildlife area, with dawn and dusk drives for the best sightings." },
-        { day: "Day 03", title: "Karamojong village visit & departure", desc: "A morning cultural visit to a nearby Karamojong community before flying back south." },
+        {
+          day: "Day 01",
+          title: "Fly to Kidepo",
+          desc: "A scheduled light-aircraft transfer from Entebbe direct to Kidepo's Apoka airstrip, with an afternoon game drive on arrival.",
+        },
+        {
+          day: "Day 02",
+          title: "Narus Valley game drives",
+          desc: "A full day exploring the park's prime wildlife area, with dawn and dusk drives for the best sightings.",
+        },
+        {
+          day: "Day 03",
+          title: "Karamojong village visit & departure",
+          desc: "A morning cultural visit to a nearby Karamojong community before flying back south.",
+        },
       ]}
       bestTime="September through March offers the clearest game viewing as wildlife concentrates around the Narus Valley's remaining water. April–August is greener and quieter, with excellent birding."
       gettingThere="Fly into Entebbe International Airport, then connect via scheduled light aircraft (roughly 1.5–2 hours) to Kidepo's Apoka airstrip. Driving from Kampala takes 8–11 hours and is usually broken up with a stop at Ziwa Rhino Sanctuary."
       related={[
         { name: "Murchison Falls", to: "/destinations/murchison-falls", img: sceneFalls },
-        { name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking", img: heroGorilla },
+        {
+          name: "Gorilla Trekking, Bwindi",
+          to: "/destinations/gorilla-trekking",
+          img: heroGorilla,
+        },
       ]}
       faqs={FAQS}
     />

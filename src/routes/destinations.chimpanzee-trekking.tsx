@@ -56,7 +56,11 @@ export const Route = createFileRoute("/destinations/chimpanzee-trekking")({
       slug="chimpanzee-trekking"
       eyebrow="Kibale, Kyambura Gorge & Budongo"
       name="Chimpanzee Trekking"
-      tagline={<>Uganda's <em className="italic text-gold">other</em> great ape.</>}
+      tagline={
+        <>
+          Uganda's <em className="italic text-gold">other</em> great ape.
+        </>
+      }
       intro="Louder, faster and more expressive than their gorilla cousins, Uganda's chimpanzees can be tracked in three very different forests — from Kibale's record-breaking density to a gorge nicknamed the Valley of Apes."
       heroImage={expChimp}
       heroAlt="Wild chimpanzee in the forest canopy of Kibale National Park"
@@ -89,23 +93,57 @@ export const Route = createFileRoute("/destinations/chimpanzee-trekking")({
         { src: g_ngamba_chimps_1, alt: "Rescued chimpanzees at Ngamba Island" },
       ]}
       highlights={[
-        { title: "Africa's highest chimp density", desc: "Kibale holds over 1,500 wild chimpanzees, the best sighting odds on the continent." },
-        { title: "Kyambura Gorge — the Valley of Apes", desc: "A dramatic rift gorge inside Queen Elizabeth National Park, chimps included." },
-        { title: "Chimpanzee Habituation Experience", desc: "A half-day following researchers as a wild community learns to tolerate humans." },
-        { title: "Twelve other primate species", desc: "Kibale alone also holds red colobus, grey-cheeked mangabey and l'Hoest's monkey." },
-        { title: "Cheaper, easier permits than gorillas", desc: "USD 250 versus USD 800, with far more daily permits available." },
-        { title: "Combine with Budongo & Murchison Falls", desc: "A natural add-on for anyone already routing through northern Uganda." },
+        {
+          title: "Africa's highest chimp density",
+          desc: "Kibale holds over 1,500 wild chimpanzees, the best sighting odds on the continent.",
+        },
+        {
+          title: "Kyambura Gorge — the Valley of Apes",
+          desc: "A dramatic rift gorge inside Queen Elizabeth National Park, chimps included.",
+        },
+        {
+          title: "Chimpanzee Habituation Experience",
+          desc: "A half-day following researchers as a wild community learns to tolerate humans.",
+        },
+        {
+          title: "Twelve other primate species",
+          desc: "Kibale alone also holds red colobus, grey-cheeked mangabey and l'Hoest's monkey.",
+        },
+        {
+          title: "Cheaper, easier permits than gorillas",
+          desc: "USD 250 versus USD 800, with far more daily permits available.",
+        },
+        {
+          title: "Combine with Budongo & Murchison Falls",
+          desc: "A natural add-on for anyone already routing through northern Uganda.",
+        },
       ]}
       itinerary={[
-        { day: "Day 01", title: "Arrive at your chosen forest", desc: "Settle in at a lodge bordering Kibale, Kyambura or Budongo, depending on your route." },
-        { day: "Day 02", title: "Chimpanzee trek", desc: "An early briefing, then a guided trek through the forest to find and spend an hour with a chimpanzee community." },
+        {
+          day: "Day 01",
+          title: "Arrive at your chosen forest",
+          desc: "Settle in at a lodge bordering Kibale, Kyambura or Budongo, depending on your route.",
+        },
+        {
+          day: "Day 02",
+          title: "Chimpanzee trek",
+          desc: "An early briefing, then a guided trek through the forest to find and spend an hour with a chimpanzee community.",
+        },
       ]}
       bestTime="Chimpanzee trekking runs year-round. The dry months of June–September and December–February offer firmer trails, while the wetter months bring quieter forests and fewer trekkers."
       gettingThere="Kibale is roughly a 5–6 hour drive from Kampala via Fort Portal. Kyambura Gorge sits inside Queen Elizabeth National Park, and Budongo Forest is en route to Murchison Falls, around 4–5 hours from Kampala."
       related={[
         { name: "Kibale", to: "/destinations/kibale-forest", img: expChimp },
-        { name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking", img: heroGorilla },
-        { name: "Queen Elizabeth National Park", to: "/destinations/queen-elizabeth-national-park", img: sceneLion },
+        {
+          name: "Gorilla Trekking, Bwindi",
+          to: "/destinations/gorilla-trekking",
+          img: heroGorilla,
+        },
+        {
+          name: "Queen Elizabeth National Park",
+          to: "/destinations/queen-elizabeth-national-park",
+          img: sceneLion,
+        },
         { name: "Murchison Falls", to: "/destinations/murchison-falls", img: sceneFalls },
       ]}
       faqs={FAQS}

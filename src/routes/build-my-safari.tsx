@@ -3,7 +3,7 @@ import { useMemo, useState, type ReactNode } from "react";
 
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
-import {buildWhatsAppHref, buildEmailHref, SITE_CONFIG } from "@/lib/site-config";
+import { buildWhatsAppHref, buildEmailHref, SITE_CONFIG } from "@/lib/site-config";
 import { trackEvent } from "@/lib/analytics";
 
 import heroGorilla from "@/assets/hero-gorilla.jpg";
@@ -31,12 +31,29 @@ export const Route = createFileRoute("/build-my-safari")({
 
 /* ---------------- Data ---------------- */
 
-type DestinationKey = "gorilla-trekking" | "tree-climbing-lions" | "murchison-falls" | "sipi-falls" | "lake-bunyonyi";
+type DestinationKey =
+  | "gorilla-trekking"
+  | "tree-climbing-lions"
+  | "murchison-falls"
+  | "sipi-falls"
+  | "lake-bunyonyi";
 
 const DESTINATIONS: Record<DestinationKey, { name: string; to: string; img: string }> = {
-  "gorilla-trekking": { name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking", img: heroGorilla },
-  "tree-climbing-lions": { name: "Tree-Climbing Lions, Ishasha", to: "/destinations/tree-climbing-lions", img: sceneLion },
-  "murchison-falls": { name: "Murchison Falls", to: "/destinations/murchison-falls", img: sceneFalls },
+  "gorilla-trekking": {
+    name: "Gorilla Trekking, Bwindi",
+    to: "/destinations/gorilla-trekking",
+    img: heroGorilla,
+  },
+  "tree-climbing-lions": {
+    name: "Tree-Climbing Lions, Ishasha",
+    to: "/destinations/tree-climbing-lions",
+    img: sceneLion,
+  },
+  "murchison-falls": {
+    name: "Murchison Falls",
+    to: "/destinations/murchison-falls",
+    img: sceneFalls,
+  },
   "sipi-falls": { name: "Sipi Falls", to: "/destinations/sipi-falls", img: expSipi },
   "lake-bunyonyi": { name: "Lake Bunyonyi", to: "/destinations/lake-bunyonyi", img: sceneBunyonyi },
 };
@@ -51,7 +68,12 @@ const INTERESTS: { key: string; label: string; dest: DestinationKey[] }[] = [
   { key: "culture", label: "Culture & Communities", dest: ["sipi-falls", "gorilla-trekking"] },
 ];
 
-const TIMINGS = ["In the next month", "1–3 months from now", "3–6 months from now", "Just exploring, no date yet"];
+const TIMINGS = [
+  "In the next month",
+  "1–3 months from now",
+  "3–6 months from now",
+  "Just exploring, no date yet",
+];
 const DAYS = ["3–5 days", "6–9 days", "10–14 days", "15+ days"];
 const STYLES = [
   { label: "Comfort", desc: "Well-appointed mid-range lodges" },
@@ -68,7 +90,13 @@ type Answers = {
   timing: string | null;
 };
 
-const EMPTY_ANSWERS: Answers = { interests: [], days: null, style: null, travelers: null, timing: null };
+const EMPTY_ANSWERS: Answers = {
+  interests: [],
+  days: null,
+  style: null,
+  travelers: null,
+  timing: null,
+};
 
 const STEPS = ["interests", "days", "style", "travelers", "timing"] as const;
 type StepKey = (typeof STEPS)[number];
@@ -101,7 +129,9 @@ function BuildMySafari() {
   function toggleInterest(key: string) {
     setAnswers((a) => ({
       ...a,
-      interests: a.interests.includes(key) ? a.interests.filter((i) => i !== key) : [...a.interests, key],
+      interests: a.interests.includes(key)
+        ? a.interests.filter((i) => i !== key)
+        : [...a.interests, key],
     }));
   }
 
@@ -131,7 +161,9 @@ function BuildMySafari() {
   }, [answers.interests]);
 
   const summaryText = useMemo(() => {
-    const interestLabels = answers.interests.map((k) => INTERESTS.find((i) => i.key === k)?.label).join(", ");
+    const interestLabels = answers.interests
+      .map((k) => INTERESTS.find((i) => i.key === k)?.label)
+      .join(", ");
     return [
       `Hi! I'd like a Uganda safari built around: ${interestLabels || "—"}.`,
       `Trip length: ${answers.days ?? "—"}.`,
@@ -142,7 +174,10 @@ function BuildMySafari() {
   }, [answers]);
 
   const whatsappHref = buildWhatsAppHref(summaryText);
-  const emailHref = buildEmailHref({ subject: "Build My Safari — trip request", body: summaryText });
+  const emailHref = buildEmailHref({
+    subject: "Build My Safari — trip request",
+    body: summaryText,
+  });
 
   return (
     <div className="bg-ivory text-charcoal">
@@ -156,8 +191,8 @@ function BuildMySafari() {
             A few questions. <em className="italic text-gold">One safari, made for you.</em>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-ivory/75">
-            No forms to fill in triplicate — just tell us how you like to travel and we'll
-            suggest where in Uganda to start.
+            No forms to fill in triplicate — just tell us how you like to travel and we'll suggest
+            where in Uganda to start.
           </p>
         </div>
       </section>
@@ -283,8 +318,8 @@ function BuildMySafari() {
                   Here's where we'd begin.
                 </h2>
                 <p className="mt-4 max-w-lg text-charcoal/70">
-                  Based on what you told us, these destinations fit best. Send us your answers
-                  and a Trek Wild Uganda specialist will turn this into a full itinerary.
+                  Based on what you told us, these destinations fit best. Send us your answers and a
+                  Trek Wild Uganda specialist will turn this into a full itinerary.
                 </p>
 
                 {suggested.length > 0 ? (
@@ -295,9 +330,12 @@ function BuildMySafari() {
                         to={d.to}
                         className="group relative aspect-[4/3] overflow-hidden rounded-2xl hover-lift"
                       >
-                        <img src={d.img} alt={d.name} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-          loading="lazy"
-        />
+                        <img
+                          src={d.img}
+                          alt={d.name}
+                          className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                          loading="lazy"
+                        />
                         <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 via-charcoal/10 to-transparent" />
                         <div className="absolute inset-x-4 bottom-4">
                           <div className="font-display text-lg text-ivory">{d.name}</div>
@@ -325,14 +363,26 @@ function BuildMySafari() {
                     href={whatsappHref}
                     target="_blank"
                     rel="noopener noreferrer"
-                    onClick={() => trackEvent("safari_plan_sent", { channel: "whatsapp", days: answers.days, style: answers.style })}
+                    onClick={() =>
+                      trackEvent("safari_plan_sent", {
+                        channel: "whatsapp",
+                        days: answers.days,
+                        style: answers.style,
+                      })
+                    }
                     className="rounded-full bg-forest px-7 py-4 text-sm font-medium text-ivory shadow-md transition-all hover:scale-105 hover:bg-forest-deep"
                   >
                     Send via WhatsApp
                   </a>
                   <a
                     href={emailHref}
-                    onClick={() => trackEvent("safari_plan_sent", { channel: "email", days: answers.days, style: answers.style })}
+                    onClick={() =>
+                      trackEvent("safari_plan_sent", {
+                        channel: "email",
+                        days: answers.days,
+                        style: answers.style,
+                      })
+                    }
                     className="rounded-full border border-charcoal/15 px-7 py-4 text-sm font-medium text-charcoal transition-colors hover:border-forest hover:text-forest"
                   >
                     Email This Plan
@@ -357,7 +407,15 @@ function BuildMySafari() {
 
 /* ---------------- Bits ---------------- */
 
-function StepBlock({ title, hint, children }: { title: string; hint?: string; children: ReactNode }) {
+function StepBlock({
+  title,
+  hint,
+  children,
+}: {
+  title: string;
+  hint?: string;
+  children: ReactNode;
+}) {
   return (
     <div className="mt-4">
       <h2 className="font-display text-2xl text-charcoal text-balance md:text-3xl">{title}</h2>
@@ -390,9 +448,18 @@ function OptionCard({
       }`}
     >
       <span className="flex items-center gap-2">
-        <span className={`text-sm font-medium ${selected ? "text-forest" : "text-charcoal"}`}>{label}</span>
+        <span className={`text-sm font-medium ${selected ? "text-forest" : "text-charcoal"}`}>
+          {label}
+        </span>
         {selected && (
-          <svg viewBox="0 0 24 24" className="h-3.5 w-3.5 shrink-0 text-forest" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden>
+          <svg
+            viewBox="0 0 24 24"
+            className="h-3.5 w-3.5 shrink-0 text-forest"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2.5"
+            aria-hidden
+          >
             <path d="M5 12.5 9.5 17 19 7" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         )}

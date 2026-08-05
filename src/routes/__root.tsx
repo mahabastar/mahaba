@@ -9,6 +9,7 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "@/lib/lovable-error-reporting";
@@ -21,7 +22,11 @@ function NotFoundComponent() {
     <div className="flex min-h-screen items-center justify-center bg-charcoal grain px-6 text-center">
       <div className="max-w-lg">
         <Link to="/" className="mx-auto flex w-fit items-center gap-3 text-ivory">
-          <img src={logoAsset.url} alt="Trek Wild Uganda logo" className="h-12 w-12 shrink-0 rounded-full bg-ivory object-contain p-0.5 ring-1 ring-gold/50" />
+          <img
+            src={logoAsset.url}
+            alt="Trek Wild Uganda logo"
+            className="h-12 w-12 shrink-0 rounded-full bg-ivory object-contain p-0.5 ring-1 ring-gold/50"
+          />
           <span className="font-display text-xl leading-none">
             Trek Wild <span className="text-gold">Uganda</span>
           </span>
@@ -65,7 +70,11 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
     <div className="flex min-h-screen items-center justify-center bg-charcoal grain px-6 text-center">
       <div className="max-w-lg">
         <div className="mx-auto flex w-fit items-center gap-3 text-ivory">
-          <img src={logoAsset.url} alt="Trek Wild Uganda logo" className="h-12 w-12 shrink-0 rounded-full bg-ivory object-contain p-0.5 ring-1 ring-gold/50" />
+          <img
+            src={logoAsset.url}
+            alt="Trek Wild Uganda logo"
+            className="h-12 w-12 shrink-0 rounded-full bg-ivory object-contain p-0.5 ring-1 ring-gold/50"
+          />
           <span className="font-display text-xl leading-none">
             Trek Wild <span className="text-gold">Uganda</span>
           </span>
@@ -149,6 +158,7 @@ function RootShell({ children }: { children: ReactNode }) {
       </head>
       <body>
         {children}
+        <Analytics />
         <Scripts />
       </body>
     </html>

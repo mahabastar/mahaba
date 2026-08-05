@@ -40,87 +40,219 @@ type MonthInfo = {
 
 const MONTHS: MonthInfo[] = [
   {
-    month: "January", short: "Jan", season: "Dry", rainfall: "Low", tempRange: "18–28°C",
-    highlights: ["Easiest gorilla trekking trails of the year", "Migratory Palearctic birds still present in wetlands", "Clear Nile views on Murchison launch cruises"],
+    month: "January",
+    short: "Jan",
+    season: "Dry",
+    rainfall: "Low",
+    tempRange: "18–28°C",
+    highlights: [
+      "Easiest gorilla trekking trails of the year",
+      "Migratory Palearctic birds still present in wetlands",
+      "Clear Nile views on Murchison launch cruises",
+    ],
     bestFor: ["Gorilla trekking", "Hiking Sipi Falls", "Photography — clear skies"],
-    destinations: [{ name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking" }, { name: "Sipi Falls", to: "/destinations/sipi-falls" }],
+    destinations: [
+      { name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking" },
+      { name: "Sipi Falls", to: "/destinations/sipi-falls" },
+    ],
     crowdNote: "Peak season — book gorilla permits well in advance.",
   },
   {
-    month: "February", short: "Feb", season: "Dry", rainfall: "Low", tempRange: "18–29°C",
-    highlights: ["Driest trekking conditions in Bwindi", "Good visibility for tree-climbing lions in Ishasha", "Warm, settled weather across the south-west"],
+    month: "February",
+    short: "Feb",
+    season: "Dry",
+    rainfall: "Low",
+    tempRange: "18–29°C",
+    highlights: [
+      "Driest trekking conditions in Bwindi",
+      "Good visibility for tree-climbing lions in Ishasha",
+      "Warm, settled weather across the south-west",
+    ],
     bestFor: ["Gorilla & chimp trekking", "Game drives", "Crater lake hikes"],
-    destinations: [{ name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking" }, { name: "Tree-Climbing Lions, Ishasha", to: "/destinations/tree-climbing-lions" }],
+    destinations: [
+      { name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking" },
+      { name: "Tree-Climbing Lions, Ishasha", to: "/destinations/tree-climbing-lions" },
+    ],
     crowdNote: "Still peak season — lodges fill quickly.",
   },
   {
-    month: "March", short: "Mar", season: "Wet", rainfall: "Moderate", tempRange: "17–27°C",
-    highlights: ["Rains begin — forests turn deep green", "Fewer visitors on the trekking trails", "Calving season begins for several antelope species"],
+    month: "March",
+    short: "Mar",
+    season: "Wet",
+    rainfall: "Moderate",
+    tempRange: "17–27°C",
+    highlights: [
+      "Rains begin — forests turn deep green",
+      "Fewer visitors on the trekking trails",
+      "Calving season begins for several antelope species",
+    ],
     bestFor: ["Value trekking permits", "Lush landscape photography", "Birding"],
-    destinations: [{ name: "Lake Bunyonyi", to: "/destinations/lake-bunyonyi" }, { name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking" }],
+    destinations: [
+      { name: "Lake Bunyonyi", to: "/destinations/lake-bunyonyi" },
+      { name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking" },
+    ],
     crowdNote: "Shoulder season — better availability and lower rates.",
   },
   {
-    month: "April", short: "Apr", season: "Wet", rainfall: "High", tempRange: "17–26°C",
-    highlights: ["Long rains at their heaviest", "Waterfalls at their most dramatic", "Excellent birding as resident species breed"],
+    month: "April",
+    short: "Apr",
+    season: "Wet",
+    rainfall: "High",
+    tempRange: "17–26°C",
+    highlights: [
+      "Long rains at their heaviest",
+      "Waterfalls at their most dramatic",
+      "Excellent birding as resident species breed",
+    ],
     bestFor: ["Birding", "Waterfall photography", "Quiet, low-crowd travel"],
-    destinations: [{ name: "Sipi Falls", to: "/destinations/sipi-falls" }, { name: "Lake Bunyonyi", to: "/destinations/lake-bunyonyi" }],
+    destinations: [
+      { name: "Sipi Falls", to: "/destinations/sipi-falls" },
+      { name: "Lake Bunyonyi", to: "/destinations/lake-bunyonyi" },
+    ],
     crowdNote: "Low season — some trails muddy, but excellent value.",
   },
   {
-    month: "May", short: "May", season: "Wet", rainfall: "High", tempRange: "17–26°C",
-    highlights: ["Rains easing toward month-end", "Forest at its most vivid green", "Fewer trekkers on Bwindi's trails"],
+    month: "May",
+    short: "May",
+    season: "Wet",
+    rainfall: "High",
+    tempRange: "17–26°C",
+    highlights: [
+      "Rains easing toward month-end",
+      "Forest at its most vivid green",
+      "Fewer trekkers on Bwindi's trails",
+    ],
     bestFor: ["Budget-conscious trekking", "Slow, scenic travel", "Coffee harvest around Sipi"],
-    destinations: [{ name: "Sipi Falls", to: "/destinations/sipi-falls" }, { name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking" }],
+    destinations: [
+      { name: "Sipi Falls", to: "/destinations/sipi-falls" },
+      { name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking" },
+    ],
     crowdNote: "Lowest season of the year — best permit availability.",
   },
   {
-    month: "June", short: "Jun", season: "Dry", rainfall: "Low", tempRange: "17–27°C",
-    highlights: ["Dry season returns — trails firm up fast", "Kob rutting displays visible at dawn", "Elephant herds gather along the Nile's banks"],
+    month: "June",
+    short: "Jun",
+    season: "Dry",
+    rainfall: "Low",
+    tempRange: "17–27°C",
+    highlights: [
+      "Dry season returns — trails firm up fast",
+      "Kob rutting displays visible at dawn",
+      "Elephant herds gather along the Nile's banks",
+    ],
     bestFor: ["Gorilla trekking", "Game drives at Murchison", "Nile boat cruises"],
-    destinations: [{ name: "Murchison Falls", to: "/destinations/murchison-falls" }, { name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking" }],
+    destinations: [
+      { name: "Murchison Falls", to: "/destinations/murchison-falls" },
+      { name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking" },
+    ],
     crowdNote: "Peak season begins — book ahead for July–August.",
   },
   {
-    month: "July", short: "Jul", season: "Dry", rainfall: "Low", tempRange: "16–26°C",
-    highlights: ["Coolest, driest month in the south-west", "Prime tree-climbing lion sightings in Ishasha", "Long, clear days for hiking"],
+    month: "July",
+    short: "Jul",
+    season: "Dry",
+    rainfall: "Low",
+    tempRange: "16–26°C",
+    highlights: [
+      "Coolest, driest month in the south-west",
+      "Prime tree-climbing lion sightings in Ishasha",
+      "Long, clear days for hiking",
+    ],
     bestFor: ["Tree-climbing lions", "Multi-day hiking", "Chimp tracking"],
-    destinations: [{ name: "Tree-Climbing Lions, Ishasha", to: "/destinations/tree-climbing-lions" }, { name: "Sipi Falls", to: "/destinations/sipi-falls" }],
+    destinations: [
+      { name: "Tree-Climbing Lions, Ishasha", to: "/destinations/tree-climbing-lions" },
+      { name: "Sipi Falls", to: "/destinations/sipi-falls" },
+    ],
     crowdNote: "Peak season — Uganda's busiest month for trekking.",
   },
   {
-    month: "August", short: "Aug", season: "Dry", rainfall: "Low", tempRange: "17–27°C",
-    highlights: ["Dry trails continue across the country", "Excellent game viewing at Murchison Falls", "Warm evenings on Lake Bunyonyi"],
+    month: "August",
+    short: "Aug",
+    season: "Dry",
+    rainfall: "Low",
+    tempRange: "17–27°C",
+    highlights: [
+      "Dry trails continue across the country",
+      "Excellent game viewing at Murchison Falls",
+      "Warm evenings on Lake Bunyonyi",
+    ],
     bestFor: ["Gorilla trekking", "Game drives", "Boat safaris"],
-    destinations: [{ name: "Murchison Falls", to: "/destinations/murchison-falls" }, { name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking" }],
+    destinations: [
+      { name: "Murchison Falls", to: "/destinations/murchison-falls" },
+      { name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking" },
+    ],
     crowdNote: "Peak season — permits and lodges book out early.",
   },
   {
-    month: "September", short: "Sep", season: "Wet", rainfall: "Moderate", tempRange: "17–27°C",
-    highlights: ["Short rains begin gently", "Crowds thin as peak season ends", "Landscapes green up again"],
+    month: "September",
+    short: "Sep",
+    season: "Wet",
+    rainfall: "Moderate",
+    tempRange: "17–27°C",
+    highlights: [
+      "Short rains begin gently",
+      "Crowds thin as peak season ends",
+      "Landscapes green up again",
+    ],
     bestFor: ["Better-value trekking", "Birding as migrants begin arriving", "Photography"],
-    destinations: [{ name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking" }, { name: "Lake Bunyonyi", to: "/destinations/lake-bunyonyi" }],
+    destinations: [
+      { name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking" },
+      { name: "Lake Bunyonyi", to: "/destinations/lake-bunyonyi" },
+    ],
     crowdNote: "Shoulder season — a good balance of weather and value.",
   },
   {
-    month: "October", short: "Oct", season: "Wet", rainfall: "Moderate", tempRange: "17–27°C",
-    highlights: ["Palearctic migratory birds begin arriving in wetlands", "Occasional afternoon showers, clear mornings", "Fewer visitors on the trails"],
+    month: "October",
+    short: "Oct",
+    season: "Wet",
+    rainfall: "Moderate",
+    tempRange: "17–27°C",
+    highlights: [
+      "Palearctic migratory birds begin arriving in wetlands",
+      "Occasional afternoon showers, clear mornings",
+      "Fewer visitors on the trails",
+    ],
     bestFor: ["Birding", "Quiet trekking", "Cultural encounters"],
-    destinations: [{ name: "Murchison Falls", to: "/destinations/murchison-falls" }, { name: "Sipi Falls", to: "/destinations/sipi-falls" }],
+    destinations: [
+      { name: "Murchison Falls", to: "/destinations/murchison-falls" },
+      { name: "Sipi Falls", to: "/destinations/sipi-falls" },
+    ],
     crowdNote: "Low-to-shoulder season — strong value across the board.",
   },
   {
-    month: "November", short: "Nov", season: "Wet", rainfall: "High", tempRange: "17–27°C",
-    highlights: ["Short rains peak, then begin easing", "Migratory birds well established in wetlands", "Lush, dramatic scenery for photography"],
+    month: "November",
+    short: "Nov",
+    season: "Wet",
+    rainfall: "High",
+    tempRange: "17–27°C",
+    highlights: [
+      "Short rains peak, then begin easing",
+      "Migratory birds well established in wetlands",
+      "Lush, dramatic scenery for photography",
+    ],
     bestFor: ["Birding", "Photography", "Off-peak trekking"],
-    destinations: [{ name: "Lake Bunyonyi", to: "/destinations/lake-bunyonyi" }, { name: "Murchison Falls", to: "/destinations/murchison-falls" }],
+    destinations: [
+      { name: "Lake Bunyonyi", to: "/destinations/lake-bunyonyi" },
+      { name: "Murchison Falls", to: "/destinations/murchison-falls" },
+    ],
     crowdNote: "Quietest month of the second half of the year.",
   },
   {
-    month: "December", short: "Dec", season: "Dry", rainfall: "Low", tempRange: "17–28°C",
-    highlights: ["Dry season returns in time for the holidays", "Migratory birds still present alongside residents", "Clear skies for gorilla trekking and game drives"],
+    month: "December",
+    short: "Dec",
+    season: "Dry",
+    rainfall: "Low",
+    tempRange: "17–28°C",
+    highlights: [
+      "Dry season returns in time for the holidays",
+      "Migratory birds still present alongside residents",
+      "Clear skies for gorilla trekking and game drives",
+    ],
     bestFor: ["Gorilla trekking", "Family safaris", "Festive-season travel"],
-    destinations: [{ name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking" }, { name: "Murchison Falls", to: "/destinations/murchison-falls" }],
+    destinations: [
+      { name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking" },
+      { name: "Murchison Falls", to: "/destinations/murchison-falls" },
+    ],
     crowdNote: "Peak holiday season — book several months ahead.",
   },
 ];
@@ -149,8 +281,8 @@ function SeasonalSafariCalendar() {
             Uganda, <em className="italic text-gold">month by month.</em>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-ivory/75">
-            Two dry seasons, two wet seasons, and something worth seeing in every one of
-            them. Pick a month to find out what's best.
+            Two dry seasons, two wet seasons, and something worth seeing in every one of them. Pick
+            a month to find out what's best.
           </p>
         </div>
       </section>
@@ -171,7 +303,9 @@ function SeasonalSafariCalendar() {
               >
                 {m.short}
                 {i === currentMonthIndex && (
-                  <span className={`h-1 w-1 rounded-full ${active === i ? "bg-gold" : "bg-forest"}`} />
+                  <span
+                    className={`h-1 w-1 rounded-full ${active === i ? "bg-gold" : "bg-forest"}`}
+                  />
                 )}
               </button>
             ))}
@@ -184,7 +318,9 @@ function SeasonalSafariCalendar() {
         <div className="mx-auto max-w-[1000px] px-6 py-16 md:px-10 md:py-24">
           <div className="rounded-3xl border border-charcoal/10 bg-white p-8 shadow-luxe md:p-12">
             <div className="flex flex-wrap items-center gap-3">
-              <span className={`rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-widest ${SEASON_STYLE[info.season]}`}>
+              <span
+                className={`rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-widest ${SEASON_STYLE[info.season]}`}
+              >
                 {info.season} Season
               </span>
               <span className="text-xs uppercase tracking-widest text-charcoal/40">

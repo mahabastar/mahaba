@@ -14,7 +14,15 @@ export interface SaveButtonProps {
   className?: string;
 }
 
-export function SaveButton({ type, slug, name, img, to, variant = "pill", className = "" }: SaveButtonProps) {
+export function SaveButton({
+  type,
+  slug,
+  name,
+  img,
+  to,
+  variant = "pill",
+  className = "",
+}: SaveButtonProps) {
   const [saved, setSaved] = useState(false);
   const [mounted, setMounted] = useState(false);
 
@@ -39,7 +47,9 @@ export function SaveButton({ type, slug, name, img, to, variant = "pill", classN
         aria-pressed={saved}
         aria-label={saved ? `Remove ${name} from My Trip` : `Save ${name} to My Trip`}
         className={`grid h-11 w-11 shrink-0 place-items-center rounded-full border backdrop-blur-md transition-colors ${
-          saved ? "border-gold bg-gold/10 text-gold" : "border-ivory/40 text-ivory hover:border-gold hover:text-gold"
+          saved
+            ? "border-gold bg-gold/10 text-gold"
+            : "border-ivory/40 text-ivory hover:border-gold hover:text-gold"
         } ${className}`}
       >
         <Heart className="h-4 w-4" fill={saved ? "currentColor" : "none"} strokeWidth={2} />

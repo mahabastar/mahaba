@@ -70,10 +70,9 @@ function useReveal<T extends HTMLElement>() {
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
-    const io = new IntersectionObserver(
-      ([entry]) => entry.isIntersecting && setVisible(true),
-      { threshold: 0.15 },
-    );
+    const io = new IntersectionObserver(([entry]) => entry.isIntersecting && setVisible(true), {
+      threshold: 0.15,
+    });
     io.observe(el);
     return () => io.disconnect();
   }, []);
@@ -92,10 +91,7 @@ function Hero() {
           height={1280}
           className="h-full w-full object-cover ken-burns"
         />
-        <div
-          className="absolute inset-0"
-          style={{ background: "var(--gradient-hero)" }}
-        />
+        <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal/70 via-transparent to-charcoal/40" />
       </div>
 
@@ -110,9 +106,9 @@ function Hero() {
             <br /> of Africa
           </h1>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-ivory/85 md:text-xl">
-            From endangered mountain gorillas and roaring waterfalls to unforgettable
-            wildlife safaris, rich cultures and breathtaking landscapes — Uganda is Africa's
-            most extraordinary destination, waiting to be explored.
+            From endangered mountain gorillas and roaring waterfalls to unforgettable wildlife
+            safaris, rich cultures and breathtaking landscapes — Uganda is Africa's most
+            extraordinary destination, waiting to be explored.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <Link
@@ -120,7 +116,13 @@ function Hero() {
               className="group inline-flex items-center gap-3 rounded-full bg-forest px-7 py-4 text-sm font-medium tracking-wide text-ivory shadow-md transition-all duration-500 hover:scale-105 hover:bg-forest-deep"
             >
               Explore Uganda
-              <svg className="h-4 w-4 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+              <svg
+                className="h-4 w-4 transition-transform group-hover:translate-x-1"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+              >
                 <path d="M5 12h14M13 5l7 7-7 7" />
               </svg>
             </Link>
@@ -163,14 +165,44 @@ function Hero() {
 /* ---------------- Scroll storytelling ---------------- */
 const scenes = [
   { n: "01", title: "Welcome to Uganda", sub: "Where nature still reigns.", img: sceneBunyonyi },
-  { n: "02", title: "Home of Mountain Gorillas", sub: "Half the world's population lives here.", img: heroGorilla },
-  { n: "03", title: "Africa's Primate Capital", sub: "13 species, one impossible forest.", img: expChimp },
-  { n: "04", title: "Where the Nile Begins", sub: "The world's longest river, born in Jinja.", img: sceneFalls },
+  {
+    n: "02",
+    title: "Home of Mountain Gorillas",
+    sub: "Half the world's population lives here.",
+    img: heroGorilla,
+  },
+  {
+    n: "03",
+    title: "Africa's Primate Capital",
+    sub: "13 species, one impossible forest.",
+    img: expChimp,
+  },
+  {
+    n: "04",
+    title: "Where the Nile Begins",
+    sub: "The world's longest river, born in Jinja.",
+    img: sceneFalls,
+  },
   { n: "05", title: "Tree-Climbing Lions", sub: "A phenomenon of Ishasha.", img: sceneLion },
-  { n: "06", title: "A Birder's Paradise", sub: "Over 1,000 species take flight.", img: sceneCrane },
+  {
+    n: "06",
+    title: "A Birder's Paradise",
+    sub: "Over 1,000 species take flight.",
+    img: sceneCrane,
+  },
   { n: "07", title: "Snow on the Equator", sub: "The mythic Rwenzori range.", img: sceneRwenzori },
-  { n: "08", title: "Warm Smiles. Rich Cultures.", sub: "Fifty languages, one welcome.", img: sceneCulture },
-  { n: "09", title: "Golden Hour on the Plains", sub: "Elephants against a burning sky.", img: sceneElephants },
+  {
+    n: "08",
+    title: "Warm Smiles. Rich Cultures.",
+    sub: "Fifty languages, one welcome.",
+    img: sceneCulture,
+  },
+  {
+    n: "09",
+    title: "Golden Hour on the Plains",
+    sub: "Elephants against a burning sky.",
+    img: sceneElephants,
+  },
   { n: "10", title: "Your Adventure Starts Here.", sub: "Uganda is waiting.", img: ctaSunset },
 ];
 
@@ -180,7 +212,11 @@ function Discover() {
       <div className="mx-auto max-w-[1400px] px-6 py-28 md:px-10 md:py-40">
         <SectionHeader
           eyebrow="Uganda in 60 seconds"
-          title={<>A country <em className="italic text-forest">rewritten</em> by every horizon.</>}
+          title={
+            <>
+              A country <em className="italic text-forest">rewritten</em> by every horizon.
+            </>
+          }
           copy="Ten scenes. One extraordinary country. Scroll slowly."
         />
 
@@ -194,7 +230,7 @@ function Discover() {
   );
 }
 
-function SceneBlock({ scene, index }: { scene: typeof scenes[number]; index: number }) {
+function SceneBlock({ scene, index }: { scene: (typeof scenes)[number]; index: number }) {
   const { ref, visible } = useReveal<HTMLDivElement>();
   const flip = index % 2 === 1;
   return (
@@ -261,12 +297,42 @@ function SectionHeader({
 
 /* ---------------- Why Uganda ---------------- */
 const whyCards = [
-  { title: "Mountain Gorillas", desc: "Trek Bwindi's ancient rainforest to meet gentle giants face to face.", img: g_gorilla_silverback, to: "/destinations/gorilla-trekking" },
-  { title: "Source of the Nile", desc: "Stand at the birthplace of the world's longest river.", img: g_source_of_the_nile_1, to: "/destinations/jinja-source-of-the-nile" },
-  { title: "Tree-Climbing Lions", desc: "A rare spectacle above the plains of Ishasha.", img: g_tree_lion, to: "/destinations/tree-climbing-lions" },
-  { title: "1,000+ Bird Species", desc: "One of Africa's greatest birding paradises.", img: g_shoebill_1, to: "/bird-guide" },
-  { title: "Primate Diversity", desc: "The richest concentration of primates on the continent.", img: g_chimp_trekking_1, to: "/destinations/chimpanzee-trekking" },
-  { title: "The Pearl of Africa", desc: "Named by Churchill. Confirmed by everyone who visits.", img: g_pearl_of_africa, to: "/uganda-explorer" },
+  {
+    title: "Mountain Gorillas",
+    desc: "Trek Bwindi's ancient rainforest to meet gentle giants face to face.",
+    img: g_gorilla_silverback,
+    to: "/destinations/gorilla-trekking",
+  },
+  {
+    title: "Source of the Nile",
+    desc: "Stand at the birthplace of the world's longest river.",
+    img: g_source_of_the_nile_1,
+    to: "/destinations/jinja-source-of-the-nile",
+  },
+  {
+    title: "Tree-Climbing Lions",
+    desc: "A rare spectacle above the plains of Ishasha.",
+    img: g_tree_lion,
+    to: "/destinations/tree-climbing-lions",
+  },
+  {
+    title: "1,000+ Bird Species",
+    desc: "One of Africa's greatest birding paradises.",
+    img: g_shoebill_1,
+    to: "/bird-guide",
+  },
+  {
+    title: "Primate Diversity",
+    desc: "The richest concentration of primates on the continent.",
+    img: g_chimp_trekking_1,
+    to: "/destinations/chimpanzee-trekking",
+  },
+  {
+    title: "The Pearl of Africa",
+    desc: "Named by Churchill. Confirmed by everyone who visits.",
+    img: g_pearl_of_africa,
+    to: "/uganda-explorer",
+  },
 ];
 
 function WhyUganda() {
@@ -276,7 +342,12 @@ function WhyUganda() {
         <SectionHeader
           invert
           eyebrow="Why Uganda"
-          title={<>Six reasons the world has been <em className="italic text-gold">quietly</em> falling in love.</>}
+          title={
+            <>
+              Six reasons the world has been <em className="italic text-gold">quietly</em> falling
+              in love.
+            </>
+          }
         />
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {whyCards.map((c) => (
@@ -297,7 +368,13 @@ function WhyUganda() {
                 <p className="mt-3 max-w-xs text-sm text-ivory/75">{c.desc}</p>
                 <div className="mt-5 inline-flex items-center gap-2 text-xs uppercase tracking-widest text-gold">
                   Discover
-                  <svg className="h-3 w-3 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <svg
+                    className="h-3 w-3 transition-transform group-hover:translate-x-1"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
                     <path d="M5 12h14M13 5l7 7-7 7" />
                   </svg>
                 </div>
@@ -343,20 +420,35 @@ function Numbers() {
 }
 
 /* ---------------- Experiences ---------------- */
-const experiences: { t: string; img: string; tall?: boolean; to: string; params?: { slug: string } }[] = [
+const experiences: {
+  t: string;
+  img: string;
+  tall?: boolean;
+  to: string;
+  params?: { slug: string };
+}[] = [
   { t: "Gorilla Trekking", img: heroGorilla, tall: true, to: "/destinations/gorilla-trekking" },
   { t: "Wildlife Safaris", img: sceneElephants, to: "/national-parks" },
   { t: "Chimpanzee Tracking", img: expChimp, to: "/destinations/chimpanzee-trekking" },
   { t: "Bird Watching", img: sceneCrane, tall: true, to: "/bird-guide" },
-  { t: "Luxury Safaris", img: expLodge, to: "/experiences/$slug", params: { slug: "luxury-safaris" } },
+  {
+    t: "Luxury Safaris",
+    img: expLodge,
+    to: "/experiences/$slug",
+    params: { slug: "luxury-safaris" },
+  },
   { t: "Boat Cruises", img: boatCruiseMurchison, to: "/destinations/murchison-falls" },
   { t: "Photography", img: sceneLion, tall: true, to: "/gallery" },
   { t: "Cultural Experiences", img: batwaDanceCulture, to: "/cultural-heritage" },
   { t: "Coffee & Tea Origins", img: expCoffee, to: "/coffee-tea-guide" },
   { t: "Hiking Rwenzori", img: sceneRwenzori, tall: true, to: "/destinations/rwenzori-mountains" },
-  { t: "Adventure Activities", img: advRwenzoriHikers, to: "/experiences/$slug", params: { slug: "adventure-safaris" } },
+  {
+    t: "Adventure Activities",
+    img: advRwenzoriHikers,
+    to: "/experiences/$slug",
+    params: { slug: "adventure-safaris" },
+  },
   { t: "Sipi Falls", img: expSipi, to: "/destinations/sipi-falls" },
-
 ];
 
 function Experiences() {
@@ -366,9 +458,16 @@ function Experiences() {
         <div className="flex flex-col justify-between gap-8 md:flex-row md:items-end">
           <SectionHeader
             eyebrow="Explore by experience"
-            title={<>Choose the <em className="italic text-forest">feeling</em> you want to remember.</>}
+            title={
+              <>
+                Choose the <em className="italic text-forest">feeling</em> you want to remember.
+              </>
+            }
           />
-          <Link to="/experiences" className="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-forest hover:text-gold">
+          <Link
+            to="/experiences"
+            className="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-forest hover:text-gold"
+          >
             All experiences <span aria-hidden>→</span>
           </Link>
         </div>
@@ -378,7 +477,6 @@ function Experiences() {
               key={e.t}
               to={e.to}
               params={e.params as never}
-
               className={`group relative block overflow-hidden rounded-2xl hover-lift ${
                 e.tall ? "row-span-2" : ""
               }`}
@@ -401,16 +499,44 @@ function Experiences() {
   );
 }
 
-
 /* ---------------- Regions map ---------------- */
 const regions = [
-  { name: "Western Uganda", slug: "western-uganda", desc: "Gorillas, chimps, Rwenzori peaks, crater lakes.", x: 22, y: 55 },
-  { name: "Northern Uganda", slug: "northern-uganda", desc: "Murchison Falls, Kidepo's untouched savanna.", x: 50, y: 22 },
-  { name: "Eastern Uganda", slug: "eastern-uganda", desc: "Sipi Falls, Mount Elgon, white-water Nile.", x: 78, y: 45 },
-  { name: "Central Uganda", slug: "central-uganda", desc: "Kampala, Entebbe, Ssese Islands, Mabamba.", x: 52, y: 60 },
-  { name: "Karamoja", slug: "karamoja", desc: "Warrior culture, dramatic mountains, wild frontier.", x: 76, y: 25 },
+  {
+    name: "Western Uganda",
+    slug: "western-uganda",
+    desc: "Gorillas, chimps, Rwenzori peaks, crater lakes.",
+    x: 22,
+    y: 55,
+  },
+  {
+    name: "Northern Uganda",
+    slug: "northern-uganda",
+    desc: "Murchison Falls, Kidepo's untouched savanna.",
+    x: 50,
+    y: 22,
+  },
+  {
+    name: "Eastern Uganda",
+    slug: "eastern-uganda",
+    desc: "Sipi Falls, Mount Elgon, white-water Nile.",
+    x: 78,
+    y: 45,
+  },
+  {
+    name: "Central Uganda",
+    slug: "central-uganda",
+    desc: "Kampala, Entebbe, Ssese Islands, Mabamba.",
+    x: 52,
+    y: 60,
+  },
+  {
+    name: "Karamoja",
+    slug: "karamoja",
+    desc: "Warrior culture, dramatic mountains, wild frontier.",
+    x: 76,
+    y: 25,
+  },
 ];
-
 
 function Regions() {
   const [active, setActive] = useState(0);
@@ -420,7 +546,11 @@ function Regions() {
         <SectionHeader
           invert
           eyebrow="Explore by region"
-          title={<>Five landscapes, each a <em className="italic text-gold">world</em> of its own.</>}
+          title={
+            <>
+              Five landscapes, each a <em className="italic text-gold">world</em> of its own.
+            </>
+          }
         />
         <div className="mt-16 grid gap-12 lg:grid-cols-2 lg:gap-20">
           <div className="relative aspect-square rounded-3xl border border-ivory/10 bg-forest-deep/40 p-6">
@@ -468,10 +598,13 @@ function Regions() {
                   <div className="font-display text-3xl md:text-4xl">{r.name}</div>
                   <div className="mt-2 max-w-sm text-sm text-ivory/60">{r.desc}</div>
                 </div>
-                <span className={`text-gold transition-transform ${active === i ? "translate-x-1" : ""}`}>→</span>
+                <span
+                  className={`text-gold transition-transform ${active === i ? "translate-x-1" : ""}`}
+                >
+                  →
+                </span>
               </Link>
             ))}
-
           </div>
         </div>
       </div>
@@ -481,21 +614,40 @@ function Regions() {
 
 /* ---------------- Bucket list masonry ---------------- */
 const bucket: { t: string; img: string; span?: string; to: string }[] = [
-  { t: "Gorilla Trekking", img: heroGorilla, span: "row-span-2", to: "/destinations/gorilla-trekking" },
+  {
+    t: "Gorilla Trekking",
+    img: heroGorilla,
+    span: "row-span-2",
+    to: "/destinations/gorilla-trekking",
+  },
   { t: "Chimpanzees", img: expChimp, to: "/destinations/chimpanzee-trekking" },
-  { t: "Murchison Falls", img: sceneFalls, span: "col-span-2", to: "/destinations/murchison-falls" },
+  {
+    t: "Murchison Falls",
+    img: sceneFalls,
+    span: "col-span-2",
+    to: "/destinations/murchison-falls",
+  },
   { t: "Sipi Falls", img: expSipi, to: "/destinations/sipi-falls" },
   { t: "White Water Rafting", img: sceneFalls, to: "/destinations/jinja-source-of-the-nile" },
-  { t: "Lake Bunyonyi", img: sceneBunyonyi, span: "col-span-2 row-span-2", to: "/destinations/lake-bunyonyi" },
+  {
+    t: "Lake Bunyonyi",
+    img: sceneBunyonyi,
+    span: "col-span-2 row-span-2",
+    to: "/destinations/lake-bunyonyi",
+  },
   { t: "Tree-Climbing Lions", img: sceneLion, to: "/destinations/tree-climbing-lions" },
   { t: "Shoebill Tracking", img: expShoebill, to: "/bird-guide" },
   { t: "Tea & Coffee Plantations", img: expCoffee, to: "/coffee-tea-guide" },
   { t: "Batwa Experience", img: batwaDanceCulture, to: "/cultural-heritage" },
   { t: "Homestay Experience", img: sceneCulture, to: "/responsible-tourism" },
-  { t: "Boat Cruises", img: boatCruiseMurchison, span: "col-span-2", to: "/destinations/queen-elizabeth-national-park" },
+  {
+    t: "Boat Cruises",
+    img: boatCruiseMurchison,
+    span: "col-span-2",
+    to: "/destinations/queen-elizabeth-national-park",
+  },
   { t: "Sunset Game Drives", img: ctaSunset, to: "/national-parks" },
 ];
-
 
 function Bucket() {
   return (
@@ -503,7 +655,12 @@ function Bucket() {
       <div className="mx-auto max-w-[1400px] px-6 py-28 md:px-10 md:py-40">
         <SectionHeader
           eyebrow="Uganda bucket list"
-          title={<>The moments you'll <em className="italic text-forest">tell stories</em> about, forever.</>}
+          title={
+            <>
+              The moments you'll <em className="italic text-forest">tell stories</em> about,
+              forever.
+            </>
+          }
         />
         <div className="mt-16 grid auto-rows-[180px] grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
           {bucket.map((b) => {
@@ -519,14 +676,17 @@ function Bucket() {
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent opacity-90 group-hover:opacity-100" />
                 <div className="absolute inset-x-4 bottom-3 flex items-center gap-2 font-display text-lg text-ivory md:text-xl">
                   {b.t}
-                  <span className="text-gold text-sm" aria-hidden>→</span>
+                  <span className="text-gold text-sm" aria-hidden>
+                    →
+                  </span>
                 </div>
               </>
             );
             return (
-              <Link key={b.t} to={b.to} className={className}>{inner}</Link>
+              <Link key={b.t} to={b.to} className={className}>
+                {inner}
+              </Link>
             );
-
           })}
         </div>
       </div>
@@ -543,12 +703,19 @@ function Journeys() {
         <SectionHeader
           invert
           eyebrow="Signature journeys"
-          title={<>Not itineraries. <em className="italic text-gold">Stories</em> waiting to be lived.</>}
+          title={
+            <>
+              Not itineraries. <em className="italic text-gold">Stories</em> waiting to be lived.
+            </>
+          }
           copy="Every journey is shaped around you — the pace, the moments, the pauses that make it yours."
         />
         <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {JOURNEYS.map((j) => (
-            <article key={j.slug} className="group flex flex-col overflow-hidden rounded-3xl bg-ivory/5 backdrop-blur-sm ring-1 ring-ivory/10 hover-lift">
+            <article
+              key={j.slug}
+              className="group flex flex-col overflow-hidden rounded-3xl bg-ivory/5 backdrop-blur-sm ring-1 ring-ivory/10 hover-lift"
+            >
               <div className="relative h-64 overflow-hidden">
                 <img
                   src={j.img}
@@ -563,7 +730,11 @@ function Journeys() {
               <div className="flex flex-1 flex-col p-8">
                 <h3 className="font-display text-3xl text-ivory">{j.title}</h3>
                 <p className="mt-3 flex-1 text-sm text-ivory/70">{j.copy}</p>
-                <Link to="/journeys/$slug" params={{ slug: j.slug }} className="mt-6 inline-flex items-center gap-2 text-sm uppercase tracking-widest text-gold">
+                <Link
+                  to="/journeys/$slug"
+                  params={{ slug: j.slug }}
+                  className="mt-6 inline-flex items-center gap-2 text-sm uppercase tracking-widest text-gold"
+                >
                   Plan this journey <span aria-hidden>→</span>
                 </Link>
               </div>
@@ -592,20 +763,30 @@ function Conservation() {
           <div className="sticky top-32">
             <div className="eyebrow">Conservation</div>
             <h2 className="mt-5 font-display text-4xl text-charcoal text-balance md:text-6xl">
-              Every journey <em className="italic text-forest">gives back</em> to the country that gives you so much.
+              Every journey <em className="italic text-forest">gives back</em> to the country that
+              gives you so much.
             </h2>
             <p className="mt-6 text-lg text-charcoal/70">
-              Trek Wild Uganda reinvests directly in the wildlife, land, and people
-              who make Uganda unforgettable. Travel here, and you become part of that story.
+              Trek Wild Uganda reinvests directly in the wildlife, land, and people who make Uganda
+              unforgettable. Travel here, and you become part of that story.
             </p>
           </div>
         </div>
         <div className="md:col-span-7">
           <div className="grid gap-4 sm:grid-cols-2">
             {pillars.map(([t, d]) => (
-              <div key={t} className="rounded-2xl border border-charcoal/10 bg-white p-7 hover-lift">
+              <div
+                key={t}
+                className="rounded-2xl border border-charcoal/10 bg-white p-7 hover-lift"
+              >
                 <div className="grid h-11 w-11 place-items-center rounded-full bg-forest/10 text-forest">
-                  <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.6">
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="h-5 w-5"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.6"
+                  >
                     <path d="M12 3c4 4 6 8 6 12a6 6 0 1 1-12 0c0-4 2-8 6-12Z" />
                   </svg>
                 </div>
@@ -637,8 +818,7 @@ const stories = [
     trip: "14-Day Ultimate Uganda",
   },
   {
-    quote:
-      "Every lodge, every guide, every sunset — chosen with such care. We'll be back.",
+    quote: "Every lodge, every guide, every sunset — chosen with such care. We'll be back.",
     name: "Kenji T.",
     from: "Japan",
     trip: "10-Day Wildlife & Primates",
@@ -652,11 +832,19 @@ function Stories() {
         <SectionHeader
           invert
           eyebrow="Traveller stories"
-          title={<>Words from people who came <em className="italic text-gold">curious</em> and left changed.</>}
+          title={
+            <>
+              Words from people who came <em className="italic text-gold">curious</em> and left
+              changed.
+            </>
+          }
         />
         <div className="mt-16 grid gap-6 md:grid-cols-3">
           {stories.map((s) => (
-            <figure key={s.name} className="flex flex-col rounded-3xl border border-ivory/10 bg-ivory/[0.03] p-8 backdrop-blur-sm">
+            <figure
+              key={s.name}
+              className="flex flex-col rounded-3xl border border-ivory/10 bg-ivory/[0.03] p-8 backdrop-blur-sm"
+            >
               <div className="text-gold" aria-hidden>
                 {"★★★★★"}
               </div>
@@ -665,7 +853,9 @@ function Stories() {
               </blockquote>
               <figcaption className="mt-8 border-t border-ivory/10 pt-5 text-sm">
                 <div className="font-medium text-ivory">{s.name}</div>
-                <div className="text-ivory/60">{s.from} · {s.trip}</div>
+                <div className="text-ivory/60">
+                  {s.from} · {s.trip}
+                </div>
               </figcaption>
             </figure>
           ))}
@@ -688,14 +878,17 @@ function Planning() {
     { label: "Currency", ask: true },
     { label: "Safety", ask: true },
     { label: "FAQs", to: "/faqs" },
-
   ];
   return (
     <section id="plan" className="bg-ivory">
       <div className="mx-auto max-w-[1400px] px-6 py-28 md:px-10 md:py-40">
         <SectionHeader
           eyebrow="Travel planning hub"
-          title={<>Everything you'll need, <em className="italic text-forest">nothing you won't</em>.</>}
+          title={
+            <>
+              Everything you'll need, <em className="italic text-forest">nothing you won't</em>.
+            </>
+          }
         />
         <Link
           to="/build-my-safari"
@@ -707,7 +900,9 @@ function Planning() {
           {items.map((i, idx) => {
             const inner = (
               <>
-                <div className="font-display text-4xl text-forest/25">{String(idx + 1).padStart(2, "0")}</div>
+                <div className="font-display text-4xl text-forest/25">
+                  {String(idx + 1).padStart(2, "0")}
+                </div>
                 <div className="mt-8">
                   <div className="font-display text-xl text-charcoal">{i.label}</div>
                   <div className="mt-2 inline-flex items-center gap-1 text-xs uppercase tracking-widest text-gold opacity-0 transition-opacity group-hover:opacity-100">
@@ -716,11 +911,14 @@ function Planning() {
                 </div>
               </>
             );
-            const className = "group flex flex-col justify-between rounded-2xl border border-charcoal/10 bg-white p-6 text-left hover-lift";
+            const className =
+              "group flex flex-col justify-between rounded-2xl border border-charcoal/10 bg-white p-6 text-left hover-lift";
             return i.ask ? (
               <a
                 key={i.label}
-                href={buildWhatsAppHref(`Hi! I have a question about ${i.label.toLowerCase()} for my Uganda trip.`)}
+                href={buildWhatsAppHref(
+                  `Hi! I have a question about ${i.label.toLowerCase()} for my Uganda trip.`,
+                )}
                 target="_blank"
                 rel="noopener noreferrer"
                 className={className}
@@ -749,9 +947,15 @@ function LatestStories() {
           <SectionHeader
             invert
             eyebrow="Latest stories"
-            title={<>The <em className="italic text-gold">Journal</em>.</>}
+            title={
+              <>
+                The <em className="italic text-gold">Journal</em>.
+              </>
+            }
           />
-          <Link to="/travel-journal" className="text-sm uppercase tracking-widest text-gold">All stories →</Link>
+          <Link to="/travel-journal" className="text-sm uppercase tracking-widest text-gold">
+            All stories →
+          </Link>
         </div>
         <div className="mt-16 grid gap-6 md:grid-cols-3">
           {posts.map((p, i) => (
@@ -774,7 +978,9 @@ function LatestStories() {
               <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/30 to-transparent" />
               <div className="absolute inset-x-6 bottom-6">
                 <div className="eyebrow !text-gold-soft">{p.category}</div>
-                <div className={`mt-2 font-display text-ivory ${i === 0 ? "text-4xl md:text-5xl" : "text-2xl"}`}>
+                <div
+                  className={`mt-2 font-display text-ivory ${i === 0 ? "text-4xl md:text-5xl" : "text-2xl"}`}
+                >
                   {p.title}
                 </div>
               </div>
@@ -791,7 +997,10 @@ function Newsletter() {
   return (
     <section className="bg-ivory">
       <div className="mx-auto max-w-[1400px] px-6 py-24 md:px-10 md:py-32">
-        <div className="relative overflow-hidden rounded-3xl p-10 md:p-16" style={{ background: "var(--gradient-gold)" }}>
+        <div
+          className="relative overflow-hidden rounded-3xl p-10 md:p-16"
+          style={{ background: "var(--gradient-gold)" }}
+        >
           <div className="grid gap-10 md:grid-cols-2 md:items-center">
             <div>
               <div className="eyebrow !text-charcoal/70">Newsletter</div>
@@ -799,14 +1008,11 @@ function Newsletter() {
                 Never miss Uganda's next adventure.
               </h2>
               <p className="mt-4 max-w-md text-charcoal/75">
-                Field notes, new journeys, and quiet moments from the Pearl of Africa —
-                one thoughtful letter a month.
+                Field notes, new journeys, and quiet moments from the Pearl of Africa — one
+                thoughtful letter a month.
               </p>
             </div>
-            <form
-              onSubmit={(e) => e.preventDefault()}
-              className="flex flex-col gap-3 sm:flex-row"
-            >
+            <form onSubmit={(e) => e.preventDefault()} className="flex flex-col gap-3 sm:flex-row">
               <input
                 type="email"
                 required
@@ -844,10 +1050,14 @@ function FinalCTA() {
                 Your Uganda story <em className="italic text-gold">starts here.</em>
               </h2>
               <p className="mt-6 max-w-xl text-lg text-ivory/85">
-                Tell us what stirs you, and we'll shape a journey around it — private, unhurried, and unmistakably yours.
+                Tell us what stirs you, and we'll shape a journey around it — private, unhurried,
+                and unmistakably yours.
               </p>
               <div className="mt-10 flex flex-wrap gap-4">
-                <Link to="/build-my-safari" className="rounded-full bg-forest px-7 py-4 text-sm font-medium text-ivory shadow-md transition-all hover:scale-105 hover:bg-forest-deep">
+                <Link
+                  to="/build-my-safari"
+                  className="rounded-full bg-forest px-7 py-4 text-sm font-medium text-ivory shadow-md transition-all hover:scale-105 hover:bg-forest-deep"
+                >
                   Plan My Safari
                 </Link>
                 <a
@@ -857,7 +1067,7 @@ function FinalCTA() {
                   className="inline-flex items-center gap-2 rounded-full border border-forest/70 px-7 py-4 text-sm font-medium text-ivory backdrop-blur-md hover:border-gold hover:text-gold"
                 >
                   <svg viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor">
-                    <path d="M20 3.5A11.6 11.6 0 0 0 3.5 20L2 22l2.1-1.5A11.6 11.6 0 1 0 20 3.5Zm-8 18.2a9.6 9.6 0 0 1-4.9-1.3l-.3-.2-2.4.6.6-2.4-.2-.3A9.6 9.6 0 1 1 12 21.7Zm5.3-6.9c-.3-.2-1.7-.9-2-1s-.5-.2-.7.2c-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1a7.7 7.7 0 0 1-3.8-3.4c-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5s-.7-1.7-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7c0 1.6 1.1 3.1 1.3 3.3.2.2 2.3 3.5 5.5 4.9 3.2 1.3 3.2.9 3.8.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.5Z"/>
+                    <path d="M20 3.5A11.6 11.6 0 0 0 3.5 20L2 22l2.1-1.5A11.6 11.6 0 1 0 20 3.5Zm-8 18.2a9.6 9.6 0 0 1-4.9-1.3l-.3-.2-2.4.6.6-2.4-.2-.3A9.6 9.6 0 1 1 12 21.7Zm5.3-6.9c-.3-.2-1.7-.9-2-1s-.5-.2-.7.2c-.2.3-.8 1-1 1.2-.2.2-.4.2-.7.1a7.7 7.7 0 0 1-3.8-3.4c-.3-.5.3-.5.8-1.6.1-.2 0-.4 0-.5s-.7-1.7-1-2.3c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7c0 1.6 1.1 3.1 1.3 3.3.2.2 2.3 3.5 5.5 4.9 3.2 1.3 3.2.9 3.8.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.5Z" />
                   </svg>
                   Chat on WhatsApp
                 </a>

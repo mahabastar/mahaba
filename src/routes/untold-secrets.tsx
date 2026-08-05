@@ -29,7 +29,11 @@ export const Route = createFileRoute("/untold-secrets")({
   component: () => (
     <CategoryHub
       eyebrow="Untold Secrets"
-      title={<>The Uganda that most itineraries <em className="italic text-gold">quietly skip</em>.</>}
+      title={
+        <>
+          The Uganda that most itineraries <em className="italic text-gold">quietly skip</em>.
+        </>
+      }
       intro="Beyond the gorillas and the Nile there is a second Uganda — remote northern savannah, a marooned pocket of Congo rainforest, glaciers on the equator, and crater lakes almost nobody photographs. These are the places we send travellers on their second visit, and the ones worth building a first trip around."
       heroImage={sceneRwenzori}
       heroAlt="Mist over the Rwenzori Mountains in western Uganda"

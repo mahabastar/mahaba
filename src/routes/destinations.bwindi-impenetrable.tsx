@@ -39,7 +39,8 @@ export const Route = createFileRoute("/destinations/bwindi-impenetrable")({
     buildDestinationHead({
       slug: "bwindi-impenetrable",
       name: "Bwindi Impenetrable National Park",
-      title: "Bwindi Impenetrable National Park, Uganda — Gorilla Trekking Guide | Trek Wild Uganda",
+      title:
+        "Bwindi Impenetrable National Park, Uganda — Gorilla Trekking Guide | Trek Wild Uganda",
       description:
         "Home to half the world's mountain gorillas — Bwindi's four trekking sectors, permit costs, and how to plan a trip into Uganda's oldest rainforest.",
       ogImage: gorillaSilverback,
@@ -59,7 +60,11 @@ export const Route = createFileRoute("/destinations/bwindi-impenetrable")({
       slug="bwindi-impenetrable"
       eyebrow="Bwindi Impenetrable National Park"
       name="Bwindi Impenetrable"
-      tagline={<>Half the world's gorillas, <em className="italic text-gold">one ancient forest</em>.</>}
+      tagline={
+        <>
+          Half the world's gorillas, <em className="italic text-gold">one ancient forest</em>.
+        </>
+      }
       intro="A UNESCO World Heritage rainforest older than the last Ice Age, tangled with vines and 1,000-year-old hardwoods — and home to roughly half of all the mountain gorillas left on Earth. Four separate trekking sectors mean more permits, more habituated families, and more ways into the same extraordinary hour."
       heroImage={gorillaSilverback}
       heroAlt="A mountain gorilla silverback foraging in Bwindi's undergrowth"
@@ -92,17 +97,47 @@ export const Route = createFileRoute("/destinations/bwindi-impenetrable")({
         { src: g_gorilla_tracking_3, alt: "A gorilla family resting in the Bwindi undergrowth" },
       ]}
       highlights={[
-        { title: "Half the world's mountain gorillas", desc: "The single largest population of mountain gorillas anywhere, across four trekking sectors." },
-        { title: "Gorilla Habituation Experience", desc: "In Rushaga, spend up to 4 hours with a family still being habituated, instead of the standard one hour." },
-        { title: "Batwa cultural encounters", desc: "Guided walks with the forest's original inhabitants, displaced when Bwindi became a protected park." },
-        { title: "World-class birding", desc: "350 species recorded, including 23 found nowhere else in Uganda." },
-        { title: "Ancient, untouched rainforest", desc: "One of the few African forests to have survived the last Ice Age intact." },
-        { title: "Choice of four distinct sectors", desc: "Buhoma, Ruhija, Rushaga and Nkuringo each offer a different pace, altitude and view." },
+        {
+          title: "Half the world's mountain gorillas",
+          desc: "The single largest population of mountain gorillas anywhere, across four trekking sectors.",
+        },
+        {
+          title: "Gorilla Habituation Experience",
+          desc: "In Rushaga, spend up to 4 hours with a family still being habituated, instead of the standard one hour.",
+        },
+        {
+          title: "Batwa cultural encounters",
+          desc: "Guided walks with the forest's original inhabitants, displaced when Bwindi became a protected park.",
+        },
+        {
+          title: "World-class birding",
+          desc: "350 species recorded, including 23 found nowhere else in Uganda.",
+        },
+        {
+          title: "Ancient, untouched rainforest",
+          desc: "One of the few African forests to have survived the last Ice Age intact.",
+        },
+        {
+          title: "Choice of four distinct sectors",
+          desc: "Buhoma, Ruhija, Rushaga and Nkuringo each offer a different pace, altitude and view.",
+        },
       ]}
       itinerary={[
-        { day: "Day 01", title: "Drive or fly to Bwindi", desc: "A scenic drive through the Kigezi highlands, or a short scheduled flight, arriving in time for an evening briefing." },
-        { day: "Day 02", title: "Gorilla trekking", desc: "An early ranger briefing at 7:30am, then into the forest to find your assigned family — anywhere from 1 to 8 hours round trip." },
-        { day: "Day 03", title: "Batwa walk or onward travel", desc: "An optional morning cultural walk with a Batwa guide before continuing to Lake Bunyonyi or Queen Elizabeth National Park." },
+        {
+          day: "Day 01",
+          title: "Drive or fly to Bwindi",
+          desc: "A scenic drive through the Kigezi highlands, or a short scheduled flight, arriving in time for an evening briefing.",
+        },
+        {
+          day: "Day 02",
+          title: "Gorilla trekking",
+          desc: "An early ranger briefing at 7:30am, then into the forest to find your assigned family — anywhere from 1 to 8 hours round trip.",
+        },
+        {
+          day: "Day 03",
+          title: "Batwa walk or onward travel",
+          desc: "An optional morning cultural walk with a Batwa guide before continuing to Lake Bunyonyi or Queen Elizabeth National Park.",
+        },
       ]}
       bestTime="June–September and December–February are driest and most popular for trekking, though gorillas can be tracked year-round. The wetter months are quieter and greener, with the trade-off of muddier trails."
       gettingThere="Fly into Entebbe, then either a scheduled light-aircraft transfer (around 1.5 hours) to an airstrip near your chosen sector, or a scenic 8–9 hour drive through the Kigezi highlands, often broken up with a stop at Lake Mburo National Park."

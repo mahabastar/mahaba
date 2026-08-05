@@ -21,7 +21,11 @@ export const Route = createFileRoute("/rivers")({
   component: () => (
     <CategoryHub
       eyebrow="The Nile & Beyond"
-      title={<>One river, <em className="italic text-gold">four completely different faces</em>.</>}
+      title={
+        <>
+          One river, <em className="italic text-gold">four completely different faces</em>.
+        </>
+      }
       intro="The Nile begins gently in Jinja and ends violently through a 7-metre gorge at Murchison Falls — and it's just one of the waterways that define how Uganda's parks connect to each other."
       heroImage={nileBridgeAerial}
       heroAlt="Aerial view of the Nile River in Uganda"

@@ -61,7 +61,11 @@ export const Route = createFileRoute("/destinations/lake-bunyonyi")({
       slug="lake-bunyonyi"
       eyebrow="South-western Uganda"
       name="Lake Bunyonyi"
-      tagline={<>The lake of <em className="italic text-gold">little birds</em>.</>}
+      tagline={
+        <>
+          The lake of <em className="italic text-gold">little birds</em>.
+        </>
+      }
       intro="At almost 2,000 metres above sea level, Lake Bunyonyi lies like polished glass between terraced hills and 29 emerald islands. It is Africa's second-deepest lake, free of hippos and crocodiles, and Uganda's most magical place to simply exhale."
       heroImage={sceneBunyonyi}
       heroAlt="Aerial view of Lake Bunyonyi with its 29 islands and terraced hillsides"
@@ -94,18 +98,52 @@ export const Route = createFileRoute("/destinations/lake-bunyonyi")({
         { src: g_bunyonyi_5, alt: "Evening on Lake Bunyonyi" },
       ]}
       highlights={[
-        { title: "Dugout canoe safaris", desc: "Paddle between the islands with local Bakiga guides — no engines, no rush." },
-        { title: "Swim in safety", desc: "One of the few African lakes with no hippos, crocs or bilharzia." },
-        { title: "Terraced-hill hikes", desc: "Walk through farmland and villages to panoramic ridge-top viewpoints." },
-        { title: "Batwa & Bakiga culture", desc: "Meet the original forest people and the highland farmers who share the shore." },
-        { title: "Island lodges", desc: "Sleep on your own private island under a blanket of highland stars." },
-        { title: "Perfect post-gorilla stop", desc: "Just 2 hours from Bwindi — the ideal decompression before flying home." },
+        {
+          title: "Dugout canoe safaris",
+          desc: "Paddle between the islands with local Bakiga guides — no engines, no rush.",
+        },
+        {
+          title: "Swim in safety",
+          desc: "One of the few African lakes with no hippos, crocs or bilharzia.",
+        },
+        {
+          title: "Terraced-hill hikes",
+          desc: "Walk through farmland and villages to panoramic ridge-top viewpoints.",
+        },
+        {
+          title: "Batwa & Bakiga culture",
+          desc: "Meet the original forest people and the highland farmers who share the shore.",
+        },
+        {
+          title: "Island lodges",
+          desc: "Sleep on your own private island under a blanket of highland stars.",
+        },
+        {
+          title: "Perfect post-gorilla stop",
+          desc: "Just 2 hours from Bwindi — the ideal decompression before flying home.",
+        },
       ]}
       itinerary={[
-        { day: "Day 01", title: "Bwindi → Bunyonyi", desc: "A scenic 2-hour transfer from Bwindi. Afternoon canoe out to your island lodge and dinner over the water." },
-        { day: "Day 02", title: "Islands & villages", desc: "A slow morning circumnavigation of the islands with a Bakiga paddler, followed by a hillside walk through farms and villages." },
-        { day: "Day 03", title: "Ridge-top hike", desc: "Hike up to a panoramic viewpoint for the classic Bunyonyi vista, then swim, kayak or simply rest on the terrace." },
-        { day: "Day 04", title: "Return to Kampala or Kigali", desc: "Drive north to Kampala or connect through the border to Kigali airport — just 3 hours away." },
+        {
+          day: "Day 01",
+          title: "Bwindi → Bunyonyi",
+          desc: "A scenic 2-hour transfer from Bwindi. Afternoon canoe out to your island lodge and dinner over the water.",
+        },
+        {
+          day: "Day 02",
+          title: "Islands & villages",
+          desc: "A slow morning circumnavigation of the islands with a Bakiga paddler, followed by a hillside walk through farms and villages.",
+        },
+        {
+          day: "Day 03",
+          title: "Ridge-top hike",
+          desc: "Hike up to a panoramic viewpoint for the classic Bunyonyi vista, then swim, kayak or simply rest on the terrace.",
+        },
+        {
+          day: "Day 04",
+          title: "Return to Kampala or Kigali",
+          desc: "Drive north to Kampala or connect through the border to Kigali airport — just 3 hours away.",
+        },
       ]}
       bestTime="June to September and December to February bring dry, clear skies and calm water — ideal for canoeing and photography. Green-season months are lush, misty and beautifully quiet."
       gettingThere="A 2-hour drive from Bwindi Impenetrable Forest, or 8 hours from Kampala via Mbarara. The closest international airport is often Kigali (Rwanda), just 3 hours away by road."

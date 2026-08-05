@@ -20,7 +20,11 @@ export const Route = createFileRoute("/weather")({
   component: () => (
     <GuidePage
       eyebrow="Climate & Conditions"
-      title={<>Uganda's weather isn't one climate — <em className="italic text-gold">it's five</em>.</>}
+      title={
+        <>
+          Uganda's weather isn't one climate — <em className="italic text-gold">it's five</em>.
+        </>
+      }
       intro="Straddling the equator gives Uganda a reputation for consistent warmth, but altitude changes that story completely — the same week can mean glacier-cold mornings in the Rwenzori and 30°C savanna heat in Kidepo. For month-by-month planning, see the Seasonal Safari Calendar; this page covers what the weather actually feels like in each region."
       heroImage={expBalloon}
       heroAlt="Clear skies over Uganda's landscape"
@@ -49,10 +53,22 @@ export const Route = createFileRoute("/weather")({
         },
       ]}
       faqs={[
-        { q: "When is Uganda's rainy season?", a: "Uganda has two wet seasons — March to May (the longer, heavier one) and September to November (shorter and lighter) — separated by two drier stretches from June to September and December to February." },
-        { q: "Does it rain all day during the wet season?", a: "Rarely — rain typically arrives as a heavy afternoon downpour lasting an hour or two, with clear mornings and evenings still common. Trekking and game drives continue through the wet season, just with muddier trails." },
-        { q: "How cold does it get in the Rwenzori Mountains?", a: "At higher camps and near the glaciers, overnight temperatures can drop close to freezing — a genuine cold-weather kit is necessary for a multi-day Rwenzori trek, unlike almost anywhere else in Uganda." },
-        { q: "What's the hottest part of Uganda?", a: "Kidepo Valley and the surrounding Karamoja region in the north-east, which is Uganda's driest and hottest corner, with daytime temperatures regularly exceeding 30°C." },
+        {
+          q: "When is Uganda's rainy season?",
+          a: "Uganda has two wet seasons — March to May (the longer, heavier one) and September to November (shorter and lighter) — separated by two drier stretches from June to September and December to February.",
+        },
+        {
+          q: "Does it rain all day during the wet season?",
+          a: "Rarely — rain typically arrives as a heavy afternoon downpour lasting an hour or two, with clear mornings and evenings still common. Trekking and game drives continue through the wet season, just with muddier trails.",
+        },
+        {
+          q: "How cold does it get in the Rwenzori Mountains?",
+          a: "At higher camps and near the glaciers, overnight temperatures can drop close to freezing — a genuine cold-weather kit is necessary for a multi-day Rwenzori trek, unlike almost anywhere else in Uganda.",
+        },
+        {
+          q: "What's the hottest part of Uganda?",
+          a: "Kidepo Valley and the surrounding Karamoja region in the north-east, which is Uganda's driest and hottest corner, with daytime temperatures regularly exceeding 30°C.",
+        },
       ]}
       related={[
         { name: "Seasonal Safari Calendar", to: "/seasonal-safari-calendar" },

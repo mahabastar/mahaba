@@ -20,7 +20,11 @@ export const Route = createFileRoute("/coffee-tea-guide")({
   component: () => (
     <GuidePage
       eyebrow="Coffee & Tea Country"
-      title={<>The plant that started here, <em className="italic text-gold">grown all over again</em>.</>}
+      title={
+        <>
+          The plant that started here, <em className="italic text-gold">grown all over again</em>.
+        </>
+      }
       intro="Robusta coffee is native to Uganda's forests — not just grown here, but originally from here, with a cultural role that predates export coffee entirely. Add the greener, quieter tea estates of the west, and Uganda's coffee and tea story is worth a stop in its own right."
       heroImage={expCoffee}
       heroAlt="Coffee terraces in Uganda's western highlands"
@@ -54,10 +58,22 @@ export const Route = createFileRoute("/coffee-tea-guide")({
         },
       ]}
       faqs={[
-        { q: "Can I visit a working coffee farm?", a: "Yes — Sipi Falls on Mount Elgon and the Fort Portal crater lakes area both offer guided farm and washing-station visits, usually combined with a tasting." },
-        { q: "What's the difference between Uganda's Robusta and Arabica?", a: "Robusta is native to Uganda's lower-altitude forests and has deep cultural roots; Arabica is grown at higher elevation on volcanic soil, chiefly around Mount Elgon and the Rwenzori foothills, and tends toward a milder flavour profile." },
-        { q: "Can I buy coffee to take home?", a: "Yes — most farm visits and cooperatives sell roasted or green beans directly, and it's one of the most genuine souvenirs available." },
-        { q: "Is a coffee tour worth adding to a wildlife-focused itinerary?", a: "It pairs naturally with Kibale or the crater lakes near Fort Portal, since you're passing directly through coffee country either way." },
+        {
+          q: "Can I visit a working coffee farm?",
+          a: "Yes — Sipi Falls on Mount Elgon and the Fort Portal crater lakes area both offer guided farm and washing-station visits, usually combined with a tasting.",
+        },
+        {
+          q: "What's the difference between Uganda's Robusta and Arabica?",
+          a: "Robusta is native to Uganda's lower-altitude forests and has deep cultural roots; Arabica is grown at higher elevation on volcanic soil, chiefly around Mount Elgon and the Rwenzori foothills, and tends toward a milder flavour profile.",
+        },
+        {
+          q: "Can I buy coffee to take home?",
+          a: "Yes — most farm visits and cooperatives sell roasted or green beans directly, and it's one of the most genuine souvenirs available.",
+        },
+        {
+          q: "Is a coffee tour worth adding to a wildlife-focused itinerary?",
+          a: "It pairs naturally with Kibale or the crater lakes near Fort Portal, since you're passing directly through coffee country either way.",
+        },
       ]}
       related={[
         { name: "The Crater Lakes", to: "/destinations/crater-lakes" },

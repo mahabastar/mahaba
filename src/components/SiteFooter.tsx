@@ -81,13 +81,16 @@ export function SiteFooter() {
             Travel Health Notice · Ebola
           </div>
           <p className="text-xs leading-relaxed text-ivory/70">
-            Uganda is safe for travel. There is no Ebola outbreak affecting tourist areas, and
-            the national parks, gorilla trekking sectors and travel routes we use are fully
-            open and operating normally. Uganda has a long, well-proven record of containing
-            isolated outbreaks quickly, with screening at Entebbe International Airport and at
-            park entry points. We monitor Ministry of Health and WHO updates daily and will
-            always tell you directly if anything on your itinerary is affected —{" "}
-            <a href={askHref("the current Ebola and health situation")} className="text-gold underline underline-offset-4 hover:text-ivory">
+            Uganda is safe for travel. There is no Ebola outbreak affecting tourist areas, and the
+            national parks, gorilla trekking sectors and travel routes we use are fully open and
+            operating normally. Uganda has a long, well-proven record of containing isolated
+            outbreaks quickly, with screening at Entebbe International Airport and at park entry
+            points. We monitor Ministry of Health and WHO updates daily and will always tell you
+            directly if anything on your itinerary is affected —{" "}
+            <a
+              href={askHref("the current Ebola and health situation")}
+              className="text-gold underline underline-offset-4 hover:text-ivory"
+            >
               ask us anything about current conditions
             </a>
             .
@@ -99,26 +102,42 @@ export function SiteFooter() {
         <div className="grid gap-14 md:grid-cols-12">
           <div className="md:col-span-4">
             <div className="flex items-center gap-3">
-              <img src={logoAsset.url} alt="Trek Wild Uganda logo" className="h-12 w-12 shrink-0 rounded-full bg-ivory object-contain p-0.5 ring-1 ring-gold/50" />
+              <img
+                src={logoAsset.url}
+                alt="Trek Wild Uganda logo"
+                className="h-12 w-12 shrink-0 rounded-full bg-ivory object-contain p-0.5 ring-1 ring-gold/50"
+              />
               <span className="font-display text-2xl">Trek Wild Uganda</span>
             </div>
             <p className="mt-6 max-w-sm text-ivory/70">
-              Discover the Pearl of Africa. Cinematic, private safaris crafted by trusted
-              local experts.
+              Discover the Pearl of Africa. Cinematic, private safaris crafted by trusted local
+              experts.
             </p>
             <div className="mt-8 space-y-2 text-sm text-ivory/75">
               <div>
                 <span className="text-ivory/50">WhatsApp: </span>
-                <a href={`https://wa.me/${SITE_CONFIG.whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="hover:text-gold">
+                <a
+                  href={`https://wa.me/${SITE_CONFIG.whatsappNumber}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-gold"
+                >
                   {SITE_CONFIG.phoneWhatsApp}
                 </a>
               </div>
-              <div><span className="text-ivory/50">Call: </span>{SITE_CONFIG.phoneLandline}</div>
+              <div>
+                <span className="text-ivory/50">Call: </span>
+                {SITE_CONFIG.phoneLandline}
+              </div>
               <div>
                 <span className="text-ivory/50">Email: </span>
-                <a href={`mailto:${SITE_CONFIG.email}`} className="hover:text-gold">{SITE_CONFIG.email}</a>
+                <a href={`mailto:${SITE_CONFIG.email}`} className="hover:text-gold">
+                  {SITE_CONFIG.email}
+                </a>
               </div>
-              <div><span className="text-ivory/50">Web: </span>www.trekwilduganda.com</div>
+              <div>
+                <span className="text-ivory/50">Web: </span>www.trekwilduganda.com
+              </div>
             </div>
             <div className="mt-8 flex gap-3">
               {[
@@ -146,10 +165,16 @@ export function SiteFooter() {
                 <ul className="mt-5 space-y-3 text-sm text-ivory/70">
                   {c.items.map((i) =>
                     i.ask ? (
-                      <li key={i.label}><a href={askHref(i.label)} className="hover:text-gold">{i.label}</a></li>
+                      <li key={i.label}>
+                        <a href={askHref(i.label)} className="hover:text-gold">
+                          {i.label}
+                        </a>
+                      </li>
                     ) : (
                       <li key={i.label}>
-                        <Link to={i.to!} className="hover:text-gold">{i.label}</Link>
+                        <Link to={i.to!} className="hover:text-gold">
+                          {i.label}
+                        </Link>
                       </li>
                     ),
                   )}

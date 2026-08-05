@@ -32,7 +32,8 @@ export const Route = createFileRoute("/destinations/semuliki")({
     buildDestinationHead({
       slug: "semuliki",
       name: "Semuliki National Park",
-      title: "Semuliki National Park, Uganda — Hot Springs & Congo-Basin Birding | Trek Wild Uganda",
+      title:
+        "Semuliki National Park, Uganda — Hot Springs & Congo-Basin Birding | Trek Wild Uganda",
       description:
         "Uganda's slice of the Congo Basin rainforest — boiling Sempaya hot springs and birding found nowhere else in East Africa, on the DR Congo border.",
       ogImage: semulikiHotSprings,
@@ -51,7 +52,11 @@ export const Route = createFileRoute("/destinations/semuliki")({
       slug="semuliki"
       eyebrow="Semuliki National Park"
       name="Semuliki"
-      tagline={<>A piece of the <em className="italic text-gold">Congo</em>, inside Uganda.</>}
+      tagline={
+        <>
+          A piece of the <em className="italic text-gold">Congo</em>, inside Uganda.
+        </>
+      }
       intro="Tucked into the floor of the Albertine Rift on the DR Congo border, Semuliki protects a low-lying extension of the Congo Basin rainforest found nowhere else in Uganda — boiling geothermal springs, birdlife shared with Central Africa, and some of the country's least-visited trails."
       heroImage={semulikiHotSprings}
       heroAlt="Steam rising from the Sempaya hot springs in Semuliki National Park"
@@ -81,16 +86,42 @@ export const Route = createFileRoute("/destinations/semuliki")({
         { src: g_birding, alt: "Birding in western Uganda" },
       ]}
       highlights={[
-        { title: "Sempaya hot springs", desc: "Boiling geothermal springs reachable on an easy guided forest walk." },
-        { title: "Congo-basin birdlife", desc: "Over 400 species, 60+ found nowhere else in Uganda." },
-        { title: "A different kind of rainforest", desc: "Low-altitude ecology shared with DR Congo's Ituri Forest, unlike Uganda's highland parks." },
-        { title: "Sempaya nature walks", desc: "Guided trails through swamp forest and dense lowland canopy." },
-        { title: "Uganda's quietest major park", desc: "A genuinely uncrowded add-on to a western Uganda circuit." },
-        { title: "Local Batwa & Bakonzo communities", desc: "Cultural encounters distinct from those elsewhere in western Uganda." },
+        {
+          title: "Sempaya hot springs",
+          desc: "Boiling geothermal springs reachable on an easy guided forest walk.",
+        },
+        {
+          title: "Congo-basin birdlife",
+          desc: "Over 400 species, 60+ found nowhere else in Uganda.",
+        },
+        {
+          title: "A different kind of rainforest",
+          desc: "Low-altitude ecology shared with DR Congo's Ituri Forest, unlike Uganda's highland parks.",
+        },
+        {
+          title: "Sempaya nature walks",
+          desc: "Guided trails through swamp forest and dense lowland canopy.",
+        },
+        {
+          title: "Uganda's quietest major park",
+          desc: "A genuinely uncrowded add-on to a western Uganda circuit.",
+        },
+        {
+          title: "Local Batwa & Bakonzo communities",
+          desc: "Cultural encounters distinct from those elsewhere in western Uganda.",
+        },
       ]}
       itinerary={[
-        { day: "Day 01", title: "Arrive & Sempaya hot springs walk", desc: "Drive in via Fort Portal and take the guided walk to the Sempaya hot springs in the afternoon." },
-        { day: "Day 02", title: "Birding walk & onward travel", desc: "An early birding walk through the forest before continuing to Kibale or Queen Elizabeth National Park." },
+        {
+          day: "Day 01",
+          title: "Arrive & Sempaya hot springs walk",
+          desc: "Drive in via Fort Portal and take the guided walk to the Sempaya hot springs in the afternoon.",
+        },
+        {
+          day: "Day 02",
+          title: "Birding walk & onward travel",
+          desc: "An early birding walk through the forest before continuing to Kibale or Queen Elizabeth National Park.",
+        },
       ]}
       bestTime="December–February and June–September are driest and most comfortable for walking. Birding is good year-round, with resident species present regardless of season."
       gettingThere="Roughly a 5–6 hour drive from Kampala via Fort Portal. Most visitors combine it with Kibale, Queen Elizabeth, or Rwenzori Mountains National Park on a western Uganda circuit."

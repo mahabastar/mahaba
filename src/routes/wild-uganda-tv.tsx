@@ -33,7 +33,11 @@ export const Route = createFileRoute("/wild-uganda-tv")({
 
 /* ---------------- Data ---------------- */
 
-type VideoCategory = "Destination Films" | "Wildlife Clips" | "Culture & Community" | "Traveller Stories";
+type VideoCategory =
+  | "Destination Films"
+  | "Wildlife Clips"
+  | "Culture & Community"
+  | "Traveller Stories";
 
 type Video = {
   id: string;
@@ -52,8 +56,13 @@ const VIDEOS: Video[] = [
     category: "Destination Films",
     duration: "4:12",
     img: gorillaBacklit,
-    teaser: "Following a single trek into Bwindi's undergrowth, from the trailhead to an hour spent with a habituated gorilla family.",
-    related: { label: "Read the story", to: "/travel-journal/$slug", params: { slug: "the-silverbacks-silence" } },
+    teaser:
+      "Following a single trek into Bwindi's undergrowth, from the trailhead to an hour spent with a habituated gorilla family.",
+    related: {
+      label: "Read the story",
+      to: "/travel-journal/$slug",
+      params: { slug: "the-silverbacks-silence" },
+    },
   },
   {
     id: "murchison-nile",
@@ -61,7 +70,8 @@ const VIDEOS: Video[] = [
     category: "Destination Films",
     duration: "3:45",
     img: sceneFalls,
-    teaser: "The entire Nile forced through a 7-metre gorge — filmed from the water, the cliff top, and the air.",
+    teaser:
+      "The entire Nile forced through a 7-metre gorge — filmed from the water, the cliff top, and the air.",
     related: { label: "Explore Murchison Falls", to: "/destinations/murchison-falls" },
   },
   {
@@ -70,7 +80,8 @@ const VIDEOS: Video[] = [
     category: "Destination Films",
     duration: "3:20",
     img: expSipi,
-    teaser: "Three waterfalls and a ridge of coffee terraces on the slopes of Mount Elgon, filmed at first light.",
+    teaser:
+      "Three waterfalls and a ridge of coffee terraces on the slopes of Mount Elgon, filmed at first light.",
     related: { label: "Explore Sipi Falls", to: "/destinations/sipi-falls" },
   },
   {
@@ -79,7 +90,8 @@ const VIDEOS: Video[] = [
     category: "Wildlife Clips",
     duration: "3:10",
     img: sceneLion,
-    teaser: "One of only two lion populations on the continent known to climb — filmed lounging in Ishasha's fig trees.",
+    teaser:
+      "One of only two lion populations on the continent known to climb — filmed lounging in Ishasha's fig trees.",
     related: { label: "Explore Ishasha", to: "/destinations/tree-climbing-lions" },
   },
   {
@@ -88,8 +100,13 @@ const VIDEOS: Video[] = [
     category: "Wildlife Clips",
     duration: "2:30",
     img: expShoebill,
-    teaser: "A dawn canoe launch into Murchison's papyrus swamp in search of one of the world's strangest-looking birds.",
-    related: { label: "Read the story", to: "/travel-journal/$slug", params: { slug: "chasing-the-shoebill" } },
+    teaser:
+      "A dawn canoe launch into Murchison's papyrus swamp in search of one of the world's strangest-looking birds.",
+    related: {
+      label: "Read the story",
+      to: "/travel-journal/$slug",
+      params: { slug: "chasing-the-shoebill" },
+    },
   },
   {
     id: "tea-coffee-terraces",
@@ -97,8 +114,13 @@ const VIDEOS: Video[] = [
     category: "Culture & Community",
     duration: "5:00",
     img: expCoffee,
-    teaser: "Following a handful of arabica cherries from a Sipi hillside to the roasting pan — plus the tea estates further west, where the same terraced-hillside rhythm shapes daily life.",
-    related: { label: "Read the story", to: "/travel-journal/$slug", params: { slug: "coffee-from-bean-to-fire" } },
+    teaser:
+      "Following a handful of arabica cherries from a Sipi hillside to the roasting pan — plus the tea estates further west, where the same terraced-hillside rhythm shapes daily life.",
+    related: {
+      label: "Read the story",
+      to: "/travel-journal/$slug",
+      params: { slug: "coffee-from-bean-to-fire" },
+    },
   },
   {
     id: "kigezi-homestay",
@@ -106,7 +128,8 @@ const VIDEOS: Video[] = [
     category: "Culture & Community",
     duration: "4:30",
     img: sceneCulture,
-    teaser: "An overnight stay with a family in the terraced hills near Lake Bunyonyi — meals cooked together, and an evening of stories by the fire.",
+    teaser:
+      "An overnight stay with a family in the terraced hills near Lake Bunyonyi — meals cooked together, and an evening of stories by the fire.",
     related: { label: "Responsible Tourism Centre", to: "/responsible-tourism" },
   },
   {
@@ -115,12 +138,19 @@ const VIDEOS: Video[] = [
     category: "Traveller Stories",
     duration: "6:15",
     img: expLodge,
-    teaser: "Travellers on what they didn't expect to feel — from a first gorilla encounter to a quiet evening on Lake Bunyonyi.",
+    teaser:
+      "Travellers on what they didn't expect to feel — from a first gorilla encounter to a quiet evening on Lake Bunyonyi.",
     related: { label: "Build My Safari", to: "/build-my-safari" },
   },
 ];
 
-const CATEGORIES: (VideoCategory | "All")[] = ["All", "Destination Films", "Wildlife Clips", "Culture & Community", "Traveller Stories"];
+const CATEGORIES: (VideoCategory | "All")[] = [
+  "All",
+  "Destination Films",
+  "Wildlife Clips",
+  "Culture & Community",
+  "Traveller Stories",
+];
 
 /* ---------------- Component ---------------- */
 
@@ -151,8 +181,8 @@ function WildUgandaTV() {
             Uganda, <em className="italic text-gold">in motion.</em>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-ivory/75">
-            Destination films, wildlife clips, culture and traveller stories — our video
-            library is in production. Here's what's coming.
+            Destination films, wildlife clips, culture and traveller stories — our video library is
+            in production. Here's what's coming.
           </p>
         </div>
       </section>
@@ -188,7 +218,12 @@ function WildUgandaTV() {
                 onClick={() => setSelected(v)}
                 className="group relative block aspect-video overflow-hidden rounded-2xl text-left"
               >
-                <img src={v.img} alt={v.title} loading="lazy" className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                <img
+                  src={v.img}
+                  alt={v.title}
+                  loading="lazy"
+                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/85 via-charcoal/20 to-transparent" />
 
                 <div className="absolute right-3 top-3 rounded-full bg-charcoal/70 px-3 py-1 text-[0.6rem] font-semibold uppercase tracking-widest text-gold backdrop-blur-sm">
@@ -207,7 +242,9 @@ function WildUgandaTV() {
                 </span>
 
                 <div className="absolute inset-x-4 bottom-4">
-                  <div className="text-[0.65rem] uppercase tracking-widest text-gold-soft">{v.category}</div>
+                  <div className="text-[0.65rem] uppercase tracking-widest text-gold-soft">
+                    {v.category}
+                  </div>
                   <div className="mt-1 font-display text-lg text-ivory">{v.title}</div>
                 </div>
               </button>
@@ -227,9 +264,12 @@ function WildUgandaTV() {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="relative aspect-video overflow-hidden rounded-2xl">
-              <img src={selected.img} alt={selected.title} className="h-full w-full object-cover"
-          loading="lazy"
-        />
+              <img
+                src={selected.img}
+                alt={selected.title}
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
               <div className="absolute inset-0 bg-charcoal/40" />
               <span className="absolute inset-0 flex items-center justify-center">
                 <span className="grid h-16 w-16 place-items-center rounded-full bg-ivory/90 text-forest">
@@ -247,7 +287,9 @@ function WildUgandaTV() {
               </button>
             </div>
             <div className="p-6">
-              <div className="text-xs uppercase tracking-widest text-gold">{selected.category} · {selected.duration}</div>
+              <div className="text-xs uppercase tracking-widest text-gold">
+                {selected.category} · {selected.duration}
+              </div>
               <h3 className="mt-2 font-display text-2xl text-charcoal">{selected.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-charcoal/70">{selected.teaser}</p>
               <p className="mt-4 rounded-xl bg-mist px-4 py-3 text-xs text-charcoal/50">

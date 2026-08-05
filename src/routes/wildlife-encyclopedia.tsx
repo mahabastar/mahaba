@@ -244,13 +244,14 @@ const STATUS_COLOR: Record<Species["status"], string> = {
 
 function WildlifeEncyclopedia() {
   const [query, setQuery] = useState("");
-  const [category, setCategory] = useState<(Category | "All")>("All");
+  const [category, setCategory] = useState<Category | "All">("All");
 
   const results = useMemo(() => {
     const q = query.trim().toLowerCase();
     return SPECIES.filter((s) => {
       const matchesCategory = category === "All" || s.category === category;
-      const matchesQuery = !q || s.name.toLowerCase().includes(q) || s.latin.toLowerCase().includes(q);
+      const matchesQuery =
+        !q || s.name.toLowerCase().includes(q) || s.latin.toLowerCase().includes(q);
       return matchesCategory && matchesQuery;
     });
   }, [query, category]);
@@ -267,8 +268,8 @@ function WildlifeEncyclopedia() {
             Know it <em className="italic text-gold">before you see it.</em>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-ivory/75">
-            Mammals, primates, birds and reptiles found across Uganda's parks and lakes —
-            what to look for, and where you're most likely to find it.
+            Mammals, primates, birds and reptiles found across Uganda's parks and lakes — what to
+            look for, and where you're most likely to find it.
           </p>
         </div>
       </section>
@@ -280,7 +281,10 @@ function WildlifeEncyclopedia() {
             <div className="relative w-full md:max-w-sm">
               <svg
                 className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-charcoal/40"
-                viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
               >
                 <circle cx="11" cy="11" r="7" />
                 <path d="m21 21-4.3-4.3" />
@@ -332,14 +336,27 @@ function WildlifeEncyclopedia() {
                 >
                   <div className="relative aspect-[4/3] w-full overflow-hidden bg-forest-deep/10">
                     {s.img ? (
-                      <img src={s.img} alt={s.name} loading="lazy" className="h-full w-full object-cover" />
+                      <img
+                        src={s.img}
+                        alt={s.name}
+                        loading="lazy"
+                        className="h-full w-full object-cover"
+                      />
                     ) : (
                       <div className="flex h-full w-full flex-col items-center justify-center gap-2 bg-gradient-to-br from-forest/10 to-earth/10 text-forest/40">
-                        <svg viewBox="0 0 24 24" className="h-10 w-10" fill="none" stroke="currentColor" strokeWidth="1.2">
+                        <svg
+                          viewBox="0 0 24 24"
+                          className="h-10 w-10"
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="1.2"
+                        >
                           <path d="M4 20c3-4 5-10 8-10s5 6 8 10" />
                           <circle cx="12" cy="7" r="2.5" />
                         </svg>
-                        <span className="text-[0.65rem] uppercase tracking-widest">Photo coming soon</span>
+                        <span className="text-[0.65rem] uppercase tracking-widest">
+                          Photo coming soon
+                        </span>
                       </div>
                     )}
                     <div className="absolute left-3 top-3 rounded-full bg-charcoal/70 px-3 py-1 text-[0.65rem] font-medium uppercase tracking-widest text-ivory backdrop-blur-sm">
@@ -349,12 +366,17 @@ function WildlifeEncyclopedia() {
                   <div className="flex flex-1 flex-col p-6">
                     <h3 className="font-display text-2xl text-charcoal">{s.name}</h3>
                     <p className="mt-0.5 text-xs italic text-charcoal/40">{s.latin}</p>
-                    <div className={`mt-3 text-xs font-medium uppercase tracking-widest ${STATUS_COLOR[s.status]}`}>
+                    <div
+                      className={`mt-3 text-xs font-medium uppercase tracking-widest ${STATUS_COLOR[s.status]}`}
+                    >
                       {s.status}
                     </div>
-                    <p className="mt-3 flex-1 text-sm leading-relaxed text-charcoal/70">{s.blurb}</p>
+                    <p className="mt-3 flex-1 text-sm leading-relaxed text-charcoal/70">
+                      {s.blurb}
+                    </p>
                     <p className="mt-4 text-xs text-charcoal/50">
-                      <span className="text-charcoal/40">Best seen: </span>{s.bestSeen}
+                      <span className="text-charcoal/40">Best seen: </span>
+                      {s.bestSeen}
                     </p>
                     <div className="mt-4 flex flex-wrap gap-2 border-t border-charcoal/10 pt-4">
                       {s.whereToSee.map((w) => (

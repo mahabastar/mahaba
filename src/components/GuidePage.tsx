@@ -28,11 +28,17 @@ export function GuidePage(p: GuidePageProps) {
 
       {/* Hero */}
       <section className="relative min-h-[55svh] w-full overflow-hidden bg-charcoal grain">
-        <img src={p.heroImage} alt={p.heroAlt} className="absolute inset-0 h-full w-full object-cover ken-burns opacity-55" />
+        <img
+          src={p.heroImage}
+          alt={p.heroAlt}
+          className="absolute inset-0 h-full w-full object-cover ken-burns opacity-55"
+        />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="relative z-10 mx-auto flex min-h-[55svh] max-w-[1000px] flex-col justify-end px-6 pb-16 pt-40 text-center md:px-10 md:pb-20">
           <div className="eyebrow !text-gold">{p.eyebrow}</div>
-          <h1 className="mt-6 font-display text-[clamp(2.2rem,6vw,4rem)] text-ivory text-balance">{p.title}</h1>
+          <h1 className="mt-6 font-display text-[clamp(2.2rem,6vw,4rem)] text-ivory text-balance">
+            {p.title}
+          </h1>
           <p className="mx-auto mt-6 max-w-2xl text-lg text-ivory/75">{p.intro}</p>
         </div>
       </section>
@@ -61,9 +67,23 @@ export function GuidePage(p: GuidePageProps) {
               {s.checklist && s.checklist.length > 0 && (
                 <ul className="mt-6 grid gap-3 sm:grid-cols-2">
                   {s.checklist.map((item) => (
-                    <li key={item} className="flex items-start gap-3 rounded-xl bg-mist px-4 py-3 text-sm text-charcoal/80">
-                      <svg viewBox="0 0 24 24" className="mt-0.5 h-4 w-4 shrink-0 text-forest" fill="none" stroke="currentColor" strokeWidth="2.5" aria-hidden>
-                        <path d="M5 12.5 9.5 17 19 7" strokeLinecap="round" strokeLinejoin="round" />
+                    <li
+                      key={item}
+                      className="flex items-start gap-3 rounded-xl bg-mist px-4 py-3 text-sm text-charcoal/80"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        className="mt-0.5 h-4 w-4 shrink-0 text-forest"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2.5"
+                        aria-hidden
+                      >
+                        <path
+                          d="M5 12.5 9.5 17 19 7"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
                       </svg>
                       {item}
                     </li>
@@ -88,7 +108,9 @@ export function GuidePage(p: GuidePageProps) {
                 <details key={f.q} className="group py-6">
                   <summary className="flex cursor-pointer list-none items-start justify-between gap-6">
                     <span className="font-display text-lg text-charcoal md:text-xl">{f.q}</span>
-                    <span className="mt-1 shrink-0 text-gold transition-transform group-open:rotate-45">＋</span>
+                    <span className="mt-1 shrink-0 text-gold transition-transform group-open:rotate-45">
+                      ＋
+                    </span>
                   </summary>
                   <p className="mt-4 max-w-3xl text-base leading-relaxed text-charcoal/75">{f.a}</p>
                 </details>
@@ -113,7 +135,9 @@ export function GuidePage(p: GuidePageProps) {
               Build My Safari
             </Link>
             <a
-              href={buildWhatsAppHref(`Hi! I have a question after reading your ${typeof p.eyebrow === "string" ? p.eyebrow.toLowerCase() : "travel"} guide.`)}
+              href={buildWhatsAppHref(
+                `Hi! I have a question after reading your ${typeof p.eyebrow === "string" ? p.eyebrow.toLowerCase() : "travel"} guide.`,
+              )}
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-full border border-forest/70 px-7 py-4 text-sm font-medium text-ivory hover:border-gold hover:text-gold"

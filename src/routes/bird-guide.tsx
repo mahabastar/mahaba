@@ -20,7 +20,11 @@ export const Route = createFileRoute("/bird-guide")({
   component: () => (
     <GuidePage
       eyebrow="For the Bird List"
-      title={<>Over 1,000 species, <em className="italic text-gold">one country</em>.</>}
+      title={
+        <>
+          Over 1,000 species, <em className="italic text-gold">one country</em>.
+        </>
+      }
       intro="Uganda's bird list runs past 1,000 recorded species — more than Kenya and Tanzania combined, in a country roughly the size of the United Kingdom. It's not a side note to a safari here; for serious birders, it's the reason to come."
       heroImage={expShoebill}
       heroAlt="Shoebill stork in Uganda's papyrus wetlands"
@@ -61,10 +65,22 @@ export const Route = createFileRoute("/bird-guide")({
         },
       ]}
       faqs={[
-        { q: "Is the shoebill sighting guaranteed?", a: "No wild sighting is ever guaranteed, but Mabamba Swamp and the Murchison Falls delta offer consistently good odds thanks to local guides' knowledge of current nesting and feeding areas." },
-        { q: "Do I need a specialist birding guide?", a: "For a serious birding trip, yes — we pair birding itineraries with guides who specialise in identification and calls, distinct from a standard safari guide." },
-        { q: "When is the best time for birding?", a: "Birding is strong year-round, but November–April adds Palearctic migrants to the resident species, giving the longest possible checklist." },
-        { q: "Can birding be combined with gorilla trekking?", a: "Yes — Bwindi itself is a strong birding site, so a gorilla trekking trip there naturally doubles as birding time on the lower forest trails." },
+        {
+          q: "Is the shoebill sighting guaranteed?",
+          a: "No wild sighting is ever guaranteed, but Mabamba Swamp and the Murchison Falls delta offer consistently good odds thanks to local guides' knowledge of current nesting and feeding areas.",
+        },
+        {
+          q: "Do I need a specialist birding guide?",
+          a: "For a serious birding trip, yes — we pair birding itineraries with guides who specialise in identification and calls, distinct from a standard safari guide.",
+        },
+        {
+          q: "When is the best time for birding?",
+          a: "Birding is strong year-round, but November–April adds Palearctic migrants to the resident species, giving the longest possible checklist.",
+        },
+        {
+          q: "Can birding be combined with gorilla trekking?",
+          a: "Yes — Bwindi itself is a strong birding site, so a gorilla trekking trip there naturally doubles as birding time on the lower forest trails.",
+        },
       ]}
       related={[
         { name: "Birding Safaris", to: "/experiences/birding" },

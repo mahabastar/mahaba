@@ -59,7 +59,8 @@ const SPOTS: Spot[] = [
     blurb: "An hour face-to-face with a mountain gorilla family in ancient rainforest.",
     img: heroGorilla,
     to: "/destinations/gorilla-trekking",
-    x: 17, y: 66,
+    x: 17,
+    y: 66,
   },
   {
     slug: "tree-climbing-lions",
@@ -69,7 +70,8 @@ const SPOTS: Spot[] = [
     blurb: "Lions draped over fig branches in Queen Elizabeth's Ishasha sector.",
     img: sceneLion,
     to: "/destinations/tree-climbing-lions",
-    x: 25, y: 58,
+    x: 25,
+    y: 58,
   },
   {
     slug: "murchison-falls",
@@ -79,7 +81,8 @@ const SPOTS: Spot[] = [
     blurb: "The Nile forced through a 7-metre gorge, with elephants and giraffe on its banks.",
     img: sceneFalls,
     to: "/destinations/murchison-falls",
-    x: 37, y: 23,
+    x: 37,
+    y: 23,
   },
   {
     slug: "sipi-falls",
@@ -89,7 +92,8 @@ const SPOTS: Spot[] = [
     blurb: "Three waterfalls, coffee terraces, and views across the plains from Mount Elgon.",
     img: expSipi,
     to: "/destinations/sipi-falls",
-    x: 82, y: 38,
+    x: 82,
+    y: 38,
   },
   {
     slug: "lake-bunyonyi",
@@ -99,7 +103,8 @@ const SPOTS: Spot[] = [
     blurb: "A crater-studded lake ringed by terraced hills — Uganda's slow-travel counterpoint.",
     img: sceneBunyonyi,
     to: "/destinations/lake-bunyonyi",
-    x: 15, y: 74,
+    x: 15,
+    y: 74,
   },
   {
     slug: "kibale-forest",
@@ -109,7 +114,8 @@ const SPOTS: Spot[] = [
     blurb: "The highest primate density in Africa, led by over 1,500 wild chimpanzees.",
     img: expChimp,
     to: "/destinations/kibale-forest",
-    x: 20, y: 44,
+    x: 20,
+    y: 44,
   },
   {
     slug: "jinja-source-of-the-nile",
@@ -119,7 +125,8 @@ const SPOTS: Spot[] = [
     blurb: "Grade 3–5 white water rafting where Lake Victoria becomes the Nile.",
     img: nileBridgeAerial,
     to: "/destinations/jinja-source-of-the-nile",
-    x: 60, y: 64,
+    x: 60,
+    y: 64,
   },
   {
     slug: "rwenzori-mountains",
@@ -129,7 +136,8 @@ const SPOTS: Spot[] = [
     blurb: "Glaciated peaks on the equator — Africa's third-highest summit.",
     img: sceneRwenzori,
     to: "/destinations/rwenzori-mountains",
-    x: 12, y: 48,
+    x: 12,
+    y: 48,
   },
   {
     slug: "kidepo-valley",
@@ -139,7 +147,8 @@ const SPOTS: Spot[] = [
     blurb: "Uganda's remotest park — cheetah, ostrich, and total isolation.",
     img: sceneElephants,
     to: "/destinations/kidepo-valley",
-    x: 68, y: 12,
+    x: 68,
+    y: 12,
   },
   {
     slug: "queen-elizabeth-national-park",
@@ -149,7 +158,8 @@ const SPOTS: Spot[] = [
     blurb: "The Kazinga Channel, Kasenyi Plains and Kyambura Gorge chimps.",
     img: sceneLion,
     to: "/destinations/queen-elizabeth-national-park",
-    x: 22, y: 50,
+    x: 22,
+    y: 50,
   },
   {
     slug: "entebbe",
@@ -159,7 +169,8 @@ const SPOTS: Spot[] = [
     blurb: "Lakeside gateway city, with a chimpanzee sanctuary a boat ride away.",
     img: expChimp,
     to: "/destinations/entebbe",
-    x: 48, y: 68,
+    x: 48,
+    y: 68,
   },
 ];
 
@@ -186,8 +197,8 @@ function UgandaExplorer() {
             The whole country, <em className="italic text-gold">one map.</em>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-ivory/75">
-            Every destination we cover, placed in context. Hover a pin to preview it, or
-            filter by what draws you.
+            Every destination we cover, placed in context. Hover a pin to preview it, or filter by
+            what draws you.
           </p>
         </div>
       </section>
@@ -250,7 +261,9 @@ function UgandaExplorer() {
                         isActive ? "h-8 w-8" : "h-5 w-5"
                       }`}
                     >
-                      <span className={`block rounded-full bg-gold transition-all duration-500 ${isActive ? "h-5 w-5" : "h-2.5 w-2.5"}`} />
+                      <span
+                        className={`block rounded-full bg-gold transition-all duration-500 ${isActive ? "h-5 w-5" : "h-2.5 w-2.5"}`}
+                      />
                     </span>
                   </button>
                 );
@@ -262,12 +275,19 @@ function UgandaExplorer() {
                   to={activeSpot.to}
                   className="absolute bottom-4 left-4 right-4 flex items-center gap-4 rounded-2xl bg-ivory/95 p-3 shadow-luxe backdrop-blur-sm transition-all sm:left-auto sm:right-4 sm:w-80"
                 >
-                  <img src={activeSpot.img} alt={activeSpot.name} className="h-16 w-16 shrink-0 rounded-xl object-cover"
-          loading="lazy"
-        />
+                  <img
+                    src={activeSpot.img}
+                    alt={activeSpot.name}
+                    className="h-16 w-16 shrink-0 rounded-xl object-cover"
+                    loading="lazy"
+                  />
                   <div className="min-w-0">
-                    <div className="text-[0.65rem] uppercase tracking-widest text-forest">{activeSpot.region}</div>
-                    <div className="truncate font-display text-base text-charcoal">{activeSpot.name}</div>
+                    <div className="text-[0.65rem] uppercase tracking-widest text-forest">
+                      {activeSpot.region}
+                    </div>
+                    <div className="truncate font-display text-base text-charcoal">
+                      {activeSpot.name}
+                    </div>
                     <div className="mt-0.5 inline-flex items-center gap-1 text-xs font-medium text-gold">
                       Explore <span aria-hidden>→</span>
                     </div>
@@ -285,18 +305,28 @@ function UgandaExplorer() {
                   onMouseEnter={() => setActive(s.slug)}
                   onFocus={() => setActive(s.slug)}
                   className={`group flex items-center gap-4 rounded-2xl border p-4 transition-all ${
-                    active === s.slug ? "border-forest bg-forest/5" : "border-charcoal/10 hover:border-forest/40"
+                    active === s.slug
+                      ? "border-forest bg-forest/5"
+                      : "border-charcoal/10 hover:border-forest/40"
                   }`}
                 >
-                  <img src={s.img} alt={s.name} className="h-16 w-16 shrink-0 rounded-xl object-cover"
-          loading="lazy"
-        />
+                  <img
+                    src={s.img}
+                    alt={s.name}
+                    className="h-16 w-16 shrink-0 rounded-xl object-cover"
+                    loading="lazy"
+                  />
                   <div className="min-w-0 flex-1">
-                    <div className="text-[0.65rem] uppercase tracking-widest text-charcoal/40">{s.region}</div>
+                    <div className="text-[0.65rem] uppercase tracking-widest text-charcoal/40">
+                      {s.region}
+                    </div>
                     <div className="font-display text-lg text-charcoal">{s.name}</div>
                     <p className="mt-1 text-sm text-charcoal/60 line-clamp-1">{s.blurb}</p>
                   </div>
-                  <span className="shrink-0 text-forest opacity-0 transition-opacity group-hover:opacity-100" aria-hidden>
+                  <span
+                    className="shrink-0 text-forest opacity-0 transition-opacity group-hover:opacity-100"
+                    aria-hidden
+                  >
                     →
                   </span>
                 </Link>

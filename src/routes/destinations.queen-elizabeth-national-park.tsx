@@ -38,7 +38,8 @@ export const Route = createFileRoute("/destinations/queen-elizabeth-national-par
     buildDestinationHead({
       slug: "queen-elizabeth-national-park",
       name: "Queen Elizabeth National Park",
-      title: "Queen Elizabeth National Park, Uganda — Kazinga Channel & Kasenyi Plains | Trek Wild Uganda",
+      title:
+        "Queen Elizabeth National Park, Uganda — Kazinga Channel & Kasenyi Plains | Trek Wild Uganda",
       description:
         "Cruise the Kazinga Channel past thousands of hippos, track chimps in Kyambura Gorge and game-drive the Kasenyi Plains. Guided tours from Trek Wild Uganda.",
       ogImage: sceneElephants,
@@ -58,7 +59,11 @@ export const Route = createFileRoute("/destinations/queen-elizabeth-national-par
       slug="queen-elizabeth-national-park"
       eyebrow="Queen Elizabeth National Park"
       name="Queen Elizabeth NP"
-      tagline={<>Where the <em className="italic text-gold">hippos outnumber the visitors</em>.</>}
+      tagline={
+        <>
+          Where the <em className="italic text-gold">hippos outnumber the visitors</em>.
+        </>
+      }
       intro="Uganda's most biodiverse park, split by a 40-kilometre channel connecting two lakes and holding one of Africa's densest concentrations of large mammals. Savanna game drives, a chimpanzee-filled gorge, and a boat cruise regularly rated the best single wildlife experience in the country."
       heroImage={sceneElephants}
       heroAlt="Savanna wildlife in Queen Elizabeth National Park"
@@ -83,29 +88,76 @@ export const Route = createFileRoute("/destinations/queen-elizabeth-national-par
         },
       ]}
       galleryImages={[
-        { src: g_qenp_moments_1, alt: "Lioness resting in a fig tree, Queen Elizabeth National Park" },
-        { src: g_qenp_moments_2, alt: "Waterbuck and calf on the plains, Queen Elizabeth National Park" },
-        { src: g_qenp_moments_3, alt: "Leopard crossing the track ahead of a game drive, Queen Elizabeth National Park" },
+        {
+          src: g_qenp_moments_1,
+          alt: "Lioness resting in a fig tree, Queen Elizabeth National Park",
+        },
+        {
+          src: g_qenp_moments_2,
+          alt: "Waterbuck and calf on the plains, Queen Elizabeth National Park",
+        },
+        {
+          src: g_qenp_moments_3,
+          alt: "Leopard crossing the track ahead of a game drive, Queen Elizabeth National Park",
+        },
         { src: g_qenp_moments_4, alt: "Giraffes browsing acacia in Queen Elizabeth National Park" },
       ]}
       highlights={[
-        { title: "Kazinga Channel boat cruise", desc: "Two hours past one of Africa's largest hippo concentrations — widely rated the park's best activity." },
-        { title: "Kasenyi Plains game drives", desc: "Open savanna, lions, elephants and Uganda kob at dawn and dusk." },
-        { title: "Kyambura Gorge chimp trekking", desc: "A dramatic forested canyon in the middle of open savanna, home to habituated chimpanzees." },
-        { title: "Over 600 bird species", desc: "One of Africa's richest birding parks, from shoebills in the wetlands to raptors on the plains." },
-        { title: "Combines easily with Ishasha", desc: "The tree-climbing lion sector sits within the same park, a short drive south." },
-        { title: "Crater lake scenery", desc: "Volcanic crater lakes dot the park's western edge, some ringed by walking trails." },
+        {
+          title: "Kazinga Channel boat cruise",
+          desc: "Two hours past one of Africa's largest hippo concentrations — widely rated the park's best activity.",
+        },
+        {
+          title: "Kasenyi Plains game drives",
+          desc: "Open savanna, lions, elephants and Uganda kob at dawn and dusk.",
+        },
+        {
+          title: "Kyambura Gorge chimp trekking",
+          desc: "A dramatic forested canyon in the middle of open savanna, home to habituated chimpanzees.",
+        },
+        {
+          title: "Over 600 bird species",
+          desc: "One of Africa's richest birding parks, from shoebills in the wetlands to raptors on the plains.",
+        },
+        {
+          title: "Combines easily with Ishasha",
+          desc: "The tree-climbing lion sector sits within the same park, a short drive south.",
+        },
+        {
+          title: "Crater lake scenery",
+          desc: "Volcanic crater lakes dot the park's western edge, some ringed by walking trails.",
+        },
       ]}
       itinerary={[
-        { day: "Day 01", title: "Arrive & Kasenyi game drive", desc: "Fly or drive in, settling into your lodge in time for an afternoon game drive on the Kasenyi Plains." },
-        { day: "Day 02", title: "Kazinga Channel cruise", desc: "A morning or afternoon boat cruise along the channel, followed by a relaxed evening at your lodge." },
-        { day: "Day 03", title: "Kyambura Gorge", desc: "A morning descent into the Valley of the Apes to track chimpanzees, before continuing on to Ishasha or your next destination." },
+        {
+          day: "Day 01",
+          title: "Arrive & Kasenyi game drive",
+          desc: "Fly or drive in, settling into your lodge in time for an afternoon game drive on the Kasenyi Plains.",
+        },
+        {
+          day: "Day 02",
+          title: "Kazinga Channel cruise",
+          desc: "A morning or afternoon boat cruise along the channel, followed by a relaxed evening at your lodge.",
+        },
+        {
+          day: "Day 03",
+          title: "Kyambura Gorge",
+          desc: "A morning descent into the Valley of the Apes to track chimpanzees, before continuing on to Ishasha or your next destination.",
+        },
       ]}
       bestTime="June–September and December–February bring the driest conditions and the most reliable wildlife concentrations along the Kazinga Channel."
       gettingThere="Fly into Entebbe International Airport, then drive roughly 6–8 hours south-west, or connect via a 1.5-hour scheduled flight to Kasese or Mweya airstrip."
       related={[
-        { name: "Tree-Climbing Lions, Ishasha", to: "/destinations/tree-climbing-lions", img: sceneLion },
-        { name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking", img: heroGorilla },
+        {
+          name: "Tree-Climbing Lions, Ishasha",
+          to: "/destinations/tree-climbing-lions",
+          img: sceneLion,
+        },
+        {
+          name: "Gorilla Trekking, Bwindi",
+          to: "/destinations/gorilla-trekking",
+          img: heroGorilla,
+        },
         { name: "Lake Bunyonyi", to: "/destinations/lake-bunyonyi", img: sceneBunyonyi },
       ]}
       faqs={FAQS}

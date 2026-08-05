@@ -32,9 +32,7 @@ export function buildDestinationHead(o: BuildDestinationHeadOptions) {
   const meta: Array<Record<string, string>> = [
     { title: o.title },
     { name: "description", content: o.description },
-    ...(o.keywords?.length
-      ? [{ name: "keywords", content: o.keywords.join(", ") }]
-      : []),
+    ...(o.keywords?.length ? [{ name: "keywords", content: o.keywords.join(", ") }] : []),
     { name: "robots", content: "index,follow,max-image-preview:large" },
 
     { property: "og:site_name", content: SITE_NAME },
@@ -81,7 +79,12 @@ export function buildDestinationHead(o: BuildDestinationHeadOptions) {
     "@type": "BreadcrumbList",
     itemListElement: [
       { "@type": "ListItem", position: 1, name: "Home", item: SITE_CONFIG.url },
-      { "@type": "ListItem", position: 2, name: "National Parks", item: `${SITE_CONFIG.url}/national-parks` },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "National Parks",
+        item: `${SITE_CONFIG.url}/national-parks`,
+      },
       { "@type": "ListItem", position: 3, name: o.name, item: absoluteUrl },
     ],
   };

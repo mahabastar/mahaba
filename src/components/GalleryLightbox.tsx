@@ -108,11 +108,7 @@ export function GalleryLightbox({
         {/* Full-size image */}
         <div className="flex-1">
           <div className="relative overflow-hidden rounded-2xl bg-charcoal">
-            <img
-              src={photo.src}
-              alt={photo.title}
-              className="max-h-[70vh] w-full object-contain"
-            />
+            <img src={photo.src} alt={photo.title} className="max-h-[70vh] w-full object-contain" />
           </div>
           <div className="mt-4 flex items-center justify-between gap-4">
             <div>
@@ -144,42 +140,107 @@ export function GalleryLightbox({
         <aside className="w-full rounded-2xl bg-ivory p-6 shadow-2xl lg:sticky lg:top-16 lg:w-[400px]">
           <div className="eyebrow !text-forest">Interested in this experience?</div>
           <p className="mt-3 text-sm leading-relaxed text-charcoal/65">
-            Tell us a little about your trip and we'll come back with a tailored plan built
-            around exactly this.
+            Tell us a little about your trip and we'll come back with a tailored plan built around
+            exactly this.
           </p>
 
           <div className="mt-5 space-y-4">
             <div>
-              <label htmlFor="gl-name" className={label}>Name</label>
-              <input id="gl-name" className={field} value={name} onChange={(e) => setName(e.target.value)} placeholder="Jane Traveller" maxLength={100} />
+              <label htmlFor="gl-name" className={label}>
+                Name
+              </label>
+              <input
+                id="gl-name"
+                className={field}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder="Jane Traveller"
+                maxLength={100}
+              />
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
-                <label htmlFor="gl-email" className={label}>Email</label>
-                <input id="gl-email" type="email" className={field} value={email} onChange={(e) => setEmail(e.target.value)} placeholder="jane@example.com" maxLength={255} />
+                <label htmlFor="gl-email" className={label}>
+                  Email
+                </label>
+                <input
+                  id="gl-email"
+                  type="email"
+                  className={field}
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="jane@example.com"
+                  maxLength={255}
+                />
               </div>
               <div>
-                <label htmlFor="gl-wa" className={label}>WhatsApp number</label>
-                <input id="gl-wa" type="tel" className={field} value={whatsapp} onChange={(e) => setWhatsapp(e.target.value)} placeholder="+1 555 0100" maxLength={30} />
+                <label htmlFor="gl-wa" className={label}>
+                  WhatsApp number
+                </label>
+                <input
+                  id="gl-wa"
+                  type="tel"
+                  className={field}
+                  value={whatsapp}
+                  onChange={(e) => setWhatsapp(e.target.value)}
+                  placeholder="+1 555 0100"
+                  maxLength={30}
+                />
               </div>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
               <div>
-                <label htmlFor="gl-country" className={label}>Country</label>
-                <input id="gl-country" className={field} value={country} onChange={(e) => setCountry(e.target.value)} placeholder="United Kingdom" maxLength={60} />
+                <label htmlFor="gl-country" className={label}>
+                  Country
+                </label>
+                <input
+                  id="gl-country"
+                  className={field}
+                  value={country}
+                  onChange={(e) => setCountry(e.target.value)}
+                  placeholder="United Kingdom"
+                  maxLength={60}
+                />
               </div>
               <div>
-                <label htmlFor="gl-travellers" className={label}>Travellers</label>
-                <input id="gl-travellers" className={field} value={travellers} onChange={(e) => setTravellers(e.target.value)} placeholder="2 adults" maxLength={40} />
+                <label htmlFor="gl-travellers" className={label}>
+                  Travellers
+                </label>
+                <input
+                  id="gl-travellers"
+                  className={field}
+                  value={travellers}
+                  onChange={(e) => setTravellers(e.target.value)}
+                  placeholder="2 adults"
+                  maxLength={40}
+                />
               </div>
             </div>
             <div>
-              <label htmlFor="gl-dates" className={label}>Preferred travel dates</label>
-              <input id="gl-dates" className={field} value={dates} onChange={(e) => setDates(e.target.value)} placeholder="June 2027, flexible" maxLength={80} />
+              <label htmlFor="gl-dates" className={label}>
+                Preferred travel dates
+              </label>
+              <input
+                id="gl-dates"
+                className={field}
+                value={dates}
+                onChange={(e) => setDates(e.target.value)}
+                placeholder="June 2027, flexible"
+                maxLength={80}
+              />
             </div>
             <div>
-              <label htmlFor="gl-message" className={label}>Message</label>
-              <textarea id="gl-message" rows={3} className={field} value={message} onChange={(e) => setMessage(e.target.value)} maxLength={1000} />
+              <label htmlFor="gl-message" className={label}>
+                Message
+              </label>
+              <textarea
+                id="gl-message"
+                rows={3}
+                className={field}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
+                maxLength={1000}
+              />
             </div>
           </div>
 

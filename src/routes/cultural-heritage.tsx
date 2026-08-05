@@ -20,7 +20,11 @@ export const Route = createFileRoute("/cultural-heritage")({
   component: () => (
     <GuidePage
       eyebrow="Beyond the Wildlife"
-      title={<>Uganda's culture is <em className="italic text-gold">as varied as its landscape</em>.</>}
+      title={
+        <>
+          Uganda's culture is <em className="italic text-gold">as varied as its landscape</em>.
+        </>
+      }
       intro="Four historic kingdoms, over fifty ethnic groups, and communities ranging from ancient forest dwellers to semi-nomadic cattle herders — Uganda's cultural diversity rarely gets the same billing as its wildlife, but it's just as central to understanding the country."
       heroImage={batwaDance}
       heroAlt="Batwa community cultural performance in south-western Uganda"
@@ -49,10 +53,22 @@ export const Route = createFileRoute("/cultural-heritage")({
         },
       ]}
       faqs={[
-        { q: "How should I approach visiting communities respectfully?", a: "Always through a guided, consented visit rather than an informal stop — we arrange cultural encounters directly with the communities involved, on their terms and at fair rates, treating the visit as an exchange rather than a photo opportunity." },
-        { q: "Is it okay to photograph people?", a: "Always ask first. Most communities are happy to be photographed as part of a guided cultural visit, but a private moment or an unposed roadside encounter is a different matter — ask, and respect a no." },
-        { q: "Can I visit the Kasubi Tombs?", a: "Yes — it's an easy stop just outside Kampala, worth combining with a city day at the start or end of your trip." },
-        { q: "Do cultural visits work well alongside a wildlife-focused itinerary?", a: "Very well — the Batwa Trail pairs naturally with a Bwindi gorilla trek, and a Karamojong village visit fits easily alongside time in Kidepo Valley." },
+        {
+          q: "How should I approach visiting communities respectfully?",
+          a: "Always through a guided, consented visit rather than an informal stop — we arrange cultural encounters directly with the communities involved, on their terms and at fair rates, treating the visit as an exchange rather than a photo opportunity.",
+        },
+        {
+          q: "Is it okay to photograph people?",
+          a: "Always ask first. Most communities are happy to be photographed as part of a guided cultural visit, but a private moment or an unposed roadside encounter is a different matter — ask, and respect a no.",
+        },
+        {
+          q: "Can I visit the Kasubi Tombs?",
+          a: "Yes — it's an easy stop just outside Kampala, worth combining with a city day at the start or end of your trip.",
+        },
+        {
+          q: "Do cultural visits work well alongside a wildlife-focused itinerary?",
+          a: "Very well — the Batwa Trail pairs naturally with a Bwindi gorilla trek, and a Karamojong village visit fits easily alongside time in Kidepo Valley.",
+        },
       ]}
       related={[
         { name: "Bwindi Impenetrable", to: "/destinations/bwindi-impenetrable" },

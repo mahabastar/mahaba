@@ -61,7 +61,11 @@ export const Route = createFileRoute("/destinations/rwenzori-mountains")({
       slug="rwenzori-mountains"
       eyebrow="Rwenzori Mountains National Park"
       name="Rwenzori Mountains"
-      tagline={<>Africa's <em className="italic text-gold">Mountains of the Moon</em>.</>}
+      tagline={
+        <>
+          Africa's <em className="italic text-gold">Mountains of the Moon</em>.
+        </>
+      }
       intro="A UNESCO World Heritage range on the Uganda–DR Congo border, glaciated within sight of the equator. From a gentle foothill day hike to a full glacier-crossing expedition to Africa's third-highest peak, the Rwenzori offers a version of Uganda most visitors never see."
       heroImage={sceneRwenzori}
       heroAlt="Trekkers crossing a glacier in the Rwenzori Mountains, Uganda"
@@ -95,23 +99,57 @@ export const Route = createFileRoute("/destinations/rwenzori-mountains")({
         { src: g_rwenzori_4, alt: "Rwenzori Mountains National Park" },
       ]}
       highlights={[
-        { title: "Africa's third-highest peak", desc: "Margherita Peak, 5,109m, reached via glacier travel and fixed ropes on the final approach." },
-        { title: "Five vegetation zones", desc: "Montane forest, bamboo, heather-giant lobelia moorland, alpine and glacial zones in a single trek." },
-        { title: "Foothill day hikes", desc: "Waterfalls, hot springs and viewpoints reachable without any technical climbing or multi-day commitment." },
-        { title: "Genuinely uncrowded", desc: "A fraction of the visitor numbers of Kilimanjaro or Mount Kenya, on comparably dramatic terrain." },
-        { title: "UNESCO World Heritage status", desc: "Recognised for its unique afro-alpine ecosystems and glaciated peaks." },
-        { title: "Local Bakonzo guides and porters", desc: "Every trek supports the mountain communities whose knowledge makes the route possible." },
+        {
+          title: "Africa's third-highest peak",
+          desc: "Margherita Peak, 5,109m, reached via glacier travel and fixed ropes on the final approach.",
+        },
+        {
+          title: "Five vegetation zones",
+          desc: "Montane forest, bamboo, heather-giant lobelia moorland, alpine and glacial zones in a single trek.",
+        },
+        {
+          title: "Foothill day hikes",
+          desc: "Waterfalls, hot springs and viewpoints reachable without any technical climbing or multi-day commitment.",
+        },
+        {
+          title: "Genuinely uncrowded",
+          desc: "A fraction of the visitor numbers of Kilimanjaro or Mount Kenya, on comparably dramatic terrain.",
+        },
+        {
+          title: "UNESCO World Heritage status",
+          desc: "Recognised for its unique afro-alpine ecosystems and glaciated peaks.",
+        },
+        {
+          title: "Local Bakonzo guides and porters",
+          desc: "Every trek supports the mountain communities whose knowledge makes the route possible.",
+        },
       ]}
       itinerary={[
-        { day: "Day 01", title: "Fort Portal → Rwenzori foothills", desc: "Arrive at the trailhead region, meet your guides and porters, and settle in ahead of tomorrow's ascent into the forest zone." },
-        { day: "Day 02–03", title: "Into the mountains", desc: "Trek up through montane forest and bamboo into the heather zone, climbing steadily through the range's distinct vegetation bands." },
-        { day: "Day 04+", title: "Summit push or turnaround", desc: "Full expeditions continue toward Margherita's glacier and summit; shorter itineraries turn back from a high viewpoint for a lighter, equally scenic trek." },
+        {
+          day: "Day 01",
+          title: "Fort Portal → Rwenzori foothills",
+          desc: "Arrive at the trailhead region, meet your guides and porters, and settle in ahead of tomorrow's ascent into the forest zone.",
+        },
+        {
+          day: "Day 02–03",
+          title: "Into the mountains",
+          desc: "Trek up through montane forest and bamboo into the heather zone, climbing steadily through the range's distinct vegetation bands.",
+        },
+        {
+          day: "Day 04+",
+          title: "Summit push or turnaround",
+          desc: "Full expeditions continue toward Margherita's glacier and summit; shorter itineraries turn back from a high viewpoint for a lighter, equally scenic trek.",
+        },
       ]}
       bestTime="June–August and December–February bring the clearest, driest conditions for both summit attempts and shorter day hikes. Expect rain and mud in any season — this is one of the wettest ranges in Africa."
       gettingThere="Fly into Entebbe International Airport, then drive roughly 5–6 hours west to the Kasese or Kilembe trailheads, or connect via a short domestic flight to Kasese airstrip followed by a short transfer."
       related={[
         { name: "Chimpanzee Trekking, Kibale", to: "/destinations/kibale-forest", img: expChimp },
-        { name: "Gorilla Trekking, Bwindi", to: "/destinations/gorilla-trekking", img: heroGorilla },
+        {
+          name: "Gorilla Trekking, Bwindi",
+          to: "/destinations/gorilla-trekking",
+          img: heroGorilla,
+        },
         { name: "Murchison Falls", to: "/destinations/murchison-falls", img: sceneFalls },
       ]}
       faqs={FAQS}

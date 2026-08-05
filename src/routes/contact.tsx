@@ -53,9 +53,12 @@ function Contact() {
             Let's start <em className="italic text-gold">a conversation.</em>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-ivory/75">
-            Tell us a little about your trip, and we'll get back to you directly — no
-            call centre, no automated reply. In a hurry?{" "}
-            <Link to="/quote-request" className="underline decoration-gold/50 underline-offset-4 hover:text-gold">
+            Tell us a little about your trip, and we'll get back to you directly — no call centre,
+            no automated reply. In a hurry?{" "}
+            <Link
+              to="/quote-request"
+              className="underline decoration-gold/50 underline-offset-4 hover:text-gold"
+            >
               Request a fast quote
             </Link>{" "}
             instead.
@@ -72,7 +75,10 @@ function Contact() {
 
               <div className="mt-6 space-y-5">
                 <div>
-                  <label htmlFor="contact-name" className="text-xs uppercase tracking-widest text-charcoal/50">
+                  <label
+                    htmlFor="contact-name"
+                    className="text-xs uppercase tracking-widest text-charcoal/50"
+                  >
                     Your name
                   </label>
                   <input
@@ -85,7 +91,10 @@ function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="contact-dates" className="text-xs uppercase tracking-widest text-charcoal/50">
+                  <label
+                    htmlFor="contact-dates"
+                    className="text-xs uppercase tracking-widest text-charcoal/50"
+                  >
                     Approximate travel dates
                   </label>
                   <input
@@ -98,7 +107,10 @@ function Contact() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="contact-message" className="text-xs uppercase tracking-widest text-charcoal/50">
+                  <label
+                    htmlFor="contact-message"
+                    className="text-xs uppercase tracking-widest text-charcoal/50"
+                  >
                     What are you hoping to do?
                   </label>
                   <textarea
@@ -113,8 +125,8 @@ function Contact() {
               </div>
 
               <p className="mt-4 text-xs text-charcoal/40">
-                This form doesn't submit automatically — it opens WhatsApp or your email
-                app with your message pre-filled, ready to send.
+                This form doesn't submit automatically — it opens WhatsApp or your email app with
+                your message pre-filled, ready to send.
               </p>
 
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
@@ -152,7 +164,9 @@ function Contact() {
                 </a>
               </div>
               {!ready && (
-                <p className="mt-3 text-xs text-charcoal/40">Fill in your name and a message to continue.</p>
+                <p className="mt-3 text-xs text-charcoal/40">
+                  Fill in your name and a message to continue.
+                </p>
               )}
             </div>
 
@@ -183,7 +197,10 @@ function Contact() {
                   </div>
                   <div>
                     <div className="text-ivory/50">Email</div>
-                    <a href={`mailto:${SITE_CONFIG.email}`} className="mt-1 block text-ivory hover:text-gold">
+                    <a
+                      href={`mailto:${SITE_CONFIG.email}`}
+                      className="mt-1 block text-ivory hover:text-gold"
+                    >
                       {SITE_CONFIG.email}
                     </a>
                   </div>
@@ -197,10 +214,13 @@ function Contact() {
               <div className="rounded-3xl border border-charcoal/10 bg-mist p-8">
                 <div className="eyebrow !text-forest">Not sure what to ask yet?</div>
                 <p className="mt-3 text-sm text-charcoal/70">
-                  Try our Build My Safari planner first — five quick questions, and we'll
-                  already have a starting point before we even speak.
+                  Try our Build My Safari planner first — five quick questions, and we'll already
+                  have a starting point before we even speak.
                 </p>
-                <Link to="/build-my-safari" className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-forest hover:text-forest-deep">
+                <Link
+                  to="/build-my-safari"
+                  className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-forest hover:text-forest-deep"
+                >
                   Build My Safari <span aria-hidden>→</span>
                 </Link>
               </div>
