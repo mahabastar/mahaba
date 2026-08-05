@@ -5,7 +5,7 @@ import expSipi from "@/assets/exp-sipi.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
 import kidepoCheetah from "@/assets/gallery/kidepo-cheetah.jpg";
 import mburoHorsebackZebra from "@/assets/gallery/lake-mburo-horseback-zebra.jpg";
-import expShoebill from "@/assets/exp-shoebill.jpg";
+import rhinoZiwa from "@/assets/gallery/rhino-ziwa.jpg";
 
 import type { CategoryItem } from "@/components/CategoryHub";
 
@@ -78,7 +78,7 @@ export const UNTOLD_SECRETS: CategoryItem[] = [
     knownFor: "Tracking rhino on foot",
     blurb:
       "The only place in Uganda to see wild rhino, and one of very few anywhere in Africa where you track them on foot rather than from a vehicle.",
-    img: expShoebill,
+    img: rhinoZiwa,
     to: "/destinations/ziwa-rhino-sanctuary",
   },
   {
