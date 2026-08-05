@@ -4,7 +4,8 @@ import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
 import sceneElephants from "@/assets/scene-elephants.jpg";
 import expSipi from "@/assets/exp-sipi.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
-import elephantSavanna from "@/assets/elephant-savanna.jpg";
+import kidepoCheetah from "@/assets/gallery/kidepo-cheetah.jpg";
+import mburoHorsebackZebra from "@/assets/gallery/lake-mburo-horseback-zebra.jpg";
 import expShoebill from "@/assets/exp-shoebill.jpg";
 
 import type { CategoryItem } from "@/components/CategoryHub";
@@ -18,7 +19,7 @@ export const UNTOLD_SECRETS: CategoryItem[] = [
     knownFor: "Africa's most remote savannah",
     blurb:
       "Open plains framed by the Morungole mountains, ostrich and cheetah found nowhere else in Uganda, and a fraction of the visitors of any other park.",
-    img: elephantSavanna,
+    img: kidepoCheetah,
     to: "/destinations/kidepo-valley",
   },
   {
@@ -58,7 +59,7 @@ export const UNTOLD_SECRETS: CategoryItem[] = [
     knownFor: "Walking & horseback safaris",
     blurb:
       "Uganda's only park where walking among zebra, impala and eland is routine — and the one most travellers drive straight past on the way to Bwindi.",
-    img: sceneElephants,
+    img: mburoHorsebackZebra,
     to: "/destinations/lake-mburo",
   },
   {
