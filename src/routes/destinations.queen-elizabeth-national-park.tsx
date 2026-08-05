@@ -86,7 +86,7 @@ export const Route = createFileRoute("/destinations/queen-elizabeth-national-par
         { src: g_qenp_moments_1, alt: "Lioness resting in a fig tree, Queen Elizabeth National Park" },
         { src: g_qenp_moments_2, alt: "Waterbuck and calf on the plains, Queen Elizabeth National Park" },
         { src: g_qenp_moments_3, alt: "Leopard crossing the track ahead of a game drive, Queen Elizabeth National Park" },
-        { src: g_qenp_moments_4, alt: "Giraffes browsing acacia in Queen Elizabeth National Park" },
+        
       ]}
       highlights={[
         { title: "Kazinga Channel boat cruise", desc: "Two hours past one of Africa's largest hippo concentrations — widely rated the park's best activity." },
