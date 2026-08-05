@@ -5,12 +5,6 @@ import sceneElephants from "@/assets/scene-elephants.jpg";
 import sceneLion from "@/assets/scene-lion.jpg";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
-import g_qenp_1 from "@/assets/gallery/qenp-1.jpg";
-import g_qenp_2 from "@/assets/gallery/qenp-2.jpg";
-import g_qenp_gate from "@/assets/gallery/qenp-gate.jpg";
-import g_hippo_road from "@/assets/gallery/hippo-road.jpg";
-import g_tree_lion from "@/assets/gallery/tree-lion.jpg";
-import g_qenp_3 from "@/assets/gallery/qenp-3.jpg";
 import g_qenp_moments_1 from "@/assets/gallery/qenp-moments-1.jpg";
 import g_qenp_moments_2 from "@/assets/gallery/qenp-moments-2.jpg";
 import g_qenp_moments_3 from "@/assets/gallery/qenp-moments-3.jpg";
@@ -89,16 +83,10 @@ export const Route = createFileRoute("/destinations/queen-elizabeth-national-par
         },
       ]}
       galleryImages={[
-        { src: g_qenp_moments_1, alt: "Moments from Queen Elizabeth National Park" },
-        { src: g_qenp_moments_2, alt: "Kazinga Channel wildlife, Queen Elizabeth" },
-        { src: g_qenp_moments_3, alt: "Game drive in Queen Elizabeth National Park" },
-        { src: g_qenp_moments_4, alt: "Queen Elizabeth National Park landscape" },
-        { src: g_qenp_1, alt: "Queen Elizabeth National Park plains" },
-        { src: g_qenp_2, alt: "Wildlife of Queen Elizabeth National Park" },
-        { src: g_qenp_gate, alt: "Entering Queen Elizabeth National Park" },
-        { src: g_hippo_road, alt: "Hippo beside the park road" },
-        { src: g_tree_lion, alt: "Tree-climbing lion in Ishasha" },
-        { src: g_qenp_3, alt: "Kazinga Channel country" },
+        { src: g_qenp_moments_1, alt: "Lioness resting in a fig tree, Queen Elizabeth National Park" },
+        { src: g_qenp_moments_2, alt: "Waterbuck and calf on the plains, Queen Elizabeth National Park" },
+        { src: g_qenp_moments_3, alt: "Leopard crossing the track ahead of a game drive, Queen Elizabeth National Park" },
+        { src: g_qenp_moments_4, alt: "Giraffes browsing acacia in Queen Elizabeth National Park" },
       ]}
       highlights={[
         { title: "Kazinga Channel boat cruise", desc: "Two hours past one of Africa's largest hippo concentrations — widely rated the park's best activity." },

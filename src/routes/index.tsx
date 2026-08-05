@@ -25,7 +25,7 @@ import expShoebill from "@/assets/exp-shoebill.jpg";
 import ctaSunset from "@/assets/cta-sunset.jpg";
 import advRwenzoriHikers from "@/assets/gallery/adventure-rwenzori-hikers.jpg";
 import g_gorilla_silverback from "@/assets/gallery/gorilla-silverback.jpg";
-import g_source_of_the_nile_1 from "@/assets/gallery/source-of-the-nile-1.jpg";
+import g_source_of_the_nile_1 from "@/assets/gallery/jinja-nile-bridge.jpg";
 import g_tree_lion from "@/assets/gallery/tree-lion.jpg";
 import g_shoebill_1 from "@/assets/gallery/shoebill-1.jpg";
 import g_chimp_trekking_1 from "@/assets/gallery/chimp-trekking-1.jpg";
