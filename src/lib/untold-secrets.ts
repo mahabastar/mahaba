@@ -1,7 +1,6 @@
 import sceneRwenzori from "@/assets/scene-rwenzori.jpg";
 import semulikiHotSprings from "@/assets/semuliki-hot-springs.jpg";
 import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
-import sceneElephants from "@/assets/scene-elephants.jpg";
 import expSipi from "@/assets/exp-sipi.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
 import kidepoCheetah from "@/assets/gallery/kidepo-cheetah.jpg";
