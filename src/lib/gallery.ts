@@ -230,7 +230,6 @@ import g_entebbe_moments_6 from "@/assets/gallery/entebbe-moments-6.jpg";
 import g_qenp_moments_1 from "@/assets/gallery/qenp-moments-1.jpg";
 import g_qenp_moments_2 from "@/assets/gallery/qenp-moments-2.jpg";
 import g_qenp_moments_3 from "@/assets/gallery/qenp-moments-3.jpg";
-import g_qenp_moments_4 from "@/assets/gallery/qenp-moments-4.jpg";
 import g_mgahinga_moments_1 from "@/assets/gallery/mgahinga-moments-1.jpg";
 import g_mgahinga_moments_2 from "@/assets/gallery/mgahinga-moments-2.jpg";
 import g_mgahinga_moments_3 from "@/assets/gallery/mgahinga-moments-3.jpg";
@@ -514,10 +513,9 @@ export const GALLERY_PHOTOS: GalleryPhoto[] = [
   { slug: "kidepo-moments-12", src: g_kidepo_moments_12, title: "Moments in Kidepo Valley National Park (12 of 12)", category: "Landscapes" },
   { slug: "white-water-rafting-4", src: g_white_water_rafting_4, title: "White-water rafting on the Nile (4 of 4)", category: "Adventure" },
   { slug: "entebbe-moments-6", src: g_entebbe_moments_6, title: "Moments in Entebbe (6 of 6)", category: "Landscapes" },
-  { slug: "qenp-moments-1", src: g_qenp_moments_1, title: "Moments from Queen Elizabeth National Park (1 of 4)", category: "Landscapes" },
-  { slug: "qenp-moments-2", src: g_qenp_moments_2, title: "Moments from Queen Elizabeth National Park (2 of 4)", category: "Landscapes" },
-  { slug: "qenp-moments-3", src: g_qenp_moments_3, title: "Moments from Queen Elizabeth National Park (3 of 4)", category: "Landscapes" },
-  { slug: "qenp-moments-4", src: g_qenp_moments_4, title: "Moments from Queen Elizabeth National Park (4 of 4)", category: "Landscapes" },
+  { slug: "qenp-moments-1", src: g_qenp_moments_1, title: "Moments from Queen Elizabeth National Park (1 of 3)", category: "Landscapes" },
+  { slug: "qenp-moments-2", src: g_qenp_moments_2, title: "Moments from Queen Elizabeth National Park (2 of 3)", category: "Landscapes" },
+  { slug: "qenp-moments-3", src: g_qenp_moments_3, title: "Moments from Queen Elizabeth National Park (3 of 3)", category: "Landscapes" },
   { slug: "mgahinga-moments-1", src: g_mgahinga_moments_1, title: "Moments from Mgahinga gorilla trekking (1 of 8)", category: "Gorilla Trekking" },
   { slug: "mgahinga-moments-2", src: g_mgahinga_moments_2, title: "Moments from Mgahinga gorilla trekking (2 of 8)", category: "Gorilla Trekking" },
   { slug: "mgahinga-moments-3", src: g_mgahinga_moments_3, title: "Moments from Mgahinga gorilla trekking (3 of 8)", category: "Gorilla Trekking" },
