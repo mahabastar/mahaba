@@ -8,7 +8,7 @@ import sceneBunyonyi from "@/assets/scene-bunyonyi.jpg";
 import g_qenp_moments_1 from "@/assets/gallery/qenp-moments-1.jpg";
 import g_qenp_moments_2 from "@/assets/gallery/qenp-moments-2.jpg";
 import g_qenp_moments_3 from "@/assets/gallery/qenp-moments-3.jpg";
-import g_qenp_moments_4 from "@/assets/gallery/qenp-moments-4.jpg";
+
 
 const FAQS = [
   {
