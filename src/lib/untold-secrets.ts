@@ -5,7 +5,7 @@ import expSipi from "@/assets/exp-sipi.jpg";
 import sceneCulture from "@/assets/scene-culture.jpg";
 import kidepoCheetah from "@/assets/gallery/kidepo-cheetah.jpg";
 import mburoHorsebackZebra from "@/assets/gallery/lake-mburo-horseback-zebra.jpg";
-import rhinoZiwa from "@/assets/gallery/rhino-ziwa.jpg";
+import rhinoZiwa from "@/assets/gallery/ziwa-sanctuary-sign.jpg";
 
 import type { CategoryItem } from "@/components/CategoryHub";
 
