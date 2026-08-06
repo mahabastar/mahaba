@@ -105,26 +105,37 @@ function About() {
           <div className="eyebrow !text-forest">Our story</div>
           <div className="mt-5 space-y-5 text-lg leading-relaxed text-charcoal/80 text-pretty">
             <p>
-              Trek Wild Uganda was built on one simple idea: the best adventures come from
+              Trek Wild Uganda was built on one simple idea: the best journeys come from
               people who actually know the land. Not a call centre in another time zone, not
-              a brochure written from a desk — guides who have spent their working lives in
-              these forests, on these roads, and at these viewpoints.
+              a brochure written at a desk — guides who have spent their working lives in
+              these forests, on these roads and at these viewpoints, and who go home to
+              them afterwards.
             </p>
             <p>
               Between our two founders sit twenty-four years of professional guiding across
-              Uganda. Years of tracking gorillas in Bwindi before the mist lifts, of reading
-              which way a herd will move at Paraa, of knowing which lodge kitchen will still
-              feed you at ten at night after a long transfer from Kidepo. That knowledge
-              isn't something you can buy in; it's accumulated one trip at a time.
+              Uganda. Years of tracking gorillas in Bwindi before the mist lifts off the
+              ridge, of reading which way a herd will move at Paraa, of knowing which lodge
+              kitchen will still feed you at ten at night after a long transfer from Kidepo.
+              That knowledge isn't something a company can buy in; it accumulates one trip
+              at a time, one wrong turn at a time.
             </p>
             <p>
-              We built this site the way we'd want a trip planned: with real information
-              before a sales pitch. A wildlife guide you can search, a calendar that tells
-              you honestly which month suits you, a calculator that gives you a number
-              before you have to ask for one. Every photograph you see here was taken by us,
-              on our own trips. By the time you talk to us, you already know roughly what
-              you want — we just make it happen.
+              We also grew up with these places as neighbours rather than attractions. The
+              forest edge at Bwindi is farmland and school runs as well as gorilla habitat.
+              Ishasha is a fishing village before it is a lion sighting. Part of our job is
+              to make sure you meet the country that way too — invited into it, not simply
+              driven through it — and that the money you spend reaches the households whose
+              cooperation keeps these parks standing.
             </p>
+            <p>
+              We built this site the way we would want a trip planned: real information
+              before a sales pitch. A wildlife guide you can search, a seasonal calendar
+              that tells you honestly which month suits you, a budget calculator that gives
+              you a number before you have to ask for one. Every photograph here was taken
+              by us, on our own trips. By the time you speak to us, you already know roughly
+              what you want — our work is to make it run beautifully.
+            </p>
+
           </div>
         </div>
       </section>
