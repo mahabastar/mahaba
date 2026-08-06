@@ -60,7 +60,6 @@ export const Route = createFileRoute("/cultural-heritage")({
           body: "Traditional dance and drumming remain a living part of Ugandan life rather than a museum piece — the Ndere Cultural Centre in Kampala covers a dozen ethnic traditions in a single evening, from Buganda's rapid baakisimba to the Karimojong's leaping edonga. In the villages you are more likely to meet it unplanned, at a wedding or a school celebration. Craft is equally practical: barkcloth beaten from the mutuba fig tree, a Buganda technique recognised by UNESCO; tight raffia baskets from Bugisu; beadwork and cowhorn from Karamoja. Buying directly from the maker or a women's cooperative keeps far more of the price in the household that produced it.",
         },
       ]}
-
       faqs={[
         { q: "How should I approach visiting communities respectfully?", a: "Always through a guided, consented visit rather than an informal stop — we arrange cultural encounters directly with the communities involved, on their terms and at fair rates, treating the visit as an exchange rather than a photo opportunity." },
         { q: "Is it okay to photograph people?", a: "Always ask first. Most communities are happy to be photographed as part of a guided cultural visit, but a private moment or an unposed roadside encounter is a different matter — ask, and respect a no." },
@@ -71,6 +70,8 @@ export const Route = createFileRoute("/cultural-heritage")({
         { name: "Bwindi Impenetrable", to: "/destinations/bwindi-impenetrable" },
         { name: "Kidepo Valley", to: "/destinations/kidepo-valley" },
         { name: "Responsible Tourism", to: "/responsible-tourism" },
+        { name: "Ugandan Food Guide", to: "/food-guide" },
+        { name: "Coffee & Tea Guide", to: "/coffee-tea-guide" },
       ]}
     />
   ),
