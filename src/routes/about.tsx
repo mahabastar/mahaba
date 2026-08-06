@@ -67,7 +67,6 @@ const FOUNDERS = [
     photoAlt:
       "Xavier Asaaba, co-founder of Trek Wild Uganda, at the snowy summit of Margherita Peak in the Rwenzori Mountains",
     role: "Co-founder & Lead Guide",
-
     body: "Xavier has spent over a decade leading treks through Uganda's forests and savannahs, and has stood on the summit of Margherita Peak more times than he can comfortably count. He reads terrain and weather the way other people read a timetable — where a gorilla family is likely to have nested, when the light over Ishasha will be worth the early start, how to keep a group calm and curious when the trail turns to mud. Guests remember him for the quiet moments as much as the big ones.",
   },
   {
