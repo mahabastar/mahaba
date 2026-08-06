@@ -6,16 +6,24 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/cultural-heritage")({
   head: () => ({
     meta: [
-      { title: "Uganda's Cultural Heritage — Trek Wild Uganda" },
+      { title: "Uganda Cultural Heritage — Kingdoms, Batwa & Karamojong" },
       {
         name: "description",
         content:
-          "Uganda's traditional kingdoms, the Batwa forest people, Karamojong pastoralists, and how to visit respectfully.",
+          "Uganda's four traditional kingdoms, the Batwa forest people, Karamojong pastoralists, village life, music, craft and food — and how to visit communities respectfully.",
       },
-      { property: "og:title", content: "Uganda's Cultural Heritage — Trek Wild Uganda" },
+      { property: "og:title", content: "Uganda Cultural Heritage — Kingdoms, Batwa & Karamojong" },
+      {
+        property: "og:description",
+        content:
+          "Fifty ethnic groups, four kingdoms and communities from forest hunter-gatherers to cattle herders — how to meet Uganda's people on their own terms.",
+      },
+      { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${SITE_CONFIG.url}/cultural-heritage` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/cultural-heritage` }],
+
   }),
   component: () => (
     <GuidePage
