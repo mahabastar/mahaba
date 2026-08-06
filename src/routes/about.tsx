@@ -13,16 +13,24 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us — Trek Wild Uganda" },
+      { title: "About Trek Wild Uganda — Ugandan-Owned Safari Guides" },
       {
         name: "description",
         content:
-          "Trek Wild Uganda is a Uganda-based safari operator built around local expertise, private guiding, and a genuine commitment to conservation and community.",
+          "Meet the Ugandan guides behind Trek Wild Uganda: 24 years of combined field experience, private vehicles on every itinerary, and a working commitment to conservation and the communities beside the parks.",
       },
-      { property: "og:title", content: "About Trek Wild Uganda" },
+      { property: "og:title", content: "About Trek Wild Uganda — Ugandan-Owned Safari Guides" },
+      {
+        property: "og:description",
+        content:
+          "Two Ugandan-born guides, 24 years in the field, and a company built on local knowledge, honest advice and revenue that stays in Uganda.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${SITE_CONFIG.url}/about` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/about` }],
+
   }),
   component: About,
 });
