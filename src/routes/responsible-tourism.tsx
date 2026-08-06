@@ -12,16 +12,24 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/responsible-tourism")({
   head: () => ({
     meta: [
-      { title: "Responsible Tourism Centre — Trek Wild Uganda" },
+      { title: "Responsible Tourism in Uganda — Conservation & Community" },
       {
         name: "description",
         content:
-          "How Trek Wild Uganda supports conservation and the communities bordering Uganda's national parks — and how you can travel responsibly too.",
+          "How Uganda's revenue-sharing model turned gorilla tourism into conservation that works — and exactly how Trek Wild Uganda supports rangers, schools and the communities bordering the parks.",
       },
-      { property: "og:title", content: "Responsible Tourism Centre — Trek Wild Uganda" },
+      { property: "og:title", content: "Responsible Tourism in Uganda — Conservation & Community" },
+      {
+        property: "og:description",
+        content:
+          "Permit fees, revenue-sharing, local employment and community-owned cultural visits — the practical detail behind responsible travel in Uganda.",
+      },
+      { property: "og:type", content: "article" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${SITE_CONFIG.url}/responsible-tourism` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/responsible-tourism` }],
+
   }),
   component: ResponsibleTourism,
 });
