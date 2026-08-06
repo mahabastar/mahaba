@@ -34,16 +34,29 @@ import g_pearl_of_africa from "@/assets/gallery/pearl-of-africa.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Trek Wild Uganda — Discover the Pearl of Africa" },
+      { title: "Uganda Safaris & Gorilla Trekking | Trek Wild Uganda" },
       {
         name: "description",
         content:
-          "Cinematic luxury Uganda safaris — mountain gorillas, tree-climbing lions, the source of the Nile, Rwenzori peaks and warm cultures, crafted by trusted local experts.",
+          "Private, locally guided Uganda safaris — mountain gorillas in Bwindi, chimpanzees in Kibale, tree-climbing lions, the source of the Nile and the Rwenzori peaks. Planned in Kampala by Ugandan guides.",
       },
-      { property: "og:title", content: "Trek Wild Uganda — Discover the Pearl of Africa" },
+      { property: "og:title", content: "Uganda Safaris & Gorilla Trekking | Trek Wild Uganda" },
+      {
+        property: "og:description",
+        content:
+          "Meet mountain gorillas in Bwindi, track chimpanzees in Kibale and stand where the Nile begins — private Uganda safaris designed and led by Ugandan guides.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:description",
+        content:
+          "Private Uganda safaris led by Ugandan guides — gorillas, chimpanzees, the Nile, the Rwenzori and the communities who live alongside them.",
+      },
       { property: "og:url", content: `${SITE_CONFIG.url}/` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/` }],
+
     scripts: [
       {
         type: "application/ld+json",
