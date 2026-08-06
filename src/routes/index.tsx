@@ -386,7 +386,9 @@ function Experiences() {
           <SectionHeader
             eyebrow="Explore by experience"
             title={<>Choose the <em className="italic text-forest">feeling</em> you want to remember.</>}
+            copy="Most travellers combine two or three of these in a single trip. Tell us which ones matter most and we'll shape the route around them."
           />
+
           <Link to="/experiences" className="inline-flex items-center gap-2 text-sm uppercase tracking-widest text-forest hover:text-gold">
             All experiences <span aria-hidden>→</span>
           </Link>
@@ -423,11 +425,12 @@ function Experiences() {
 
 /* ---------------- Regions map ---------------- */
 const regions = [
-  { name: "Western Uganda", slug: "western-uganda", desc: "Gorillas, chimps, Rwenzori peaks, crater lakes.", x: 22, y: 55 },
-  { name: "Northern Uganda", slug: "northern-uganda", desc: "Murchison Falls, Kidepo's untouched savanna.", x: 50, y: 22 },
-  { name: "Eastern Uganda", slug: "eastern-uganda", desc: "Sipi Falls, Mount Elgon, white-water Nile.", x: 78, y: 45 },
-  { name: "Central Uganda", slug: "central-uganda", desc: "Kampala, Entebbe, Ssese Islands, Mabamba.", x: 52, y: 60 },
-  { name: "Karamoja", slug: "karamoja", desc: "Warrior culture, dramatic mountains, wild frontier.", x: 76, y: 25 },
+  { name: "Western Uganda", slug: "western-uganda", desc: "Gorillas in Bwindi, chimpanzees in Kibale, Rwenzori glaciers and a chain of crater lakes above the tea.", x: 22, y: 55 },
+  { name: "Northern Uganda", slug: "northern-uganda", desc: "Murchison Falls forcing the Nile through a seven-metre gap, and Kidepo's vast, barely-visited savanna.", x: 50, y: 22 },
+  { name: "Eastern Uganda", slug: "eastern-uganda", desc: "Sipi Falls and Arabica farms on Mount Elgon, and the white water of the young Nile at Jinja.", x: 78, y: 45 },
+  { name: "Central Uganda", slug: "central-uganda", desc: "Kampala's markets and music, lakeside Entebbe, the Ssese Islands and shoebills at Mabamba Swamp.", x: 52, y: 60 },
+  { name: "Karamoja", slug: "karamoja", desc: "Uganda's pastoralist frontier — Karamojong homesteads, escarpment ranges and genuine remoteness.", x: 76, y: 25 },
+
 ];
 
 
@@ -440,7 +443,9 @@ function Regions() {
           invert
           eyebrow="Explore by region"
           title={<>Five landscapes, each a <em className="italic text-gold">world</em> of its own.</>}
+          copy="Uganda is compact enough that two regions fit comfortably into ten days — and varied enough that they will feel like two different countries."
         />
+
         <div className="mt-16 grid gap-12 lg:grid-cols-2 lg:gap-20">
           <div className="relative aspect-square rounded-3xl border border-ivory/10 bg-forest-deep/40 p-6">
             <svg viewBox="0 0 100 100" className="h-full w-full text-forest">
@@ -523,7 +528,9 @@ function Bucket() {
         <SectionHeader
           eyebrow="Uganda bucket list"
           title={<>The moments you'll <em className="italic text-forest">tell stories</em> about, forever.</>}
+          copy="The experiences guests mention most in the months after they fly home — not because they are rare on a list, but because of how they felt on the day."
         />
+
         <div className="mt-16 grid auto-rows-[180px] grid-cols-2 gap-3 md:grid-cols-4 md:gap-4">
           {bucket.map((b) => {
             const className = `group relative block overflow-hidden rounded-2xl ${b.span ?? ""}`;
@@ -563,7 +570,7 @@ function Journeys() {
           invert
           eyebrow="Signature journeys"
           title={<>Not itineraries. <em className="italic text-gold">Stories</em> waiting to be lived.</>}
-          copy="Every journey is shaped around you — the pace, the moments, the pauses that make it yours."
+          copy="Six routes we run often enough to know intimately — from a three-day gorilla escape to a twenty-one-day circuit of the whole country. Each one is a starting point, adjusted to your pace, your interests and the season you travel in."
         />
         <div className="mt-16 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {JOURNEYS.map((j) => (
@@ -597,12 +604,12 @@ function Journeys() {
 /* ---------------- Conservation ---------------- */
 function Conservation() {
   const pillars = [
-    ["Wildlife", "Anti-poaching, gorilla protection, ranger support."],
-    ["Communities", "Fair wages and long-term partnerships in villages we visit."],
-    ["Education", "School scholarships for the children of park communities."],
-    ["Women-Led", "Sourcing from women-led cooperatives across Uganda."],
-    ["Tree Planting", "Every traveller plants a forest of native trees."],
-    ["Responsible Travel", "Small groups. Light footprints. Deep respect."],
+    ["Wildlife", "Ranger support and anti-poaching patrols in the parks we work in, and gorilla permit fees that fund habitat protection directly."],
+    ["Communities", "Fair wages, long-term partnerships and bookings made directly with the villages and cooperatives we visit."],
+    ["Education", "School fees and materials for children from the communities bordering Bwindi, Kibale and Queen Elizabeth."],
+    ["Women-Led", "Craft, coffee and catering sourced from women-led cooperatives — the most reliable route from tourism income to household income."],
+    ["Tree Planting", "Native indigenous seedlings planted with community nurseries on the forest edge, where buffer zones matter most."],
+    ["Responsible Travel", "Small groups, quiet vehicles, strict wildlife distances, and briefings that treat local etiquette as seriously as safety."],
   ];
   return (
     <section className="relative overflow-hidden bg-ivory">
@@ -614,10 +621,14 @@ function Conservation() {
               Every journey <em className="italic text-forest">gives back</em> to the country that gives you so much.
             </h2>
             <p className="mt-6 text-lg text-charcoal/70">
-              Trek Wild Uganda reinvests directly in the wildlife, land, and people
-              who make Uganda unforgettable. Travel here, and you become part of that story.
+              Uganda's gorillas recovered because the families living beside the forest were
+              given a reason to protect it. That principle shapes how we work: revenue that
+              stays local, guides and rangers from the villages on the park boundary, and
+              partnerships we keep in the quiet season as well as the busy one. Travel here,
+              and you become part of that arithmetic.
             </p>
           </div>
+
         </div>
         <div className="md:col-span-7">
           <div className="grid gap-4 sm:grid-cols-2">
@@ -715,7 +726,9 @@ function Planning() {
         <SectionHeader
           eyebrow="Travel planning hub"
           title={<>Everything you'll need, <em className="italic text-forest">nothing you won't</em>.</>}
+          copy="Visas, vaccinations, permits, packing, weather and honest cost ranges — written by the people who will be meeting you at Entebbe."
         />
+
         <Link
           to="/build-my-safari"
           className="mt-8 inline-flex items-center gap-3 rounded-full bg-forest px-7 py-4 text-sm font-medium text-ivory shadow-md transition-all hover:scale-105 hover:bg-forest-deep"
@@ -815,12 +828,14 @@ function Newsletter() {
             <div>
               <div className="eyebrow !text-charcoal/70">Newsletter</div>
               <h2 className="mt-4 font-display text-4xl text-charcoal text-balance md:text-5xl">
-                Never miss Uganda's next adventure.
+                Letters from the Pearl of Africa.
               </h2>
               <p className="mt-4 max-w-md text-charcoal/75">
-                Field notes, new journeys, and quiet moments from the Pearl of Africa —
-                one thoughtful letter a month.
+                Field notes from the trail, gorilla family news, honest advice on when to
+                travel, and the occasional photograph we couldn't keep to ourselves — one
+                thoughtful letter a month, and nothing else.
               </p>
+
             </div>
             <form
               onSubmit={(e) => e.preventDefault()}
