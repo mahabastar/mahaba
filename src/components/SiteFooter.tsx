@@ -29,10 +29,11 @@ const COLS: { h: string; items: FooterItem[] }[] = [
     h: "Experiences",
     items: [
       { label: "Gorilla Trekking", to: "/destinations/gorilla-trekking" },
-      { label: "Chimpanzees", to: "/destinations/gorilla-trekking" },
-      { label: "Birding", to: "/wildlife-encyclopedia" },
-      { label: "Cultural Tours", to: "/responsible-tourism" },
-      { label: "Photography", to: "/travel-journal" },
+      { label: "Chimpanzee Trekking", to: "/destinations/chimpanzee-trekking" },
+      { label: "Birding & Shoebills", to: "/bird-guide" },
+      { label: "Cultural Experiences", to: "/cultural-heritage" },
+      { label: "Photography Safaris", to: "/gallery" },
+
     ],
   },
   {
@@ -162,7 +163,7 @@ export function SiteFooter() {
         </div>
         <div className="mt-16 flex flex-col items-start justify-between gap-4 border-t border-ivory/10 pt-6 text-xs text-ivory/50 md:flex-row md:items-center">
           <div>© {new Date().getFullYear()} Trek Wild Uganda. All rights reserved.</div>
-          <div>Discover the Pearl of Africa.</div>
+          <div>Ugandan-owned, Ugandan-guided. Discover the Pearl of Africa.</div>
         </div>
       </div>
     </footer>
