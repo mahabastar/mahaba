@@ -93,9 +93,12 @@ function ResponsibleTourism() {
             Travel that <em className="italic text-gold">gives back.</em>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-ivory/75">
-            Conservation and community wellbeing aren't a side note to a Uganda safari —
-            they're the reason there's still something extraordinary left to see.
+            Uganda's mountain gorillas are the only great ape population on earth whose
+            numbers are rising. That did not happen by fencing people out — it happened by
+            giving the families who live beside the forest a stake in keeping it standing.
+            Your trip is part of that arrangement.
           </p>
+
         </div>
       </section>
 
@@ -123,6 +126,11 @@ function ResponsibleTourism() {
           <h2 className="mt-4 max-w-2xl font-display text-4xl text-ivory text-balance md:text-5xl">
             Four commitments that shape every itinerary.
           </h2>
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-ivory/70">
+            None of these add cost to your trip. They simply decide which lodge we book,
+            which guide meets you, and who is paid when you walk into a village.
+          </p>
+
 
           <div className="mt-16 grid grid-cols-1 gap-10 md:grid-cols-2">
             {PILLARS.map((p) => (
@@ -149,6 +157,11 @@ function ResponsibleTourism() {
           <h2 className="mt-4 font-display text-4xl text-charcoal text-balance md:text-5xl">
             What you can do, while you're here.
           </h2>
+          <p className="mt-5 text-base leading-relaxed text-charcoal/70">
+            Small habits, repeated by every visitor, are what make the difference between
+            tourism that erodes a place and tourism that pays for its protection.
+          </p>
+
           <ul className="mt-10 space-y-5">
             {TRAVELER_TIPS.map((t) => (
               <li key={t} className="flex gap-4 rounded-2xl bg-mist p-5">
@@ -186,6 +199,12 @@ function ResponsibleTourism() {
           <h2 className="mt-6 font-display text-4xl text-ivory text-balance md:text-6xl">
             Let's build a trip <em className="italic text-gold">that gives back.</em>
           </h2>
+          <p className="mx-auto mt-6 max-w-xl text-ivory/70">
+            Tell us what matters to you — community stays, a conservation talk with the
+            rangers, buying straight from a women's cooperative — and we'll write it into
+            the days rather than bolt it on at the end.
+          </p>
+
           <div className="mt-10">
             <Link
               to="/build-my-safari"
