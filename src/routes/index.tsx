@@ -878,8 +878,11 @@ function FinalCTA() {
                 Your Uganda story <em className="italic text-gold">starts here.</em>
               </h2>
               <p className="mt-6 max-w-xl text-lg text-ivory/85">
-                Tell us what stirs you, and we'll shape a journey around it — private, unhurried, and unmistakably yours.
+                Tell us what you hope to feel — the hush before a gorilla appears, the roar
+                of Murchison, an evening in a village kitchen — and we'll build the days
+                around it. Private, unhurried, and planned by people who live here.
               </p>
+
               <div className="mt-10 flex flex-wrap gap-4">
                 <Link to="/build-my-safari" className="rounded-full bg-forest px-7 py-4 text-sm font-medium text-ivory shadow-md transition-all hover:scale-105 hover:bg-forest-deep">
                   Plan My Safari

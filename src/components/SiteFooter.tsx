@@ -103,9 +103,11 @@ export function SiteFooter() {
               <span className="font-display text-2xl">Trek Wild Uganda</span>
             </div>
             <p className="mt-6 max-w-sm text-ivory/70">
-              Discover the Pearl of Africa. Cinematic, private safaris crafted by trusted
-              local experts.
+              A Ugandan-owned safari company based in Kampala. Private, unhurried journeys
+              to the gorillas, the Nile and the mountains — guided by people who grew up
+              beside them, and built to leave something behind in the communities we visit.
             </p>
+
             <div className="mt-8 space-y-2 text-sm text-ivory/75">
               <div>
                 <span className="text-ivory/50">WhatsApp: </span>
