@@ -44,19 +44,19 @@ const STATS = [
 const VALUES = [
   {
     title: "Local first",
-    body: "We're based in Uganda, not routing you through a foreign call centre. Guides, drivers and planners here know these parks and roads because they work them, not because they read about them.",
+    body: "We are based in Uganda, not routing you through a foreign call centre. The guides, drivers and planners who answer your questions know these parks and these roads because they work them every week — which is why the advice you get is specific rather than general.",
   },
   {
     title: "Inspire first, sell last",
-    body: "We'd rather you spend ten minutes on our Wildlife Encyclopedia or Seasonal Calendar than on a hard sell. If Uganda is right for you, that becomes obvious on its own.",
+    body: "We would rather you spend ten minutes in our Wildlife Encyclopedia or the Seasonal Safari Calendar than sit through a pitch. If Uganda is the right country for your next trip, that becomes obvious on its own — and if a different month or a shorter route suits you better, we will say so.",
   },
   {
     title: "Money that stays here",
-    body: "Revenue-sharing, local employment, and direct-from-community bookings for cultural visits and homestays — the practical detail behind the word 'responsible.' See our Responsible Tourism Centre for the specifics.",
+    body: "Revenue-sharing with park-adjacent communities, local employment, and cultural visits and homestays booked directly with the families who host them. That is the practical detail behind the word 'responsible' — the Responsible Tourism Centre sets out exactly where it goes.",
   },
   {
     title: "Honest, not polished",
-    body: "Where something's uncertain — a receding glacier, a park still recovering its wildlife — we'll say so. A good trip is built on accurate expectations, not brochure language.",
+    body: "Where something is uncertain — a receding Rwenzori glacier, a park still rebuilding its wildlife numbers, a gorilla group that moved high up the ridge — we tell you before you book. A good trip is built on accurate expectations, not brochure language.",
   },
 ];
 
@@ -67,7 +67,8 @@ const FOUNDERS = [
     photoAlt:
       "Xavier Asaaba, co-founder of Trek Wild Uganda, at the snowy summit of Margherita Peak in the Rwenzori Mountains",
     role: "Co-founder & Lead Guide",
-    body: "Xavier has spent over a decade leading treks through Uganda's forests and savannahs, with a deep knowledge of wildlife behaviour, terrain and timing that only comes from thousands of hours in the field. He has a gift for reading the environment — knowing exactly where the gorillas are likely to be, when the light will be perfect for photographs, and how to keep a group calm and curious even in the thick of the bush.",
+
+    body: "Xavier has spent over a decade leading treks through Uganda's forests and savannahs, and has stood on the summit of Margherita Peak more times than he can comfortably count. He reads terrain and weather the way other people read a timetable — where a gorilla family is likely to have nested, when the light over Ishasha will be worth the early start, how to keep a group calm and curious when the trail turns to mud. Guests remember him for the quiet moments as much as the big ones.",
   },
   {
     name: "Herbert Muzoora",
@@ -75,9 +76,10 @@ const FOUNDERS = [
     photoAlt:
       "Herbert Muzoora, co-founder of Trek Wild Uganda, in Trek Wild Uganda branded cap and shirt in the forest",
     role: "Co-founder & Head of Journeys",
-    body: "Herbert brings the same 12 years of hands-on experience, with an especially sharp instinct for logistics and route planning across some of Uganda's more remote and rewarding destinations. Well before Trek Wild Uganda, he built a reputation for turning long travel days into smooth, enjoyable parts of the journey — always ready with a story, a shortcut, or a well-timed stop at just the right viewpoint.",
+    body: "Herbert brings twelve years of hands-on experience and an unusually sharp instinct for logistics across Uganda's more remote corners — Kidepo, Karamoja, the Semliki valley. Long before Trek Wild Uganda existed he had a reputation for turning transfer days into the part of the trip people talk about afterwards: a story at the right moment, a detour to a roadside market, a stop at a viewpoint that is not on any map. He plans every itinerary personally.",
   },
 ];
+
 
 
 function About() {
