@@ -60,7 +60,7 @@ export const Route = createFileRoute("/destinations/bwindi-impenetrable")({
       eyebrow="Bwindi Impenetrable National Park"
       name="Bwindi Impenetrable"
       tagline={<>Half the world's gorillas, <em className="italic text-gold">one ancient forest</em>.</>}
-      intro="A UNESCO World Heritage rainforest older than the last Ice Age, tangled with vines and 1,000-year-old hardwoods — and home to roughly half of all the mountain gorillas left on Earth. Four separate trekking sectors mean more permits, more habituated families, and more ways into the same extraordinary hour."
+      intro="A UNESCO World Heritage rainforest older than the last Ice Age — tangled with vines, buttressed hardwoods and a canopy so dense that daylight arrives in fragments. Around half of all the mountain gorillas left on Earth live in these 321 square kilometres, alongside the Bakiga farmers and Batwa families whose lives have been shaped by the forest for generations. Four separate trekking sectors mean more permits, more habituated families, and more ways into the same extraordinary hour."
       heroImage={gorillaSilverback}
       heroAlt="A mountain gorilla silverback foraging in Bwindi's undergrowth"
       facts={[
@@ -72,17 +72,22 @@ export const Route = createFileRoute("/destinations/bwindi-impenetrable")({
       sections={[
         {
           title: "Four sectors, one forest",
-          body: "Bwindi isn't a single trekking base but four: Buhoma in the north, Ruhija to the east, and Rushaga and Nkuringo in the south. Each has its own habituated gorilla families, its own terrain, and its own character — which is why where you stay matters as much as when you go.",
+          body: "Bwindi isn't a single trekking base but four: Buhoma in the north, Ruhija to the east, and Rushaga and Nkuringo in the south. Each has its own habituated gorilla families, its own terrain, and its own character — Buhoma the most established and gentlest underfoot, Ruhija the highest and coolest, Rushaga the widest choice of families and home of the longer habituation experience, Nkuringo the steepest and, many say, the most beautiful. Which sector you sleep in decides how your morning begins, so it matters as much as when you go.",
         },
         {
           title: "The forest itself",
-          body: "'Impenetrable' isn't marketing. Bwindi's 321 square kilometres are among the most biodiverse in Africa — over 400 plant species, 350 bird species, and a canopy so dense that GPS trackers and radio calls, not sightlines, are how rangers locate each gorilla family every morning before trekkers set out.",
+          body: "'Impenetrable' isn't marketing. Bwindi is among the most biodiverse places in Africa — over 400 plant species, 350 birds, forest elephants moving unseen through the understorey. The air is cool and wet and smells of leaf litter and wild celery; the noise is constant and layered, cicadas over turacos over the distant crack of a branch. The canopy is thick enough that rangers locate each gorilla family every morning by radio and tracker knowledge rather than sightlines, long before the first trekkers lace their boots.",
+        },
+        {
+          title: "The people of the forest edge",
+          body: "Bwindi is ringed by densely farmed hills — banana gardens, sorghum, tea — worked by Bakiga families whose homes stop exactly where the park boundary begins. The Batwa, who lived inside this forest for millennia as hunter-gatherers, were moved out when it became a national park in 1991; today their guided walks near Buhoma and Nkuringo are among the most honest cultural hours in Uganda, and the income goes straight to the households involved. Twenty percent of park entry revenue is shared with these communities, funding classrooms, clinics and clean water, which is precisely why the forest still stands.",
         },
         {
           title: "More than gorillas",
-          body: "Beyond the primary draw, Bwindi borders Batwa forest communities whose guided cultural walks are among Uganda's most genuine encounters, and its lower trails offer birding rivalled by few other parks on the continent — including 23 species found nowhere else in Uganda.",
+          body: "The lower trails offer birding rivalled by few parks on the continent, including 23 Albertine Rift endemics found nowhere else in Uganda, and walks to the Munyaga River waterfalls that most visitors skip entirely. Give Bwindi a spare afternoon and it will fill it — a village walk through the banana gardens, a coffee or basket-weaving cooperative, or simply the mist rolling back up the valley as the light goes.",
         },
       ]}
+
       galleryImages={[
         { src: g_gorilla_silverback, alt: "Silverback gorilla foraging in Bwindi's undergrowth" },
         { src: g_gorilla_baby, alt: "A young gorilla feeding in the forest" },

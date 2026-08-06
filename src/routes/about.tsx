@@ -13,16 +13,24 @@ import { SITE_CONFIG } from "@/lib/site-config";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us — Trek Wild Uganda" },
+      { title: "About Trek Wild Uganda — Ugandan-Owned Safari Guides" },
       {
         name: "description",
         content:
-          "Trek Wild Uganda is a Uganda-based safari operator built around local expertise, private guiding, and a genuine commitment to conservation and community.",
+          "Meet the Ugandan guides behind Trek Wild Uganda: 24 years of combined field experience, private vehicles on every itinerary, and a working commitment to conservation and the communities beside the parks.",
       },
-      { property: "og:title", content: "About Trek Wild Uganda" },
+      { property: "og:title", content: "About Trek Wild Uganda — Ugandan-Owned Safari Guides" },
+      {
+        property: "og:description",
+        content:
+          "Two Ugandan-born guides, 24 years in the field, and a company built on local knowledge, honest advice and revenue that stays in Uganda.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${SITE_CONFIG.url}/about` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/about` }],
+
   }),
   component: About,
 });
@@ -36,19 +44,19 @@ const STATS = [
 const VALUES = [
   {
     title: "Local first",
-    body: "We're based in Uganda, not routing you through a foreign call centre. Guides, drivers and planners here know these parks and roads because they work them, not because they read about them.",
+    body: "We are based in Uganda, not routing you through a foreign call centre. The guides, drivers and planners who answer your questions know these parks and these roads because they work them every week — which is why the advice you get is specific rather than general.",
   },
   {
     title: "Inspire first, sell last",
-    body: "We'd rather you spend ten minutes on our Wildlife Encyclopedia or Seasonal Calendar than on a hard sell. If Uganda is right for you, that becomes obvious on its own.",
+    body: "We would rather you spend ten minutes in our Wildlife Encyclopedia or the Seasonal Safari Calendar than sit through a pitch. If Uganda is the right country for your next trip, that becomes obvious on its own — and if a different month or a shorter route suits you better, we will say so.",
   },
   {
     title: "Money that stays here",
-    body: "Revenue-sharing, local employment, and direct-from-community bookings for cultural visits and homestays — the practical detail behind the word 'responsible.' See our Responsible Tourism Centre for the specifics.",
+    body: "Revenue-sharing with park-adjacent communities, local employment, and cultural visits and homestays booked directly with the families who host them. That is the practical detail behind the word 'responsible' — the Responsible Tourism Centre sets out exactly where it goes.",
   },
   {
     title: "Honest, not polished",
-    body: "Where something's uncertain — a receding glacier, a park still recovering its wildlife — we'll say so. A good trip is built on accurate expectations, not brochure language.",
+    body: "Where something is uncertain — a receding Rwenzori glacier, a park still rebuilding its wildlife numbers, a gorilla group that moved high up the ridge — we tell you before you book. A good trip is built on accurate expectations, not brochure language.",
   },
 ];
 
@@ -59,7 +67,7 @@ const FOUNDERS = [
     photoAlt:
       "Xavier Asaaba, co-founder of Trek Wild Uganda, at the snowy summit of Margherita Peak in the Rwenzori Mountains",
     role: "Co-founder & Lead Guide",
-    body: "Xavier has spent over a decade leading treks through Uganda's forests and savannahs, with a deep knowledge of wildlife behaviour, terrain and timing that only comes from thousands of hours in the field. He has a gift for reading the environment — knowing exactly where the gorillas are likely to be, when the light will be perfect for photographs, and how to keep a group calm and curious even in the thick of the bush.",
+    body: "Xavier has spent over a decade leading treks through Uganda's forests and savannahs, and has stood on the summit of Margherita Peak more times than he can comfortably count. He reads terrain and weather the way other people read a timetable — where a gorilla family is likely to have nested, when the light over Ishasha will be worth the early start, how to keep a group calm and curious when the trail turns to mud. Guests remember him for the quiet moments as much as the big ones.",
   },
   {
     name: "Herbert Muzoora",
@@ -67,9 +75,10 @@ const FOUNDERS = [
     photoAlt:
       "Herbert Muzoora, co-founder of Trek Wild Uganda, in Trek Wild Uganda branded cap and shirt in the forest",
     role: "Co-founder & Head of Journeys",
-    body: "Herbert brings the same 12 years of hands-on experience, with an especially sharp instinct for logistics and route planning across some of Uganda's more remote and rewarding destinations. Well before Trek Wild Uganda, he built a reputation for turning long travel days into smooth, enjoyable parts of the journey — always ready with a story, a shortcut, or a well-timed stop at just the right viewpoint.",
+    body: "Herbert brings twelve years of hands-on experience and an unusually sharp instinct for logistics across Uganda's more remote corners — Kidepo, Karamoja, the Semliki valley. Long before Trek Wild Uganda existed he had a reputation for turning transfer days into the part of the trip people talk about afterwards: a story at the right moment, a detour to a roadside market, a stop at a viewpoint that is not on any map. He plans every itinerary personally.",
   },
 ];
+
 
 
 function About() {
@@ -96,26 +105,37 @@ function About() {
           <div className="eyebrow !text-forest">Our story</div>
           <div className="mt-5 space-y-5 text-lg leading-relaxed text-charcoal/80 text-pretty">
             <p>
-              Trek Wild Uganda was built on one simple idea: the best adventures come from
+              Trek Wild Uganda was built on one simple idea: the best journeys come from
               people who actually know the land. Not a call centre in another time zone, not
-              a brochure written from a desk — guides who have spent their working lives in
-              these forests, on these roads, and at these viewpoints.
+              a brochure written at a desk — guides who have spent their working lives in
+              these forests, on these roads and at these viewpoints, and who go home to
+              them afterwards.
             </p>
             <p>
               Between our two founders sit twenty-four years of professional guiding across
-              Uganda. Years of tracking gorillas in Bwindi before the mist lifts, of reading
-              which way a herd will move at Paraa, of knowing which lodge kitchen will still
-              feed you at ten at night after a long transfer from Kidepo. That knowledge
-              isn't something you can buy in; it's accumulated one trip at a time.
+              Uganda. Years of tracking gorillas in Bwindi before the mist lifts off the
+              ridge, of reading which way a herd will move at Paraa, of knowing which lodge
+              kitchen will still feed you at ten at night after a long transfer from Kidepo.
+              That knowledge isn't something a company can buy in; it accumulates one trip
+              at a time, one wrong turn at a time.
             </p>
             <p>
-              We built this site the way we'd want a trip planned: with real information
-              before a sales pitch. A wildlife guide you can search, a calendar that tells
-              you honestly which month suits you, a calculator that gives you a number
-              before you have to ask for one. Every photograph you see here was taken by us,
-              on our own trips. By the time you talk to us, you already know roughly what
-              you want — we just make it happen.
+              We also grew up with these places as neighbours rather than attractions. The
+              forest edge at Bwindi is farmland and school runs as well as gorilla habitat.
+              Ishasha is a fishing village before it is a lion sighting. Part of our job is
+              to make sure you meet the country that way too — invited into it, not simply
+              driven through it — and that the money you spend reaches the households whose
+              cooperation keeps these parks standing.
             </p>
+            <p>
+              We built this site the way we would want a trip planned: real information
+              before a sales pitch. A wildlife guide you can search, a seasonal calendar
+              that tells you honestly which month suits you, a budget calculator that gives
+              you a number before you have to ask for one. Every photograph here was taken
+              by us, on our own trips. By the time you speak to us, you already know roughly
+              what you want — our work is to make it run beautifully.
+            </p>
+
           </div>
         </div>
       </section>
@@ -129,9 +149,11 @@ function About() {
               Xavier Asaaba &amp; Herbert Muzoora — <em className="italic text-gold">your guides to the Pearl of Africa.</em>
             </h2>
             <p className="mt-5 text-base leading-relaxed text-ivory/75">
-              Two Ugandan-born guides with a combined 24 years of experience showing
-              travellers the very best this country has to offer.
+              Two Ugandan-born guides with a combined twenty-four years in the field. One
+              of them will read your enquiry, and one of them will almost certainly be
+              standing at Entebbe arrivals when you land.
             </p>
+
           </div>
 
           <div className="mt-14 grid gap-10 md:grid-cols-2">
@@ -181,6 +203,11 @@ function About() {
           <h2 className="mt-4 max-w-2xl font-display text-4xl text-charcoal text-balance md:text-5xl">
             Four things we don't compromise on.
           </h2>
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-charcoal/70">
+            These are not marketing lines. They are the four decisions that most often
+            change how a Uganda trip actually feels on the ground.
+          </p>
+
           <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-2">
             {VALUES.map((v) => (
               <div key={v.title} className="border-t border-charcoal/10 pt-6">
@@ -202,12 +229,16 @@ function About() {
                 Drawn from the communities bordering the parks.
               </h2>
               <p className="mt-5 text-sm leading-relaxed text-ivory/75 md:text-base">
-                Many of the rangers, trackers and guides we work with grew up in villages on
-                a park boundary — they know the terrain and the wildlife's habits from a
-                lifetime spent nearby, not a training manual alone. It's also, practically,
-                how tourism revenue reaches the people whose cooperation keeps these parks
-                protected. More on how that works on our Responsible Tourism Centre.
+                Most of the rangers, trackers and guides we work with grew up in villages on
+                a park boundary. They read the terrain and the animals' habits from a
+                lifetime spent alongside them, not from a training manual — which is why a
+                tracker can tell you a gorilla family fed here two hours ago from a bent
+                stem you would have walked straight past. It is also, practically, how
+                tourism money reaches the households whose cooperation keeps these parks
+                protected: wages, permit revenue-sharing, school fees, and craft and produce
+                bought locally. Our Responsible Tourism Centre sets out the specifics.
               </p>
+
               <Link
                 to="/responsible-tourism"
                 className="mt-6 inline-flex items-center gap-2 text-sm font-medium uppercase tracking-widest text-gold hover:text-ivory"
@@ -232,11 +263,14 @@ function About() {
         <div className="mx-auto max-w-[1000px] px-6 py-24 text-center md:px-10 md:py-32">
           <div className="eyebrow !text-forest">Let's talk</div>
           <h2 className="mt-6 font-display text-4xl text-charcoal text-balance md:text-6xl">
-            Questions before you commit?
+            Tell us what you're hoping for.
           </h2>
-          <p className="mx-auto mt-4 max-w-md text-charcoal/60">
-            Reach out directly, or start with a personalised plan.
+          <p className="mx-auto mt-4 max-w-lg text-charcoal/60">
+            Ask us anything — the right month, whether the trek is within your fitness,
+            how much it really costs. A founder replies, usually within a day, and there
+            is no obligation attached to the conversation.
           </p>
+
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               to="/contact"

@@ -9,16 +9,24 @@ import { trackEvent } from "@/lib/analytics";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Us — Trek Wild Uganda" },
+      { title: "Contact Trek Wild Uganda — Talk to a Ugandan Guide" },
       {
         name: "description",
         content:
-          "Get in touch with Trek Wild Uganda — WhatsApp, email, or send us your trip details directly.",
+          "Speak directly with the Ugandan guides who will plan and lead your safari. WhatsApp, phone or email — a founder replies personally, usually within a day.",
       },
-      { property: "og:title", content: "Contact Trek Wild Uganda" },
+      { property: "og:title", content: "Contact Trek Wild Uganda — Talk to a Ugandan Guide" },
+      {
+        property: "og:description",
+        content:
+          "No call centre and no automated reply — message the team in Uganda who will be planning your gorilla trek and meeting you at Entebbe.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${SITE_CONFIG.url}/contact` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/contact` }],
+
   }),
   component: Contact,
 });
@@ -53,8 +61,9 @@ function Contact() {
             Let's start <em className="italic text-gold">a conversation.</em>
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-lg text-ivory/75">
-            Tell us a little about your trip, and we'll get back to you directly — no
-            call centre, no automated reply. In a hurry?{" "}
+            Tell us who's travelling, roughly when, and what you most hope to see. One of
+            our founders reads every enquiry personally and replies from Uganda — usually
+            within a day, always with real answers rather than a brochure. In a hurry?{" "}
             <Link to="/quote-request" className="underline decoration-gold/50 underline-offset-4 hover:text-gold">
               Request a fast quote
             </Link>{" "}
@@ -189,7 +198,7 @@ function Contact() {
                   </div>
                   <div>
                     <div className="text-ivory/50">Based in</div>
-                    <div className="mt-1 text-ivory">Uganda</div>
+                    <div className="mt-1 text-ivory">Kampala, Uganda (EAT, UTC+3)</div>
                   </div>
                 </div>
               </div>
@@ -197,8 +206,9 @@ function Contact() {
               <div className="rounded-3xl border border-charcoal/10 bg-mist p-8">
                 <div className="eyebrow !text-forest">Not sure what to ask yet?</div>
                 <p className="mt-3 text-sm text-charcoal/70">
-                  Try our Build My Safari planner first — five quick questions, and we'll
-                  already have a starting point before we even speak.
+                  Try the Build My Safari planner first — five short questions about who's
+                  travelling, when, and what matters most. We'll have a draft route in mind
+                  before we even speak, and you'll have something concrete to react to.
                 </p>
                 <Link to="/build-my-safari" className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-forest hover:text-forest-deep">
                   Build My Safari <span aria-hidden>→</span>

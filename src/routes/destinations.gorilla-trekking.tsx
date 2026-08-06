@@ -65,7 +65,7 @@ export const Route = createFileRoute("/destinations/gorilla-trekking")({
       eyebrow="Bwindi Impenetrable Forest"
       name="Gorilla Trekking"
       tagline={<>An hour with the <em className="italic text-gold">silverbacks</em>.</>}
-      intro="Descend into one of Africa's oldest rainforests and stand quietly, breathing the same misty air as a family of mountain gorillas. It is the rarest wildlife encounter on earth — and Uganda protects nearly half of the world's remaining population."
+      intro="You leave the lodge before the mist has lifted, follow a tracker who has known this forest since childhood, and climb until the trail stops being a trail. Then he raises a hand, and three metres away a silverback lifts his head from a stem of wild celery and looks straight at you. There is no fence, no vehicle, no glass. It is the rarest wildlife encounter left on earth — and Uganda protects nearly half of the world's remaining mountain gorillas."
       heroImage={heroGorilla}
       heroAlt="Silverback mountain gorilla resting in the undergrowth of Bwindi rainforest"
       facts={[
@@ -77,17 +77,22 @@ export const Route = createFileRoute("/destinations/gorilla-trekking")({
       sections={[
         {
           title: "A forest older than memory",
-          body: "Bwindi Impenetrable Forest is one of Africa's oldest ecosystems — 25,000 years of unbroken canopy, a living cathedral of ferns, orchids and ancient hardwoods. It is home to more than 400 mountain gorillas, roughly half of the world's remaining population.",
+          body: "Bwindi Impenetrable Forest is one of Africa's oldest ecosystems — some 25,000 years of unbroken canopy that survived the Ice Age when forests around it did not. Ferns, orchids and hardwoods layer into a green so complete it changes the colour of the light. More than 400 mountain gorillas live here, roughly half the world's remaining population, in a species whose numbers are now climbing rather than falling: the only great ape on earth of which that is true.",
         },
         {
           title: "The hour that changes you",
-          body: "After a briefing at dawn, your ranger guides lead you into the forest to find a habituated gorilla family. Once you're with them, the clock begins: one silent, sacred hour with silverbacks, mothers and infants moving through their world as if you were simply another part of it.",
+          body: "You gather at dawn for a briefing, are matched to a family by fitness, and walk in behind rangers already in radio contact with the trackers who found the group at first light. The walk can take one hour or six. Then the clock starts, and everything narrows: an infant somersaulting off a branch, a mother eating with her back turned, a silverback breathing so audibly you feel it. Almost no one speaks. Almost everyone remembers it as the hour that reset their sense of scale.",
         },
         {
           title: "Trekked with intention",
-          body: "Every permit funds ranger patrols, community projects and conservation of the forest itself. Group sizes are limited to eight guests per family, and Trek Wild Uganda pairs each trek with lodges and porters chosen from surrounding villages.",
+          body: "Every USD 800 permit funds ranger patrols, veterinary care and the revenue-sharing scheme that returns a fifth of park income to the villages on the forest boundary — the arrangement that turned local farmers from adversaries into the gorillas' most effective protection. Group sizes are capped at eight guests, distancing rules are enforced, and we book porters, guides and community lodges from the surrounding villages, so the money stays where the forest is.",
+        },
+        {
+          title: "The people you'll meet along the way",
+          body: "Your tracker is likely a Bakiga man from a farm within sight of the park gate; your porter, a woman from a cooperative that shares the day's earnings across the group. The Batwa, evicted from this forest in 1991, now run guided walks that explain how they lived inside it — how to find water in a vine, fire in wet air, medicine in a leaf. Set aside a morning for it. The gorillas are why you came; these conversations are often what you find yourself describing at home.",
         },
       ]}
+
       galleryImages={[
         { src: g_gorilla_silverback, alt: "Silverback gorilla in Bwindi" },
         { src: g_gorilla_lookup, alt: "Mountain gorilla pausing mid-forage" },
