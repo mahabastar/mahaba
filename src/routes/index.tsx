@@ -123,10 +123,12 @@ function Hero() {
             <br /> of Africa
           </h1>
           <p className="mt-8 max-w-xl text-lg leading-relaxed text-ivory/85 md:text-xl">
-            From endangered mountain gorillas and roaring waterfalls to unforgettable
-            wildlife safaris, rich cultures and breathtaking landscapes — Uganda is Africa's
-            most extraordinary destination, waiting to be explored.
+            Mountain gorillas in mist-hung forest. The Nile leaving Lake Victoria on its
+            6,650-kilometre journey north. Glaciers on the equator, and villages where the
+            welcome is genuine. Uganda holds all of it inside a country the size of Britain —
+            and we were born here to show it to you.
           </p>
+
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <Link
               to="/uganda-explorer"
@@ -175,27 +177,29 @@ function Hero() {
 
 /* ---------------- Scroll storytelling ---------------- */
 const scenes = [
-  { n: "01", title: "Welcome to Uganda", sub: "Where nature still reigns.", img: sceneBunyonyi },
-  { n: "02", title: "Home of Mountain Gorillas", sub: "Half the world's population lives here.", img: heroGorilla },
-  { n: "03", title: "Africa's Primate Capital", sub: "13 species, one impossible forest.", img: expChimp },
-  { n: "04", title: "Where the Nile Begins", sub: "The world's longest river, born in Jinja.", img: sceneFalls },
-  { n: "05", title: "Tree-Climbing Lions", sub: "A phenomenon of Ishasha.", img: sceneLion },
-  { n: "06", title: "A Birder's Paradise", sub: "Over 1,000 species take flight.", img: sceneCrane },
-  { n: "07", title: "Snow on the Equator", sub: "The mythic Rwenzori range.", img: sceneRwenzori },
-  { n: "08", title: "Warm Smiles. Rich Cultures.", sub: "Fifty languages, one welcome.", img: sceneCulture },
-  { n: "09", title: "Golden Hour on the Plains", sub: "Elephants against a burning sky.", img: sceneElephants },
-  { n: "10", title: "Your Adventure Starts Here.", sub: "Uganda is waiting.", img: ctaSunset },
+  { n: "01", title: "Welcome to Uganda", sub: "Where nature still sets the pace, and the welcome is personal.", img: sceneBunyonyi },
+  { n: "02", title: "Home of Mountain Gorillas", sub: "Roughly half the world's remaining population lives in these hills.", img: heroGorilla },
+  { n: "03", title: "Africa's Primate Capital", sub: "Thirteen species share one forest — and the noise at dawn proves it.", img: expChimp },
+  { n: "04", title: "Where the Nile Begins", sub: "The world's longest river starts its journey here, at Jinja.", img: sceneFalls },
+  { n: "05", title: "Tree-Climbing Lions", sub: "In Ishasha, whole prides doze in the fig branches.", img: sceneLion },
+  { n: "06", title: "A Birder's Paradise", sub: "Over 1,000 species, including the improbable shoebill.", img: sceneCrane },
+  { n: "07", title: "Snow on the Equator", sub: "The Rwenzori — the Mountains of the Moon, glaciers and all.", img: sceneRwenzori },
+  { n: "08", title: "Warm Smiles. Rich Cultures.", sub: "More than fifty languages, and one shared instinct for hospitality.", img: sceneCulture },
+  { n: "09", title: "Golden Hour on the Plains", sub: "Elephant herds crossing a sky that turns copper in minutes.", img: sceneElephants },
+  { n: "10", title: "Your Journey Starts Here", sub: "Tell us what you want to feel. We'll build the rest.", img: ctaSunset },
 ];
+
 
 function Discover() {
   return (
     <section id="discover" className="relative bg-ivory">
       <div className="mx-auto max-w-[1400px] px-6 py-28 md:px-10 md:py-40">
         <SectionHeader
-          eyebrow="Uganda in 60 seconds"
+          eyebrow="Uganda in ten scenes"
           title={<>A country <em className="italic text-forest">rewritten</em> by every horizon.</>}
-          copy="Ten scenes. One extraordinary country. Scroll slowly."
+          copy="Ten scenes that explain why travellers keep calling Uganda the best-kept secret in East Africa. Scroll slowly — each one is a place you can actually stand in."
         />
+
 
         <div className="mt-20 space-y-24 md:space-y-40">
           {scenes.map((s, i) => (
@@ -274,12 +278,12 @@ function SectionHeader({
 
 /* ---------------- Why Uganda ---------------- */
 const whyCards = [
-  { title: "Mountain Gorillas", desc: "Trek Bwindi's ancient rainforest to meet gentle giants face to face.", img: g_gorilla_silverback, to: "/destinations/gorilla-trekking" },
-  { title: "Source of the Nile", desc: "Stand at the birthplace of the world's longest river.", img: g_source_of_the_nile_1, to: "/destinations/jinja-source-of-the-nile" },
-  { title: "Tree-Climbing Lions", desc: "A rare spectacle above the plains of Ishasha.", img: g_tree_lion, to: "/destinations/tree-climbing-lions" },
-  { title: "1,000+ Bird Species", desc: "One of Africa's greatest birding paradises.", img: g_shoebill_1, to: "/bird-guide" },
-  { title: "Primate Diversity", desc: "The richest concentration of primates on the continent.", img: g_chimp_trekking_1, to: "/destinations/chimpanzee-trekking" },
-  { title: "The Pearl of Africa", desc: "Named by Churchill. Confirmed by everyone who visits.", img: g_pearl_of_africa, to: "/uganda-explorer" },
+  { title: "Mountain Gorillas", desc: "Bwindi is one of only two places on earth where mountain gorillas survive. One hour, a few metres apart, and a habituation programme that has helped their numbers climb.", img: g_gorilla_silverback, to: "/destinations/gorilla-trekking" },
+  { title: "Source of the Nile", desc: "Stand at Jinja where the world's longest river leaves Lake Victoria — the point European explorers spent decades searching for.", img: g_source_of_the_nile_1, to: "/destinations/jinja-source-of-the-nile" },
+  { title: "Tree-Climbing Lions", desc: "In the Ishasha sector of Queen Elizabeth, lions rest in fig trees — behaviour recorded in only a handful of places in Africa.", img: g_tree_lion, to: "/destinations/tree-climbing-lions" },
+  { title: "1,000+ Bird Species", desc: "More than half of Africa's birds in one country, from the prehistoric shoebill to the grey crowned crane on the national flag.", img: g_shoebill_1, to: "/bird-guide" },
+  { title: "Primate Diversity", desc: "Thirteen primate species in Kibale alone, and Africa's densest chimpanzee population living within earshot of the trail.", img: g_chimp_trekking_1, to: "/destinations/chimpanzee-trekking" },
+  { title: "The Pearl of Africa", desc: "Churchill's phrase, written in 1908. A century on, travellers still reach for it after their first week here.", img: g_pearl_of_africa, to: "/uganda-explorer" },
 ];
 
 function WhyUganda() {
@@ -290,7 +294,9 @@ function WhyUganda() {
           invert
           eyebrow="Why Uganda"
           title={<>Six reasons the world has been <em className="italic text-gold">quietly</em> falling in love.</>}
+          copy="No single park does everything. Uganda is the rare country where forest, savanna, mountain, river and culture sit within a day's drive of one another."
         />
+
         <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {whyCards.map((c) => (
             <Link
