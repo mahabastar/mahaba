@@ -9,16 +9,24 @@ import { trackEvent } from "@/lib/analytics";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Us — Trek Wild Uganda" },
+      { title: "Contact Trek Wild Uganda — Talk to a Ugandan Guide" },
       {
         name: "description",
         content:
-          "Get in touch with Trek Wild Uganda — WhatsApp, email, or send us your trip details directly.",
+          "Speak directly with the Ugandan guides who will plan and lead your safari. WhatsApp, phone or email — a founder replies personally, usually within a day.",
       },
-      { property: "og:title", content: "Contact Trek Wild Uganda" },
+      { property: "og:title", content: "Contact Trek Wild Uganda — Talk to a Ugandan Guide" },
+      {
+        property: "og:description",
+        content:
+          "No call centre and no automated reply — message the team in Uganda who will be planning your gorilla trek and meeting you at Entebbe.",
+      },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
       { property: "og:url", content: `${SITE_CONFIG.url}/contact` },
     ],
     links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/contact` }],
+
   }),
   component: Contact,
 });
