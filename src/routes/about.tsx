@@ -149,9 +149,11 @@ function About() {
               Xavier Asaaba &amp; Herbert Muzoora — <em className="italic text-gold">your guides to the Pearl of Africa.</em>
             </h2>
             <p className="mt-5 text-base leading-relaxed text-ivory/75">
-              Two Ugandan-born guides with a combined 24 years of experience showing
-              travellers the very best this country has to offer.
+              Two Ugandan-born guides with a combined twenty-four years in the field. One
+              of them will read your enquiry, and one of them will almost certainly be
+              standing at Entebbe arrivals when you land.
             </p>
+
           </div>
 
           <div className="mt-14 grid gap-10 md:grid-cols-2">
@@ -201,6 +203,11 @@ function About() {
           <h2 className="mt-4 max-w-2xl font-display text-4xl text-charcoal text-balance md:text-5xl">
             Four things we don't compromise on.
           </h2>
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-charcoal/70">
+            These are not marketing lines. They are the four decisions that most often
+            change how a Uganda trip actually feels on the ground.
+          </p>
+
           <div className="mt-14 grid grid-cols-1 gap-10 md:grid-cols-2">
             {VALUES.map((v) => (
               <div key={v.title} className="border-t border-charcoal/10 pt-6">
@@ -222,12 +229,16 @@ function About() {
                 Drawn from the communities bordering the parks.
               </h2>
               <p className="mt-5 text-sm leading-relaxed text-ivory/75 md:text-base">
-                Many of the rangers, trackers and guides we work with grew up in villages on
-                a park boundary — they know the terrain and the wildlife's habits from a
-                lifetime spent nearby, not a training manual alone. It's also, practically,
-                how tourism revenue reaches the people whose cooperation keeps these parks
-                protected. More on how that works on our Responsible Tourism Centre.
+                Most of the rangers, trackers and guides we work with grew up in villages on
+                a park boundary. They read the terrain and the animals' habits from a
+                lifetime spent alongside them, not from a training manual — which is why a
+                tracker can tell you a gorilla family fed here two hours ago from a bent
+                stem you would have walked straight past. It is also, practically, how
+                tourism money reaches the households whose cooperation keeps these parks
+                protected: wages, permit revenue-sharing, school fees, and craft and produce
+                bought locally. Our Responsible Tourism Centre sets out the specifics.
               </p>
+
               <Link
                 to="/responsible-tourism"
                 className="mt-6 inline-flex items-center gap-2 text-sm font-medium uppercase tracking-widest text-gold hover:text-ivory"
@@ -252,11 +263,14 @@ function About() {
         <div className="mx-auto max-w-[1000px] px-6 py-24 text-center md:px-10 md:py-32">
           <div className="eyebrow !text-forest">Let's talk</div>
           <h2 className="mt-6 font-display text-4xl text-charcoal text-balance md:text-6xl">
-            Questions before you commit?
+            Tell us what you're hoping for.
           </h2>
-          <p className="mx-auto mt-4 max-w-md text-charcoal/60">
-            Reach out directly, or start with a personalised plan.
+          <p className="mx-auto mt-4 max-w-lg text-charcoal/60">
+            Ask us anything — the right month, whether the trek is within your fitness,
+            how much it really costs. A founder replies, usually within a day, and there
+            is no obligation attached to the conversation.
           </p>
+
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <Link
               to="/contact"
