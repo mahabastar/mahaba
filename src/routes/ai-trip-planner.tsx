@@ -242,7 +242,7 @@ function AiTripPlanner() {
                 to="/build-my-safari"
                 className="rounded-full bg-forest px-7 py-4 text-sm font-medium text-ivory shadow-md transition-all hover:scale-105 hover:bg-forest-deep"
               >
-                Refine with Build My Safari
+                Refine this plan with our team
               </Link>
               <a
                 href={buildWhatsAppHref(

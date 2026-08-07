@@ -220,7 +220,7 @@ function NationalParksHub() {
               to="/build-my-safari"
               className="rounded-full bg-forest px-7 py-4 text-sm font-medium text-ivory shadow-md transition-all hover:scale-105 hover:bg-forest-deep"
             >
-              Build My Safari
+              Help me choose my parks
             </Link>
             <a
               href={buildWhatsAppHref("Hi! I'd like help choosing which Uganda national parks to visit.")}

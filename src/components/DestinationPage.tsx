@@ -301,7 +301,7 @@ export function DestinationPage(p: DestinationPageProps) {
               to="/build-my-safari"
               className="rounded-full bg-forest px-7 py-4 text-sm font-medium text-ivory shadow-md hover:scale-105 hover:bg-forest-deep transition-all"
             >
-              Build My Safari
+              Plan my trip to {p.name}
             </Link>
             <a
               href={`https://wa.me/${SITE_CONFIG.whatsappNumber}`}

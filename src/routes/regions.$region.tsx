@@ -290,13 +290,13 @@ function RegionPage() {
               to="/build-my-safari"
               className="rounded-full bg-forest px-7 py-4 text-sm font-medium text-ivory shadow-md transition-all hover:scale-105 hover:bg-forest-deep"
             >
-              Build My Safari
+              Plan my {region.name} trip
             </Link>
             <Link
               to="/contact"
               className="rounded-full border border-ivory/40 px-7 py-4 text-sm font-medium text-ivory transition-colors hover:border-gold hover:text-gold"
             >
-              Contact Us
+              Ask a local guide
             </Link>
           </div>
         </div>

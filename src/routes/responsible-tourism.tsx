@@ -210,7 +210,7 @@ function ResponsibleTourism() {
               to="/build-my-safari"
               className="inline-flex rounded-full bg-forest px-7 py-4 text-sm font-medium text-ivory shadow-md transition-all hover:scale-105 hover:bg-forest-deep"
             >
-              Build My Safari
+              Plan a trip that gives back
             </Link>
           </div>
         </div>

@@ -276,13 +276,13 @@ function About() {
               to="/contact"
               className="rounded-full bg-forest px-7 py-4 text-sm font-medium text-ivory shadow-md transition-all hover:scale-105 hover:bg-forest-deep"
             >
-              Contact Us
+              Talk to Xavier or Herbert
             </Link>
             <Link
               to="/build-my-safari"
               className="rounded-full border border-forest/70 px-7 py-4 text-sm font-medium text-charcoal transition-colors hover:border-forest hover:text-forest"
             >
-              Build My Safari
+              Start planning my trip
             </Link>
           </div>
         </div>
