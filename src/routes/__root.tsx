@@ -13,7 +13,7 @@ import { useEffect, type ReactNode } from "react";
 import appCss from "../styles.css?url";
 import { reportLovableError } from "@/lib/lovable-error-reporting";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
-import { trackPageview } from "@/lib/analytics";
+import { trackPageview, GA_MEASUREMENT_ID } from "@/lib/analytics";
 import logoAsset from "@/assets/trek-wild-uganda-logo.png.asset.json";
 
 function NotFoundComponent() {
@@ -134,6 +134,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap",
       },
     ],
+    scripts: GA_MEASUREMENT_ID
+      ? [
+          { src: `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`, async: true },
+          {
+            children: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','${GA_MEASUREMENT_ID}',{send_page_view:false});`,
+          },
+        ]
+      : [],
   }),
   shellComponent: RootShell,
   component: RootComponent,
