@@ -101,6 +101,51 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
+const ORGANIZATION_LD = {
+  "@context": "https://schema.org",
+  "@type": "TravelAgency",
+  "@id": `${SITE_CONFIG.url}/#organization`,
+  name: SITE_CONFIG.name,
+  url: SITE_CONFIG.url,
+  logo: `${SITE_CONFIG.url}/favicon.png`,
+  image: `${SITE_CONFIG.url}/favicon.png`,
+  description:
+    "Ugandan-owned, Ugandan-guided luxury safari company crafting gorilla trekking, chimpanzee tracking, wildlife, birding, hiking and cultural journeys across Uganda.",
+  email: SITE_CONFIG.email,
+  telephone: SITE_CONFIG.phoneWhatsApp,
+  areaServed: "Uganda",
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "UG",
+    addressLocality: "Kampala",
+  },
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      contactType: "customer service",
+      email: SITE_CONFIG.email,
+      telephone: SITE_CONFIG.phoneWhatsApp,
+      availableLanguage: ["English"],
+      areaServed: "Worldwide",
+    },
+  ],
+  sameAs: [
+    SITE_CONFIG.social.instagram,
+    SITE_CONFIG.social.tiktok,
+    SITE_CONFIG.social.facebook,
+  ],
+};
+
+const WEBSITE_LD = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${SITE_CONFIG.url}/#website`,
+  url: SITE_CONFIG.url,
+  name: SITE_CONFIG.name,
+  inLanguage: "en",
+  publisher: { "@id": `${SITE_CONFIG.url}/#organization` },
+};
+
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
@@ -113,7 +158,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Trek Wild Uganda crafts luxury safaris across the Pearl of Africa — gorilla trekking, chimpanzee tracking, wildlife, birding, hiking, culture and honeymoons.",
       },
       { name: "author", content: "Trek Wild Uganda" },
+      { name: "robots", content: "index,follow,max-image-preview:large" },
+      { name: "theme-color", content: "#1B2B21" },
       { property: "og:site_name", content: "Trek Wild Uganda" },
+      { property: "og:locale", content: "en_US" },
       { property: "og:title", content: "Trek Wild Uganda — Discover the Pearl of Africa" },
       {
         property: "og:description",
@@ -134,14 +182,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: "https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500;600;700&display=swap",
       },
     ],
-    scripts: GA_MEASUREMENT_ID
-      ? [
-          { src: `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`, async: true },
-          {
-            children: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','${GA_MEASUREMENT_ID}',{send_page_view:false});`,
-          },
-        ]
-      : [],
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(ORGANIZATION_LD) },
+      { type: "application/ld+json", children: JSON.stringify(WEBSITE_LD) },
+      ...(GA_MEASUREMENT_ID
+        ? [
+            { src: `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`, async: true },
+            {
+              children: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}window.gtag=gtag;gtag('js',new Date());gtag('config','${GA_MEASUREMENT_ID}',{send_page_view:false});`,
+            },
+          ]
+        : []),
+    ],
   }),
   shellComponent: RootShell,
   component: RootComponent,
