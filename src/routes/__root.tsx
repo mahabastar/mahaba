@@ -147,6 +147,11 @@ const WEBSITE_LD = {
   publisher: { "@id": `${SITE_CONFIG.url}/#organization` },
 };
 
+// Paste your Search Console meta-tag token into VITE_GOOGLE_SITE_VERIFICATION
+// (or replace the empty string below) to verify ownership by HTML tag.
+const GOOGLE_SITE_VERIFICATION =
+  (import.meta.env.VITE_GOOGLE_SITE_VERIFICATION as string | undefined) || "";
+
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
@@ -161,6 +166,9 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "Trek Wild Uganda" },
       { name: "robots", content: "index,follow,max-image-preview:large" },
       { name: "theme-color", content: "#1B2B21" },
+      ...(GOOGLE_SITE_VERIFICATION
+        ? [{ name: "google-site-verification", content: GOOGLE_SITE_VERIFICATION }]
+        : []),
       { property: "og:site_name", content: "Trek Wild Uganda" },
       { property: "og:locale", content: "en_US" },
       { property: "og:title", content: "Trek Wild Uganda — Discover the Pearl of Africa" },
