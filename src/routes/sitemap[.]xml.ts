@@ -5,8 +5,7 @@ import { JOURNEYS } from "@/lib/journeys";
 import { EXPERIENCES } from "@/lib/experiences";
 import { JOURNAL_POSTS } from "@/lib/journal-posts";
 
-// TODO: replace with your project URL once a project name or custom domain is set.
-const BASE_URL = "";
+const BASE_URL = "https://www.trekwilduganda.com";
 
 interface SitemapEntry {
   path: string;
