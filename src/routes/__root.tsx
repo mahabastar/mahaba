@@ -157,11 +157,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Trek Wild Uganda — Discover the Pearl of Africa" },
+      { title: "Uganda Safaris & Gorilla Trekking | Trek Wild Uganda" },
       {
         name: "description",
         content:
-          "Trek Wild Uganda crafts luxury safaris across the Pearl of Africa — gorilla trekking, chimpanzee tracking, wildlife, birding, hiking, culture and honeymoons.",
+          "Private, locally guided Uganda safaris — mountain gorillas in Bwindi, chimpanzees in Kibale, tree-climbing lions, the source of the Nile and the Rwenzori peaks. Planned in Kampala by Ugandan guides.",
       },
       { name: "author", content: "Trek Wild Uganda" },
       { name: "robots", content: "index,follow,max-image-preview:large" },
@@ -171,14 +171,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         : []),
       { property: "og:site_name", content: "Trek Wild Uganda" },
       { property: "og:locale", content: "en_US" },
-      { property: "og:title", content: "Trek Wild Uganda — Discover the Pearl of Africa" },
+      { property: "og:title", content: "Uganda Safaris & Gorilla Trekking | Trek Wild Uganda" },
       {
         property: "og:description",
         content:
-          "Luxury Uganda safaris — gorillas, chimpanzees, wildlife, birding, culture and hiking. Crafted itineraries across the Pearl of Africa.",
+          "Private, locally guided Uganda safaris — mountain gorillas in Bwindi, chimpanzees in Kibale, tree-climbing lions, the source of the Nile and the Rwenzori peaks. Planned in Kampala by Ugandan guides.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:title", content: "Uganda Safaris & Gorilla Trekking | Trek Wild Uganda" },
+      { name: "twitter:description", content: "Private, locally guided Uganda safaris — mountain gorillas in Bwindi, chimpanzees in Kibale, tree-climbing lions, the source of the Nile and the Rwenzori peaks. Planned in Kampala by Ugandan guides." },
+      { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/GFmBvthTZXOQLte29ny3bTtPx8W2/social-images/social-1786073343154-social-image.webp" },
+      { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/GFmBvthTZXOQLte29ny3bTtPx8W2/social-images/social-1786073343154-social-image.webp" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },

@@ -44,14 +44,14 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Meet mountain gorillas in Bwindi, track chimpanzees in Kibale and stand where the Nile begins — private Uganda safaris designed and led by Ugandan guides.",
+          "Private, locally guided Uganda safaris — mountain gorillas in Bwindi, chimpanzees in Kibale, tree-climbing lions, the source of the Nile and the Rwenzori peaks. Planned in Kampala by Ugandan guides.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       {
         name: "twitter:description",
         content:
-          "Private Uganda safaris led by Ugandan guides — gorillas, chimpanzees, the Nile, the Rwenzori and the communities who live alongside them.",
+          "Private, locally guided Uganda safaris — mountain gorillas in Bwindi, chimpanzees in Kibale, tree-climbing lions, the source of the Nile and the Rwenzori peaks. Planned in Kampala by Ugandan guides.",
       },
       { property: "og:url", content: `${SITE_CONFIG.url}/` },
     ],
