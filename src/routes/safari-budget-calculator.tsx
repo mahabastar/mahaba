@@ -189,7 +189,7 @@ function SafariBudgetCalculator() {
                   to="/build-my-safari"
                   className="rounded-full border border-ivory/20 px-6 py-3.5 text-center text-sm font-medium text-ivory transition-colors hover:border-gold hover:text-gold"
                 >
-                  Build My Safari instead
+                  Turn this estimate into a real plan
                 </Link>
               </div>
             </div>

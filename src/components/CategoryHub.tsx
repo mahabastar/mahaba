@@ -122,7 +122,7 @@ export function CategoryHub(p: CategoryHubProps) {
               to="/build-my-safari"
               className="rounded-full bg-forest px-7 py-4 text-sm font-medium text-ivory shadow-md transition-all hover:scale-105 hover:bg-forest-deep"
             >
-              Build My Safari
+              Start planning with a Ugandan guide
             </Link>
             <a
               href={buildWhatsAppHref(p.ctaBody)}

@@ -92,7 +92,7 @@ function QuoteRequest() {
             No obligation, no lengthy wizard — just the essentials, and we'll come back to you
             directly with pricing and options. Want something more guided instead?{" "}
             <Link to="/build-my-safari" className="underline decoration-gold/50 underline-offset-4 hover:text-gold">
-              Try Build My Safari
+              Walk me through it step by step
             </Link>.
           </p>
         </div>

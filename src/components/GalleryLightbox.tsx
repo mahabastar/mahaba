@@ -189,7 +189,7 @@ export function GalleryLightbox({
             onClick={() => submit("whatsapp")}
             className="mt-6 w-full rounded-full bg-forest px-6 py-3.5 text-sm font-medium text-ivory shadow-md transition-all hover:bg-forest-deep disabled:cursor-not-allowed disabled:opacity-40"
           >
-            Plan My Safari
+            Send this to a guide on WhatsApp
           </button>
           <button
             type="button"

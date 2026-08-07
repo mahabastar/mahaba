@@ -110,7 +110,7 @@ export function GuidePage(p: GuidePageProps) {
               to="/build-my-safari"
               className="rounded-full bg-forest px-7 py-4 text-sm font-medium text-ivory shadow-md transition-all hover:scale-105 hover:bg-forest-deep"
             >
-              Build My Safari
+              Fold this into my itinerary
             </Link>
             <a
               href={buildWhatsAppHref(`Hi! I have a question after reading your ${typeof p.eyebrow === "string" ? p.eyebrow.toLowerCase() : "travel"} guide.`)}

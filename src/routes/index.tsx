@@ -144,7 +144,7 @@ function Hero() {
               to="/build-my-safari"
               className="inline-flex items-center gap-3 rounded-full border border-forest/70 px-7 py-4 text-sm font-medium tracking-wide text-ivory backdrop-blur-md transition-colors hover:border-gold hover:text-gold"
             >
-              Build My Safari
+              Plan my Uganda safari
             </Link>
           </div>
         </div>
@@ -885,7 +885,7 @@ function FinalCTA() {
 
               <div className="mt-10 flex flex-wrap gap-4">
                 <Link to="/build-my-safari" className="rounded-full bg-forest px-7 py-4 text-sm font-medium text-ivory shadow-md transition-all hover:scale-105 hover:bg-forest-deep">
-                  Plan My Safari
+                  Start planning my journey
                 </Link>
                 <a
                   href={`https://wa.me/${SITE_CONFIG.whatsappNumber}`}
