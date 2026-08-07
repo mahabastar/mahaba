@@ -15,6 +15,7 @@ import { reportLovableError } from "@/lib/lovable-error-reporting";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { trackPageview, GA_MEASUREMENT_ID } from "@/lib/analytics";
 import logoAsset from "@/assets/trek-wild-uganda-logo.png.asset.json";
+import { SITE_CONFIG } from "@/lib/site-config";
 
 function NotFoundComponent() {
   return (
