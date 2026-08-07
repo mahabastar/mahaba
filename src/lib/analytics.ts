@@ -27,7 +27,10 @@ declare global {
   }
 }
 
-export const GA_MEASUREMENT_ID = import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined;
+const DEFAULT_GA_MEASUREMENT_ID = "G-64LLGP1F56";
+
+export const GA_MEASUREMENT_ID =
+  (import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined) || DEFAULT_GA_MEASUREMENT_ID;
 
 export const analyticsEnabled = Boolean(GA_MEASUREMENT_ID);
 
