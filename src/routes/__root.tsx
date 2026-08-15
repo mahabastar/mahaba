@@ -131,9 +131,10 @@ const ORGANIZATION_LD = {
     },
   ],
   sameAs: [
-    SITE_CONFIG.social.instagram,
-    SITE_CONFIG.social.tiktok,
-    SITE_CONFIG.social.facebook,
+  SITE_CONFIG.social.tiktok,
+  SITE_CONFIG.social.youtube,
+  SITE_CONFIG.social.facebook,
+],
   ],
 };
 
