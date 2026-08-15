@@ -147,6 +147,10 @@ const WEBSITE_LD = {
   inLanguage: "en",
   publisher: { "@id": `${SITE_CONFIG.url}/#organization` },
 };
+{
+  property: "og:url",
+  content: SITE_CONFIG.url,
+},
 
 // Paste your Search Console meta-tag token into VITE_GOOGLE_SITE_VERIFICATION
 // (or replace the empty string below) to verify ownership by HTML tag.
