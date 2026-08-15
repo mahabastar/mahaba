@@ -1,4 +1,3 @@
-
 /**
  * Single source of truth for Trek Wild Uganda contact details.
  *
