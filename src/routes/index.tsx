@@ -40,7 +40,9 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Private, locally guided Uganda safaris — mountain gorillas in Bwindi, chimpanzees in Kibale, tree-climbing lions, the source of the Nile and the Rwenzori peaks. Planned in Kampala by Ugandan guides.",
+          {
+    "Explore Uganda safari packages with local guides, gorilla trekking in Bwindi, chimpanzee trekking in Kibale, wildlife safaris and customized Uganda trips.",
+},
       },
       { property: "og:title", content: "Uganda Safaris & Gorilla Trekking | Trek Wild Uganda" },
       {
