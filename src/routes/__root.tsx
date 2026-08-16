@@ -131,9 +131,10 @@ const ORGANIZATION_LD = {
     },
   ],
   sameAs: [
-    SITE_CONFIG.social.instagram,
-    SITE_CONFIG.social.tiktok,
-    SITE_CONFIG.social.facebook,
+  SITE_CONFIG.social.tiktok,
+  SITE_CONFIG.social.youtube,
+  SITE_CONFIG.social.facebook,
+],
   ],
 };
 
@@ -146,6 +147,10 @@ const WEBSITE_LD = {
   inLanguage: "en",
   publisher: { "@id": `${SITE_CONFIG.url}/#organization` },
 };
+{
+  property: "og:url",
+  content: SITE_CONFIG.url,
+},
 
 // Paste your Search Console meta-tag token into VITE_GOOGLE_SITE_VERIFICATION
 // (or replace the empty string below) to verify ownership by HTML tag.
@@ -181,6 +186,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Uganda Safaris & Gorilla Trekking | Trek Wild Uganda" },
       { name: "twitter:description", content: "Private, locally guided Uganda safaris — mountain gorillas in Bwindi, chimpanzees in Kibale, tree-climbing lions, the source of the Nile and the Rwenzori peaks. Planned in Kampala by Ugandan guides." },
+{
+  name: "twitter:url",
+  content: SITE_CONFIG.url,
+},
       { property: "og:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/GFmBvthTZXOQLte29ny3bTtPx8W2/social-images/social-1786073343154-social-image.webp" },
       { name: "twitter:image", content: "https://storage.googleapis.com/gpt-engineer-file-uploads/GFmBvthTZXOQLte29ny3bTtPx8W2/social-images/social-1786073343154-social-image.webp" },
     ],
