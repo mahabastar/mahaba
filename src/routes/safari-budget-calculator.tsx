@@ -6,7 +6,9 @@ import { SiteFooter } from "@/components/SiteFooter";
 import {buildWhatsAppHref, SITE_CONFIG } from "@/lib/site-config";
 import { trackEvent } from "@/lib/analytics";
 
-export const Route = createFileRoute("/safari-budget-calculator")({
+export const Route ={
+  title: "Uganda Safari Cost & Budget Calculator | Trek Wild Uganda",
+}, ({
   head: () => ({
     meta: [
       { title: "Safari Budget Calculator — Trek Wild Uganda" },
