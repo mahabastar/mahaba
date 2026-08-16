@@ -3,13 +3,13 @@ import { useMemo, useState } from "react";
 
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
-import {buildWhatsAppHref, SITE_CONFIG } from "@/lib/site-config";
+import { buildWhatsAppHref, SITE_CONFIG } from "@/lib/site-config";
 import { trackEvent } from "@/lib/analytics";
 
 export const Route = createFileRoute("/safari-budget-calculator")({
-  ...
-  component: SafariBudgetCalculator,
-});
+  head: () => ({
+    meta: [
+      { title: "Safari Budget Calculator — Trek Wild Uganda" },
       {
         name: "description",
         content:
@@ -17,8 +17,7 @@ export const Route = createFileRoute("/safari-budget-calculator")({
       },
       {
         property: "og:title",
-        content:
-          "Uganda Safari Cost & Budget Calculator | Trek Wild Uganda",
+        content: "Safari Budget Calculator — Trek Wild Uganda",
       },
       {
         property: "og:description",
@@ -36,21 +35,6 @@ export const Route = createFileRoute("/safari-budget-calculator")({
         href: `${SITE_CONFIG.url}/safari-budget-calculator`,
       },
     ],
-  }),
-  component: SafariBudgetCalculator,
-}); ({
-  head: () => ({
-    meta: [
-      { title: "Safari Budget Calculator — Trek Wild Uganda" },
-      {
-        name: "description",
-        content:
-          "Estimate the cost of your Uganda safari — travel style, trip length, group size, gorilla and chimp permits — before requesting a personalised quote.",
-      },
-      { property: "og:title", content: "Safari Budget Calculator — Trek Wild Uganda" },
-      { property: "og:url", content: `${SITE_CONFIG.url}/safari-budget-calculator` },
-    ],
-    links: [{ rel: "canonical", href: `${SITE_CONFIG.url}/safari-budget-calculator` }],
   }),
   component: SafariBudgetCalculator,
 });
