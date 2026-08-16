@@ -34,7 +34,9 @@ import g_pearl_of_africa from "@/assets/gallery/pearl-of-africa.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Uganda Safaris & Gorilla Trekking | Trek Wild Uganda" },
+      {
+  title: "Uganda Safari Packages & Gorilla Trekking | Trek Wild Uganda",
+},
       {
         name: "description",
         content:
