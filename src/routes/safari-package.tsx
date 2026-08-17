@@ -4,7 +4,7 @@ import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
 import { buildPageMeta } from "@/lib/site-config";
 
-export const Route = createFileRoute("/safari-packages")({
+export const Route = createFileRoute("/safari-package")({
   head: () =>
     buildPageMeta({
       title: "Uganda Safari Packages | Trek Wild Uganda",
