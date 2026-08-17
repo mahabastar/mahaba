@@ -19,7 +19,7 @@ import { Route as UgandaExplorerRouteImport } from './routes/uganda-explorer'
 import { Route as TravelJournalRouteImport } from './routes/travel-journal'
 import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as SeasonalSafariCalendarRouteImport } from './routes/seasonal-safari-calendar'
-import { Route as SafariPackagesRouteImport } from './routes/safari-packages'
+import { Route as SafariPackageRouteImport } from './routes/safari-package'
 import { Route as SafariBudgetCalculatorRouteImport } from './routes/safari-budget-calculator'
 import { Route as RiversRouteImport } from './routes/rivers'
 import { Route as ResponsibleTourismRouteImport } from './routes/responsible-tourism'
@@ -120,9 +120,9 @@ const SeasonalSafariCalendarRoute = SeasonalSafariCalendarRouteImport.update({
   path: '/seasonal-safari-calendar',
   getParentRoute: () => rootRouteImport,
 } as any)
-const SafariPackagesRoute = SafariPackagesRouteImport.update({
-  id: '/safari-packages',
-  path: '/safari-packages',
+const SafariPackageRoute = SafariPackageRouteImport.update({
+  id: '/safari-package',
+  path: '/safari-package',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SafariBudgetCalculatorRoute = SafariBudgetCalculatorRouteImport.update({
@@ -408,7 +408,7 @@ export interface FileRoutesByFullPath {
   '/responsible-tourism': typeof ResponsibleTourismRoute
   '/rivers': typeof RiversRoute
   '/safari-budget-calculator': typeof SafariBudgetCalculatorRoute
-  '/safari-packages': typeof SafariPackagesRoute
+  '/safari-package': typeof SafariPackageRoute
   '/seasonal-safari-calendar': typeof SeasonalSafariCalendarRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/travel-journal': typeof TravelJournalRouteWithChildren
@@ -469,7 +469,7 @@ export interface FileRoutesByTo {
   '/responsible-tourism': typeof ResponsibleTourismRoute
   '/rivers': typeof RiversRoute
   '/safari-budget-calculator': typeof SafariBudgetCalculatorRoute
-  '/safari-packages': typeof SafariPackagesRoute
+  '/safari-package': typeof SafariPackageRoute
   '/seasonal-safari-calendar': typeof SeasonalSafariCalendarRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/uganda-explorer': typeof UgandaExplorerRoute
@@ -531,7 +531,7 @@ export interface FileRoutesById {
   '/responsible-tourism': typeof ResponsibleTourismRoute
   '/rivers': typeof RiversRoute
   '/safari-budget-calculator': typeof SafariBudgetCalculatorRoute
-  '/safari-packages': typeof SafariPackagesRoute
+  '/safari-package': typeof SafariPackageRoute
   '/seasonal-safari-calendar': typeof SeasonalSafariCalendarRoute
   '/sitemap.xml': typeof SitemapDotxmlRoute
   '/travel-journal': typeof TravelJournalRouteWithChildren
@@ -595,7 +595,7 @@ export interface FileRouteTypes {
     | '/responsible-tourism'
     | '/rivers'
     | '/safari-budget-calculator'
-    | '/safari-packages'
+    | '/safari-package'
     | '/seasonal-safari-calendar'
     | '/sitemap.xml'
     | '/travel-journal'
@@ -656,7 +656,7 @@ export interface FileRouteTypes {
     | '/responsible-tourism'
     | '/rivers'
     | '/safari-budget-calculator'
-    | '/safari-packages'
+    | '/safari-package'
     | '/seasonal-safari-calendar'
     | '/sitemap.xml'
     | '/uganda-explorer'
@@ -717,7 +717,7 @@ export interface FileRouteTypes {
     | '/responsible-tourism'
     | '/rivers'
     | '/safari-budget-calculator'
-    | '/safari-packages'
+    | '/safari-package'
     | '/seasonal-safari-calendar'
     | '/sitemap.xml'
     | '/travel-journal'
@@ -780,7 +780,7 @@ export interface RootRouteChildren {
   ResponsibleTourismRoute: typeof ResponsibleTourismRoute
   RiversRoute: typeof RiversRoute
   SafariBudgetCalculatorRoute: typeof SafariBudgetCalculatorRoute
-  SafariPackagesRoute: typeof SafariPackagesRoute
+  SafariPackageRoute: typeof SafariPackageRoute
   SeasonalSafariCalendarRoute: typeof SeasonalSafariCalendarRoute
   SitemapDotxmlRoute: typeof SitemapDotxmlRoute
   TravelJournalRoute: typeof TravelJournalRouteWithChildren
@@ -887,11 +887,11 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SeasonalSafariCalendarRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/safari-packages': {
-      id: '/safari-packages'
-      path: '/safari-packages'
-      fullPath: '/safari-packages'
-      preLoaderRoute: typeof SafariPackagesRouteImport
+    '/safari-package': {
+      id: '/safari-package'
+      path: '/safari-package'
+      fullPath: '/safari-package'
+      preLoaderRoute: typeof SafariPackageRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/safari-budget-calculator': {
@@ -1292,7 +1292,7 @@ const rootRouteChildren: RootRouteChildren = {
   ResponsibleTourismRoute: ResponsibleTourismRoute,
   RiversRoute: RiversRoute,
   SafariBudgetCalculatorRoute: SafariBudgetCalculatorRoute,
-  SafariPackagesRoute: SafariPackagesRoute,
+  SafariPackageRoute: SafariPackageRoute,
   SeasonalSafariCalendarRoute: SeasonalSafariCalendarRoute,
   SitemapDotxmlRoute: SitemapDotxmlRoute,
   TravelJournalRoute: TravelJournalRouteWithChildren,
