@@ -1,23 +1,22 @@
 /**
  * Google Analytics 4 integration.
  *
- * Requires VITE_GA_MEASUREMENT_ID (see .env.example) — your GA4
- * "Measurement ID", found in GA4: Admin -> Data Streams -> your
- * web stream -> Measurement ID (starts with "G-"). Without it set,
- * analytics stays fully disabled — no script loads, nothing is sent,
- * and no error is thrown.
+ * Analytics is enabled only when VITE_GA_MEASUREMENT_ID is explicitly
+ * configured in the environment.
  *
- * Note for later: GA4 sets cookies and collects visitor data. If you
- * have or expect EU/UK visitors, you likely need a cookie-consent
- * banner and a privacy policy that discloses this before the script
- * loads, to comply with GDPR/PECR. That consent layer isn't included
- * here — this file only wires up the tracking itself.
+ * Example:
+ * VITE_GA_MEASUREMENT_ID=G-XXXXXXXXXX
  *
- * This is a single-page app, so GA4's automatic pageview (fired once
- * when gtag.js first loads) isn't enough — it would miss every
- * client-side route change. The root layout's config call sets
- * send_page_view: false, and trackPageview() below is called manually
- * on every route change instead (see __root.tsx).
+ * If the variable is not configured:
+ * - no GA4 script should load
+ * - no visitor data should be sent
+ * - tracking functions safely do nothing
+ *
+ * IMPORTANT:
+ * GA4 may set cookies and collect visitor information. If the site
+ * receives visitors from jurisdictions requiring consent, such as the
+ * EU/UK, a consent mechanism should be implemented before analytics
+ * is loaded.
  */
 
 declare global {
@@ -27,25 +26,65 @@ declare global {
   }
 }
 
-const DEFAULT_GA_MEASUREMENT_ID = "G-64LLGP1F56";
-
+/**
+ * Read the GA4 Measurement ID from the Vite environment.
+ *
+ * Do NOT hard-code the production Measurement ID here.
+ *
+ * This prevents analytics from being silently enabled when the
+ * environment variable has not been configured.
+ */
 export const GA_MEASUREMENT_ID =
-  (import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined) || DEFAULT_GA_MEASUREMENT_ID;
+  (import.meta.env.VITE_GA_MEASUREMENT_ID as string | undefined)?.trim() || "";
 
+/**
+ * Whether analytics is configured.
+ */
 export const analyticsEnabled = Boolean(GA_MEASUREMENT_ID);
 
-/** Call on every client-side route change to record an SPA pageview. */
-export function trackPageview(path: string) {
-  if (!analyticsEnabled || typeof window === "undefined" || !window.gtag) return;
+/**
+ * Record a page view for a client-side route change.
+ *
+ * The application is an SPA, so relying only on GA4's initial
+ * automatic page view would miss subsequent client-side navigation.
+ */
+export function trackPageview(path: string): void {
+  if (
+    !analyticsEnabled ||
+    typeof window === "undefined" ||
+    typeof window.gtag !== "function"
+  ) {
+    return;
+  }
+
   window.gtag("event", "page_view", {
     page_path: path,
     page_location: window.location.href,
-    page_title: document.title,
+    page_title:
+      typeof document !== "undefined" ? document.title : undefined,
   });
 }
 
-/** Call to record a conversion-relevant action (quote sent, WhatsApp opened, etc.). */
-export function trackEvent(name: string, params?: Record<string, unknown>) {
-  if (!analyticsEnabled || typeof window === "undefined" || !window.gtag) return;
-  window.gtag("event", name, params);
+/**
+ * Record a custom analytics event.
+ *
+ * Example:
+ *
+ * trackEvent("whatsapp_click", {
+ *   page_path: window.location.pathname,
+ * });
+ */
+export function trackEvent(
+  name: string,
+  params?: Record<string, unknown>,
+): void {
+  if (
+    !analyticsEnabled ||
+    typeof window === "undefined" ||
+    typeof window.gtag !== "function"
+  ) {
+    return;
+  }
+
+  window.gtag("event", name, params ?? {});
 }
