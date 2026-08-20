@@ -8,8 +8,8 @@ import {
   buildWhatsAppHref,
   getSiteUrl,
   getVerifiedSocialProfiles,
-} from "@/lib/site-config"; { JOURNAL_POSTS } from "@/lib/journal-posts";
-
+} from "@/lib/site-config";
+import { JOURNAL_POSTS } from "@/lib/journal-posts";
 import { JOURNEYS } from "@/lib/journeys";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneElephants from "@/assets/scene-elephants.jpg";
