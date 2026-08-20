@@ -37,11 +37,111 @@ import g_chimp_trekking_1 from "@/assets/gallery/chimp-trekking-1.jpg";
 import g_pearl_of_africa from "@/assets/gallery/pearl-of-africa.jpg";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      {
-  title: "Uganda Safari Packages & Gorilla Trekking | Trek Wild Uganda",
-},
+    head: () => {
+    const title =
+      "Uganda Safari Packages & Gorilla Trekking | Trek Wild Uganda";
+
+    const description =
+      "Explore Uganda safari packages with local guides, gorilla trekking in Bwindi, chimpanzee trekking in Kibale, wildlife safaris and customized Uganda trips.";
+
+    const canonicalUrl = getSiteUrl("/");
+
+    const socialImage =
+      "https://storage.googleapis.com/gpt-engineer-file-uploads/GFmBvthTZXOQLte29ny3bTtPx8W2/social-images/social-1786073343154-social-image.webp";
+
+    return {
+      meta: [
+        {
+          title,
+        },
+        {
+          name: "description",
+          content: description,
+        },
+        {
+          name: "robots",
+          content: "index,follow,max-image-preview:large",
+        },
+
+        {
+          property: "og:site_name",
+          content: SITE_CONFIG.name,
+        },
+        {
+          property: "og:locale",
+          content: "en_US",
+        },
+        {
+          property: "og:title",
+          content: title,
+        },
+        {
+          property: "og:description",
+          content: description,
+        },
+        {
+          property: "og:type",
+          content: "website",
+        },
+        {
+          property: "og:url",
+          content: canonicalUrl,
+        },
+        {
+          property: "og:image",
+          content: socialImage,
+        },
+
+        {
+          name: "twitter:card",
+          content: "summary_large_image",
+        },
+        {
+          name: "twitter:title",
+          content: title,
+        },
+        {
+          name: "twitter:description",
+          content: description,
+        },
+        {
+          name: "twitter:image",
+          content: socialImage,
+        },
+      ],
+
+      links: [
+        {
+          rel: "canonical",
+          href: canonicalUrl,
+        },
+      ],
+
+      scripts: [
+        {
+          type: "application/ld+json",
+          children: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "TravelAgency",
+            "@id": `${SITE_CONFIG.url}/#organization`,
+            name: SITE_CONFIG.name,
+            url: SITE_CONFIG.url,
+            logo: getSiteUrl("/favicon.png"),
+            image: socialImage,
+            description:
+              "Ugandan-owned, locally guided safari company offering gorilla trekking, chimpanzee tracking, wildlife safaris, birding, hiking and cultural journeys across Uganda.",
+            telephone: SITE_CONFIG.phoneWhatsApp,
+            email: SITE_CONFIG.email,
+            areaServed: {
+              "@type": "Country",
+              name: "Uganda",
+            },
+            sameAs: getVerifiedSocialProfiles(),
+          }),
+        },
+      ],
+    };
+  },
       {
         name: "description",
         content:
