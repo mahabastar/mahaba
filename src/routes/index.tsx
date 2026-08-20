@@ -3,8 +3,13 @@ import { useEffect, useRef, useState } from "react";
 
 import { SiteNav } from "@/components/SiteNav";
 import { SiteFooter } from "@/components/SiteFooter";
-import { JOURNAL_POSTS } from "@/lib/journal-posts";
-import { SITE_CONFIG, buildWhatsAppHref } from "@/lib/site-config";
+import {
+  SITE_CONFIG,
+  buildWhatsAppHref,
+  getSiteUrl,
+  getVerifiedSocialProfiles,
+} from "@/lib/site-config"; { JOURNAL_POSTS } from "@/lib/journal-posts";
+
 import { JOURNEYS } from "@/lib/journeys";
 import heroGorilla from "@/assets/hero-gorilla.jpg";
 import sceneElephants from "@/assets/scene-elephants.jpg";
