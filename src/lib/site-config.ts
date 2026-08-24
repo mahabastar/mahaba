@@ -16,10 +16,13 @@ export const SITE_CONFIG = {
   /**
    * Single canonical website origin.
    *
-   * All canonical URLs, sitemap URLs, Open Graph URLs and structured
-   * data should ultimately resolve to this origin.
+   * IMPORTANT:
+   * The non-www domain is the canonical production domain.
+   *
+   * All canonical URLs, sitemap URLs, Open Graph URLs and
+   * structured data should ultimately resolve to this origin.
    */
-  url: "https://www.trekwilduganda.com",
+  url: "https://trekwilduganda.com",
 
   /**
    * Primary business email.
@@ -49,8 +52,8 @@ export const SITE_CONFIG = {
     /**
      * Instagram is currently not promoted or verified.
      *
-     * Kept as null rather than publishing an unverified URL in
-     * structured data.
+     * Kept as null rather than publishing an unverified URL
+     * in structured data.
      */
     instagram: null,
 
@@ -62,8 +65,8 @@ export const SITE_CONFIG = {
     /**
      * Facebook profile currently requires verification.
      *
-     * Keep null until the official Trek Wild Uganda Facebook Page
-     * URL has been confirmed.
+     * Keep null until the official Trek Wild Uganda Facebook
+     * Page URL has been confirmed.
      */
     facebook: null,
 
@@ -75,9 +78,18 @@ export const SITE_CONFIG = {
 } as const;
 
 /**
- * Returns the canonical website origin without a trailing slash.
+ * Returns the canonical website URL with an optional path.
  *
- * This prevents accidental double slashes when constructing URLs.
+ * Examples:
+ *
+ * getSiteUrl()
+ * -> https://trekwilduganda.com
+ *
+ * getSiteUrl("/")
+ * -> https://trekwilduganda.com/
+ *
+ * getSiteUrl("/travel-journal")
+ * -> https://trekwilduganda.com/travel-journal
  */
 export function getSiteUrl(path = ""): string {
   const normalizedPath = path
@@ -90,7 +102,7 @@ export function getSiteUrl(path = ""): string {
 }
 
 /**
- * Builds a wa.me link with a pre-filled, URL-encoded message.
+ * Builds a WhatsApp link with a pre-filled, URL-encoded message.
  */
 export function buildWhatsAppHref(message: string): string {
   return `https://wa.me/${SITE_CONFIG.whatsappNumber}?text=${encodeURIComponent(
