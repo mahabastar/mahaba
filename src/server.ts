@@ -17,34 +17,48 @@ let serverEntryPromise: Promise<ServerEntry> | undefined;
 async function getServerEntry(): Promise<ServerEntry> {
   if (!serverEntryPromise) {
     serverEntryPromise = import("@tanstack/react-start/server-entry").then(
-      (m) => (m.default ?? m) as ServerEntry,
+      (module) => (module.default ?? module) as ServerEntry,
     );
   }
+
   return serverEntryPromise;
 }
 
-// h3 swallows in-handler throws into a normal 500 Response with body
-// {"unhandled":true,"message":"HTTPError"} — try/catch alone never fires for those.
-async function normalizeCatastrophicSsrResponse(
+/**
+ * TanStack Start / h3 can sometimes convert an unhandled SSR HTTPError
+ * into a generic JSON 500 response instead of allowing it to reach the
+ * outer try/catch.
+ *
+ * Convert that specific failure into our normal HTML error page so users,
+ * crawlers and monitoring systems don't receive an internal JSON payload.
+ */
+async function normalizeServerError(
   response: Response,
 ): Promise<Response> {
-  if (response.status < 500) return response;
+  if (response.status < 500) {
+    return response;
+  }
 
   const contentType = response.headers.get("content-type") ?? "";
-  if (!contentType.includes("application/json")) return response;
+
+  if (!contentType.includes("application/json")) {
+    return response;
+  }
 
   const body = await response.clone().text();
-  if (!isH3SwallowedErrorBody(body)) return response;
+
+  if (!isH3SwallowedErrorBody(body)) {
+    return response;
+  }
+
+  const capturedError = consumeLastCapturedError();
 
   console.error(
-    consumeLastCapturedError() ??
-      new Error(`h3 swallowed SSR error: ${body}`),
+    capturedError ??
+      new Error(`Unhandled SSR HTTPError response: ${body}`),
   );
 
-  return new Response(renderErrorPage(), {
-    status: 500,
-    headers: { "content-type": "text/html; charset=utf-8" },
-  });
+  return createHtmlErrorResponse();
 }
 
 function isH3SwallowedErrorBody(body: string): boolean {
@@ -63,23 +77,48 @@ function isH3SwallowedErrorBody(body: string): boolean {
   }
 }
 
+function createHtmlErrorResponse(): Response {
+  return new Response(renderErrorPage(), {
+    status: 500,
+    headers: {
+      "Content-Type": "text/html; charset=utf-8",
+      "Cache-Control": "no-store",
+    },
+  });
+}
+
 export default {
-  async fetch(request: Request, env: unknown, ctx: unknown) {
+  async fetch(
+    request: Request,
+    env: unknown,
+    ctx: unknown,
+  ): Promise<Response> {
+    /*
+     * Domain redirects happen before SSR.
+     *
+     * This prevents legacy hosts from rendering the application first
+     * and then redirecting after the page has already been processed.
+     */
+    const redirect = getDomainRedirect(request);
+
+    if (redirect) {
+      return redirect;
+    }
+
     try {
-      const redirect = getDomainRedirect(request);
-      if (redirect) return redirect;
-
       const handler = await getServerEntry();
-      const response = await handler.fetch(request, env, ctx);
 
-      return await normalizeCatastrophicSsrResponse(response);
+      const response = await handler.fetch(
+        request,
+        env,
+        ctx,
+      );
+
+      return normalizeServerError(response);
     } catch (error) {
-      console.error(error);
+      console.error("Fatal SSR error:", error);
 
-      return new Response(renderErrorPage(), {
-        status: 500,
-        headers: { "content-type": "text/html; charset=utf-8" },
-      });
+      return createHtmlErrorResponse();
     }
   },
 };
