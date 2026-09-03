@@ -1,5 +1,30 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "bun run build",
   "outputDirectory": ".vercel/output",
   "framework": null,
-  "redirects": 
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "trekwilduganda.com"
+        }
+      ],
+      "destination": "https://www.biikuyatrailsuganda.com/$1",
+      "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.trekwilduganda.com"
+        }
+      ],
+      "destination": "https://www.biikuyatrailsuganda.com/$1",
+      "permanent": true
+    }
+  ]
+}
